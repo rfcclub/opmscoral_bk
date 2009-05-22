@@ -50,10 +50,46 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "POSClientSetup", "Setup1\Se
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A37C2A4-354C-44A1-BFCC-1BFF98114199}"
 	ProjectSection(SolutionItems) = preProject
+		Libraries\antlr.runtime.dll = Libraries\antlr.runtime.dll
+		Libraries\BarcodeLib.dll = Libraries\BarcodeLib.dll
+		Libraries\Castle.Core.dll = Libraries\Castle.Core.dll
+		Libraries\Castle.DynamicProxy2.dll = Libraries\Castle.DynamicProxy2.dll
+		Libraries\Common.Logging.dll = Libraries\Common.Logging.dll
+		Libraries\Common.Logging.Log4Net.dll = Libraries\Common.Logging.Log4Net.dll
+		Libraries\Iesi.Collections.dll = Libraries\Iesi.Collections.dll
 		Libraries\Libraries.rar = Libraries\Libraries.rar
+		Libraries\log4net.dll = Libraries\log4net.dll
+		Libraries\Microsoft.Practices.EnterpriseLibrary.Common.dll = Libraries\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		Libraries\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll = Libraries\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll
+		Libraries\Microsoft.Practices.EnterpriseLibrary.Validation.Configuration.Design.dll = Libraries\Microsoft.Practices.EnterpriseLibrary.Validation.Configuration.Design.dll
+		Libraries\Microsoft.Practices.EnterpriseLibrary.Validation.dll = Libraries\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+		Libraries\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll = Libraries\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+		Libraries\Microsoft.Practices.ObjectBuilder.dll = Libraries\Microsoft.Practices.ObjectBuilder.dll
+		Libraries\MySql.Data.dll = Libraries\MySql.Data.dll
+		Libraries\NHibernate.dll = Libraries\NHibernate.dll
+		Libraries\QSS.Components.Data.dll = Libraries\QSS.Components.Data.dll
+		Libraries\QSS.Components.dll = Libraries\QSS.Components.dll
+		Libraries\QSS.Components.Windows.Forms.dll = Libraries\QSS.Components.Windows.Forms.dll
+		Libraries\Spring.Aop.dll = Libraries\Spring.Aop.dll
+		Libraries\Spring.Core.dll = Libraries\Spring.Core.dll
+		Libraries\Spring.Data.dll = Libraries\Spring.Data.dll
+		Libraries\Spring.Data.NHibernate20.dll = Libraries\Spring.Data.NHibernate20.dll
+		Libraries\Spring.Messaging.dll = Libraries\Spring.Messaging.dll
+		Libraries\Spring.Messaging.Nms.dll = Libraries\Spring.Messaging.Nms.dll
+		Libraries\Spring.Scheduling.Quartz.dll = Libraries\Spring.Scheduling.Quartz.dll
+		Libraries\Spring.Services.dll = Libraries\Spring.Services.dll
+		Libraries\Spring.Testing.NUnit.dll = Libraries\Spring.Testing.NUnit.dll
+		Libraries\Spring.Web.dll = Libraries\Spring.Web.dll
+		Libraries\Spring.Web.Extensions.dll = Libraries\Spring.Web.Extensions.dll
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOS.Interfaces", "CoralPOS.Interfaces\CoralPOS.Interfaces.csproj", "{A377C470-FB76-423D-A15F-A81B58C1EF31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSReports", "POSReports\POSReports.csproj", "{A501DC0E-5E63-4CE7-8D99-F45D1B69CD9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportPOSData", "ImportPOSData\ImportPOSData.csproj", "{53EA70B6-957C-4D8A-BD43-1450C7433920}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagementTool", "ClientManagementTool\ClientManagementTool.csproj", "{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -87,6 +123,18 @@ Global
 		{A377C470-FB76-423D-A15F-A81B58C1EF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A377C470-FB76-423D-A15F-A81B58C1EF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A377C470-FB76-423D-A15F-A81B58C1EF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A501DC0E-5E63-4CE7-8D99-F45D1B69CD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A501DC0E-5E63-4CE7-8D99-F45D1B69CD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A501DC0E-5E63-4CE7-8D99-F45D1B69CD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A501DC0E-5E63-4CE7-8D99-F45D1B69CD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EA70B6-957C-4D8A-BD43-1450C7433920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EA70B6-957C-4D8A-BD43-1450C7433920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EA70B6-957C-4D8A-BD43-1450C7433920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EA70B6-957C-4D8A-BD43-1450C7433920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
