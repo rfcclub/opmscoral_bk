@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using AppFrame.Common;
+using AppFrame.Utility.Mapper;
+using CoralPOS.Interfaces.Model;
+
+namespace CoralPOS.Interfaces.Utility.Mapper
+{
+    /// <summary>
+    /// Converter convert from RoleModel to Role
+    /// </summary>
+    public class RoleMapper : BaseMapper<Role,RoleModel>
+    {
+        public Role Convert(RoleModel source)
+        {
+            Role role = new Role();
+            role.Name = source.Name;
+            return role;
+        }
+    }
+}

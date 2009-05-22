@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using AppFrame.Collection;
+using AppFrame.Model;
+
+namespace CoralPOS.Interfaces.Collection
+{
+    public class PurchaseOrderCollection : BaseCollection<PurchaseOrder>
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="source"></param>
+        public PurchaseOrderCollection(BindingSource source) : base(source)
+        {
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public PurchaseOrderCollection()
+        {
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="list"></param>
+        public PurchaseOrderCollection(IList<PurchaseOrder> list) : base(list)
+        {
+        }
+    }
+}
