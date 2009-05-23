@@ -270,7 +270,6 @@
     <Compile Include="Utility\GlobalUtility.cs" />
     <Compile Include="Utility\Mapper\BaseMapper.cs" />
     <Compile Include="Utility\Mapper\BaseTransform.cs" />
-    <Compile Include="Utility\Mapper\BaseUserMapper.cs" />
     <Compile Include="Utility\Mapper\FormTransform.cs" />
     <Compile Include="Utility\Mapper\ObjectTransform.cs" />
     <Compile Include="Utility\Mapper\StringMapper.cs" />
@@ -280,7 +279,6 @@
     <Compile Include="Utility\NumberUtility.cs" />
     <Compile Include="Utility\ObjectConverter.cs" />
     <Compile Include="Utility\RandomGenerator.cs" />
-    <Compile Include="Utility\ResourceUtility.cs" />
     <Compile Include="Utility\SecurityUtility.cs" />
     <Compile Include="Utility\StringUtility.cs" />
   </ItemGroup>
