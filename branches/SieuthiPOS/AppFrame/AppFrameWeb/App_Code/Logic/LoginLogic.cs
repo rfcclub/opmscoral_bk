@@ -11,7 +11,9 @@ using System.Web.UI.HtmlControls;
 using AppFrame.DataLayer;
 using AppFrame.Common;
 using AppFrame.Utility;
-using AppFrame.Model;
+using CoralPOS.Interfaces.DataLayer;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
 using ObjectConverter=AppFrame.Utility.ObjectConverter;
 
 namespace AppFrame.Logic
@@ -148,7 +150,12 @@ namespace AppFrame.Logic
 
         public void ProcessUser(LoginModel model)
         {
-            throw new NotImplementedException();
+            
+        }
+
+        public void ChangePassword(string username, string password, string newPassword)
+        {
+            
         }
 
         #endregion

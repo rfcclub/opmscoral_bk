@@ -3,12 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFrame", "AppFrame\AppFrame.csproj", "{73A362AB-99CF-4AA1-8278-01CAED2516F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFrameClient", "AppFrameClient\AppFrameClient.csproj", "{65E17626-8E16-448C-A89D-ADE344360AF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSClient", "AppFrameClient\POSClient.csproj", "{65E17626-8E16-448C-A89D-ADE344360AF4}"
 	ProjectSection(ProjectDependencies) = postProject
 		{73A362AB-99CF-4AA1-8278-01CAED2516F0} = {73A362AB-99CF-4AA1-8278-01CAED2516F0}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFrameServer", "AppFrameServer\AppFrameServer.csproj", "{C3773063-F4BA-4DCC-99C6-6C1F66397173}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSServer", "AppFrameServer\POSServer.csproj", "{C3773063-F4BA-4DCC-99C6-6C1F66397173}"
 	ProjectSection(ProjectDependencies) = postProject
 		{73A362AB-99CF-4AA1-8278-01CAED2516F0} = {73A362AB-99CF-4AA1-8278-01CAED2516F0}
 	EndProjectSection
@@ -20,7 +20,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AppFrameWeb", "AppFrameWeb\
 		SccLocalPath = "Svn"
 		SccProvider = "SubversionScc"
 		TargetFramework = "3.5"
-		ProjectReferences = "{73A362AB-99CF-4AA1-8278-01CAED2516F0}|AppFrame.dll;{C3773063-F4BA-4DCC-99C6-6C1F66397173}|AppFrameServer.dll;"
+		ProjectReferences = "{73A362AB-99CF-4AA1-8278-01CAED2516F0}|AppFrame.dll;{C3773063-F4BA-4DCC-99C6-6C1F66397173}|AppFrameServer.dll;{A377C470-FB76-423D-A15F-A81B58C1EF31}|CoralPOS.Interfaces.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/AppFrameWeb"
 		Debug.AspNetCompiler.PhysicalPath = "AppFrameWeb\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AppFrameWeb\"

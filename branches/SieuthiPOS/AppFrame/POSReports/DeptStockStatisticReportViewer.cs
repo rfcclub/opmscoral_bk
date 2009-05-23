@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
 using Microsoft.Reporting.WinForms;
 
 namespace POSReports

@@ -1,6 +1,8 @@
 using System.Collections;
+using CoralPOS.Interfaces.DataLayer;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
 using Spring.Transaction.Interceptor;
-using AppFrame.Model;
 using AppFrame.DataLayer;
 
 namespace AppFrame.Logic

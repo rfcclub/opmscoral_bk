@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web;
-using AppFrame.Model;
+using CoralPOS.Interfaces.DataLayer;
+using CoralPOS.Interfaces.Model;
 using Spring.Data.NHibernate.Support;
 
 /// <summary>
@@ -15,7 +16,7 @@ namespace AppFrame.DataLayer
     {
         
         
-        public global::AppFrame.Model.LoginModel getInfo(string Username, string Password)
+        public LoginModel getInfo(string Username, string Password)
         {
             LoginModel model = null;
             

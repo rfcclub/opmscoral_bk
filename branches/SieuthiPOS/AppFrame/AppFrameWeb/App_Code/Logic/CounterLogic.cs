@@ -1,3 +1,5 @@
+using CoralPOS.Interfaces.Logic;
+
 /// <summary>
 /// Summary description for CounterLogic
 /// </summary>
