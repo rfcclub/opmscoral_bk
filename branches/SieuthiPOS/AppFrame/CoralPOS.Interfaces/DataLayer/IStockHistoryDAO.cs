@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using AppFrame;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 using NHibernate.Criterion;
 
 namespace CoralPOS.Interfaces.DataLayer

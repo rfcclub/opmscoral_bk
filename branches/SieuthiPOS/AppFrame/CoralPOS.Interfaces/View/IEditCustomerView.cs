@@ -2,10 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter;
 
-namespace AppFrame.View
+namespace CoralPOS.Interfaces.View
 {
     public interface IEditCustomerView<T>:ICustomerView<T> where T : BaseEventArgs 
     {

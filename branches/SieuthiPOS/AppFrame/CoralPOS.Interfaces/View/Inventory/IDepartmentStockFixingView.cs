@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Presenter.Inventory;
+using CoralPOS.Interfaces.Presenter.Inventory;
 
-namespace AppFrame.View.Inventory
+namespace CoralPOS.Interfaces.View.Inventory
 {
     public interface IDepartmentStockFixingView
     {

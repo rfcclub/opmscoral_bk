@@ -6,7 +6,7 @@ using System.Collections;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.Masters
+namespace CoralPOS.Interfaces.Presenter.Masters
 {
     public class UniversalMasterSaveEventArgs : BaseEventArgs
     {

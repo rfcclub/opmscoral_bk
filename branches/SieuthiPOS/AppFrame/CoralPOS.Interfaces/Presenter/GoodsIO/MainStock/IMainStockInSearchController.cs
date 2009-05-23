@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrame.View.GoodsIO.MainStock;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 
-namespace AppFrame.Presenter.GoodsIO.MainStock
+namespace CoralPOS.Interfaces.Presenter.GoodsIO.MainStock
 {
     public interface IMainStockInSearchController : IBaseController<MainStockInSearchEventArgs>
     {

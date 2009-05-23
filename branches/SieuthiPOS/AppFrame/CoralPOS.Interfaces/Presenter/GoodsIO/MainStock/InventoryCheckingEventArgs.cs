@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Model;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsIO.MainStock
+namespace CoralPOS.Interfaces.Presenter.GoodsIO.MainStock
 {
     public class InventoryCheckingEventArgs : BaseEventArgs
     {

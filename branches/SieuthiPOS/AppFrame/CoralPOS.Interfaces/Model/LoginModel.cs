@@ -5,7 +5,6 @@ using System.Resources;
 using System.Text;
 using System.Xml.Serialization;
 using AppFrame.Common;
-using AppFrame.Model;
 
 namespace CoralPOS.Interfaces.Model
 {

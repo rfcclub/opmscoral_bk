@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using AppFrame.Controls;
-using AppFrame.Model;
 
 namespace CoralPOS.Interfaces.Model
 {

@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.DataLayer;
-using AppFrame.Model;
 using CoralPOS.Interfaces.Model;
 using Spring.Transaction.Interceptor;
 

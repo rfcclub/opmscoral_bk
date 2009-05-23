@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppFrame.DataLayer
+namespace CoralPOS.Interfaces.DataLayer
 {
     class Dummy
     {

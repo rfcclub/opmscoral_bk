@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using AppFrame;
 using AppFrame.ModelCriteria;
-using AppFrame.View.GoodsSale;
 using CoralPOS.Interfaces.Collection;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View.GoodsSale;
 
-namespace AppFrame.Presenter.GoodsSale
+namespace CoralPOS.Interfaces.Presenter.GoodsSale
 {
     public interface IGoodsSaleListController
     {

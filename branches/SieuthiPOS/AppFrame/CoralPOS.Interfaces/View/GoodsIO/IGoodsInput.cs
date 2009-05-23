@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrame.View.GoodsIO
+namespace CoralPOS.Interfaces.View.GoodsIO
 {
     public interface IGoodsInput<T> where T : BaseEventArgs
     {

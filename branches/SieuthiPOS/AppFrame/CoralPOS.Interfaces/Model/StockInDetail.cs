@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region StockInDetail
     /// <summary>
     /// StockInDetail object for NHibernate mapped table 'stock_in_detail'.
     /// </summary>
     [Serializable]
     public class StockInDetail : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         public enum StockInStatus
         {
@@ -207,7 +205,7 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
@@ -216,5 +214,4 @@ namespace AppFrame.Model
 
         public virtual ProductMaster ProductMaster { get; set; }
     }
-    #endregion
 }

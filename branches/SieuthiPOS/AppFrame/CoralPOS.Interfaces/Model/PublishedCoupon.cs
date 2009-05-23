@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region PublishedCoupon
     /// <summary>
     /// PublishedCoupon object for NHibernate mapped table 'published_coupon'.
     /// </summary>
     [Serializable]
     public class PublishedCoupon : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _couponId; 		
         protected Int64 _publishedCouponId; 		
@@ -196,12 +194,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

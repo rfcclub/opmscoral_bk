@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 
-namespace AppFrame.View.GoodsIO.MainStock
+namespace CoralPOS.Interfaces.View.GoodsIO.MainStock
 {
     public interface IMainStockInView : IView<MainStockInEventArgs>
     {

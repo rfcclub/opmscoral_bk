@@ -4,7 +4,7 @@ using System.Text;
 using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.SalePoints
+namespace CoralPOS.Interfaces.Presenter.SalePoints
 {
     public class SalePointListEventArgs : BaseEventArgs
     {

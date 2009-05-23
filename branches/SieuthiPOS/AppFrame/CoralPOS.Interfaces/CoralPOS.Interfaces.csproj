@@ -47,6 +47,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\AppFrameWeb\Bin\Spring.Aop.dll</HintPath>
     </Reference>
+    <Reference Include="Spring.Core, Version=1.2.0.20313, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AppFrameWeb\Bin\Spring.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Spring.Data, Version=1.2.0.20313, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\AppFrameWeb\Bin\Spring.Data.dll</HintPath>
@@ -443,6 +447,8 @@
     <Compile Include="Presenter\SecurityEventArgs.cs" />
     <Compile Include="Presenter\StockOutConfirmEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Mapper\BaseUserMapper.cs" />
+    <Compile Include="Utility\Mapper\POSMapperRepository.cs" />
     <Compile Include="Utility\Mapper\DepartmentStockInMapper.cs" />
     <Compile Include="Utility\Mapper\DepartmentStockMapper.cs" />
     <Compile Include="Utility\Mapper\DepartmentStockTempMapper.cs" />

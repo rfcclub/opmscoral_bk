@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region EmployeeWorkingDay
     /// <summary>
     /// EmployeeWorkingDay object for NHibernate mapped table 'employee_working_days'.
     /// </summary>
     [Serializable]
     public class EmployeeWorkingDay : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected string _employeeId; 		
         protected DateTime _workingDay; 		
@@ -216,12 +214,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

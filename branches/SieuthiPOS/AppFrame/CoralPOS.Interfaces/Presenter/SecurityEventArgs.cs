@@ -6,7 +6,7 @@ using System.Text;
 using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter
+namespace CoralPOS.Interfaces.Presenter
 {
     public class SecurityEventArgs : BaseEventArgs
     {

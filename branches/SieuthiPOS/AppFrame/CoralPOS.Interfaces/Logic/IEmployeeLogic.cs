@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
-using AppFrame.Model;
+using AppFrame;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Logic
+namespace CoralPOS.Interfaces.Logic
 {
     public interface IEmployeeLogic
     {

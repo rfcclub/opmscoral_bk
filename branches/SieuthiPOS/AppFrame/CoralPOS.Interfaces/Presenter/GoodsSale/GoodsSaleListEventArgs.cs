@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using AppFrame;
 using AppFrame.Common;
-using AppFrame.Model;
 using CoralPOS.Interfaces.Collection;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsSale
+namespace CoralPOS.Interfaces.Presenter.GoodsSale
 {
     public class GoodsSaleListEventArgs  : BaseEventArgs
     {

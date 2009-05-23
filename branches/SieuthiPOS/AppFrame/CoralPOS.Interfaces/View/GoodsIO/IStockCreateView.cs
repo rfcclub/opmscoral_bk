@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AppFrame.Presenter.GoodsIO;
 using AppFrame.Common;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrame.View.GoodsIO
+namespace CoralPOS.Interfaces.View.GoodsIO
 {
     public interface IStockCreateView : IView<StockCreateEventArgs>
     {

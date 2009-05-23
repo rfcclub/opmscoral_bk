@@ -6,7 +6,7 @@ using System.Text;
 using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsIO.DepartmentGoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO
 {
     public class DepartmentStockCheckingEventArgs : BaseEventArgs
     {

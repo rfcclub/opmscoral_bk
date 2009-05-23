@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Presenter.Report;
 
-namespace AppFrame.View.Reports
+namespace CoralPOS.Interfaces.View.Reports
 {
     public interface IReportStockInView
     {

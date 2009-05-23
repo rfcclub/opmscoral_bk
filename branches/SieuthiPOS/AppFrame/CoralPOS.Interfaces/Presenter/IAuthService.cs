@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
 
-namespace AppFrame.Presenter
+namespace CoralPOS.Interfaces.Presenter
 {
     public interface IAuthService
     {

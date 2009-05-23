@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.View;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.View;
 
-namespace AppFrame.Presenter
+namespace CoralPOS.Interfaces.Presenter
 {
     public interface IPosLogController : IBaseController<PosLogEventArgs>
     {

@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using AppFrame;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
+using Spring.Context;
+using Spring.Context.Support;
 
-namespace AppFrame.Common
+namespace CoralPOS.Interfaces.Common
 {
     public static class CurrentDepartment
     {
@@ -18,26 +21,26 @@ namespace AppFrame.Common
             Department _currentDepartment=null;
             /*if (_currentDepartment == null)
             {*/
-                IApplicationContext ctx = ContextRegistry.GetContext();
-                var departmentLogic = ctx.GetObject("AppFrame.Service.IDepartmentLogic") as IDepartmentLogic;
-                var criteria = new ObjectCriteria();
-                criteria.AddEqCriteria("Active", 1);
-                criteria.AddEqCriteria("DelFlg", (long)0);
-                if (departmentLogic != null)
+            IApplicationContext ctx = ContextRegistry.GetContext();
+            var departmentLogic = ctx.GetObject("AppFrame.Service.IDepartmentLogic") as IDepartmentLogic;
+            var criteria = new ObjectCriteria();
+            criteria.AddEqCriteria("Active", 1);
+            criteria.AddEqCriteria("DelFlg", (long)0);
+            if (departmentLogic != null)
+            {
+                IList deptList = departmentLogic.FindAll(criteria);
+                if (deptList!= null && deptList.Count > 0)
                 {
-                    IList deptList = departmentLogic.FindAll(criteria);
-                    if (deptList!= null && deptList.Count > 0)
-                    {
-                        _currentDepartment = deptList[0] as Department;
-                    }
+                    _currentDepartment = deptList[0] as Department;
                 }
-                if (_currentDepartment == null)
-                {
-                    return _hqDepartment;
-                }
-                // detach object to session
+            }
+            if (_currentDepartment == null)
+            {
+                return _hqDepartment;
+            }
+            // detach object to session
                 
-                return _currentDepartment;
+            return _currentDepartment;
             /*}
             else
             {

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 
-namespace AppFrame.View.GoodsSale
+namespace CoralPOS.Interfaces.View.GoodsSale
 {
     public interface IGoodsSaleView : IView<GoodsSaleEventArgs>
     {

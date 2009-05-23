@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AppFrame.Presenter.GoodsIO;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 
-namespace AppFrame.View.GoodsIO.DepartmentGoodsIO
+namespace CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO
 {
     public interface IDepartmentStockDetailView : IView<DepartmentStockDetailEventArgs>
     {

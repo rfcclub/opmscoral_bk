@@ -1,8 +1,8 @@
 ﻿using System;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrame.View.GoodsIO
+namespace CoralPOS.Interfaces.View.GoodsIO
 {
     public interface IProductMasterSearchOrCreateView : IView<ProductMasterSearchOrCreateEventArgs>
     {

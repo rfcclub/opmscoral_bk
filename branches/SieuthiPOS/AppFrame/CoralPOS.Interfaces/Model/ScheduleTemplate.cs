@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region ScheduleTemplate
     /// <summary>
     /// ScheduleTemplate object for NHibernate mapped table 'schedule_template'.
     /// </summary>
     [Serializable]
     public class ScheduleTemplate : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _employeeId; 		
         protected Int64 _scheduleId; 		
@@ -280,12 +278,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

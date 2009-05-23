@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 
-namespace AppFrame.View.GoodsIO.MainStock
+namespace CoralPOS.Interfaces.View.GoodsIO.MainStock
 {
     public interface IProcessErrorGoodsView
     {

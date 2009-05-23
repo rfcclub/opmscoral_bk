@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 
-namespace AppFrame.Presenter.GoodsIO.DepartmentGoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO
 {
     public interface IDepartmentStockInExtraController : IDepartmentStockInController
     {

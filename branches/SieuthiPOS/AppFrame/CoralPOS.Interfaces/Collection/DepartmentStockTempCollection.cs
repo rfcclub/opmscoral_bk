@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Model;
+using AppFrame.Collection;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Collection
+namespace CoralPOS.Interfaces.Collection
 {
     public class DepartmentStockTempCollection : BaseCollection<DepartmentStockTemp>
     {

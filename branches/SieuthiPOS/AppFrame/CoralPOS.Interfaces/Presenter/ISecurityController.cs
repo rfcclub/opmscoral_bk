@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.View;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View;
 
-namespace AppFrame.Presenter
+namespace CoralPOS.Interfaces.Presenter
 {
     public interface ISecurityController
     {

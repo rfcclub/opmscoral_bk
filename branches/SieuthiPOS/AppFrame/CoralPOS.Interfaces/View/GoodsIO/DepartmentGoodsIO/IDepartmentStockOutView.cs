@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 
-namespace AppFrame.View.GoodsIO.DepartmentGoodsIO
+namespace CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO
 {
     public interface IDepartmentStockOutView : IView<DepartmentStockOutEventArgs>
     {

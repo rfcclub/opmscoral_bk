@@ -1,4 +1,4 @@
-namespace AppFrame.View
+namespace CoralPOS.Interfaces.View
 {
     internal class Dummy
     {

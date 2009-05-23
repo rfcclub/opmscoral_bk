@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
+using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Utility.Mapper
+namespace CoralPOS.Interfaces.Utility.Mapper
 {
     public class DepartmentStockMapper : BaseMapper<DepartmentStock, DepartmentStockTemp>
     {
@@ -17,10 +18,10 @@ namespace AppFrame.Utility.Mapper
 
             temp.Quantity = source.Quantity;
             temp.DepartmentStockPK = new DepartmentStockPK
-            {
-                DepartmentId = source.DepartmentStockTempPK.DepartmentId,
-                ProductId = source.DepartmentStockTempPK.ProductId
-            };
+                                         {
+                                             DepartmentId = source.DepartmentStockTempPK.DepartmentId,
+                                             ProductId = source.DepartmentStockTempPK.ProductId
+                                         };
             temp.DelFlg = 0;
             temp.UpdateDate = DateTime.Now;
             temp.CreateId = source.CreateId;

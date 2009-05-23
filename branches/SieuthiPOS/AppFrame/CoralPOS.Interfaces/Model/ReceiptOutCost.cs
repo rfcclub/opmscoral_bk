@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region ReceiptOutCost
     /// <summary>
     /// ReceiptOutCost object for NHibernate mapped table 'receipt_out_cost'.
     /// </summary>
     [Serializable]
     public class ReceiptOutCost : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _receiptOutId; 		
         protected Int64 _departmentId; 		
@@ -184,12 +182,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

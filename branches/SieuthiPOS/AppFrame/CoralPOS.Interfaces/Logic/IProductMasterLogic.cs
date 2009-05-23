@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using AppFrame;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
 namespace CoralPOS.Interfaces.Logic
 {

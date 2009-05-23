@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.View.GoodsIO;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace AppFrame.Presenter.GoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO
 {
     public interface IProductMasterSearchDepartmentController
     {

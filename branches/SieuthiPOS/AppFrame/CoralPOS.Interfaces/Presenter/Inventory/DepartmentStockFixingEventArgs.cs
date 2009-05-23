@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using AppFrame.Common;
 
-namespace AppFrame.Presenter.Inventory
+namespace CoralPOS.Interfaces.Presenter.Inventory
 {
     public class DepartmentStockFixingEventArgs : BaseEventArgs
     {

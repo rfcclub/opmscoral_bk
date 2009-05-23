@@ -1,8 +1,8 @@
 using System;
 using AppFrame.Common;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 
-namespace AppFrame.View.SalePoints
+namespace CoralPOS.Interfaces.View.SalePoints
 {
     public interface IEmployeeView : IView<EmployeeEventArgs>
     {

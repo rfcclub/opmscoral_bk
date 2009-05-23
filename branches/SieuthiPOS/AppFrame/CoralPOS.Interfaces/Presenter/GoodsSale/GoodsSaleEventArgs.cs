@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Model;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsSale
+namespace CoralPOS.Interfaces.Presenter.GoodsSale
 {
     public class GoodsSaleEventArgs : BaseEventArgs
     {
@@ -19,5 +18,4 @@ namespace AppFrame.Presenter.GoodsSale
         public bool IsFillComboBox { get; set; }
         public string ComboBoxDisplayMember { get; set; }
     }
-        
 }

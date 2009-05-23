@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Runtime.Serialization;
 using AppFrame.Common;
-using AppFrame.Model;
 
 namespace CoralPOS.Interfaces.Model
 {

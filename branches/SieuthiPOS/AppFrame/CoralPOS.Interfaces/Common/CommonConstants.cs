@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AppFrame.Common
+namespace CoralPOS.Interfaces.Common
 {
     public sealed class CommonConstants
     {

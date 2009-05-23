@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.SalePoints
+namespace CoralPOS.Interfaces.Presenter.SalePoints
 {
     public class EmployeeEventArgs : BaseEventArgs
     {

@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region DepartmentReturnCost
     /// <summary>
     /// DepartmentReturnCost object for NHibernate mapped table 'department_return_cost'.
     /// </summary>
     [Serializable]
     public class DepartmentReturnCost : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _departmentReturnId; 		
         protected Int64 _costType; 		
@@ -36,7 +34,7 @@ namespace AppFrame.Model
 
         #region Public Properties
 
-		public virtual DepartmentReturnCostPK DepartmentReturnCostPK { get; set; }
+        public virtual DepartmentReturnCostPK DepartmentReturnCostPK { get; set; }
 		
         public virtual Int64 DepartmentReturnId
         {
@@ -174,12 +172,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

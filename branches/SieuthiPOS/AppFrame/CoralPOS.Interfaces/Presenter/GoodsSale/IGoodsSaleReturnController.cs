@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Model;
-using AppFrame.View.GoodsSale;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.View.GoodsSale;
 
-namespace AppFrame.Presenter.GoodsSale
+namespace CoralPOS.Interfaces.Presenter.GoodsSale
 {
     public interface IGoodsSaleReturnController
     {

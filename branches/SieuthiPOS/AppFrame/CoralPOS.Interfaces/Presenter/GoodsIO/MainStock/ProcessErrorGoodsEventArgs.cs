@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using AppFrame.Common;
 
-namespace AppFrame.Presenter.GoodsIO.MainStock
+namespace CoralPOS.Interfaces.Presenter.GoodsIO.MainStock
 {
     public class ProcessErrorGoodsEventArgs : BaseEventArgs
     {

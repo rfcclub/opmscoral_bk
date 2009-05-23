@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
 
-namespace AppFrame.Presenter.GoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO
 {
     public class ProductMasterEventArgs : BaseEventArgs
     {

@@ -6,7 +6,7 @@ using System.Collections;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO
 {
     public class GoodsIOSearchEventArgs : BaseEventArgs
     {

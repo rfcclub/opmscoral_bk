@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Collection;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
 namespace CoralPOS.Interfaces.Collection
 {

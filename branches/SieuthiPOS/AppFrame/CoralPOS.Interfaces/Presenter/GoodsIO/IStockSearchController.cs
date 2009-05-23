@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace AppFrame.Presenter.GoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO
 {
     public interface IStockSearchController : IBaseController<StockSearchEventArgs>
     {

@@ -4,10 +4,9 @@ using System.Text;
 using AppFrame.Common;
 using System.Collections;
 using System.Windows.Forms;
-using AppFrame.Model;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsIO.DepartmentGoodsIO
+namespace CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO
 {
     public class DepartmentStockInEventArgs : BaseEventArgs
     {

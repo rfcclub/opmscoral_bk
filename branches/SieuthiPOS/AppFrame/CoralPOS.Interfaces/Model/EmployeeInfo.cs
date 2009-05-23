@@ -2,11 +2,9 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using AppFrame.Controls;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region EmployeeInfo
     /// <summary>
     /// EmployeeInfo object for NHibernate mapped table 'employee_detail'.
     /// </summary>
@@ -14,7 +12,7 @@ namespace AppFrame.Model
     [Serializable]
     public class EmployeeInfo : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         /*protected Int64 _employeeId;
         protected Int64 _departmentId; 		*/
@@ -44,7 +42,7 @@ namespace AppFrame.Model
 
         #region Public Properties
         public virtual EmployeePK EmployeePK { get; set; }
-       /* public virtual Int64 EmployeeId
+        /* public virtual Int64 EmployeeId
         {
             get
             {
@@ -242,12 +240,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
+using AppFrame;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.DataLayer
+namespace CoralPOS.Interfaces.DataLayer
 {
     public interface IPurchaseOrderLogDAO
     {

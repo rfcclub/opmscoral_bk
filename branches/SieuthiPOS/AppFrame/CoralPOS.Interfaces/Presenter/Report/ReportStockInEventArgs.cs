@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.View.Reports;
+using CoralPOS.Interfaces.View.Reports;
 
-namespace AppFrame.Presenter.Report
+namespace CoralPOS.Interfaces.Presenter.Report
 {
     public class ReportStockInEventArgs : BaseEventArgs
     {

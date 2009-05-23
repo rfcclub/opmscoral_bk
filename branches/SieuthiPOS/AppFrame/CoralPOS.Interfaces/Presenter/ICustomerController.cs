@@ -1,10 +1,9 @@
 ﻿using System;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.View;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View;
 
-namespace AppFrame.Presenter
+namespace CoralPOS.Interfaces.Presenter
 {
     public interface ICustomerController<T> : IBaseController<T> where T:BaseEventArgs
     {

@@ -2,11 +2,9 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using AppFrame.Controls;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region ProductMaster
     /// <summary>
     /// ProductMaster object for NHibernate mapped table 'product_master'.
     /// </summary>
@@ -14,7 +12,7 @@ namespace AppFrame.Model
     [Serializable]
     public class DepartmentStockProductMasterView : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         #endregion
 
@@ -57,12 +55,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

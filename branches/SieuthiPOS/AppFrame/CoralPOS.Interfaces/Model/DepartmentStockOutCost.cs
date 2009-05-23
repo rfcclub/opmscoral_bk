@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region DepartmentStockOutCost
     /// <summary>
     /// DepartmentStockOutCost object for NHibernate mapped table 'department_stock_out_cost'.
     /// </summary>
     [Serializable]
     public class DepartmentStockOutCost : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _stockOutId; 		
         protected Int64 _costType; 		
@@ -37,7 +35,7 @@ namespace AppFrame.Model
 
         #region Public Properties
 
-		public virtual DepartmentStockOutCostPK DepartmentStockOutCostPK { get; set; }
+        public virtual DepartmentStockOutCostPK DepartmentStockOutCostPK { get; set; }
 		
         public virtual Int64 StockOutId
         {
@@ -186,12 +184,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

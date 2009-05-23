@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region PurchaseOrderPromotion
     /// <summary>
     /// PurchaseOrderPromotion object for NHibernate mapped table 'purchase_order_promotion'.
     /// </summary>
     [Serializable]
     public class PurchaseOrderPromotion : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _purchaseOrderId; 		
         protected Int64 _purchaseOrderDetailId; 		
@@ -224,12 +222,11 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
         }
         #endregion
     }
-    #endregion
 }

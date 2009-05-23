@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrame.View.GoodsIO
+namespace CoralPOS.Interfaces.View.GoodsIO
 {
     public interface IProductMasterEditView
     {

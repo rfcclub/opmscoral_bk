@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Model;
+using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Utility.Mapper
+namespace CoralPOS.Interfaces.Utility.Mapper
 {
     public class DepartmentStockInMapper : BaseMapper<DepartmentStockIn,StockOut>
     {
@@ -45,8 +45,8 @@ namespace AppFrame.Utility.Mapper
                 detail.ExclusiveKey = 1;
                 detail.Quantity = stockOutDetail.Quantity;
                 detail.DepartmentStockInDetailPK = 
-                     new DepartmentStockInDetailPK{ DepartmentId = source.DepartmentId,
-                                                    ProductId   = detail.Product.ProductId};
+                    new DepartmentStockInDetailPK{ DepartmentId = source.DepartmentId,
+                                                   ProductId   = detail.Product.ProductId};
                 deptStockInDetails.Add(detail);
             }
             deptStockIn.DepartmentStockInDetails = deptStockInDetails;

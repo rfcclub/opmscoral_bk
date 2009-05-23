@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using AppFrame;
-using AppFrame.Model;
 using System.Collections.Generic;
 using CoralPOS.Interfaces.Model;
 

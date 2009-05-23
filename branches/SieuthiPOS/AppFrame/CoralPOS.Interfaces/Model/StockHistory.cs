@@ -2,11 +2,9 @@
 using System.Collections;
 using System.ComponentModel;
 using AppFrame.Controls;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region Stock
     /// <summary>
     /// Stock object for NHibernate mapped table 'stock_defect'.
     /// </summary>
@@ -191,5 +189,4 @@ namespace AppFrame.Model
 
         
     }
-    #endregion
 }

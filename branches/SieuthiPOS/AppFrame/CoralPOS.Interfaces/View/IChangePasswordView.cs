@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Presenter;
+using CoralPOS.Interfaces.Presenter;
 
-namespace AppFrame.View
+namespace CoralPOS.Interfaces.View
 {
     public interface IChangePasswordView<T> where T : BaseEventArgs
     {

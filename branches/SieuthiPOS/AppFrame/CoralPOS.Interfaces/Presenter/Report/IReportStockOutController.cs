@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.Reports;
 using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.Reports;
 
-namespace AppFrame.Presenter.Report
+namespace CoralPOS.Interfaces.Presenter.Report
 {
     public interface IReportStockOutController
     {

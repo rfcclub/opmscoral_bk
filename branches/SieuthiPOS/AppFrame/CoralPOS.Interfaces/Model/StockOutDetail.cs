@@ -2,11 +2,9 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using AppFrame.Controls;
-using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Model
+namespace CoralPOS.Interfaces.Model
 {
-    #region StockOutDetail
     /// <summary>
     /// StockOutDetail object for NHibernate mapped table 'stock_out_detail'.
     /// </summary>
@@ -14,7 +12,7 @@ namespace AppFrame.Model
     [Serializable]
     public class StockOutDetail : System.IComparable
     {
-    	#region Member Variables
+        #region Member Variables
 
         protected Int64 _stockOutId; 		
         protected string _productId; 		
@@ -200,7 +198,7 @@ namespace AppFrame.Model
             
         }
 
-		// override object.GetHashCode
+        // override object.GetHashCode
         public override int GetHashCode()
         {
             return base.GetHashCode();
@@ -209,5 +207,4 @@ namespace AppFrame.Model
         
         public virtual ProductMaster ProductMaster { get; set; }
     }
-    #endregion
 }

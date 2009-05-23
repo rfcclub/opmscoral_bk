@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Model;
 using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Presenter.GoodsSale
+namespace CoralPOS.Interfaces.Presenter.GoodsSale
 {
     public class GoodsSaleReturnEventArgs : BaseEventArgs
     {

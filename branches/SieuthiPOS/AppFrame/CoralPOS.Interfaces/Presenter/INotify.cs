@@ -1,4 +1,4 @@
-﻿namespace AppFrame.Presenter
+﻿namespace CoralPOS.Interfaces.Presenter
 {
     public interface INotify
     {

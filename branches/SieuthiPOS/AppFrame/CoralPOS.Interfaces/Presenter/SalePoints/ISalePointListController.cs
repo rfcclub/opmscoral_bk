@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.View.SalePoints;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.View.SalePoints;
 
-namespace AppFrame.Presenter.SalePoints
+namespace CoralPOS.Interfaces.Presenter.SalePoints
 {
     public interface ISalePointListController : IBaseController<SalePointListEventArgs>
     {

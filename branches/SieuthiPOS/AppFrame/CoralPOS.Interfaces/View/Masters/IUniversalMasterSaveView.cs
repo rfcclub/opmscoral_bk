@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.Masters;
+using CoralPOS.Interfaces.Presenter.Masters;
 
-namespace AppFrame.View.Masters
+namespace CoralPOS.Interfaces.View.Masters
 {
     public interface IUniversalMasterSaveView : IView<UniversalMasterSaveEventArgs>
     {

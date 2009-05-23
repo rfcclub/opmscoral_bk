@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace AppFrame.Exceptions
+namespace CoralPOS.Interfaces.Exceptions
 {
     public class DataLayerException : System.Exception
     {
