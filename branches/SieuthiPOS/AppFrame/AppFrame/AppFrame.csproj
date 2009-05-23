@@ -170,7 +170,6 @@
     <Compile Include="Common\ClientInfo.cs" />
     <Compile Include="Common\ClonableObject.cs" />
     <Compile Include="Common\Code39.cs" />
-    <Compile Include="Common\CurrentDepartment.cs" />
     <Compile Include="Common\GlobalCache.cs" />
     <Compile Include="Common\IBaseController.cs" />
     <Compile Include="Common\IDefaultController.cs" />
@@ -217,13 +216,15 @@
     <Compile Include="Common\LogicArgs.cs" />
     <Compile Include="Common\MenuItemPermission.cs" />
     <Compile Include="Common\Model.cs" />
-    <Compile Include="Common\CommonConstants.cs" />
     <Compile Include="Common\Role.cs" />
     <Compile Include="Common\SpringSupport\AFAuthenticationObjectDefinitionParser.cs" />
     <Compile Include="Common\SpringSupport\AFSecurityObjectDefinitionParser.cs" />
     <Compile Include="Common\SpringSupport\AFUserManagerObjectDefinitionParser.cs" />
     <Compile Include="Common\SpringSupport\AFUserObjectDefinitionParser.cs" />
     <Compile Include="Common\SpringSupport\AppFrameSecurityParser.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Exceptions\DataLayerException.cs" />
+    <Compile Include="Exceptions\PresentationException.cs" />
     <Compile Include="ModelCriteria\PurchaseOrderCriteria.cs" />
     <Compile Include="ObjectCriteria.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

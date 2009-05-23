@@ -1,8 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
-using AppFrame.Model;
-using AppFrame.Common;
 
 namespace AppFrame.Utility.Mapper
 {
@@ -13,20 +10,18 @@ namespace AppFrame.Utility.Mapper
 
         // register new mapper
         
-
-        private MapperRepository()
+        public virtual void RegisterMappers()
         {
-            registerMappers();
-        }
-        private void registerMappers()
-        {
-            Register(new BaseUserMapper());
-            Register(new RoleMapper());
+            //Register(new BaseUserMapper());
+            //Register(new RoleMapper());
         }
         public static MapperRepository Instance()
         {
             if (repository == null)
+            {
                 repository = new MapperRepository();
+                repository.RegisterMappers();
+            }
             return repository;
         }
         /// <summary>

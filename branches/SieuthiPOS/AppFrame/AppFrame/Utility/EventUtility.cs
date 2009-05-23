@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using AppFrame.Common;
 using AppFrame.Exceptions;
-using AppFrame.Presenter;
+
 
 namespace AppFrame.Utility
 {
