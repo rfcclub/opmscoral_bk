@@ -453,6 +453,7 @@
     <Compile Include="Utility\Mapper\DepartmentStockMapper.cs" />
     <Compile Include="Utility\Mapper\DepartmentStockTempMapper.cs" />
     <Compile Include="Utility\Mapper\RoleMapper.cs" />
+    <Compile Include="Utility\ResourceUtility.cs" />
     <Compile Include="View\Dummy.cs" />
     <Compile Include="View\GoodsIO\DepartmentGoodsIO\IDepartmentPriceUpdateView.cs" />
     <Compile Include="View\GoodsIO\DepartmentGoodsIO\IDepartmentStockCheckingView.cs" />

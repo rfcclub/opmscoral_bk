@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using AppFrame.Model;
 using AppFrame.Common;
+using AppFrame.Utility.Mapper;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrame.Utility.Mapper
+namespace CoralPOS.Interfaces.Utility.Mapper
 {
     /// <summary>
     /// Class Convert from LoginModel to BaseUser
