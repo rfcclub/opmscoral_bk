@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Resources;
 using System.Text;
 using AppFrame.Common;
+using CoralPOS.Interfaces.Common;
 using Spring.Context.Support;
 
 namespace AppFrame.Utility
