@@ -3,16 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppFrame", "AppFrame\AppFrame.csproj", "{73A362AB-99CF-4AA1-8278-01CAED2516F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSClient", "AppFrameClient\POSClient.csproj", "{65E17626-8E16-448C-A89D-ADE344360AF4}"
-	ProjectSection(ProjectDependencies) = postProject
-		{73A362AB-99CF-4AA1-8278-01CAED2516F0} = {73A362AB-99CF-4AA1-8278-01CAED2516F0}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POSServer", "AppFrameServer\POSServer.csproj", "{C3773063-F4BA-4DCC-99C6-6C1F66397173}"
-	ProjectSection(ProjectDependencies) = postProject
-		{73A362AB-99CF-4AA1-8278-01CAED2516F0} = {73A362AB-99CF-4AA1-8278-01CAED2516F0}
-	EndProjectSection
-EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AppFrameWeb", "AppFrameWeb\", "{C68BC794-1835-4AF1-BF4A-0F96312222EA}"
 	ProjectSection(WebsiteProperties) = preProject
 		SccProjectName = "Svn"
@@ -91,6 +81,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportPOSData", "ImportPOSD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientManagementTool", "ClientManagementTool\ClientManagementTool.csproj", "{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOS.Client", "AppFrameClient\CoralPOS.Client.csproj", "{65E17626-8E16-448C-A89D-ADE344360AF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOS.Server", "AppFrameServer\CoralPOS.Server.csproj", "{C3773063-F4BA-4DCC-99C6-6C1F66397173}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -105,14 +99,6 @@ Global
 		{73A362AB-99CF-4AA1-8278-01CAED2516F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73A362AB-99CF-4AA1-8278-01CAED2516F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73A362AB-99CF-4AA1-8278-01CAED2516F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65E17626-8E16-448C-A89D-ADE344360AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65E17626-8E16-448C-A89D-ADE344360AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65E17626-8E16-448C-A89D-ADE344360AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65E17626-8E16-448C-A89D-ADE344360AF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C68BC794-1835-4AF1-BF4A-0F96312222EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C68BC794-1835-4AF1-BF4A-0F96312222EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C68BC794-1835-4AF1-BF4A-0F96312222EA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
@@ -135,6 +121,14 @@ Global
 		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{224C31A0-A5A8-4F6C-8373-6A8F6EC612FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E17626-8E16-448C-A89D-ADE344360AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E17626-8E16-448C-A89D-ADE344360AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E17626-8E16-448C-A89D-ADE344360AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E17626-8E16-448C-A89D-ADE344360AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -186,10 +186,6 @@
     <Compile Include="View\Management\IEmployeeWorkingsView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AppFrameClient\CoralPOS.Client.csproj">
-      <Project>{65E17626-8E16-448C-A89D-ADE344360AF4}</Project>
-      <Name>CoralPOS.Client</Name>
-    </ProjectReference>
     <ProjectReference Include="..\AppFrame\AppFrame.csproj">
       <Project>{73A362AB-99CF-4AA1-8278-01CAED2516F0}</Project>
       <Name>AppFrame</Name>
