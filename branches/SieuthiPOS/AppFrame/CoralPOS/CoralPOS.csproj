@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{980B950B-5AC9-4C8E-A956-45C401BFEF89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CoralPOS</RootNamespace>
+    <AssemblyName>CoralPOS</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DataLayer\BlockInCostDAOImpl.cs" />
+    <Compile Include="DataLayer\BlockInDAOImpl.cs" />
+    <Compile Include="DataLayer\BlockInDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\CategoryDAOImpl.cs" />
+    <Compile Include="DataLayer\ContractDAOImpl.cs" />
+    <Compile Include="DataLayer\CountryDAOImpl.cs" />
+    <Compile Include="DataLayer\CouponDAOImpl.cs" />
+    <Compile Include="DataLayer\CouponTypeDAOImpl.cs" />
+    <Compile Include="DataLayer\CustomerDAOImpl.cs" />
+    <Compile Include="DataLayer\CustomerDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentCostDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentManagementDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentPriceDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentPromotionDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentReturnCostDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentReturnDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentReturnDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockHistoryDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockInCostDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockInDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockInDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockOutCostDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockOutDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockOutDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentStockTempDAOImpl.cs" />
+    <Compile Include="DataLayer\DepartmentTimelineDAOImpl.cs" />
+    <Compile Include="DataLayer\DistributorDAOImpl.cs" />
+    <Compile Include="DataLayer\EmployeeDAOImpl.cs" />
+    <Compile Include="DataLayer\EmployeeDayoffDAOImpl.cs" />
+    <Compile Include="DataLayer\EmployeeDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\EmployeeRewardDAOImpl.cs" />
+    <Compile Include="DataLayer\EmployeeWorkingDayDAOImpl.cs" />
+    <Compile Include="DataLayer\GiftDAOImpl.cs" />
+    <Compile Include="DataLayer\LoginDaoImpl.cs" />
+    <Compile Include="DataLayer\ManufacturerDAOImpl.cs" />
+    <Compile Include="DataLayer\OtherTransactionLogDAOImpl.cs" />
+    <Compile Include="DataLayer\PackagerDAOImpl.cs" />
+    <Compile Include="DataLayer\PosLogDAOImpl.cs" />
+    <Compile Include="DataLayer\ProductColorDAOImpl.cs" />
+    <Compile Include="DataLayer\ProductDAOImpl.cs" />
+    <Compile Include="DataLayer\ProductMasterDAOImpl.cs" />
+    <Compile Include="DataLayer\ProductSizeDAOImpl.cs" />
+    <Compile Include="DataLayer\ProductTypeDAOImpl.cs" />
+    <Compile Include="DataLayer\PromotionDAOImpl.cs" />
+    <Compile Include="DataLayer\PublishedCouponDAOImpl.cs" />
+    <Compile Include="DataLayer\PurchaseOrderDAOImpl.cs" />
+    <Compile Include="DataLayer\PurchaseOrderDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\PurchaseOrderDetailLogDAOImpl.cs" />
+    <Compile Include="DataLayer\PurchaseOrderLogDAOImpl.cs" />
+    <Compile Include="DataLayer\PurchaseOrderPromotionDAOImpl.cs" />
+    <Compile Include="DataLayer\ReceiptDAOImpl.cs" />
+    <Compile Include="DataLayer\ReceiptOutCostDAOImpl.cs" />
+    <Compile Include="DataLayer\ReceiptOutDAOImpl.cs" />
+    <Compile Include="DataLayer\ReturnBlockInDAOImpl.cs" />
+    <Compile Include="DataLayer\ReturnPoDAOImpl.cs" />
+    <Compile Include="DataLayer\ReturnProductDAOImpl.cs" />
+    <Compile Include="DataLayer\RoleDaoImpl.cs" />
+    <Compile Include="DataLayer\ScheduleTemplateDAOImpl.cs" />
+    <Compile Include="DataLayer\SimilarProductDAOImpl.cs" />
+    <Compile Include="DataLayer\StockDAOImpl.cs" />
+    <Compile Include="DataLayer\StockHistoryDAOImpl.cs" />
+    <Compile Include="DataLayer\StockInDAOImpl.cs" />
+    <Compile Include="DataLayer\StockInDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\StockOutCostDAOImpl.cs" />
+    <Compile Include="DataLayer\StockOutDAOImpl.cs" />
+    <Compile Include="DataLayer\StockOutDetailDAOImpl.cs" />
+    <Compile Include="DataLayer\SupplierDAOImpl.cs" />
+    <Compile Include="DataLayer\SyncStatusDAOImpl.cs" />
+    <Compile Include="DataLayer\TaxDAOImpl.cs" />
+    <Compile Include="Logic\BlockInCostLogicImpl.cs" />
+    <Compile Include="Logic\BlockInDetailLogicImpl.cs" />
+    <Compile Include="Logic\BlockInLogicImpl.cs" />
+    <Compile Include="Logic\CategoryLogicImpl.cs" />
+    <Compile Include="Logic\ContractLogicImpl.cs" />
+    <Compile Include="Logic\CountryLogicImpl.cs" />
+    <Compile Include="Logic\CouponLogicImpl.cs" />
+    <Compile Include="Logic\CouponTypeLogicImpl.cs" />
+    <Compile Include="Logic\CustomerDetailLogicImpl.cs" />
+    <Compile Include="Logic\CustomerLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentCostLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentManagementLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentPriceLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentPromotionLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentReturnCostLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentReturnDetailLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentReturnLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockHistoryLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockInCostLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockInDetailLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockInLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockOutCostLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockOutDetailLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockOutLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentStockTempLogicImpl.cs" />
+    <Compile Include="Logic\DepartmentTimelineLogicImpl.cs" />
+    <Compile Include="Logic\DistributorLogicImpl.cs" />
+    <Compile Include="Logic\EmployeeDayoffLogicImpl.cs" />
+    <Compile Include="Logic\EmployeeDetailLogicImpl.cs" />
+    <Compile Include="Logic\EmployeeLogicImpl.cs" />
+    <Compile Include="Logic\EmployeeRewardLogicImpl.cs" />
+    <Compile Include="Logic\EmployeeWorkingDayLogicImpl.cs" />
+    <Compile Include="Logic\GiftLogicImpl.cs" />
+    <Compile Include="Logic\LoginLogic.cs" />
+    <Compile Include="Logic\ManufacturerLogicImpl.cs" />
+    <Compile Include="Logic\OtherTransactionLogLogicImpl.cs" />
+    <Compile Include="Logic\PackagerLogicImpl.cs" />
+    <Compile Include="Logic\PosLogLogicImpl.cs" />
+    <Compile Include="Logic\ProductColorLogicImpl.cs" />
+    <Compile Include="Logic\ProductLogicImpl.cs" />
+    <Compile Include="Logic\ProductMasterLogicImpl.cs" />
+    <Compile Include="Logic\ProductSizeLogicImpl.cs" />
+    <Compile Include="Logic\ProductTypeLogicImpl.cs" />
+    <Compile Include="Logic\PromotionLogicImpl.cs" />
+    <Compile Include="Logic\PublishedCouponLogicImpl.cs" />
+    <Compile Include="Logic\PurchaseOrderDetailLogicImpl.cs" />
+    <Compile Include="Logic\PurchaseOrderDetailLogLogicImpl.cs" />
+    <Compile Include="Logic\PurchaseOrderLogicImpl.cs" />
+    <Compile Include="Logic\PurchaseOrderLogLogicImpl.cs" />
+    <Compile Include="Logic\PurchaseOrderPromotionLogicImpl.cs" />
+    <Compile Include="Logic\ReceiptLogicImpl.cs" />
+    <Compile Include="Logic\ReceiptOutCostLogicImpl.cs" />
+    <Compile Include="Logic\ReceiptOutLogicImpl.cs" />
+    <Compile Include="Logic\ReturnBlockInLogicImpl.cs" />
+    <Compile Include="Logic\ReturnPoLogicImpl.cs" />
+    <Compile Include="Logic\ReturnProductLogicImpl.cs" />
+    <Compile Include="Logic\ScheduleTemplateLogicImpl.cs" />
+    <Compile Include="Logic\SimilarProductLogicImpl.cs" />
+    <Compile Include="Logic\StockHistoryLogicImpl.cs" />
+    <Compile Include="Logic\StockInDetailLogicImpl.cs" />
+    <Compile Include="Logic\StockInLogicImpl.cs" />
+    <Compile Include="Logic\StockLogicImpl.cs" />
+    <Compile Include="Logic\StockOutCostLogicImpl.cs" />
+    <Compile Include="Logic\StockOutDetailLogicImpl.cs" />
+    <Compile Include="Logic\StockOutLogicImpl.cs" />
+    <Compile Include="Logic\SupplierLogicImpl.cs" />
+    <Compile Include="Logic\SyncStatusLogicImpl.cs" />
+    <Compile Include="Logic\TaxLogicImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\MySQLDao.xml" />
+    <EmbeddedResource Include="Config\Services.xml" />
+    <Content Include="Logic\dummy.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\AppFrameObject.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Logic.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\Presentation.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
