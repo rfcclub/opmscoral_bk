@@ -157,7 +157,7 @@
             // 
             // distributorBindingSource
             // 
-            this.distributorBindingSource.DataSource = typeof(AppFrame.Model.Distributor);
+            this.distributorBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Distributor);
             // 
             // label7
             // 
@@ -181,7 +181,7 @@
             // 
             // packagerBindingSource
             // 
-            this.packagerBindingSource.DataSource = typeof(AppFrame.Model.Packager);
+            this.packagerBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Packager);
             // 
             // label6
             // 
@@ -205,7 +205,7 @@
             // 
             // manufacturerBindingSource
             // 
-            this.manufacturerBindingSource.DataSource = typeof(AppFrame.Model.Manufacturer);
+            this.manufacturerBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Manufacturer);
             // 
             // label5
             // 
@@ -229,7 +229,7 @@
             // 
             // countryBindingSource
             // 
-            this.countryBindingSource.DataSource = typeof(AppFrame.Model.Country);
+            this.countryBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Country);
             // 
             // cbbProductType
             // 
@@ -243,7 +243,7 @@
             // 
             // typeBindingSource
             // 
-            this.typeBindingSource.DataSource = typeof(AppFrame.Model.ProductType);
+            this.typeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductType);
             // 
             // txtProductMasterId
             // 
@@ -337,7 +337,7 @@
             // 
             // colorBindingSource
             // 
-            this.colorBindingSource.DataSource = typeof(AppFrame.Model.ProductColor);
+            this.colorBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductColor);
             // 
             // lbxProductSize
             // 
@@ -353,7 +353,7 @@
             // 
             // sizeBindingSource
             // 
-            this.sizeBindingSource.DataSource = typeof(AppFrame.Model.ProductSize);
+            this.sizeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductSize);
             // 
             // txtDescription1
             // 

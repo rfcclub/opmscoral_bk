@@ -5,19 +5,20 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.Presenter.GoodsIO.MainStock
+namespace CoralPOS.Presenter.GoodsIO.MainStock
 {
     public class InventoryCheckingController : IInventoryCheckingController
     {
         #region IInventoryCheckingController Members
         
-        AppFrame.View.GoodsIO.MainStock.IInventoryCheckingView inventoryCheckingView;    
-        public AppFrame.View.GoodsIO.MainStock.IInventoryCheckingView InventoryCheckingView
+       CoralPOS.Interfaces.View.GoodsIO.MainStock.IInventoryCheckingView inventoryCheckingView;    
+        public CoralPOS.Interfaces.View.GoodsIO.MainStock.IInventoryCheckingView InventoryCheckingView
         {
             get
             {
@@ -97,29 +98,29 @@ namespace AppFrameClient.Presenter.GoodsIO.MainStock
             e.ReturnStockViewList = stockViewList;
         }
 
-        public AppFrame.Logic.IStockLogic StockLogic
+        public IStockLogic StockLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IProductMasterLogic ProductMasterLogic
-        {
-            get;set;
-            
-        }
-
-        public AppFrame.Logic.IStockInLogic StockInLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockInDetailLogic StockInDetailLogic
+        public IStockInLogic StockInLogic
+        {
+            get;set;
+            
+        }
+
+        public IStockInDetailLogic StockInDetailLogic
         {
             get;set;
             
@@ -130,13 +131,13 @@ namespace AppFrameClient.Presenter.GoodsIO.MainStock
         #region IInventoryCheckingController Members
 
 
-        public AppFrame.Logic.IStockOutLogic StockOutLogic
+        public IStockOutLogic StockOutLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockOutDetailLogic StockOutDetailLogic
+        public IStockOutDetailLogic StockOutDetailLogic
         {
             get;set;
         }

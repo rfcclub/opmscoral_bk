@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
-using CoralPOS.Interfaces.Common;
-using CoralPOS.Interfaces.Exceptions;
+using AppFrame.Common;
+using AppFrame.Exceptions;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
@@ -42,8 +42,8 @@ namespace CoralPOS.View.GoodsIO.MainStock
 
         #region IProcessErrorGoodsView Members
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController processErrorGoodsController;
-        public AppFrame.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController ProcessErrorGoodsController
+        private CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController processErrorGoodsController;
+        public CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController ProcessErrorGoodsController
         {
             get
             {
@@ -56,9 +56,9 @@ namespace CoralPOS.View.GoodsIO.MainStock
             }
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.ProcessErrorGoodsEventArgs> LoadAllStockDefects;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.ProcessErrorGoodsEventArgs> LoadAllStockDefects;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.ProcessErrorGoodsEventArgs> SaveStockDefects;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.ProcessErrorGoodsEventArgs> SaveStockDefects;
 
         #endregion
 

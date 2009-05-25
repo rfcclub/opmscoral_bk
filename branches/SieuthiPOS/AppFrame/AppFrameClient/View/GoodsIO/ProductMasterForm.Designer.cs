@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO
+﻿namespace CoralPOS.View.GoodsIO
 {
     partial class ProductMasterForm
     {
@@ -36,7 +36,7 @@
             this.barcodePrintDocument = new System.Drawing.Printing.PrintDocument();
             this.barcodePrintPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.productMasterControl = new AppFrameClient.View.GoodsIO.ProductMasterControl();
+            this.productMasterControl = new ProductMasterControl();
             this.SuspendLayout();
             // 
             // label8

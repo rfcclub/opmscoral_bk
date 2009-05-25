@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
 
 namespace ClientManagementTool.Logic
 {

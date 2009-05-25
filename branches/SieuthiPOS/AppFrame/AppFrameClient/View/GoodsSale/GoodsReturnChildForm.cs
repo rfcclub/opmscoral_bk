@@ -6,15 +6,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
-using AppFrame.View.GoodsSale;
-using AppFrameClient.Common;
+using CoralPOS.Interfaces.View.GoodsSale;
+using CoralPOS.Common;
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class GoodsReturnChildForm : BaseForm, IGoodsSaleReturnView
     {

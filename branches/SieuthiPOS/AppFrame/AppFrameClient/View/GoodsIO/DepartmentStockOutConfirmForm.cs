@@ -7,16 +7,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.Report;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.Reports;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.Reports;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class DepartmentStockOutConfirmForm : BaseForm,IDepartmentStockOutReportView
     {
@@ -29,8 +29,8 @@ namespace AppFrameClient.View.GoodsIO
 
         #region IDepartmentStockOutReportView Members
 
-        private AppFrame.Presenter.Report.IReportStockOutController reportStockOutController;
-        public AppFrame.Presenter.Report.IReportStockOutController ReportStockOutController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockOutController reportStockOutController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockOutController ReportStockOutController
         {
             get
             {
@@ -102,13 +102,13 @@ namespace AppFrameClient.View.GoodsIO
         #region IDepartmentStockOutReportView Members
 
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> ConfirmStockOutEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> ConfirmStockOutEvent;
         
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> DenyStockOutEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> DenyStockOutEvent;
         
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> LoadDepartmentStockOutsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> LoadDepartmentStockOutsEvent;
 
         #endregion
 

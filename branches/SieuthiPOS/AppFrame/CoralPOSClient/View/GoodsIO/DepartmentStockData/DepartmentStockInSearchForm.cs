@@ -6,10 +6,10 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
 
@@ -79,7 +79,7 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
             dataTable.Rows.Clear();
             for (int i = 0; i < DepartmentStockInList.Count; i++)
             {
-                var result = (AppFrame.Model.DepartmentStockIn)DepartmentStockInList[i];
+                var result = (CoralPOS.Interfaces.Model.DepartmentStockIn)DepartmentStockInList[i];
                 dataTable.Rows.Add(AddProductToDataGrid(result));
 
             }
@@ -89,7 +89,7 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
             dgvProduct.Refresh();
         }
 
-        private static object[] AddProductToDataGrid(AppFrame.Model.DepartmentStockIn stockInDetail)
+        private static object[] AddProductToDataGrid(DepartmentStockIn stockInDetail)
         {
             var obj = new object[MAX_COLUMNS];
             obj[STOCK_IN_ID_POS] = stockInDetail.DepartmentStockInPK.StockInId;

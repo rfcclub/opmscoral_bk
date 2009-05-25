@@ -6,15 +6,15 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
-using AppFrame.Model;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Collection;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.Report;
 using AppFrame.Utility;
-using AppFrame.View.Reports;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.Reports;
+using CoralPOS.ViewModel;
 using POSReports;
 
-namespace AppFrameClient.View.Reports
+namespace CoralPOS.View.Reports
 {
     public partial class DepartmentStockInReportForm : AppFrame.Common.BaseForm,IDepartmentStockInReportView
     {
@@ -48,8 +48,8 @@ namespace AppFrameClient.View.Reports
 
         #region IDepartmentStockInReportView Members
 
-        AppFrame.Presenter.Report.IReportStockInController reportStockInController;
-        public AppFrame.Presenter.Report.IReportStockInController ReportStockInController
+        CoralPOS.Interfaces.Presenter.Report.IReportStockInController reportStockInController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockInController ReportStockInController
         {
             get
             {
@@ -67,14 +67,14 @@ namespace AppFrameClient.View.Reports
             get;set;
         }
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> LoadStockOutByRangeEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> LoadStockOutByRangeEvent;
 
         #endregion
 
         #region IDepartmentStockInReportView Members
 
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> LoadAllDeparmentEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> LoadAllDeparmentEvent;
 
         #endregion
 

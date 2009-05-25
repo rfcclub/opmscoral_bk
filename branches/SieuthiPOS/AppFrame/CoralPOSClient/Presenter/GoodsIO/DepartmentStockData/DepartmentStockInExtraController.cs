@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
@@ -22,7 +23,7 @@ namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
                 #region IDepartmentStockInExtraController Members
 
                 private IDepartmentStockInExtraView departmentStockInExtraView;
-                public AppFrame.View.GoodsIO.DepartmentGoodsIO.IDepartmentStockInExtraView DepartmentStockInExtraView
+                public CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO.IDepartmentStockInExtraView DepartmentStockInExtraView
                 {
                     get
                     {
@@ -481,22 +482,22 @@ namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
                     set;
                 }
 
-                public Logic.IProductColorLogic ProductColorLogic
+                public IProductColorLogic ProductColorLogic
                 {
                     get;set;
             
                 }
 
-                public Logic.IProductSizeLogic ProductSizeLogic
+                public IProductSizeLogic ProductSizeLogic
                 {
                     get;set;
                 }
-                public Logic.IStockLogic StockLogic
+                public IStockLogic StockLogic
                 {
                     get;
                     set;
                 }
-                public Logic.IEmployeeDetailLogic EmployeeDetailLogic
+                public IEmployeeDetailLogic EmployeeDetailLogic
                 {
                     get;
                     set;

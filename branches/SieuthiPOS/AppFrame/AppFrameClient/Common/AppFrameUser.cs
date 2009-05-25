@@ -4,11 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Configuration;
-using AppFrame.DataLayer;
-using AppFrame.Model;
+using CoralPOS.Interfaces.DataLayer;
+using CoralPOS.Interfaces.Model;
 using Spring.Context;
 using Spring.Context.Support;
-using AppFrame.Logic;
+using CoralPOS.Interfaces.Logic;
 
 /// <summary>
 /// Summary description for AppFrameUser

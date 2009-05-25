@@ -5,7 +5,7 @@ using AppFrame;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.SalePoints;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 
 namespace CoralPOS.Presenter.GoodsIO

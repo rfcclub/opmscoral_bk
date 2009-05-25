@@ -8,17 +8,19 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.Report;
 using AppFrame.Utility;
-using AppFrame.View.Reports;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.Report;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View.Reports;
 //using Aspose.Cells;
+using CoralPOS.ViewModel;
 using POSReports;
 
-namespace AppFrameClient.View.Reports
+namespace CoralPOS.View.Reports
 {
     public partial class frmStockinStatistic : BaseForm,IReportStockInView
     {
@@ -33,8 +35,8 @@ namespace AppFrameClient.View.Reports
        #region IReportStockInView Members
 
 
-        private AppFrame.Presenter.Report.IReportStockInController reportStockInController;
-        public AppFrame.Presenter.Report.IReportStockInController ReportStockInController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockInController reportStockInController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockInController ReportStockInController
         {
             get
             {

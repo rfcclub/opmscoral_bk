@@ -7,14 +7,15 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
-using AppFrame.View;
+using CoralPOS.Interfaces.View;
 using Spring.Context;
 using Spring.Context.Support;
 
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     public partial class EditCustomerForm : BaseForm,IEditCustomerView<CustomerEventArgs>
     {

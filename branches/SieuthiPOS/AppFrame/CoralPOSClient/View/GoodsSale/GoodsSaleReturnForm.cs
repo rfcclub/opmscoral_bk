@@ -11,11 +11,12 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.Common;
 using CoralPOS.View.GoodsIO.DepartmentStockData;
@@ -54,7 +55,7 @@ namespace CoralPOS.View.GoodsSale
         #region IGoodsSaleReturnView Members
 
         private IGoodsSaleReturnController goodsSaleReturnController;
-        public AppFrame.Presenter.GoodsSale.IGoodsSaleReturnController GoodsSaleReturnController
+        public CoralPOS.Interfaces.Presenter.GoodsSale.IGoodsSaleReturnController GoodsSaleReturnController
         {
             get
             {
@@ -75,33 +76,33 @@ namespace CoralPOS.View.GoodsSale
 
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> AddGoodsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> AddGoodsEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> DeleteGoodsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> DeleteGoodsEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> LoadPurchaseOrderEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> LoadPurchaseOrderEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> HelpEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> HelpEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> FirstRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> FirstRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> PreviousRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> PreviousRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> NextRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> NextRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> LastRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> LastRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> PrintCheckEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> PrintCheckEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> SaveCheckEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> SaveCheckEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> ResetCheckEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> ResetCheckEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> CloseFormEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> CloseFormEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> FillProductToComboEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> FillProductToComboEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleReturnEventArgs> SavePurchaseOrderEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleReturnEventArgs> SavePurchaseOrderEvent;
 
         #endregion
 
@@ -288,7 +289,7 @@ namespace CoralPOS.View.GoodsSale
 
         }
 
-        void form_SelectProductEvent(object sender, AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs e)
+        void form_SelectProductEvent(object sender, CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs e)
         {
             pODReturnList[dgvBill.CurrentCell.OwningRow.Index].Product = e.ReturnProduct;
             GoodsSaleEventArgs goodsSaleEventArgs = new GoodsSaleEventArgs();
@@ -305,7 +306,7 @@ namespace CoralPOS.View.GoodsSale
 
             if (form != null)
             {
-                form.SelectProductEvent -= new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
+                form.SelectProductEvent -= new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
                 form.Close();
             }
         }
@@ -589,7 +590,7 @@ namespace CoralPOS.View.GoodsSale
             if (dgvNewBill.CurrentCell.ColumnIndex == 0)
             {
                 newForm = GlobalUtility.GetOnlyChildFormObject<ProductMasterSearchDepartmentForm>(GlobalCache.Instance().MainForm, FormConstants.PRODUCT_MASTER_SEARCH_DEPARMENT_FORM);
-                newForm.SelectProductEvent += new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectNewProductEvent);
+                newForm.SelectProductEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectNewProductEvent);
                 if (newForm != null)
                     newForm.Show();
             }
@@ -617,7 +618,7 @@ namespace CoralPOS.View.GoodsSale
 
             if (newForm != null)
             {
-                newForm.SelectProductEvent -= new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
+                newForm.SelectProductEvent -= new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
                 newForm.Close();
             }
         }

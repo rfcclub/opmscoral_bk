@@ -6,16 +6,17 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
-using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Model;
-using AppFrame.Presenter;
 using AppFrame.Utility;
-using AppFrame.View;
-using AppFrameClient.Common;
+using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View;
+using CoralPOS.Common;
 
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     public partial class SecuritySettingsForm : BaseForm, ISecurityView
     {
@@ -34,8 +35,8 @@ namespace AppFrameClient.View
 
         #region ISecurityView Members
 
-        AppFrame.Presenter.ISecurityController securityController;
-        public AppFrame.Presenter.ISecurityController SecurityController
+        CoralPOS.Interfaces.Presenter.ISecurityController securityController;
+        public CoralPOS.Interfaces.Presenter.ISecurityController SecurityController
         {
             get
             {
@@ -48,11 +49,11 @@ namespace AppFrameClient.View
             }
         }
 
-        public event EventHandler<AppFrame.Presenter.SecurityEventArgs> InitSecuritySettingsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SecurityEventArgs> InitSecuritySettingsEvent;
 
-        public event EventHandler<AppFrame.Presenter.SecurityEventArgs> SaveUserEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SecurityEventArgs> SaveUserEvent;
 
-        public event EventHandler<AppFrame.Presenter.SecurityEventArgs> EditUserEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SecurityEventArgs> EditUserEvent;
 
         #endregion
 

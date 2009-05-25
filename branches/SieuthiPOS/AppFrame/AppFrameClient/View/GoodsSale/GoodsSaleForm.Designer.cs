@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsSale
+﻿namespace CoralPOS.View.GoodsSale
 {
     partial class GoodsSaleForm
     {
@@ -163,31 +163,31 @@
             // 
             // ProductReportCollectionBindingSource
             // 
-            this.ProductReportCollectionBindingSource.DataSource = typeof(AppFrame.Collection.ProductReportCollection);
+            this.ProductReportCollectionBindingSource.DataSource = typeof(CoralPOS.Interfaces.Collection.ProductReportCollection);
             // 
             // PurchaseOrderDetailReportCollectionBindingSource
             // 
-            this.PurchaseOrderDetailReportCollectionBindingSource.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailReportCollection);
+            this.PurchaseOrderDetailReportCollectionBindingSource.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailReportCollection);
             // 
             // PurchaseOrderDetailCollectionBindingSource
             // 
-            this.PurchaseOrderDetailCollectionBindingSource.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.PurchaseOrderDetailCollectionBindingSource.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // PurchaseOrderDetailBindingSource
             // 
-            this.PurchaseOrderDetailBindingSource.DataSource = typeof(AppFrame.Model.PurchaseOrderDetail);
+            this.PurchaseOrderDetailBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.PurchaseOrderDetail);
             // 
             // DepartmentBindingSource
             // 
-            this.DepartmentBindingSource.DataSource = typeof(AppFrame.Model.Department);
+            this.DepartmentBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Department);
             // 
             // PurchaseOrderBindingSource
             // 
-            this.PurchaseOrderBindingSource.DataSource = typeof(AppFrame.Model.PurchaseOrder);
+            this.PurchaseOrderBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.PurchaseOrder);
             // 
             // ReceiptBindingSource
             // 
-            this.ReceiptBindingSource.DataSource = typeof(AppFrame.Model.Receipt);
+            this.ReceiptBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Receipt);
             // 
             // dgvBill
             // 
@@ -377,7 +377,7 @@
             // 
             // bdsBill
             // 
-            this.bdsBill.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.bdsBill.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // columnProductSearch
             // 

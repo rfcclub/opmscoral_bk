@@ -5,19 +5,21 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 
-namespace AppFrameClient.Presenter.GoodsSale
+namespace CoralPOS.Presenter.GoodsSale
 {
     public class GoodsSaleReturnController : IGoodsSaleReturnController
     {
         #region IGoodsSaleReturnController Members
 
-        private AppFrame.View.GoodsSale.IGoodsSaleReturnView goodsSaleReturnView; 
-        public AppFrame.View.GoodsSale.IGoodsSaleReturnView GoodsSaleReturnView
+        private CoralPOS.Interfaces.View.GoodsSale.IGoodsSaleReturnView goodsSaleReturnView; 
+        public CoralPOS.Interfaces.View.GoodsSale.IGoodsSaleReturnView GoodsSaleReturnView
         {
             get
             {
@@ -163,31 +165,31 @@ namespace AppFrameClient.Presenter.GoodsSale
             e.RefPurchaseOrder = purchaseOrder;
         }
 
-        public AppFrame.Logic.IPurchaseOrderLogic PurchaseOrderLogic
+        public IPurchaseOrderLogic PurchaseOrderLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
+        public IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Model.PurchaseOrder ReturnPurchaseOrder
+        public CoralPOS.Interfaces.Model.PurchaseOrder ReturnPurchaseOrder
         {
             get;set;
             
@@ -205,7 +207,7 @@ namespace AppFrameClient.Presenter.GoodsSale
         #region IGoodsSaleReturnController Members
 
 
-        public AppFrame.Logic.IDepartmentPriceLogic DepartmentPriceLogic
+        public IDepartmentPriceLogic DepartmentPriceLogic
         {
             get ;set;
             
@@ -216,7 +218,7 @@ namespace AppFrameClient.Presenter.GoodsSale
         #region IGoodsSaleReturnController Members
 
 
-        public AppFrame.Logic.IReturnPoLogic ReturnPoLogic
+        public IReturnPoLogic ReturnPoLogic
         {
             get;set;
         }
@@ -236,7 +238,7 @@ namespace AppFrameClient.Presenter.GoodsSale
         #region IGoodsSaleReturnController Members
 
 
-        public AppFrame.Logic.IDepartmentStockLogic DepartmentStockLogic
+        public IDepartmentStockLogic DepartmentStockLogic
         {
             get;set;
             

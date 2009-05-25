@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.MainStock
+﻿namespace CoralPOS.View.GoodsIO.MainStock
 {
     partial class MainStockInForm
     {
@@ -436,7 +436,7 @@
             // 
             // bdsStockIn
             // 
-            this.bdsStockIn.DataSource = typeof(AppFrame.Collection.StockInDetailCollection);
+            this.bdsStockIn.DataSource = typeof(CoralPOS.Interfaces.Collection.StockInDetailCollection);
             // 
             // numericUpDownBarcode
             // 

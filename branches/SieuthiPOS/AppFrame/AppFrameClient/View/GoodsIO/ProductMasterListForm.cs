@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class ProductMasterListForm : Form
     {

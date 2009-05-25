@@ -3,23 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using AppFrame;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
-using AppFrame.View.GoodsSale;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsSale;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.Presenter.GoodsSale
+namespace CoralPOS.Presenter.GoodsSale
 {
     public class GoodsSaleListController : IGoodsSaleListController
     {
         #region IGoodsSaleListController Members
 
         private IGoodsSaleListView goodsSaleListView;
-        public AppFrame.View.GoodsSale.IGoodsSaleListView GoodsSaleListView
+        public CoralPOS.Interfaces.View.GoodsSale.IGoodsSaleListView GoodsSaleListView
         {
             get
             {
@@ -51,22 +52,22 @@ namespace AppFrameClient.Presenter.GoodsSale
             EventUtility.fireEvent(CompletedGoodsSaleListSearchEvent, this, goodsSaleListEventArgs);
         }
 
-        public AppFrame.Logic.IPurchaseOrderLogic PurchaseOrderLogic
+        public IPurchaseOrderLogic PurchaseOrderLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
+        public IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
         }
 
-        public AppFrame.Collection.PurchaseOrderCollection PurchaseOrders
+        public CoralPOS.Interfaces.Collection.PurchaseOrderCollection PurchaseOrders
         {
             get;set;
         }

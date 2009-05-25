@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.MainStock
+﻿namespace CoralPOS.View.GoodsIO.MainStock
 {
     partial class MainStockInSearchReportForm
     {
@@ -180,7 +180,7 @@
             // 
             // bdsStockIn
             // 
-            this.bdsStockIn.DataSource = typeof(AppFrame.Collection.DepartmentStockInDetailCollection);
+            this.bdsStockIn.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockInDetailCollection);
             // 
             // chkImportDateTo
             // 

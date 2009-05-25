@@ -206,7 +206,7 @@ namespace CoralPOS.View.Reports
             // 
             // bdsStockInResultDetail
             // 
-            this.bdsStockInResultDetail.DataSource = typeof(AppFrame.Collection.StockInDetailCollection);
+            this.bdsStockInResultDetail.DataSource = typeof(CoralPOS.Interfaces.Collection.StockInDetailCollection);
             // 
             // label4
             // 

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame;
-using AppFrame.Logic;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace AppFrameClient.Presenter.GoodsIO
+namespace CoralPOS.Presenter.GoodsIO
 {
     public class GoodsIOSearchController : IGoodsIOSearchController
     {

@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
+using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace AppFrameClient.Presenter
+namespace CoralPOS.Presenter
 {
     public class StockOutConfirmController : IStockOutConfirmController
     {

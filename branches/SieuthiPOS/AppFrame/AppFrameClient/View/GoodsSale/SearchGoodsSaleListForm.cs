@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
-using AppFrameClient.ViewModel;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class SearchGoodsSaleListForm : GoodsSaleListForm
     {

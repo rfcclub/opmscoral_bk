@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.Masters;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Masters;
 
 namespace CoralPOS.View.Masters

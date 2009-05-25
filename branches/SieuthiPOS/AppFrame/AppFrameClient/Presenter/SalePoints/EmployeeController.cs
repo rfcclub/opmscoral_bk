@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.SalePoints;
-using AppFrameClient.Common;
-using AppFrameClient.Utility.Mapper;
-using AppFrameClient.View.SalePoints;
+using CoralPOS.Interfaces.View.SalePoints;
+using CoralPOS.Utility.Mapper;
+using CoralPOS.Common;
+using CoralPOS.View.SalePoints;
 
-namespace AppFrameClient.Presenter.SalePoints
+namespace CoralPOS.Presenter.SalePoints
 {
     public class EmployeeController : IEmployeeController
     {
@@ -20,7 +20,7 @@ namespace AppFrameClient.Presenter.SalePoints
         #region IEmployeeController<EmployeeEventArgs> Members
 
         private IEmployeeView employeeView;
-        public AppFrame.View.SalePoints.IEmployeeView EmployeeView
+        public CoralPOS.Interfaces.View.SalePoints.IEmployeeView EmployeeView
         {
             get
             {
@@ -106,7 +106,7 @@ namespace AppFrameClient.Presenter.SalePoints
         
 
         private IEmployeeLogic employeeLogic;
-        public AppFrame.Logic.IEmployeeLogic EmployeeLogic
+        public IEmployeeLogic EmployeeLogic
         {
             get
             {
@@ -119,7 +119,7 @@ namespace AppFrameClient.Presenter.SalePoints
         }
 
         private IEmployeeDetailLogic employeeDetailLogic;
-        public AppFrame.Logic.IEmployeeDetailLogic EmployeeDetailLogic
+        public IEmployeeDetailLogic EmployeeDetailLogic
         {
             get
             {

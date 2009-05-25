@@ -6,18 +6,19 @@ using System.Drawing;
 using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.Common;
-using AppFrameClient.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Common;
+using CoralPOS.Presenter.GoodsIO.DepartmentStockData;
 
 
-namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockOutExtraForm : BaseForm, IDepartmentStockOutView
     {
@@ -415,7 +416,7 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
 
         public event EventHandler<DepartmentStockInEventArgs> InitDepartmentStockInEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
 
         public event EventHandler<DepartmentStockInEventArgs> SaveDepartmentStockInEvent;
 

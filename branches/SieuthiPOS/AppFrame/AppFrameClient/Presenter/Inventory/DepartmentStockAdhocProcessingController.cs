@@ -5,14 +5,15 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.Inventory;
-using AppFrame.View.Inventory;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.Inventory;
+using CoralPOS.Interfaces.View.Inventory;
+using CoralPOS.ViewModel;
 using Spring.Transaction.Interceptor;
 
-namespace AppFrameClient.Presenter.Inventory
+namespace CoralPOS.Presenter.Inventory
 {
     public class DepartmentStockAdhocProcessingController : IDepartmentStockAdhocProcessingController
     {

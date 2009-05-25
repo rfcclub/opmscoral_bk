@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 
-namespace AppFrameClient.ViewModel
+namespace CoralPOS.ViewModel
 {
     public class DepartmentStockInResultDetailCollection : BaseCollection<DepartmentStockInResultDetail>
     {

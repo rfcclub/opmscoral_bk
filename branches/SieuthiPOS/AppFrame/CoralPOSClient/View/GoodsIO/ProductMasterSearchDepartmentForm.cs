@@ -7,10 +7,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using Microsoft.Reporting.WinForms;
 
@@ -51,23 +51,23 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
 
        
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SaveProductMasterEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SaveProductMasterEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SearchProductMasterEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SearchProductMasterEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SelectProductMasterEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SelectProductMasterEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SearchProductsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SearchProductsEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SelectProductEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> SelectProductEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> InitProductMasterSearchDepartmentEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> InitProductMasterSearchDepartmentEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> OpenProductMasterSearchDepartmentEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs> OpenProductMasterSearchDepartmentEvent;
 
-        private AppFrame.Presenter.GoodsIO.IProductMasterSearchDepartmentController
+        private CoralPOS.Interfaces.Presenter.GoodsIO.IProductMasterSearchDepartmentController
             productMasterSearchDepartmentController;    
-        public AppFrame.Presenter.GoodsIO.IProductMasterSearchDepartmentController ProductMasterSearchDepartmentController
+        public CoralPOS.Interfaces.Presenter.GoodsIO.IProductMasterSearchDepartmentController ProductMasterSearchDepartmentController
         {
             get
             {

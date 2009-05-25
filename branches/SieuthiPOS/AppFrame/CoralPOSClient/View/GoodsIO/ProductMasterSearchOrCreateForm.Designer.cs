@@ -310,7 +310,7 @@
             // 
             // productMasterBindingSource
             // 
-            this.productMasterBindingSource.DataSource = typeof(AppFrame.Model.ProductMaster);
+            this.productMasterBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductMaster);
             // 
             // productMasterSearchControl
             // 

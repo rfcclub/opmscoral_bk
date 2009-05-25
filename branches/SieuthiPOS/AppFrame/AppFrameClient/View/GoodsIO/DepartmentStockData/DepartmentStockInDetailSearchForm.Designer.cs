@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockInDetailSearchForm
     {
@@ -42,7 +42,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.productMasterSearchControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterSearchControl = new ProductMasterSearchControl();
             this.label4 = new System.Windows.Forms.Label();
             this.txtSumInQuantity = new System.Windows.Forms.TextBox();
             this.txtSumRemainQuantity = new System.Windows.Forms.TextBox();

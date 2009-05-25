@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockSyncFromMainForm
     {
@@ -139,7 +139,7 @@
             // 
             // syncResultBindingSource
             // 
-            this.syncResultBindingSource.DataSource = typeof(AppFrame.Model.SyncResult);
+            this.syncResultBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.SyncResult);
             // 
             // dgvSyncResult
             // 

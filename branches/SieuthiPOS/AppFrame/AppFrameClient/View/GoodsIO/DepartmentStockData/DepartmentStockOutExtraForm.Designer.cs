@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockOutExtraForm
     {
@@ -99,7 +99,7 @@
             // 
             // bdsStockIn
             // 
-            this.bdsStockIn.DataSource = typeof(AppFrame.Collection.DepartmentStockOutDetailCollection);
+            this.bdsStockIn.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockOutDetailCollection);
             // 
             // mnuCreateNewItem
             // 
@@ -485,7 +485,7 @@
             // 
             // colorBindingSource
             // 
-            this.colorBindingSource.DataSource = typeof(AppFrame.Model.ProductColor);
+            this.colorBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductColor);
             // 
             // lstSize
             // 
@@ -502,7 +502,7 @@
             // 
             // sizeBindingSource
             // 
-            this.sizeBindingSource.DataSource = typeof(AppFrame.Model.ProductSize);
+            this.sizeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductSize);
             // 
             // label4
             // 

@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.MainStock
+﻿namespace CoralPOS.View.GoodsIO.MainStock
 {
     partial class ProcessErrorGoodsForm
     {

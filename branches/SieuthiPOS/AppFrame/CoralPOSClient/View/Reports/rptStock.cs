@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Presenter.Report;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Reports;
 
 namespace CoralPOS.View.Reports
@@ -24,8 +24,8 @@ namespace CoralPOS.View.Reports
 
         #region IReportStockInParamView Members
 
-        private AppFrame.Presenter.Report.IReportStockInController reportStockInController;
-        public AppFrame.Presenter.Report.IReportStockInController ReportStockInController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockInController reportStockInController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockInController ReportStockInController
         {
             get
             {
@@ -44,7 +44,7 @@ namespace CoralPOS.View.Reports
         #region IReportStockInParamView Members
 
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockInEventArgs> CreateReportStockIn;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockInEventArgs> CreateReportStockIn;
 
         #endregion
 

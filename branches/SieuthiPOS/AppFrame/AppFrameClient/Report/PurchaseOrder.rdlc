@@ -20,7 +20,7 @@
       <Fields>
         <Field Name="PurchaseOrderDetailPK">
           <DataField>PurchaseOrderDetailPK</DataField>
-          <rd:TypeName>AppFrame.Model.PurchaseOrderDetailPK</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.PurchaseOrderDetailPK</rd:TypeName>
         </Field>
         <Field Name="PurchaseOrderId">
           <DataField>PurchaseOrderId</DataField>
@@ -76,7 +76,7 @@
         </Field>
         <Field Name="PurchaseOrder">
           <DataField>PurchaseOrder</DataField>
-          <rd:TypeName>AppFrame.Model.PurchaseOrder</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.PurchaseOrder</rd:TypeName>
         </Field>
         <Field Name="PurchaseOrderPromotions">
           <DataField>PurchaseOrderPromotions</DataField>
@@ -84,15 +84,15 @@
         </Field>
         <Field Name="Tax">
           <DataField>Tax</DataField>
-          <rd:TypeName>AppFrame.Model.Tax</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.Tax</rd:TypeName>
         </Field>
         <Field Name="Product">
           <DataField>Product</DataField>
-          <rd:TypeName>AppFrame.Model.Product</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.Product</rd:TypeName>
         </Field>
         <Field Name="ProductMaster">
           <DataField>ProductMaster</DataField>
-          <rd:TypeName>AppFrame.Model.ProductMaster</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.ProductMaster</rd:TypeName>
         </Field>
       </Fields>
       <Query>
@@ -103,7 +103,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>AppFrame.Collection</rd:DataSetName>
         <rd:TableName>PurchaseOrderDetailCollection</rd:TableName>
-        <rd:ObjectDataSourceType>AppFrame.Collection.PurchaseOrderDetailCollection, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="AppFrame_Model_PurchaseOrderDetail">
@@ -134,15 +134,15 @@
         </Field>
         <Field Name="Product">
           <DataField>Product</DataField>
-          <rd:TypeName>AppFrame.Model.Product</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.Product</rd:TypeName>
         </Field>
         <Field Name="ProductMaster">
           <DataField>ProductMaster</DataField>
-          <rd:TypeName>AppFrame.Model.ProductMaster</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.ProductMaster</rd:TypeName>
         </Field>
         <Field Name="PurchaseOrder">
           <DataField>PurchaseOrder</DataField>
-          <rd:TypeName>AppFrame.Model.PurchaseOrder</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.PurchaseOrder</rd:TypeName>
         </Field>
         <Field Name="PurchaseOrderDetailId">
           <DataField>PurchaseOrderDetailId</DataField>
@@ -150,7 +150,7 @@
         </Field>
         <Field Name="PurchaseOrderDetailPK">
           <DataField>PurchaseOrderDetailPK</DataField>
-          <rd:TypeName>AppFrame.Model.PurchaseOrderDetailPK</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.PurchaseOrderDetailPK</rd:TypeName>
         </Field>
         <Field Name="PurchaseOrderId">
           <DataField>PurchaseOrderId</DataField>
@@ -174,7 +174,7 @@
         </Field>
         <Field Name="Tax">
           <DataField>Tax</DataField>
-          <rd:TypeName>AppFrame.Model.Tax</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.Tax</rd:TypeName>
         </Field>
         <Field Name="UpdateDate">
           <DataField>UpdateDate</DataField>
@@ -193,7 +193,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>AppFrame.Model</rd:DataSetName>
         <rd:TableName>PurchaseOrderDetail</rd:TableName>
-        <rd:ObjectDataSourceType>AppFrame.Model.PurchaseOrderDetail, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CoralPOS.Interfaces.Model.PurchaseOrderDetail, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="AppFrame_Model_Department">
@@ -271,7 +271,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>AppFrame.Model</rd:DataSetName>
         <rd:TableName>Department</rd:TableName>
-        <rd:ObjectDataSourceType>AppFrame.Model.Department, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CoralPOS.Interfaces.Model.Department, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="AppFrame_Model_PurchaseOrder">
@@ -286,7 +286,7 @@
         </Field>
         <Field Name="Customer">
           <DataField>Customer</DataField>
-          <rd:TypeName>AppFrame.Model.Customer</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.Customer</rd:TypeName>
         </Field>
         <Field Name="DelFlg">
           <DataField>DelFlg</DataField>
@@ -318,7 +318,7 @@
         </Field>
         <Field Name="PurchaseOrderPK">
           <DataField>PurchaseOrderPK</DataField>
-          <rd:TypeName>AppFrame.Model.PurchaseOrderPK</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.PurchaseOrderPK</rd:TypeName>
         </Field>
         <Field Name="PurchasePrice">
           <DataField>PurchasePrice</DataField>
@@ -345,7 +345,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>AppFrame.Model</rd:DataSetName>
         <rd:TableName>PurchaseOrder</rd:TableName>
-        <rd:ObjectDataSourceType>AppFrame.Model.PurchaseOrder, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CoralPOS.Interfaces.Model.PurchaseOrder, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="AppFrame_Model_Receipt">
@@ -380,7 +380,7 @@
         </Field>
         <Field Name="PurchaseOrder">
           <DataField>PurchaseOrder</DataField>
-          <rd:TypeName>AppFrame.Model.PurchaseOrder</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.PurchaseOrder</rd:TypeName>
         </Field>
         <Field Name="ReceiptId">
           <DataField>ReceiptId</DataField>
@@ -396,7 +396,7 @@
         </Field>
         <Field Name="ReceiptPK">
           <DataField>ReceiptPK</DataField>
-          <rd:TypeName>AppFrame.Model.ReceiptPK</rd:TypeName>
+          <rd:TypeName>CoralPOS.Interfaces.Model.ReceiptPK</rd:TypeName>
         </Field>
         <Field Name="ReturnAmount">
           <DataField>ReturnAmount</DataField>
@@ -423,7 +423,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>AppFrame.Model</rd:DataSetName>
         <rd:TableName>Receipt</rd:TableName>
-        <rd:ObjectDataSourceType>AppFrame.Model.Receipt, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CoralPOS.Interfaces.Model.Receipt, AppFrame, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

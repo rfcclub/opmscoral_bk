@@ -3,10 +3,13 @@ using System.Resources;
 using AppFrame.Common;
 using AppFrame.Utility;
 using AppFrame.View;
-using AppFrameClient.Common;
+using AppFrame.Common;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View;
+using CoralPOS.Common;
 using Spring.Aop;
 
-namespace AppFrame.Advice
+namespace CoralPOS.Advice
 {
     internal class MenuPermissionAdvice : IAfterReturningAdvice
     {

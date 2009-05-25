@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
@@ -312,13 +313,13 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
         #region IDepartmentStockInExtraController Members
 
 
-        public Logic.IProductColorLogic ProductColorLogic
+        public IProductColorLogic ProductColorLogic
         {
             get;set;
             
         }
 
-        public Logic.IProductSizeLogic ProductSizeLogic
+        public IProductSizeLogic ProductSizeLogic
         {
             get;set;
         }

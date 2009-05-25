@@ -6,16 +6,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.Presenter.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Presenter.GoodsIO;
 
-namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentReStockInForm : BaseForm,IDepartmentStockInView
     {
@@ -99,8 +100,8 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
 
         #region IDepartmentStockInView Members
 
-        private AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockInController departmentStockInController;
-        public AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockInController DepartmentStockInController
+        private CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockInController departmentStockInController;
+        public CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockInController DepartmentStockInController
         {
             set
             {
@@ -109,8 +110,8 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
             }
         }
 
-        public AppFrame.Presenter.GoodsIO.IProductMasterSearchOrCreateController productMasterSearchOrCreateController;
-        public AppFrame.Presenter.GoodsIO.IProductMasterSearchOrCreateController ProductMasterSearchOrCreateController
+        public CoralPOS.Interfaces.Presenter.GoodsIO.IProductMasterSearchOrCreateController productMasterSearchOrCreateController;
+        public CoralPOS.Interfaces.Presenter.GoodsIO.IProductMasterSearchOrCreateController ProductMasterSearchOrCreateController
         {
             set
             {
@@ -118,15 +119,15 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
             }
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> InitDepartmentStockInEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> InitDepartmentStockInEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> SaveDepartmentStockInEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> SaveDepartmentStockInEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> FindProductMasterEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> FindProductMasterEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> SyncDepartmentStockInEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockInEventArgs> SyncDepartmentStockInEvent;
 
         #endregion
 

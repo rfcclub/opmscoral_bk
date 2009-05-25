@@ -5,14 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Logic;
+using CoralPOS.Interfaces.Logic;
 using System.Collections;
-using AppFrame.Model;
-using AppFrameClient.Common;
+using CoralPOS.Interfaces.Model;
 using AppFrame.Utility;
 using AppFrame;
+using CoralPOS.Common;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class GoodsInput : Form
     {

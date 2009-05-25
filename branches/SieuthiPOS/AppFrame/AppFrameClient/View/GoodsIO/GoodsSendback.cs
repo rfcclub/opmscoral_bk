@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class GoodsSendback : Form
     {

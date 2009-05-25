@@ -9,12 +9,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Presenter.GoodsIO.DepartmentStockData;
 
@@ -271,7 +272,7 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
         #region IDepartmentStockInView Members
 
         private DepartmentStockInExtraController departmentStockInController;
-        public AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockInController DepartmentStockInController
+        public CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockInController DepartmentStockInController
         {
             get
             {
@@ -292,7 +293,7 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
         
         
         private IProductMasterSearchOrCreateController productMasterSearchOrCreateController;
-        public AppFrame.Presenter.GoodsIO.IProductMasterSearchOrCreateController ProductMasterSearchOrCreateController
+        public CoralPOS.Interfaces.Presenter.GoodsIO.IProductMasterSearchOrCreateController ProductMasterSearchOrCreateController
         {
             set
             {
@@ -302,7 +303,7 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
 
         public event EventHandler<DepartmentStockInEventArgs> InitDepartmentStockInEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
 
         public event EventHandler<DepartmentStockInEventArgs> SaveDepartmentStockInEvent;
 

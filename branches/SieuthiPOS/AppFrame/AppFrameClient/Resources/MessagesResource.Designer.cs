@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppFrameClient.Resources {
+namespace CoralPOS.Resources {
     using System;
     
     

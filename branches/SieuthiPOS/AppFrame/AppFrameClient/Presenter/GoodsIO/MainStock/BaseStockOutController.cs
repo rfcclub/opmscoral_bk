@@ -6,18 +6,19 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.Presenter.GoodsIO.MainStock
+namespace CoralPOS.Presenter.GoodsIO.MainStock
 {
     public class BaseStockOutController : IBaseStockOutController
     {
         #region IBaseStockOutController Members
 
-        private AppFrame.View.GoodsIO.MainStock.IBaseStockOutView baseStockOutView;
-        public AppFrame.View.GoodsIO.MainStock.IBaseStockOutView BaseStockOutView
+        private CoralPOS.Interfaces.View.GoodsIO.MainStock.IBaseStockOutView baseStockOutView;
+        public CoralPOS.Interfaces.View.GoodsIO.MainStock.IBaseStockOutView BaseStockOutView
         {
             get
             {
@@ -234,31 +235,31 @@ namespace AppFrameClient.Presenter.GoodsIO.MainStock
 
       
 
-        public AppFrame.Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockLogic StockLogic
+        public IStockLogic StockLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockOutLogic StockOutLogic
+        public IStockOutLogic StockOutLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockOutDetailLogic StockOutDetailLogic
+        public IStockOutDetailLogic StockOutDetailLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
         }
@@ -268,7 +269,7 @@ namespace AppFrameClient.Presenter.GoodsIO.MainStock
         #region IBaseStockOutController Members
 
 
-        public AppFrame.Logic.IDepartmentStockHistoryLogic DepartmentStockHistoryLogic
+        public IDepartmentStockHistoryLogic DepartmentStockHistoryLogic
         {
             get;set;
         }
@@ -278,12 +279,12 @@ namespace AppFrameClient.Presenter.GoodsIO.MainStock
         #region IBaseStockOutController Members
 
 
-        public AppFrame.Logic.IDepartmentStockOutLogic DepartmentStockOutLogic
+        public IDepartmentStockOutLogic DepartmentStockOutLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
+        public IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
         {
             get;set;
         }

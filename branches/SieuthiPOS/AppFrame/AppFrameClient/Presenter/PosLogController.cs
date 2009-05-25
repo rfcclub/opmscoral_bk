@@ -5,17 +5,17 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.View;
+using CoralPOS.Interfaces.View.GoodsIO;
 using NHibernate.Criterion;
 
-namespace AppFrameClient.Presenter
+namespace CoralPOS.Presenter
 {
     public class PosLogController : IPosLogController
     {

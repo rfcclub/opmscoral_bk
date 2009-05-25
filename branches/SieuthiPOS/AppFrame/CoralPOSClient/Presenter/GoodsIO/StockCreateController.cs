@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using AppFrame;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.SalePoints;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using NHibernate.Criterion;
 

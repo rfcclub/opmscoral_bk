@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 
 namespace CoralPOS.View.GoodsIO
 {

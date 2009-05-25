@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
+using AppFrame.Common;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.DataLayer;
 using CoralPOS.Interfaces.Exceptions;

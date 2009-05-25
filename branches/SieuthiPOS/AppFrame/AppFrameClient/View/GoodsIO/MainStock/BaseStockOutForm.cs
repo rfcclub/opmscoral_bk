@@ -5,15 +5,16 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.MainStock;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsIO.MainStock;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsIO.MainStock
+namespace CoralPOS.View.GoodsIO.MainStock
 {
    
     public partial class BaseStockOutForm : AppFrame.Common.BaseForm,IBaseStockOutView
@@ -94,8 +95,8 @@ namespace AppFrameClient.View.GoodsIO.MainStock
 
         #region IBaseStockOutView Members
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IBaseStockOutController baseStockOutController;
-        public AppFrame.Presenter.GoodsIO.MainStock.IBaseStockOutController BaseStockOutController
+        private  CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IBaseStockOutController baseStockOutController;
+        public  CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IBaseStockOutController BaseStockOutController
         {
             get
             {

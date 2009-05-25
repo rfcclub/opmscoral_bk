@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrameClient.ViewModel
+namespace CoralPOS.ViewModel
 {
     public class DepartmentStockOutView
     {

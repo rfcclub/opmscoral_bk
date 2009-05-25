@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame;
-using CoralPOS.Interfaces.Common;
-using CoralPOS.Interfaces.Exceptions;
+using AppFrame.Common;
+using AppFrame.Exceptions;
+using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
@@ -16,8 +17,8 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
     {
         #region IInventoryCheckingController Members
         
-        AppFrame.View.GoodsIO.MainStock.IInventoryCheckingView inventoryCheckingView;    
-        public AppFrame.View.GoodsIO.MainStock.IInventoryCheckingView InventoryCheckingView
+        CoralPOS.Interfaces.View.GoodsIO.MainStock.IInventoryCheckingView inventoryCheckingView;    
+        public CoralPOS.Interfaces.View.GoodsIO.MainStock.IInventoryCheckingView InventoryCheckingView
         {
             get
             {
@@ -97,29 +98,29 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
             e.ReturnStockViewList = stockViewList;
         }
 
-        public Logic.IStockLogic StockLogic
+        public IStockLogic StockLogic
         {
             get;set;
         }
 
-        public Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;set;
         }
 
-        public Logic.IProductMasterLogic ProductMasterLogic
-        {
-            get;set;
-            
-        }
-
-        public Logic.IStockInLogic StockInLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
             
         }
 
-        public Logic.IStockInDetailLogic StockInDetailLogic
+        public IStockInLogic StockInLogic
+        {
+            get;set;
+            
+        }
+
+        public IStockInDetailLogic StockInDetailLogic
         {
             get;set;
             
@@ -130,13 +131,13 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
         #region IInventoryCheckingController Members
 
 
-        public Logic.IStockOutLogic StockOutLogic
+        public IStockOutLogic StockOutLogic
         {
             get;set;
             
         }
 
-        public Logic.IStockOutDetailLogic StockOutDetailLogic
+        public IStockOutDetailLogic StockOutDetailLogic
         {
             get;set;
         }

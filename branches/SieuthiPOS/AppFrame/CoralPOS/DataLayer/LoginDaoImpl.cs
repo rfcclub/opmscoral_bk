@@ -16,7 +16,7 @@ namespace CoralPOS.DataLayer
     {
 
 
-        public global::AppFrame.Model.LoginModel getInfo(string Username, string Password)
+        public LoginModel getInfo(string Username, string Password)
         {
             LoginModel model = null;
             ObjectCriteria criteria = new ObjectCriteria();

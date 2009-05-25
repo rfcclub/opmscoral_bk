@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
+using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.Model;
-using CoralPOS.Interfaces.Utility.Mapper;
+using AppFrame.Utility.Mapper;
 using CoralPOS.View.SalePoints;
 
 namespace CoralPOS.Utility.Mapper

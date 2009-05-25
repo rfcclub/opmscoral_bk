@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.View;
-using AppFrameClient.Common;
+using CoralPOS.Interfaces.View;
+using CoralPOS.Common;
 using Spring.Context;
 using Spring.Context.Support;
 
-namespace AppFrameClient
+namespace CoralPOS
 {
     public partial class SplashScreen : Form
     {

@@ -8,14 +8,16 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
-using AppFrame.View.GoodsSale;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsSale;
+using CoralPOS.ViewModel;
+
 //using Aspose.Cells;
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class DayGoodsSaleListForm : BaseForm,IDayGoodsSaleListView
     {
@@ -59,7 +61,7 @@ namespace AppFrameClient.View.GoodsSale
         #region IDayGoodsSaleListView Members
 
         private IGoodsSaleListController goodsSaleListController;
-        public AppFrame.Presenter.GoodsSale.IGoodsSaleListController GoodsSaleListController
+        public CoralPOS.Interfaces.Presenter.GoodsSale.IGoodsSaleListController GoodsSaleListController
         {
             get
             {
@@ -93,11 +95,11 @@ namespace AppFrameClient.View.GoodsSale
 
         
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> GoodsSaleListSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> GoodsSaleListSearchEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> ExportToExcelEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> ExportToExcelEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> PrintGoodsSaleEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> PrintGoodsSaleEvent;
 
         #endregion
 

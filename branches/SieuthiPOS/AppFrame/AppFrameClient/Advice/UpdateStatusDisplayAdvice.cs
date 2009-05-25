@@ -1,8 +1,9 @@
 ﻿using System.Threading;
 using AopAlliance.Intercept;
 using AppFrame.View;
+using CoralPOS.Interfaces.View;
 
-namespace AppFrame.Advice
+namespace CoralPOS.Advice
 {
     internal class UpdateStatusDisplayAdvice : IMethodInterceptor
     {

@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
-using AppFrame.View;
-using AppFrameClient.Utility;
+using CoralPOS.Interfaces.View;
+using CoralPOS.Utility;
 using Common.Logging;
 
 namespace AppFrame.Presenter

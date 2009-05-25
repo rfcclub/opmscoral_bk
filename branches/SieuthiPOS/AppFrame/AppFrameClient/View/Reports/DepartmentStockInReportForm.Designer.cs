@@ -1,4 +1,6 @@
-﻿namespace AppFrameClient.View.Reports
+﻿using CoralPOS.ViewModel;
+
+namespace CoralPOS.View.Reports
 {
     partial class DepartmentStockInReportForm
     {
@@ -245,7 +247,7 @@
             // 
             // bdsStockOutResultPM
             // 
-            this.bdsStockOutResultPM.DataSource = typeof(AppFrameClient.ViewModel.DepartmentStockInResultDetailCollection);
+            this.bdsStockOutResultPM.DataSource = typeof(DepartmentStockInResultDetailCollection);
             this.bdsStockOutResultPM.CurrentChanged += new System.EventHandler(this.bdsStockInResultPM_CurrentChanged);
             // 
             // dgvStockProductsDetail
@@ -438,7 +440,7 @@
             // 
             // bdsStockOutResultDetail
             // 
-            this.bdsStockOutResultDetail.DataSource = typeof(AppFrame.Collection.DepartmentStockInDetailCollection);
+            this.bdsStockOutResultDetail.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockInDetailCollection);
             // 
             // dtpTo
             // 

@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentPriceUpdateForm
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.productMasterSearchControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterSearchControl = new ProductMasterSearchControl();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();

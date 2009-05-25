@@ -6,7 +6,7 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 
-namespace AppFrameClient.Common
+namespace CoralPOS.Common
 {
     public class Code39Ex
     {

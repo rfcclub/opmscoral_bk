@@ -2,116 +2,117 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AFCSetting = AppFrameClient.Properties.Settings;
+using CoralPOS.Properties;
+using AFCSetting = CoralPOS.Properties.Settings;
 
-namespace AppFrameClient.Common
+namespace CoralPOS.Common
 {
     public class ClientSetting
     {   
         public static bool IsClient()
         {
-            return string.IsNullOrEmpty(AFCSetting.Default.IsClient)
+            return string.IsNullOrEmpty(Settings.Default.IsClient)
                        ? false
-                       : AFCSetting.Default.IsClient.Equals("1");           
+                       : Settings.Default.IsClient.Equals("1");           
         }
 
         public static bool IsServer()
         {
-            return string.IsNullOrEmpty(AFCSetting.Default.IsClient)
+            return string.IsNullOrEmpty(Settings.Default.IsClient)
                        ? false
-                       : AFCSetting.Default.IsClient.Equals("0");
+                       : Settings.Default.IsClient.Equals("0");
         }
         public static void Save()
         {
-            AFCSetting.Default.Save();
-            AFCSetting.Default.Upgrade();
+            Settings.Default.Save();
+            Settings.Default.Upgrade();
         }
         public static void Reload()
         {
-            AFCSetting.Default.Reload();
+            Settings.Default.Reload();
         }
 
         public static string SyncImportPath
         {
             get
             {
-                return AFCSetting.Default.SyncImportPath;
+                return Settings.Default.SyncImportPath;
             }
             set
             {
-                AFCSetting.Default.SyncImportPath = value;
+                Settings.Default.SyncImportPath = value;
             }
         }
         public static string SyncSuccessPath
         {
             get
             {
-                return AFCSetting.Default.SyncSuccessPath;
+                return Settings.Default.SyncSuccessPath;
             }
             set
             {
-                AFCSetting.Default.SyncSuccessPath = value;
+                Settings.Default.SyncSuccessPath = value;
             }
         }
         public static string SyncErrorPath
         {
             get
             {
-                return AFCSetting.Default.SyncErrorPath;
+                return Settings.Default.SyncErrorPath;
             }
             set
             {
-                AFCSetting.Default.SyncErrorPath = value;
+                Settings.Default.SyncErrorPath = value;
             }
         }
         public static string SyncExportPath
         {
             get
             {
-                return AFCSetting.Default.SyncExportPath;
+                return Settings.Default.SyncExportPath;
             }
             set
             {
-                AFCSetting.Default.SyncExportPath = value;
+                Settings.Default.SyncExportPath = value;
             }
         }
         public static string PrinterName
         {
             get
             {
-                return AFCSetting.Default.PrinterName;
+                return Settings.Default.PrinterName;
             }
             set
             {
-                AFCSetting.Default.PrinterName = value;
+                Settings.Default.PrinterName = value;
             }
         }
         public static string MySQLDumpPath
         {
             get
             {
-                return AFCSetting.Default.MySQLDump;
+                return Settings.Default.MySQLDump;
             }
             set
             {
-                AFCSetting.Default.MySQLDump = value;                
+                Settings.Default.MySQLDump = value;                
             }
         }
         public static string DBBackupPath
         {
             get
             {
-                return AFCSetting.Default.DBBackupPath;
+                return Settings.Default.DBBackupPath;
             }
             set
             {
-                AFCSetting.Default.DBBackupPath = value;
+                Settings.Default.DBBackupPath = value;
             }
         }
 
         public static void Reset()
         {
-            AFCSetting.Default.Reset();
+            Settings.Default.Reset();
         }
     }
 }

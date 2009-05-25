@@ -1,4 +1,6 @@
-﻿namespace AppFrameClient.View.Inventory
+﻿using CoralPOS.ViewModel;
+
+namespace CoralPOS.View.Inventory
 {
     partial class DepartmentStockAdhocCheckingForm
     {
@@ -303,7 +305,7 @@
             // 
             // bdsStockDefect
             // 
-            this.bdsStockDefect.DataSource = typeof(AppFrameClient.ViewModel.DepartmentStockTempViewCollection);
+            this.bdsStockDefect.DataSource = typeof(DepartmentStockTempViewCollection);
             // 
             // systemHotkey1
             // 

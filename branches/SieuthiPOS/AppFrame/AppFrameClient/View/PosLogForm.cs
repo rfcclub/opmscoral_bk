@@ -7,15 +7,15 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
-using AppFrame.View;
-using AppFrame.View.GoodsIO;
-using AppFrameClient.View.GoodsIO;
+using CoralPOS.Interfaces.View;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.View.GoodsIO;
 
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     public partial class PosLogForm : BaseForm, IPosLogView
     {

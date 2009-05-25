@@ -7,10 +7,10 @@ using System.Drawing;
 using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 
 namespace CoralPOS.View.GoodsIO.DepartmentStockData

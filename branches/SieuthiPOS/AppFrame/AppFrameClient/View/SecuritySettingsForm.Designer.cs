@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     partial class SecuritySettingsForm
     {
@@ -384,7 +384,7 @@ namespace AppFrameClient.View
             // 
             // bdsUserInfo
             // 
-            this.bdsUserInfo.DataSource = typeof(AppFrame.Collection.LoginModelCollection);
+            this.bdsUserInfo.DataSource = typeof(CoralPOS.Interfaces.Collection.LoginModelCollection);
             // 
             // btnEdit
             // 

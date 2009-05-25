@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.Report;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
@@ -29,8 +29,8 @@ namespace CoralPOS.View.GoodsIO
 
         #region IDepartmentStockOutReportView Members
 
-        private AppFrame.Presenter.Report.IReportStockOutController reportStockOutController;
-        public AppFrame.Presenter.Report.IReportStockOutController ReportStockOutController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockOutController reportStockOutController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockOutController ReportStockOutController
         {
             get
             {
@@ -102,13 +102,13 @@ namespace CoralPOS.View.GoodsIO
         #region IDepartmentStockOutReportView Members
 
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> ConfirmStockOutEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> ConfirmStockOutEvent;
         
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> DenyStockOutEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> DenyStockOutEvent;
         
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> LoadDepartmentStockOutsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> LoadDepartmentStockOutsEvent;
 
         #endregion
 

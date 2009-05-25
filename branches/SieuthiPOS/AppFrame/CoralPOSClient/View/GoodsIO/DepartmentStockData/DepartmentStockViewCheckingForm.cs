@@ -9,10 +9,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.ViewModel;
 using CoralPOS.Common;
@@ -29,16 +30,16 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
 
         #region IDepartmentStockCheckingView Members
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> FillProductMasterToComboEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> FillProductMasterToComboEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> LoadGoodsByProductIdEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> LoadGoodsByProductIdEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> SaveInventoryCheckingEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> SaveInventoryCheckingEvent;
         public event EventHandler<DepartmentStockCheckingEventArgs> SaveTempInventoryCheckingEvent;
         public event EventHandler<DepartmentStockCheckingEventArgs> LoadTempInventoryCheckingEvent;
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IDepartmentStockCheckingController departmentStockCheckingController;        
-        public AppFrame.Presenter.GoodsIO.MainStock.IDepartmentStockCheckingController DepartmentStockCheckingController
+        private CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockCheckingController departmentStockCheckingController;
+        public CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.IDepartmentStockCheckingController DepartmentStockCheckingController
         {
             get
             {

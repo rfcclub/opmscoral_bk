@@ -284,7 +284,7 @@
             // 
             // bdsEmployeeSource
             // 
-            this.bdsEmployeeSource.DataSource = typeof(AppFrame.Model.EmployeeInfo);
+            this.bdsEmployeeSource.DataSource = typeof(CoralPOS.Interfaces.Model.EmployeeInfo);
             this.bdsEmployeeSource.Filter = "DelFlg = 1";
             // 
             // btnCheckAll

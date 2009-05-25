@@ -175,7 +175,7 @@
             // 
             // BlockDetailBindingSource
             // 
-            this.BlockDetailBindingSource.DataSource = typeof(AppFrame.Model.BlockInDetail);
+            this.BlockDetailBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.BlockInDetail);
             // 
             // GoodsIOSearchForm
             // 

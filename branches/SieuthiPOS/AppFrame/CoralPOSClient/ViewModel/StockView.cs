@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using CoralPOS.Interfaces.Controls;
+using AppFrame.Controls;
 using CoralPOS.Interfaces.Model;
 
 namespace CoralPOS.ViewModel

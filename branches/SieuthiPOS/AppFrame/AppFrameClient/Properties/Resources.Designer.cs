@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppFrameClient.Properties {
+namespace CoralPOS.Properties {
     using System;
     
     

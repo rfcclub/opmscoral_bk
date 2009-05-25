@@ -7,15 +7,16 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrame.View.GoodsIO.MainStock;
-using AppFrameClient.Utility;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.MainStock;
+using CoralPOS.Utility;
 
-namespace AppFrameClient.Presenter.GoodsIO.MainStock
+namespace CoralPOS.Presenter.GoodsIO.MainStock
 {
     public class MainStockOutController : IMainStockOutController
     {

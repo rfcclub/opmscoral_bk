@@ -1,7 +1,7 @@
 ﻿using System;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     partial class ProductMasterCreateForm
     {
@@ -35,7 +35,7 @@ namespace AppFrameClient.View.GoodsIO
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.picProduct = new System.Windows.Forms.PictureBox();
-            this.productMasterControl = new AppFrameClient.View.GoodsIO.ProductMasterCreateControl();
+            this.productMasterControl = new ProductMasterCreateControl();
             this.btnRevert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picProduct)).BeginInit();
             this.SuspendLayout();

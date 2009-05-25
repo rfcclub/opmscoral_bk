@@ -3,6 +3,7 @@ using System.Collections;
 using AppFrame;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
 using NHibernate;
 using NHibernate.Criterion;
 using Spring.Transaction.Interceptor;

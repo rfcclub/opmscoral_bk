@@ -85,6 +85,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOS.Client", "AppFrame
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOS.Server", "AppFrameServer\CoralPOS.Server.csproj", "{C3773063-F4BA-4DCC-99C6-6C1F66397173}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOS", "CoralPOS\CoralPOS.csproj", "{980B950B-5AC9-4C8E-A956-45C401BFEF89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoralPOSClient", "CoralPOSClient\CoralPOSClient.csproj", "{D00460D1-6FAB-443F-A23A-D1FFF7961431}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -129,6 +133,14 @@ Global
 		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3773063-F4BA-4DCC-99C6-6C1F66397173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980B950B-5AC9-4C8E-A956-45C401BFEF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980B950B-5AC9-4C8E-A956-45C401BFEF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980B950B-5AC9-4C8E-A956-45C401BFEF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980B950B-5AC9-4C8E-A956-45C401BFEF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00460D1-6FAB-443F-A23A-D1FFF7961431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00460D1-6FAB-443F-A23A-D1FFF7961431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00460D1-6FAB-443F-A23A-D1FFF7961431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00460D1-6FAB-443F-A23A-D1FFF7961431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

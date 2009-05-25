@@ -421,7 +421,7 @@
             // 
             // bdsDeptStockIn
             // 
-            this.bdsDeptStockIn.DataSource = typeof(AppFrame.Collection.DepartmentStockInDetailCollection);
+            this.bdsDeptStockIn.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockInDetailCollection);
             // 
             // cbbDept
             // 
@@ -433,7 +433,7 @@
             // 
             // bdsDept
             // 
-            this.bdsDept.DataSource = typeof(AppFrame.Model.Department);
+            this.bdsDept.DataSource = typeof(CoralPOS.Interfaces.Model.Department);
             // 
             // DepartmentStockInExtraForm
             // 

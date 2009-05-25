@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsSale
+﻿namespace CoralPOS.View.GoodsSale
 {
     partial class Goods
     {

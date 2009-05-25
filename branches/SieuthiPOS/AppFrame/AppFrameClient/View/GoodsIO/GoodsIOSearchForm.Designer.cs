@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO
+﻿namespace CoralPOS.View.GoodsIO
 {
     partial class GoodsIOSearchForm
     {
@@ -175,7 +175,7 @@
             // 
             // BlockDetailBindingSource
             // 
-            this.BlockDetailBindingSource.DataSource = typeof(AppFrame.Model.BlockInDetail);
+            this.BlockDetailBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.BlockInDetail);
             // 
             // GoodsIOSearchForm
             // 

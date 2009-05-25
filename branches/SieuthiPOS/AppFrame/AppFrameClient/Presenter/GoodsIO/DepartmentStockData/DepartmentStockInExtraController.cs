@@ -7,14 +7,15 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.Utility;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Utility;
 
-namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockInExtraController : DepartmentStockInController, IDepartmentStockInExtraController
     {
@@ -22,7 +23,7 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
                 #region IDepartmentStockInExtraController Members
 
                 private IDepartmentStockInExtraView departmentStockInExtraView;
-                public AppFrame.View.GoodsIO.DepartmentGoodsIO.IDepartmentStockInExtraView DepartmentStockInExtraView
+                public CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO.IDepartmentStockInExtraView DepartmentStockInExtraView
                 {
                     get
                     {
@@ -481,22 +482,22 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
                     set;
                 }
 
-                public AppFrame.Logic.IProductColorLogic ProductColorLogic
+                public IProductColorLogic ProductColorLogic
                 {
                     get;set;
             
                 }
 
-                public AppFrame.Logic.IProductSizeLogic ProductSizeLogic
+                public IProductSizeLogic ProductSizeLogic
                 {
                     get;set;
                 }
-                public AppFrame.Logic.IStockLogic StockLogic
+                public IStockLogic StockLogic
                 {
                     get;
                     set;
                 }
-                public AppFrame.Logic.IEmployeeDetailLogic EmployeeDetailLogic
+                public IEmployeeDetailLogic EmployeeDetailLogic
                 {
                     get;
                     set;

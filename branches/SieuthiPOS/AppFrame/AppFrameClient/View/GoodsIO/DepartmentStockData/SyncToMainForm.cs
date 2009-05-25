@@ -12,15 +12,16 @@ using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.Common;
-using AppFrameClient.Utility;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Common;
+using CoralPOS.Utility;
 
-namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     public partial class SyncToMainForm : BaseForm, IDepartmentStockOutView
     {

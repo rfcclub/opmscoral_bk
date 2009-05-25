@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.SalePoints
+﻿namespace CoralPOS.View.SalePoints
 {
     partial class SalePointListForm
     {
@@ -241,7 +241,7 @@
             // 
             // bdsSalePointList
             // 
-            this.bdsSalePointList.DataSource = typeof(AppFrame.Model.Department);
+            this.bdsSalePointList.DataSource = typeof(CoralPOS.Interfaces.Model.Department);
             // 
             // cmnDepartments
             // 

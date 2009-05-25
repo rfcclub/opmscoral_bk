@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 
-namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockInSearchController : IDepartmentStockInSearchController
     {

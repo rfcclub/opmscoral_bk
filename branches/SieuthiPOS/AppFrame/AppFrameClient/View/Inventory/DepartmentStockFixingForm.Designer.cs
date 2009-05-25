@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.Inventory
+﻿namespace CoralPOS.View.Inventory
 {
     partial class DepartmentStockFixingForm
     {

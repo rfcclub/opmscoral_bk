@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 using AopAlliance.Intercept;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 
 namespace CoralPOS.Advice
 {

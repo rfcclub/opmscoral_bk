@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
-using CoralPOS.Interfaces.Utility;
+using CoralPOS.Interfaces.Presenter;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 using CoralPOS.Utility;
 using Common.Logging;

@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.Reports
+﻿namespace CoralPOS.View.Reports
 {
     partial class MainStockOutReportForm
     {

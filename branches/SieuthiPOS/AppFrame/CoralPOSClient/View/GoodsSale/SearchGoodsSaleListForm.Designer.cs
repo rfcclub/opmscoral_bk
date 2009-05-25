@@ -1,4 +1,6 @@
-﻿namespace CoralPOS.View.GoodsSale
+﻿using CoralPOS.Interfaces.Collection;
+
+namespace CoralPOS.View.GoodsSale
 {
     partial class SearchGoodsSaleListForm
     {
@@ -73,7 +75,7 @@
             // 
             // bdsPurchaseOrders
             // 
-            this.bdsPurchaseOrders.DataSource = typeof(AppFrame.Collection.PurchaseOrderCollection);
+            this.bdsPurchaseOrders.DataSource = typeof(PurchaseOrderCollection);
             // 
             // panel1
             // 

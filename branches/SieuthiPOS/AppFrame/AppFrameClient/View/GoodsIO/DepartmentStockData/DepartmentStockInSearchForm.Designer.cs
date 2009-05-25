@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockInSearchForm
     {

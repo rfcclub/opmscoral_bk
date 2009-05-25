@@ -1,4 +1,6 @@
-﻿namespace AppFrameClient.View.GoodsSale
+﻿using CoralPOS.ViewModel;
+
+namespace CoralPOS.View.GoodsSale
 {
     partial class GoodsSaleListForm
     {
@@ -299,7 +301,7 @@
             // 
             // bdsPurchaseOrders
             // 
-            this.bdsPurchaseOrders.DataSource = typeof(AppFrameClient.ViewModel.PurchaseOrderView);
+            this.bdsPurchaseOrders.DataSource = typeof(PurchaseOrderView);
             // 
             // chkMorningSort
             // 

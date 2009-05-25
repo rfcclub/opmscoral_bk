@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Presenter.Report;
+using AppFrame.Common;
 using AppFrame.Utility;
-using AppFrame.View.Reports;
+using CoralPOS.Interfaces.Presenter.Report;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View.Reports;
 
-namespace AppFrameClient.View.Reports
+namespace CoralPOS.View.Reports
 {
     public partial class frmStockinRpt : BaseForm,IReportStockInParamView
     {
@@ -24,8 +26,8 @@ namespace AppFrameClient.View.Reports
 
         #region IReportStockInParamView Members
 
-        private AppFrame.Presenter.Report.IReportStockInController reportStockInController;
-        public AppFrame.Presenter.Report.IReportStockInController ReportStockInController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockInController reportStockInController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockInController ReportStockInController
         {
             get
             {
@@ -44,7 +46,7 @@ namespace AppFrameClient.View.Reports
         #region IReportStockInParamView Members
 
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockInEventArgs> CreateReportStockIn;
+        public event EventHandler<ReportStockInEventArgs> CreateReportStockIn;
 
         #endregion
 

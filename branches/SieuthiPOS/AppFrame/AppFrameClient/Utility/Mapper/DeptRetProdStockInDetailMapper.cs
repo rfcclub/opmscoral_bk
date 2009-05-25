@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Common;
-using AppFrame.Model;
 using AppFrame.Utility.Mapper;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Utility.Mapper;
 
-namespace AppFrameClient.Utility.Mapper
+namespace CoralPOS.Utility.Mapper
 {
     public class DeptRetProdStockInDetailMapper : BaseMapper<StockInDetail, DepartmentStockOutDetail>
     {

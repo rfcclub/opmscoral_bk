@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using AopAlliance.Intercept;
+using AppFrame.View;
 using CoralPOS.Interfaces.View;
 
 namespace CoralPOS.Advice

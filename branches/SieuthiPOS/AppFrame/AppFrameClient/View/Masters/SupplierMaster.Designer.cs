@@ -1,4 +1,4 @@
-﻿namespace AppFrame.Presenter.GoodsIO
+﻿namespace CoralPOS.Interfaces.Presenter.GoodsIO
 {
     partial class SupplierInput
     {

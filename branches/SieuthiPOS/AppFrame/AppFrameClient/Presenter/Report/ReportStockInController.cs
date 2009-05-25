@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Presenter.Report;
 
-namespace AppFrameClient.Presenter.Report
+namespace CoralPOS.Presenter.Report
 {
     public class ReportStockInController : IReportStockInController
     {
         #region IReportStockInController Members
 
-        private AppFrame.View.Reports.IDepartmentStockInReportView departmentStockInReportView;
-        public AppFrame.View.Reports.IDepartmentStockInReportView DepartmentStockInReportView
+        private CoralPOS.Interfaces.View.Reports.IDepartmentStockInReportView departmentStockInReportView;
+        public CoralPOS.Interfaces.View.Reports.IDepartmentStockInReportView DepartmentStockInReportView
         {
             get
             {
@@ -48,9 +49,9 @@ namespace AppFrameClient.Presenter.Report
 
         }
 
-        private AppFrame.View.Reports.IReportStockInParamView reportStockInParamView;
+        private CoralPOS.Interfaces.View.Reports.IReportStockInParamView reportStockInParamView;
 
-        public AppFrame.View.Reports.IReportStockInParamView ReportStockInParamView
+        public CoralPOS.Interfaces.View.Reports.IReportStockInParamView ReportStockInParamView
         {
             get
             {
@@ -68,8 +69,8 @@ namespace AppFrameClient.Presenter.Report
             
         }
 
-        private AppFrame.View.Reports.IReportStockInView reportStockInView;
-        public AppFrame.View.Reports.IReportStockInView ReportStockInView
+        private CoralPOS.Interfaces.View.Reports.IReportStockInView reportStockInView;
+        public CoralPOS.Interfaces.View.Reports.IReportStockInView ReportStockInView
         {
             get
             {
@@ -94,37 +95,37 @@ namespace AppFrameClient.Presenter.Report
 
         }
 
-        public AppFrame.Logic.IStockLogic StockLogic
+        public IStockLogic StockLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockInLogic StockInLogic
+        public IStockInLogic StockInLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IStockInDetailLogic StockInDetailLogic
+        public IStockInDetailLogic StockInDetailLogic
         {
             get;set;
         }
-        public AppFrame.Logic.IDepartmentStockInLogic DepartmentStockInLogic
+        public IDepartmentStockInLogic DepartmentStockInLogic
         {
             get;
             set;
 
         }
 
-        public AppFrame.Logic.IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
+        public IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
         {
             get;
             set;
 
         }
 
-        public AppFrame.Logic.IDepartmentLogic DepartmentLogic
+        public IDepartmentLogic DepartmentLogic
         {
             get;
             set;

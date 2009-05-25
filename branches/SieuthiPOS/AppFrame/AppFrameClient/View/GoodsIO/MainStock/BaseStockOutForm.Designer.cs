@@ -1,4 +1,6 @@
-﻿namespace AppFrameClient.View.GoodsIO.MainStock
+﻿using CoralPOS.ViewModel;
+
+namespace CoralPOS.View.GoodsIO.MainStock
 {
     partial class BaseStockOutForm
     {
@@ -239,7 +241,7 @@
             // 
             // bdsProductMasters
             // 
-            this.bdsProductMasters.DataSource = typeof(AppFrameClient.ViewModel.StockViewCollection);
+            this.bdsProductMasters.DataSource = typeof(StockViewCollection);
             // 
             // btnLoadBarcode
             // 

@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.SalePoints
+﻿namespace CoralPOS.View.SalePoints
 {
     partial class EmployeeListForm
     {
@@ -215,7 +215,7 @@
             // 
             // bdsEmployee
             // 
-            this.bdsEmployee.DataSource = typeof(AppFrame.Collection.EmployeeInfoCollection);
+            this.bdsEmployee.DataSource = typeof(CoralPOS.Interfaces.Collection.EmployeeInfoCollection);
             // 
             // button1
             // 

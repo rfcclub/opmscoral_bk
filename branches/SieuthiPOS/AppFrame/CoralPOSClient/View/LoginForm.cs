@@ -1,11 +1,13 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Common;
+using CoralPOS.Interfaces.View;
 using Spring.Context;
 using Spring.Context.Support;
 

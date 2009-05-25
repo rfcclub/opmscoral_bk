@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Logic;
+using CoralPOS.Interfaces.Logic;
 using ClientManagementTool.View.Management;
 
 namespace ClientManagementTool.Logic

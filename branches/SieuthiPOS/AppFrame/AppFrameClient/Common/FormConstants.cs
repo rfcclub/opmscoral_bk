@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AppFrameClient.Common
+namespace CoralPOS.Common
 {
     public sealed class FormConstants
     {

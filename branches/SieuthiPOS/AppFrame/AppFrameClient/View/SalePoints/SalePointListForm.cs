@@ -7,12 +7,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.SalePoints;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View.SalePoints;
 
-namespace AppFrameClient.View.SalePoints
+namespace CoralPOS.View.SalePoints
 {
     public partial class SalePointListForm : BaseForm,ISalePointListView
     {
@@ -30,7 +32,7 @@ namespace AppFrameClient.View.SalePoints
         #region ISalePointListView Members
 
         private ISalePointListController salePointListController;
-        public AppFrame.Presenter.SalePoints.ISalePointListController SalePointListController
+        public CoralPOS.Interfaces.Presenter.SalePoints.ISalePointListController SalePointListController
         {
             get
             {
@@ -77,20 +79,20 @@ namespace AppFrameClient.View.SalePoints
             bdsSalePointList.DataSource = e.DepartmentList;
         }
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> HelpEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> HelpEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> CheckAllEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> CheckAllEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> UncheckAllEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> UncheckAllEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> AddSalePointEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> AddSalePointEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> EditSalePointEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> EditSalePointEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> DeleteSalePointEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> DeleteSalePointEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> CloseSalePointListFormEvent;
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> LoadDepartmentsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> CloseSalePointListFormEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SalePoints.SalePointListEventArgs> LoadDepartmentsEvent;
 
         #endregion
 

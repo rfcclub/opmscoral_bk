@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.ViewModel;
 
@@ -19,7 +20,7 @@ namespace CoralPOS.Presenter.GoodsSale
         #region IGoodsSaleListController Members
 
         private IGoodsSaleListView goodsSaleListView;
-        public AppFrame.View.GoodsSale.IGoodsSaleListView GoodsSaleListView
+        public CoralPOS.Interfaces.View.GoodsSale.IGoodsSaleListView GoodsSaleListView
         {
             get
             {
@@ -51,22 +52,22 @@ namespace CoralPOS.Presenter.GoodsSale
             EventUtility.fireEvent(CompletedGoodsSaleListSearchEvent, this, goodsSaleListEventArgs);
         }
 
-        public Logic.IPurchaseOrderLogic PurchaseOrderLogic
+        public IPurchaseOrderLogic PurchaseOrderLogic
         {
             get;set;
         }
 
-        public Logic.IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
+        public IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
         {
             get;set;
         }
 
-        public Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
         }
 
-        public AppFrame.Collection.PurchaseOrderCollection PurchaseOrders
+        public PurchaseOrderCollection PurchaseOrders
         {
             get;set;
         }

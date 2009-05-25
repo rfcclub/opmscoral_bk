@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
@@ -15,9 +16,9 @@ namespace CoralPOS.Presenter.GoodsIO
     {
         #region IProductMasterSearchDepartmentController Members
 
-        private AppFrame.View.GoodsIO.IProductMasterSearchDepartmentView productMasterSearchDepartmentView;
+        private CoralPOS.Interfaces.View.GoodsIO.IProductMasterSearchDepartmentView productMasterSearchDepartmentView;
         
-        public AppFrame.View.GoodsIO.IProductMasterSearchDepartmentView ProductMasterSearchDepartmentView
+        public CoralPOS.Interfaces.View.GoodsIO.IProductMasterSearchDepartmentView ProductMasterSearchDepartmentView
         {
             get
             {
@@ -137,55 +138,55 @@ namespace CoralPOS.Presenter.GoodsIO
             e.DistributorList.Insert(0, new Distributor());
         }
 
-        public Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
             
         }
 
-        public Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;
             set;
 
         }
 
-        public Logic.ICountryLogic CountryLogic
+        public ICountryLogic CountryLogic
         {
             get;set;
             
         }
 
-        public Logic.IProductColorLogic ProductColorLogic
+        public IProductColorLogic ProductColorLogic
         {
             get;set;
             
         }
 
-        public Logic.IProductTypeLogic ProductTypeLogic
+        public IProductTypeLogic ProductTypeLogic
         {
             get;set;
             
         }
 
-        public Logic.IProductSizeLogic ProductSizeLogic
+        public IProductSizeLogic ProductSizeLogic
         {
             get;set;
         }
 
-        public Logic.IManufacturerLogic ManufacturerLogic
-        {
-            get;set;
-            
-        }
-
-        public Logic.IDistributorLogic DistributorLogic
+        public IManufacturerLogic ManufacturerLogic
         {
             get;set;
             
         }
 
-        public Logic.IPackagerLogic PackagerLogic
+        public IDistributorLogic DistributorLogic
+        {
+            get;set;
+            
+        }
+
+        public IPackagerLogic PackagerLogic
         {
             get;set;
             

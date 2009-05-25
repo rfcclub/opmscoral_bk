@@ -5,11 +5,13 @@ using System.ComponentModel;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
+using AppFrame.Common;
+using AppFrame.Exceptions;
 using CoralPOS.Interfaces.Common;
-using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 
 namespace CoralPOS.Presenter.GoodsSale
@@ -19,7 +21,7 @@ namespace CoralPOS.Presenter.GoodsSale
 
         #region IGoodsSaleController Members
         private IGoodsSaleView goodsSaleView;
-        public AppFrame.View.GoodsSale.IGoodsSaleView GoodsSaleView
+        public CoralPOS.Interfaces.View.GoodsSale.IGoodsSaleView GoodsSaleView
         {
             get
             {
@@ -248,24 +250,24 @@ namespace CoralPOS.Presenter.GoodsSale
         #region IGoodsSaleController Members
 
 
-        public Logic.IPurchaseOrderLogic PurchaseOrderLogic
+        public IPurchaseOrderLogic PurchaseOrderLogic
         {
             get;
             set;
         }
 
-        public Logic.IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
+        public IPurchaseOrderDetailLogic PurchaseOrderDetailLogic
         {
             get;
             set;
         }
 
-        public Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get; set;
 
         }
-        public Logic.IDepartmentPriceLogic DepartmentPriceLogic
+        public IDepartmentPriceLogic DepartmentPriceLogic
         {
             get; set;
         }
@@ -275,7 +277,7 @@ namespace CoralPOS.Presenter.GoodsSale
         #region IGoodsSaleController Members
 
 
-        public AppFrame.Model.PurchaseOrder PurchaseOrder
+        public CoralPOS.Interfaces.Model.PurchaseOrder PurchaseOrder
         {
             get;set;
         }
@@ -295,7 +297,7 @@ namespace CoralPOS.Presenter.GoodsSale
         #region IGoodsSaleController Members
 
 
-        public Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;set;
         }
@@ -323,7 +325,7 @@ namespace CoralPOS.Presenter.GoodsSale
         #region IGoodsSaleController Members
 
 
-        public Logic.IDepartmentStockLogic DepartmentStockLogic
+        public IDepartmentStockLogic DepartmentStockLogic
         {
             get;set;
         }

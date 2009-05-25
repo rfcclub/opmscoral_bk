@@ -95,7 +95,7 @@
             // 
             // stockBindingSource
             // 
-            this.stockBindingSource.DataSource = typeof(AppFrame.Model.Stock);
+            this.stockBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Stock);
             // 
             // btnSearch
             // 

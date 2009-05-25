@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using AppFrame;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.DataLayer;
 using CoralPOS.Interfaces.Utility;
 using NHibernate;
 using NHibernate.Criterion;

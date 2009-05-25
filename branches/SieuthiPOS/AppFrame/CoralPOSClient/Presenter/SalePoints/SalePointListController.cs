@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.SalePoints;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 using CoralPOS.Common;
 using CoralPOS.View.SalePoints;
@@ -22,7 +22,7 @@ namespace CoralPOS.Presenter.SalePoints
         #region ISalePointListController Members
 
         private ISalePointListView salePointListView;
-        public AppFrame.View.SalePoints.ISalePointListView SalePointListView
+        public CoralPOS.Interfaces.View.SalePoints.ISalePointListView SalePointListView
         {
             get
             {
@@ -153,7 +153,7 @@ namespace CoralPOS.Presenter.SalePoints
         #region ISalePointListController Members
 
         private IList<Department> departmentList;
-        public IList<AppFrame.Model.Department> DepartmentList
+        public IList<CoralPOS.Interfaces.Model.Department> DepartmentList
         {
             get
             {
@@ -170,7 +170,7 @@ namespace CoralPOS.Presenter.SalePoints
         #region ISalePointListController Members
 
         private IDepartmentLogic departmentLogic;
-        public Logic.IDepartmentLogic DepartmentLogic
+        public IDepartmentLogic DepartmentLogic
         {
             get
             {

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Collection;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Collection;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrameClient.ViewModel
+namespace CoralPOS.ViewModel
 {
     public class DepartmentStockDefectCollection : BaseCollection<DepartmentStockHistory>
     {

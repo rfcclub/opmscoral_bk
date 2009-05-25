@@ -8,15 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.Report;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.Reports;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.Reports;
 //using Aspose.Cells;
 
-namespace AppFrameClient.View.Reports
+namespace CoralPOS.View.Reports
 {
     public partial class RemainStockReport : BaseForm, IStockSearchView
     {

@@ -8,12 +8,13 @@ using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 
-namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentPriceUpdateForm : BaseForm, IDepartmentPriceUpdateView
     {

@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO
+﻿namespace CoralPOS.View.GoodsIO
 {
     partial class ProductMasterSearchOrCreateForm
     {
@@ -57,7 +57,7 @@
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productMasterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productMasterSearchControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterSearchControl = new ProductMasterSearchControl();
             this.productMasterTabControl.SuspendLayout();
             this.productMasterSearchTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductMaster)).BeginInit();
@@ -310,7 +310,7 @@
             // 
             // productMasterBindingSource
             // 
-            this.productMasterBindingSource.DataSource = typeof(AppFrame.Model.ProductMaster);
+            this.productMasterBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductMaster);
             // 
             // productMasterSearchControl
             // 

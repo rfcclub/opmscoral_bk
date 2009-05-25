@@ -6,21 +6,22 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.Utility;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Utility;
 using Microsoft.ReportingServices.Diagnostics.Utilities;
 using NHibernate.Criterion;
 
-namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockInController : IDepartmentStockInController
     {

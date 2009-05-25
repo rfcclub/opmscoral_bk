@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.Report;
 using CoralPOS.Interfaces.Presenter.SalePoints;
@@ -18,19 +19,19 @@ namespace CoralPOS.Presenter.Report
         #region IReportStockOutController Members
 
 
-        public Logic.IDepartmentStockInLogic DepartmentStockInLogic
+        public IDepartmentStockInLogic DepartmentStockInLogic
         {
             get;set;
             
         }
 
-        public Logic.IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
+        public IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
         {
             get;set;
             
         }
 
-        public Logic.IDepartmentLogic DepartmentLogic
+        public IDepartmentLogic DepartmentLogic
         {
             get;set;
             
@@ -40,8 +41,8 @@ namespace CoralPOS.Presenter.Report
 
         #region IReportStockOutController Members
 
-        private AppFrame.View.Reports.IStockOutReportView mainStockOutReportView;
-        public AppFrame.View.Reports.IStockOutReportView MainStockOutReportView
+        private CoralPOS.Interfaces.View.Reports.IStockOutReportView mainStockOutReportView;
+        public CoralPOS.Interfaces.View.Reports.IStockOutReportView MainStockOutReportView
         {
             get
             {
@@ -75,23 +76,23 @@ namespace CoralPOS.Presenter.Report
             }
         }
 
-        public Logic.IDepartmentStockOutLogic DepartmentStockOutLogic
+        public IDepartmentStockOutLogic DepartmentStockOutLogic
         {
             get;set;
         }
 
-        public Logic.IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
+        public IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
         {
             get;set;
         }
 
-        public Logic.IStockOutLogic StockOutLogic
+        public IStockOutLogic StockOutLogic
         {
             get;set;
             
         }
 
-        public Logic.IStockOutDetailLogic StockOutDetailLogic
+        public IStockOutDetailLogic StockOutDetailLogic
         {
             get;set;
         }
@@ -100,8 +101,8 @@ namespace CoralPOS.Presenter.Report
 
         #region IReportStockOutController Members
 
-        AppFrame.View.GoodsIO.IDepartmentStockOutReportView departmentStockOutReportView;
-        public AppFrame.View.GoodsIO.IDepartmentStockOutReportView DepartmentStockOutReportView
+        CoralPOS.Interfaces.View.GoodsIO.IDepartmentStockOutReportView departmentStockOutReportView;
+        public CoralPOS.Interfaces.View.GoodsIO.IDepartmentStockOutReportView DepartmentStockOutReportView
         {
             get
             {
@@ -219,12 +220,12 @@ namespace CoralPOS.Presenter.Report
         #region IReportStockOutController Members
 
 
-        public Logic.IStockLogic StockLogic
+        public IStockLogic StockLogic
         {
             get;set;
             
         }
-        public Logic.IStockInLogic StockInLogic
+        public IStockInLogic StockInLogic
         {
             get;
             set;

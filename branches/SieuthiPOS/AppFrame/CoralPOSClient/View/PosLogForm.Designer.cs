@@ -222,7 +222,7 @@
             // 
             // posLogBindingSource
             // 
-            this.posLogBindingSource.DataSource = typeof(AppFrame.Model.PosLog);
+            this.posLogBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.PosLog);
             // 
             // chkImportDateTo
             // 

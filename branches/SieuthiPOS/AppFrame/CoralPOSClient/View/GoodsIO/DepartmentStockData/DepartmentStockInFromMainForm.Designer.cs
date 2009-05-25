@@ -475,7 +475,7 @@
             // 
             // bdsStockIn
             // 
-            this.bdsStockIn.DataSource = typeof(AppFrame.Collection.DepartmentStockInDetailCollection);
+            this.bdsStockIn.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockInDetailCollection);
             // 
             // cbbDept
             // 
@@ -489,7 +489,7 @@
             // 
             // bdsDept
             // 
-            this.bdsDept.DataSource = typeof(AppFrame.Model.Department);
+            this.bdsDept.DataSource = typeof(CoralPOS.Interfaces.Model.Department);
             // 
             // label1
             // 
@@ -535,11 +535,11 @@
             // 
             // colorBindingSource
             // 
-            this.colorBindingSource.DataSource = typeof(AppFrame.Model.ProductColor);
+            this.colorBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductColor);
             // 
             // sizeBindingSource
             // 
-            this.sizeBindingSource.DataSource = typeof(AppFrame.Model.ProductSize);
+            this.sizeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductSize);
             // 
             // lstSize
             // 

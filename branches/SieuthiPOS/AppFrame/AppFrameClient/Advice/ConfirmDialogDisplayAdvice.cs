@@ -1,8 +1,9 @@
 ﻿using System.Windows.Forms;
 using AopAlliance.Intercept;
 using AppFrame.Utility;
+using AppFrame.Utility;
 
-namespace AppFrame.Advice
+namespace CoralPOS.Advice
 {
     public class ConfirmDialogDisplayAdvice : IMethodInterceptor
     {

@@ -3,16 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AppFrame.Presenter;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Presenter;
+using CoralPOS.Interfaces.View;
 
-namespace AppFrameClient.Presenter
+namespace CoralPOS.Presenter
 {
     public class SecurityController : ISecurityController
     {
         #region ISecurityController Members
 
-        private AppFrame.View.ISecurityView securityView;
-        public AppFrame.View.ISecurityView SecurityView
+        private ISecurityView securityView;
+        public ISecurityView SecurityView
         {
             get
             {
@@ -42,12 +44,12 @@ namespace AppFrameClient.Presenter
 
         }
 
-        public AppFrame.Logic.ILoginLogic LoginLogic
+        public ILoginLogic LoginLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IEmployeeDetailLogic EmployeeInfoLogic
+        public IEmployeeDetailLogic EmployeeInfoLogic
         {
             get; set;
         }
@@ -57,7 +59,7 @@ namespace AppFrameClient.Presenter
         #region ISecurityController Members
 
 
-        public AppFrame.Logic.IDepartmentLogic DepartmentLogic
+        public IDepartmentLogic DepartmentLogic
         {
             get;set;
         }

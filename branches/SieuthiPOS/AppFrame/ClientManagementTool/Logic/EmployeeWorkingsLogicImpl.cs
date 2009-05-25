@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Logic;
-using AppFrame.Model;
 using AppFrame.Utility;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Utility;
 using ClientManagementTool.View.Management;
 
 namespace ClientManagementTool.Logic

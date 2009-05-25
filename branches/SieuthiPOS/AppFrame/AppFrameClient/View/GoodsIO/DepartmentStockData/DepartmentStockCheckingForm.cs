@@ -6,15 +6,17 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
-using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockCheckingForm : AppFrame.Common.BaseForm, IDepartmentStockCheckingView
     {
@@ -27,14 +29,14 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
 
         #region IDepartmentStockCheckingView Members
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> FillProductMasterToComboEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> FillProductMasterToComboEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> LoadGoodsByProductIdEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> LoadGoodsByProductIdEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> SaveInventoryCheckingEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs> SaveInventoryCheckingEvent;
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IDepartmentStockCheckingController departmentStockCheckingController;        
-        public AppFrame.Presenter.GoodsIO.MainStock.IDepartmentStockCheckingController DepartmentStockCheckingController
+        private  IDepartmentStockCheckingController departmentStockCheckingController;        
+        public  IDepartmentStockCheckingController DepartmentStockCheckingController
         {
             get
             {

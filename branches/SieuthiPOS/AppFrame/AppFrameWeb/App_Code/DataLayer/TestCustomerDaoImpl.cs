@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using AppFrame.DataLayer;
+using CoralPOS.DataLayer;
 using CoralPOS.Interfaces.DataLayer;
 using CoralPOS.Interfaces.Model;
 using NHibernate;
@@ -17,7 +17,7 @@ using Spring.Data.NHibernate.Support;
 /// <summary>
 /// Summary description for CustomerDaoImpl
 /// </summary>
-namespace AppFrame.DataLayer
+namespace CoralPOS.DataLayer
 {
 public class TestCustomerDaoImpl :HibernateDaoSupport,ITestCustomerDao
 {

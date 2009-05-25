@@ -5,14 +5,15 @@ using System.Web;
 using AopAlliance.Intercept;
 using AppFrame.Common;
 using System.Windows.Forms;
-using AppFrame.Logic;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Logic;
 using System.Collections;
 using System.Runtime.Remoting;
 using System.IO;
 using AppFrame.Utility;
 using Common.Logging;
 
-namespace AppFrame.Advice
+namespace CoralPOS.Advice
 {
     public class LogicAuthorizationAdvice : IMethodInterceptor
     {

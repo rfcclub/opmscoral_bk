@@ -215,7 +215,7 @@
             // 
             // bdsEmployee
             // 
-            this.bdsEmployee.DataSource = typeof(AppFrame.Collection.EmployeeInfoCollection);
+            this.bdsEmployee.DataSource = typeof(CoralPOS.Interfaces.Collection.EmployeeInfoCollection);
             // 
             // button1
             // 

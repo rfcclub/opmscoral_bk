@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Presenter;
+using AppFrame.Utility;
 using CoralPOS.Common;
 using CoralPOS.View;
 

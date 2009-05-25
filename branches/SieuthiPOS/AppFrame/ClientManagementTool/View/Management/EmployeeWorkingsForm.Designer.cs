@@ -1,4 +1,6 @@
-﻿namespace ClientManagementTool.View.Management
+﻿using CoralPOS.Interfaces.Collection;
+
+namespace ClientManagementTool.View.Management
 {
     partial class EmployeeWorkingsForm
     {
@@ -128,7 +130,7 @@
             // 
             // bdsEmployeeWorking
             // 
-            this.bdsEmployeeWorking.DataSource = typeof(AppFrame.Collection.EmployeeWorkingDaysCollection);
+            this.bdsEmployeeWorking.DataSource = typeof(EmployeeWorkingDaysCollection);
             // 
             // btnClose
             // 

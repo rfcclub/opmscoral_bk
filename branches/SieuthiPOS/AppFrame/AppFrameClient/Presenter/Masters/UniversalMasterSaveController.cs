@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.Masters;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.Masters;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.Masters;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.Masters;
 
-namespace AppFrameClient.Presenter.Masters
+namespace CoralPOS.Presenter.Masters
 {
     public class UniversalMasterSaveController : IUniversalMasterSaveController
     {

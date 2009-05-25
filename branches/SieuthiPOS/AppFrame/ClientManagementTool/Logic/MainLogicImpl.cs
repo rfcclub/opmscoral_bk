@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame;
-using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrameClient.Logic;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Logic;
 
 namespace ClientManagementTool.Logic
 {
@@ -71,22 +71,22 @@ namespace ClientManagementTool.Logic
         #region IMainLogic Members
 
 
-        public AppFrame.Logic.IEmployeeWorkingDayLogic EmployeeWorkingDayLogic
+        public IEmployeeWorkingDayLogic EmployeeWorkingDayLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IEmployeeDetailLogic EmployeeInfoLogic
+        public IEmployeeDetailLogic EmployeeInfoLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IEmployeeLogic EmployeeLogic
+        public IEmployeeLogic EmployeeLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IDepartmentTimelineLogic DepartmentTimelineLogic
+        public IDepartmentTimelineLogic DepartmentTimelineLogic
         {
             get;set;
         }
@@ -97,7 +97,7 @@ namespace ClientManagementTool.Logic
         #region IMainLogic Members
 
 
-        public AppFrame.Logic.IDepartmentManagementLogic DepartmentManagementLogic
+        public IDepartmentManagementLogic DepartmentManagementLogic
         {
             get;set;
         }

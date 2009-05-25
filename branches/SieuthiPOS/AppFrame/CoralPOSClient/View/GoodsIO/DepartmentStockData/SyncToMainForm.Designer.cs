@@ -64,7 +64,7 @@
             // 
             // syncResultBindingSource
             // 
-            this.syncResultBindingSource.DataSource = typeof(AppFrame.Model.SyncResult);
+            this.syncResultBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.SyncResult);
             // 
             // label1
             // 

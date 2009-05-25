@@ -1,4 +1,4 @@
-namespace AppFrame.DataLayer
+namespace CoralPOS.DataLayer
 {
     internal class Dummy
     {

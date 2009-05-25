@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using AppFrame;
+using AppFrame.Common;
+using AppFrame.Exceptions;
 using CoralPOS.Interfaces.Common;
-using CoralPOS.Interfaces.Exceptions;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
@@ -97,33 +98,33 @@ namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
         }
 
 
-        public Logic.IDepartmentStockLogic DepartmentStockLogic
+        public IDepartmentStockLogic DepartmentStockLogic
         {
             get;
             set;
         }
 
-        public Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;
             set;
         }
 
-        public Logic.IProductMasterLogic ProductMasterLogic
-        {
-            get;
-            set;
-
-        }
-
-        public Logic.IDepartmentStockInLogic DepartmentStockInLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;
             set;
 
         }
 
-        public Logic.IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
+        public IDepartmentStockInLogic DepartmentStockInLogic
+        {
+            get;
+            set;
+
+        }
+
+        public IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
         {
             get;
             set;
@@ -135,14 +136,14 @@ namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
         #region IInventoryCheckingController Members
 
 
-        public Logic.IDepartmentStockOutLogic DepartmentStockOutLogic
+        public IDepartmentStockOutLogic DepartmentStockOutLogic
         {
             get;
             set;
 
         }
 
-        public Logic.IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
+        public IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
         {
             get;
             set;

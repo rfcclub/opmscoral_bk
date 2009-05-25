@@ -7,16 +7,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
-using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.MainStock;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View.GoodsIO.MainStock;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsIO.MainStock
+namespace CoralPOS.View.GoodsIO.MainStock
 {
     public partial class ProcessErrorGoodsForm : BaseForm,IProcessErrorGoodsView
     {
@@ -42,8 +43,8 @@ namespace AppFrameClient.View.GoodsIO.MainStock
 
         #region IProcessErrorGoodsView Members
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController processErrorGoodsController;
-        public AppFrame.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController ProcessErrorGoodsController
+        private  CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController processErrorGoodsController;
+        public  CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IProcessErrorGoodsController ProcessErrorGoodsController
         {
             get
             {
@@ -56,9 +57,9 @@ namespace AppFrameClient.View.GoodsIO.MainStock
             }
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.ProcessErrorGoodsEventArgs> LoadAllStockDefects;
+        public event EventHandler<ProcessErrorGoodsEventArgs> LoadAllStockDefects;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.ProcessErrorGoodsEventArgs> SaveStockDefects;
+        public event EventHandler<ProcessErrorGoodsEventArgs> SaveStockDefects;
 
         #endregion
 

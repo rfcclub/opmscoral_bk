@@ -6,14 +6,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
-using AppFrame.Model;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Collection;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.Report;
 using AppFrame.Utility;
-using AppFrame.View.Reports;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.Reports;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.Reports
+namespace CoralPOS.View.Reports
 {
     public partial class MainStockOutReportForm : AppFrame.Common.BaseForm,IStockOutReportView
     {
@@ -89,8 +89,8 @@ namespace AppFrameClient.View.Reports
 
         #region IStockOutReportView Members
 
-        private AppFrame.Presenter.Report.IReportStockOutController reportStockOutController;
-        public AppFrame.Presenter.Report.IReportStockOutController ReportStockOutController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockOutController reportStockOutController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockOutController ReportStockOutController
         {
             get
             {
@@ -103,9 +103,9 @@ namespace AppFrameClient.View.Reports
             }
         }
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> LoadStockOutsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> LoadStockOutsEvent;
 
-        public event EventHandler<AppFrame.Presenter.Report.ReportStockOutEventArgs> LoadStockOutDetailEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.Report.ReportStockOutEventArgs> LoadStockOutDetailEvent;
 
         #endregion
 

@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
-using AppFrame.View;
+using CoralPOS.Interfaces.View;
 
 namespace AppFrame.Presenter
 {

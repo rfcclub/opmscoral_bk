@@ -6,13 +6,13 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO;
 using AppFrame.Utility;
-using AppFrameClient.Common;
+using CoralPOS.Common;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class GoodsIOSearchForm : Form, IGoodsIOSearchView
     {

@@ -6,10 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
 using AppFrame.Utility;
+using CoralPOS.Interfaces.Collection;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Utility;
 using ClientManagementTool.Logic;
 using ClientManagementTool.Model;
 

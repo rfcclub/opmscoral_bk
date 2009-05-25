@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Common;
 
 namespace CoralPOS.View.GoodsIO

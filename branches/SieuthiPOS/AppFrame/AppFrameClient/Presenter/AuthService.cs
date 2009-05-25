@@ -4,8 +4,10 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
 using AppFrame.Utility;
-using AppFrameClient.Common;
-using AppFrameClient.View;
+using CoralPOS.Interfaces.Presenter;
+using AppFrame.Utility;
+using CoralPOS.Common;
+using CoralPOS.View;
 
 namespace AppFrame.Presenter
 {

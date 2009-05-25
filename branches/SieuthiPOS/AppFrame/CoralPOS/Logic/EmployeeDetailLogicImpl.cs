@@ -1,7 +1,10 @@
 using System;
 using System.Collections;
 using AppFrame;
+using AppFrame.Common;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Utility;
 using Spring.Transaction.Interceptor;
 using CoralPOS.Interfaces.Model;

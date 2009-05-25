@@ -6,11 +6,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.SalePoints;
-using CoralPOS.Interfaces.Utility;
-using CoralPOS.Interfaces.Utility.Mapper;
+using AppFrame.Utility;
+using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.View.SalePoints;
 
 namespace CoralPOS.View.SalePoints

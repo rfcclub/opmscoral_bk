@@ -7,15 +7,15 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.SalePoints;
+using CoralPOS.Interfaces.View.SalePoints;
 using BarcodeLib;
 
-namespace AppFrameClient.View.SalePoints
+namespace CoralPOS.View.SalePoints
 {
     public partial class EmployeeListForm : BaseForm,IEmployeeListView
     {

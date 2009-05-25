@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     public partial class PosLogDetailForm : Form
     {

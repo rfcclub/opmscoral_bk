@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     partial class ProductMasterSearchDepartmentForm
     {
@@ -58,7 +58,7 @@
             this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delFlgDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productMasterSearchControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterSearchControl = new ProductMasterSearchControl();
             this.productMasterIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productColorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,7 +86,7 @@
             // 
             // productMasterBindingSource
             // 
-            this.productMasterBindingSource.DataSource = typeof(AppFrame.Model.ProductMaster);
+            this.productMasterBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductMaster);
             // 
             // btnClose
             // 
@@ -270,7 +270,7 @@
             // 
             // deptStockBindingSource
             // 
-            this.deptStockBindingSource.DataSource = typeof(AppFrame.Collection.DepartmentStockCollection);
+            this.deptStockBindingSource.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockCollection);
             // 
             // ProductMaster
             // 

@@ -4,17 +4,18 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using NHibernate.Criterion;
 
-namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockSearchController : IDepartmentStockSearchController
     {

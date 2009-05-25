@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using FontFamily=System.Drawing.FontFamily;
 
-namespace AppFrameClient.Common
+namespace CoralPOS.Common
 {
     public class Code39Settings
     {

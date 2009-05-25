@@ -5,12 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Model;
-using AppFrame.Presenter.Masters;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.Masters;
 using AppFrame.Utility;
-using AppFrame.View.Masters;
+using CoralPOS.Interfaces.View.Masters;
 
-namespace AppFrameClient.View.Masters
+namespace CoralPOS.View.Masters
 {
     public partial class UniversalMasterCreateForm : Form, IUniversalMasterSaveView
     {

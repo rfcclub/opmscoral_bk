@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AppFrameClient.View.Inventory
+namespace CoralPOS.View.Inventory
 {
     public partial class GoodsStatus : Form
     {

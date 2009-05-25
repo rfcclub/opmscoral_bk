@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient
+﻿namespace CoralPOS
 {
     partial class SplashScreen
     {
@@ -38,8 +38,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AppFrameClient.Properties.Resources.SplashScreen;
-            this.pictureBox1.InitialImage = global::AppFrameClient.Properties.Resources.SplashScreen;
+            this.pictureBox1.Image = global::CoralPOS.Properties.Resources.SplashScreen;
+            this.pictureBox1.InitialImage = global::CoralPOS.Properties.Resources.SplashScreen;
             this.pictureBox1.Location = new System.Drawing.Point(18, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 314);

@@ -8,10 +8,11 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.ViewModel;
 
@@ -71,7 +72,7 @@ namespace CoralPOS.View.GoodsSale
         #region IMonthGoodsSaleListView Members
 
         private IGoodsSaleListController goodsSaleListController;
-        public AppFrame.Presenter.GoodsSale.IGoodsSaleListController GoodsSaleListController
+        public CoralPOS.Interfaces.Presenter.GoodsSale.IGoodsSaleListController GoodsSaleListController
         {
             get
             {
@@ -105,11 +106,11 @@ namespace CoralPOS.View.GoodsSale
             txtRetQty.Text = retQty.ToString();
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> GoodsSaleListSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> GoodsSaleListSearchEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> ExportToExcelEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> ExportToExcelEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> PrintGoodsSaleEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> PrintGoodsSaleEvent;
 
         #endregion
 

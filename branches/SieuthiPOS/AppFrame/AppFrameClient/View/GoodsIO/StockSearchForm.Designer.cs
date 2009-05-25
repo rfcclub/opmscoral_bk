@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO
+﻿namespace CoralPOS.View.GoodsIO
 {
     partial class StockSearchForm
     {
@@ -53,7 +53,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.btnExcel = new System.Windows.Forms.Button();
-            this.productMasterControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterControl = new ProductMasterSearchControl();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSumQty = new System.Windows.Forms.TextBox();
@@ -220,7 +220,7 @@
             // 
             // stockBindingSource
             // 
-            this.stockBindingSource.DataSource = typeof(AppFrame.Model.Stock);
+            this.stockBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Stock);
             // 
             // btnSearch
             // 

@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO
+﻿namespace CoralPOS.View.GoodsIO
 {
     partial class GoodsSendback
     {

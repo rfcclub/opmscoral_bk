@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class Goods : Form
     {

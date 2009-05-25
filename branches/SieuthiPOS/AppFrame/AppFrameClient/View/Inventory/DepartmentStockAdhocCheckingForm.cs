@@ -6,19 +6,19 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.Inventory;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.Inventory;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrame.View.Inventory;
-using AppFrameClient.Common;
-using AppFrameClient.View.GoodsIO.DepartmentStockData;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.View.Inventory;
+using CoralPOS.Common;
+using CoralPOS.View.GoodsIO.DepartmentStockData;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.Inventory
+namespace CoralPOS.View.Inventory
 {
     public partial class DepartmentStockAdhocCheckingForm : BaseForm, IDepartmentStockAdhocProcessingView
     {

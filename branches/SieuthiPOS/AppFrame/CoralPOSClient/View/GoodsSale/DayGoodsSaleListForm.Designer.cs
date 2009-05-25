@@ -80,7 +80,7 @@ namespace CoralPOS.View.GoodsSale
             // 
             // BindingSource
             // 
-            this.BindingSource.DataSource = typeof(AppFrame.Model.PurchaseOrder);
+            this.BindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.PurchaseOrder);
             // 
             // button2
             // 

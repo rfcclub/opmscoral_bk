@@ -14,8 +14,9 @@
     <property name="DbProvider" ref="DbProvider"/>
     <property name="MappingAssemblies">
       <list>
-          <value>AppFrame</value>
-          <value>AppFrameClient</value>
+          <value>CoralPOS</value>
+          <value>CoralPOS.Interfaces</value>
+          <value>CoralPOSClient</value>
 
       </list>
     </property>

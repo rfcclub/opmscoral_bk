@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppFrameClient {
+namespace CoralPOS {
     using System;
     
     

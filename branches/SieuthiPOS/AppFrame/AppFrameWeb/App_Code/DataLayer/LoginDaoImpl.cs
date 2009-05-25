@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web;
+using AppFrame;
 using CoralPOS.Interfaces.DataLayer;
 using CoralPOS.Interfaces.Model;
 using Spring.Data.NHibernate.Support;
@@ -10,7 +11,7 @@ using Spring.Data.NHibernate.Support;
 /// </summary>
 /// 
 
-namespace AppFrame.DataLayer
+namespace CoralPOS.DataLayer
 {
     public class LoginDaoImpl : HibernateDaoSupport, ILoginDao
     {

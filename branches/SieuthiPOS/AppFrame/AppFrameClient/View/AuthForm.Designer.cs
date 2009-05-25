@@ -1,4 +1,4 @@
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     partial class AuthForm
     {

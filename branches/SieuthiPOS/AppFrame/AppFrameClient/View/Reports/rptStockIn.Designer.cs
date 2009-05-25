@@ -1,4 +1,6 @@
-﻿namespace AppFrameClient.View.Reports
+﻿using CoralPOS.ViewModel;
+
+namespace CoralPOS.View.Reports
 {
     partial class frmStockinStatistic
     {
@@ -204,7 +206,7 @@
             // 
             // bdsStockInResultDetail
             // 
-            this.bdsStockInResultDetail.DataSource = typeof(AppFrame.Collection.StockInDetailCollection);
+            this.bdsStockInResultDetail.DataSource = typeof(CoralPOS.Interfaces.Collection.StockInDetailCollection);
             // 
             // label4
             // 
@@ -279,7 +281,7 @@
             // 
             // bdsStockInResultPM
             // 
-            this.bdsStockInResultPM.DataSource = typeof(AppFrameClient.ViewModel.StockInResultDetailCollection);
+            this.bdsStockInResultPM.DataSource = typeof(StockInResultDetailCollection);
             // 
             // id
             // 

@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrameClient.Common;
+using CoralPOS.Common;
 
-namespace AppFrameClient.View
+namespace CoralPOS.View
 {
     public partial class ClientServerSettingForm : Form
     {

@@ -9,14 +9,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using AppFrame.Common;
-using AppFrame.DataLayer;
-using AppFrame.Logic;
+using CoralPOS.DataLayer;
+using CoralPOS.Interfaces.DataLayer;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Logic;
 
 /// <summary>
 /// Summary description for CustomerLogic
 /// </summary>
 /// 
-namespace  AppFrame.Logic
+namespace  CoralPOS.Logic
 {  
 public class TestCustomerLogic : ITestCustomerLogic
 {
@@ -32,12 +35,12 @@ public class TestCustomerLogic : ITestCustomerLogic
     #region ICustomerLogic Members
 
 
-    public AppFrame.Model.CustomerModel GetCustomer(string customerName)
+    public CustomerModel GetCustomer(string customerName)
     {
         throw new Exception("The method or operation is not implemented.");
     }
 
-    public bool SaveCustomer(AppFrame.Model.CustomerModel customer)
+    public bool SaveCustomer(CustomerModel customer)
     {
         return CustomerDao.saveCustomer(customer);
     }
@@ -47,7 +50,7 @@ public class TestCustomerLogic : ITestCustomerLogic
         return CustomerDao.loadAllCustomers();
     }
 
-    public AppFrame.Model.CustomerModel LoadCustomer(int id)
+    public CustomerModel LoadCustomer(int id)
     {
         return CustomerDao.loadCustomer(id);
     }
@@ -62,7 +65,7 @@ public class TestCustomerLogic : ITestCustomerLogic
     #region ICustomerLogic Members
 
 
-    public bool UpdateCustomer(AppFrame.Model.CustomerModel customer)
+    public bool UpdateCustomer(CustomerModel customer)
     {
         return CustomerDao.updateCustomer(customer);
     }
@@ -72,7 +75,7 @@ public class TestCustomerLogic : ITestCustomerLogic
     #region ICustomerLogic Members
 
 
-    public bool DeleteCustomer(AppFrame.Model.CustomerModel customer)
+    public bool DeleteCustomer(CustomerModel customer)
     {
         return CustomerDao.deleteCustomer(customer);
     }

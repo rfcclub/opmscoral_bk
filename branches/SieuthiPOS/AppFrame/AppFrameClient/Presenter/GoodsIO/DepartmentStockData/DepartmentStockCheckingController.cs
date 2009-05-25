@@ -5,16 +5,17 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using NHibernate.Criterion;
 using ArrayList = System.Collections.ArrayList;
 
-namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockCheckingController : IDepartmentStockCheckingController
     {
@@ -97,33 +98,33 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
         }
 
 
-        public AppFrame.Logic.IDepartmentStockLogic DepartmentStockLogic
+        public IDepartmentStockLogic DepartmentStockLogic
         {
             get;
             set;
         }
 
-        public AppFrame.Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;
             set;
         }
 
-        public AppFrame.Logic.IProductMasterLogic ProductMasterLogic
-        {
-            get;
-            set;
-
-        }
-
-        public AppFrame.Logic.IDepartmentStockInLogic DepartmentStockInLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;
             set;
 
         }
 
-        public AppFrame.Logic.IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
+        public IDepartmentStockInLogic DepartmentStockInLogic
+        {
+            get;
+            set;
+
+        }
+
+        public IDepartmentStockInDetailLogic DepartmentStockInDetailLogic
         {
             get;
             set;
@@ -135,14 +136,14 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
         #region IInventoryCheckingController Members
 
 
-        public AppFrame.Logic.IDepartmentStockOutLogic DepartmentStockOutLogic
+        public IDepartmentStockOutLogic DepartmentStockOutLogic
         {
             get;
             set;
 
         }
 
-        public AppFrame.Logic.IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
+        public IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
         {
             get;
             set;

@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using AppFrame.Controls;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrameClient.ViewModel
+namespace CoralPOS.ViewModel
 {
     
     public class StockView

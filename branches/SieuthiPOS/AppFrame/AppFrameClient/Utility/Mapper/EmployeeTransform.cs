@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Model;
 using AppFrame.Utility.Mapper;
-using AppFrameClient.View.SalePoints;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Utility.Mapper;
+using CoralPOS.View.SalePoints;
 
-namespace AppFrameClient.Utility.Mapper
+namespace CoralPOS.Utility.Mapper
 {
     public class EmployeeTransform : FormTransform<EmployeeForm, EmployeeInfo>
     {

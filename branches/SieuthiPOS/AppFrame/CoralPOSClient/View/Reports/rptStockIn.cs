@@ -9,10 +9,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.Report;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Reports;
 //using Aspose.Cells;
 using CoralPOS.ViewModel;
@@ -33,8 +33,8 @@ namespace CoralPOS.View.Reports
        #region IReportStockInView Members
 
 
-        private AppFrame.Presenter.Report.IReportStockInController reportStockInController;
-        public AppFrame.Presenter.Report.IReportStockInController ReportStockInController
+        private CoralPOS.Interfaces.Presenter.Report.IReportStockInController reportStockInController;
+        public CoralPOS.Interfaces.Presenter.Report.IReportStockInController ReportStockInController
         {
             get
             {

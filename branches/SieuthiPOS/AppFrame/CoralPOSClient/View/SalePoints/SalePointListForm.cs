@@ -6,10 +6,10 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.SalePoints;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 
 namespace CoralPOS.View.SalePoints
@@ -30,7 +30,7 @@ namespace CoralPOS.View.SalePoints
         #region ISalePointListView Members
 
         private ISalePointListController salePointListController;
-        public AppFrame.Presenter.SalePoints.ISalePointListController SalePointListController
+        public ISalePointListController SalePointListController
         {
             get
             {
@@ -77,20 +77,20 @@ namespace CoralPOS.View.SalePoints
             bdsSalePointList.DataSource = e.DepartmentList;
         }
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> HelpEvent;
+        public event EventHandler<SalePointListEventArgs> HelpEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> CheckAllEvent;
+        public event EventHandler<SalePointListEventArgs> CheckAllEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> UncheckAllEvent;
+        public event EventHandler<SalePointListEventArgs> UncheckAllEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> AddSalePointEvent;
+        public event EventHandler<SalePointListEventArgs> AddSalePointEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> EditSalePointEvent;
+        public event EventHandler<SalePointListEventArgs> EditSalePointEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> DeleteSalePointEvent;
+        public event EventHandler<SalePointListEventArgs> DeleteSalePointEvent;
 
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> CloseSalePointListFormEvent;
-        public event EventHandler<AppFrame.Presenter.SalePoints.SalePointListEventArgs> LoadDepartmentsEvent;
+        public event EventHandler<SalePointListEventArgs> CloseSalePointListFormEvent;
+        public event EventHandler<SalePointListEventArgs> LoadDepartmentsEvent;
 
         #endregion
 

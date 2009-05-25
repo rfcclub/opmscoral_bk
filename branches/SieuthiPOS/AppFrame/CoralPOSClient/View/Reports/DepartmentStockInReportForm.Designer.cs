@@ -440,7 +440,7 @@ namespace CoralPOS.View.Reports
             // 
             // bdsStockOutResultDetail
             // 
-            this.bdsStockOutResultDetail.DataSource = typeof(AppFrame.Collection.DepartmentStockInDetailCollection);
+            this.bdsStockOutResultDetail.DataSource = typeof(CoralPOS.Interfaces.Collection.DepartmentStockInDetailCollection);
             // 
             // dtpTo
             // 

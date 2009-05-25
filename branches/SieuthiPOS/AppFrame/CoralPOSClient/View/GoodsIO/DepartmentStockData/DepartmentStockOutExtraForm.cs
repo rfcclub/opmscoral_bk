@@ -7,11 +7,12 @@ using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
 using CoralPOS.Presenter.GoodsIO.DepartmentStockData;
@@ -415,7 +416,7 @@ namespace CoralPOS.View.GoodsIO.DepartmentStockData
 
         public event EventHandler<DepartmentStockInEventArgs> InitDepartmentStockInEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchOrCreateEventArgs> OpenProductMasterSearchEvent;
 
         public event EventHandler<DepartmentStockInEventArgs> SaveDepartmentStockInEvent;
 

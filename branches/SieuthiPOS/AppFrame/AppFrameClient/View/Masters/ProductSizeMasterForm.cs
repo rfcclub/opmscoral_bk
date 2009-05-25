@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace AppFrameClient.View.Masters
+namespace CoralPOS.View.Masters
 {
     public partial class ProductSizeMasterForm : Form
     {

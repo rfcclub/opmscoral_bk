@@ -5,19 +5,20 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrameClient.Presenter.GoodsIO
+namespace CoralPOS.Presenter.GoodsIO
 {
     public class ProductMasterSearchDepartmentController : IProductMasterSearchDepartmentController
     {
         #region IProductMasterSearchDepartmentController Members
 
-        private AppFrame.View.GoodsIO.IProductMasterSearchDepartmentView productMasterSearchDepartmentView;
+        private CoralPOS.Interfaces.View.GoodsIO.IProductMasterSearchDepartmentView productMasterSearchDepartmentView;
         
-        public AppFrame.View.GoodsIO.IProductMasterSearchDepartmentView ProductMasterSearchDepartmentView
+        public CoralPOS.Interfaces.View.GoodsIO.IProductMasterSearchDepartmentView ProductMasterSearchDepartmentView
         {
             get
             {
@@ -137,55 +138,55 @@ namespace AppFrameClient.Presenter.GoodsIO
             e.DistributorList.Insert(0, new Distributor());
         }
 
-        public AppFrame.Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;
             set;
 
         }
 
-        public AppFrame.Logic.ICountryLogic CountryLogic
+        public ICountryLogic CountryLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductColorLogic ProductColorLogic
+        public IProductColorLogic ProductColorLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductTypeLogic ProductTypeLogic
+        public IProductTypeLogic ProductTypeLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IProductSizeLogic ProductSizeLogic
+        public IProductSizeLogic ProductSizeLogic
         {
             get;set;
         }
 
-        public AppFrame.Logic.IManufacturerLogic ManufacturerLogic
-        {
-            get;set;
-            
-        }
-
-        public AppFrame.Logic.IDistributorLogic DistributorLogic
+        public IManufacturerLogic ManufacturerLogic
         {
             get;set;
             
         }
 
-        public AppFrame.Logic.IPackagerLogic PackagerLogic
+        public IDistributorLogic DistributorLogic
+        {
+            get;set;
+            
+        }
+
+        public IPackagerLogic PackagerLogic
         {
             get;set;
             

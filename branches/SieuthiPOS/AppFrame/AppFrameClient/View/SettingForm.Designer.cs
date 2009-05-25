@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View
+﻿namespace CoralPOS.View
 {
     partial class SettingForm
     {
@@ -267,7 +267,7 @@
             this.cboPrinters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPrinters.FormattingEnabled = true;
             this.cboPrinters.Location = new System.Drawing.Point(185, 161);
-            this.cboPrinters.Name = global::AppFrameClient.Properties.Settings.Default.PrinterName;
+            this.cboPrinters.Name = global::CoralPOS.Properties.Settings.Default.PrinterName;
             this.cboPrinters.Size = new System.Drawing.Size(172, 21);
             this.cboPrinters.TabIndex = 12;
             // 

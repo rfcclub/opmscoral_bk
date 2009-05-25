@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Configuration;
 
-namespace AppFrameClient.Common
+namespace CoralPOS.Common
 {
     
     public class AppFrameSetting : System.Configuration.ApplicationSettingsBase

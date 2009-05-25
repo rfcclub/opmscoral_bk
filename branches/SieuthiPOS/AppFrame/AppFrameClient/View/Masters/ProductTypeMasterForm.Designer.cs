@@ -1,4 +1,6 @@
-﻿namespace AppFrameClient.View.Masters
+﻿using CoralPOS.MasterDBTableAdapters;
+
+namespace CoralPOS.View.Masters
 {
     partial class ProductTypeMasterForm
     {
@@ -38,10 +40,10 @@
             System.Windows.Forms.Label uPDATE_IDLabel;
             System.Windows.Forms.Label eXCLUSIVE_KEYLabel;
             System.Windows.Forms.Label dEL_FLGLabel;
-            this.masterDB = new AppFrameClient.MasterDB();
+            this.masterDB = new MasterDB();
             this.product_typeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.product_typeTableAdapter = new AppFrameClient.MasterDBTableAdapters.product_typeTableAdapter();
-            this.tableAdapterManager = new AppFrameClient.MasterDBTableAdapters.TableAdapterManager();
+            this.product_typeTableAdapter = new product_typeTableAdapter();
+            this.tableAdapterManager = new TableAdapterManager();
             this.product_typeBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -97,7 +99,7 @@
             this.tableAdapterManager.product_colorTableAdapter = null;
             this.tableAdapterManager.product_sizeTableAdapter = null;
             this.tableAdapterManager.product_typeTableAdapter = this.product_typeTableAdapter;
-            this.tableAdapterManager.UpdateOrder = AppFrameClient.MasterDBTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // product_typeBindingNavigator
             // 
@@ -398,8 +400,8 @@
 
         private MasterDB masterDB;
         private System.Windows.Forms.BindingSource product_typeBindingSource;
-        private AppFrameClient.MasterDBTableAdapters.product_typeTableAdapter product_typeTableAdapter;
-        private AppFrameClient.MasterDBTableAdapters.TableAdapterManager tableAdapterManager;
+        private product_typeTableAdapter product_typeTableAdapter;
+        private TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator product_typeBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using AppFrame;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;

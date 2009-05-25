@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Utility.Mapper;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Model;
-using CoralPOS.Interfaces.Utility.Mapper;
+using AppFrame.Utility.Mapper;
 using CoralPOS.ViewModel;
 
 namespace CoralPOS.Utility.Mapper

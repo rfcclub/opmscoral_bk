@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database">
+  
+  <!-- Data Access Objects -->
+  <object id="CoralPOS.DataLayer.IDepartmentReturnDAO" type="CoralPOS.DataLayer.DepartmentReturnDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentCostDAO" type="CoralPOS.DataLayer.DepartmentCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentPriceDAO" type="CoralPOS.DataLayer.DepartmentPriceDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockOutCostDAO" type="CoralPOS.DataLayer.StockOutCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IReceiptDAO" type="CoralPOS.DataLayer.ReceiptDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockDAO" type="CoralPOS.DataLayer.DepartmentStockDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockTempDAO" type="CoralPOS.DataLayer.DepartmentStockTempDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ICustomersDAO" type="CoralPOS.DataLayer.CustomerDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockOutDAO" type="CoralPOS.DataLayer.StockOutDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockInCostDAO" type="CoralPOS.DataLayer.DepartmentStockInCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockDAO" type="CoralPOS.DataLayer.StockDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IEmployeeWorkingDayDAO" type="CoralPOS.DataLayer.EmployeeWorkingDayDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPurchaseOrderDetailLogDAO" type="CoralPOS.DataLayer.PurchaseOrderDetailLogDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IEmployeeDetailDAO" type="CoralPOS.DataLayer.EmployeeDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPurchaseOrderDetailDAO" type="CoralPOS.DataLayer.PurchaseOrderDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ISupplierDAO" type="CoralPOS.DataLayer.SupplierDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IBlockInDetailDAO" type="CoralPOS.DataLayer.BlockInDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPackagerDAO" type="CoralPOS.DataLayer.PackagerDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IContractDAO" type="CoralPOS.DataLayer.ContractDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IProductColorDAO" type="CoralPOS.DataLayer.ProductColorDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockInDetailDAO" type="CoralPOS.DataLayer.DepartmentStockInDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IReceiptOutDAO" type="CoralPOS.DataLayer.ReceiptOutDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ICountryDAO" type="CoralPOS.DataLayer.CountryDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ICategoryDAO" type="CoralPOS.DataLayer.CategoryDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ITaxDAO" type="CoralPOS.DataLayer.TaxDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentReturnDetailDAO" type="CoralPOS.DataLayer.DepartmentReturnDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IManufacturerDAO" type="CoralPOS.DataLayer.ManufacturerDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IGiftDAO" type="CoralPOS.DataLayer.GiftDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IReturnProductDAO" type="CoralPOS.DataLayer.ReturnProductDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ICustomerDetailDAO" type="CoralPOS.DataLayer.CustomerDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentDAO" type="CoralPOS.DataLayer.DepartmentDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPromotionDAO" type="CoralPOS.DataLayer.PromotionDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ICouponTypeDAO" type="CoralPOS.DataLayer.CouponTypeDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPurchaseOrderLogDAO" type="CoralPOS.DataLayer.PurchaseOrderLogDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockOutDAO" type="CoralPOS.DataLayer.DepartmentStockOutDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentPromotionDAO" type="CoralPOS.DataLayer.DepartmentPromotionDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPurchaseOrderDAO" type="CoralPOS.DataLayer.PurchaseOrderDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockOutDetailDAO" type="CoralPOS.DataLayer.StockOutDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockInDetailDAO" type="CoralPOS.DataLayer.StockInDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockInDAO" type="CoralPOS.DataLayer.DepartmentStockInDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IProductSizeDAO" type="CoralPOS.DataLayer.ProductSizeDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IBlockInCostDAO" type="CoralPOS.DataLayer.BlockInCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IProductMasterDAO" type="CoralPOS.DataLayer.ProductMasterDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDistributorDAO" type="CoralPOS.DataLayer.DistributorDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IEmployeeDAO" type="CoralPOS.DataLayer.EmployeeDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentReturnCostDAO" type="CoralPOS.DataLayer.DepartmentReturnCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ICouponDAO" type="CoralPOS.DataLayer.CouponDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPurchaseOrderPromotionDAO" type="CoralPOS.DataLayer.PurchaseOrderPromotionDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.ISimilarProductDAO" type="CoralPOS.DataLayer.SimilarProductDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockOutCostDAO" type="CoralPOS.DataLayer.DepartmentStockOutCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IBlockInDAO" type="CoralPOS.DataLayer.BlockInDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IEmployeeRewardDAO" type="CoralPOS.DataLayer.EmployeeRewardDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IDepartmentStockOutDetailDAO" type="CoralPOS.DataLayer.DepartmentStockOutDetailDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IReturnBlockInDAO" type="CoralPOS.DataLayer.ReturnBlockInDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IProductTypeDAO" type="CoralPOS.DataLayer.ProductTypeDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockInDAO" type="CoralPOS.DataLayer.StockInDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IStockHistoryDAO" type="CoralPOS.DataLayer.StockHistoryDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="CoralPOS.DataLayer.IDepartmentStockHistoryDAO" type="CoralPOS.DataLayer.DepartmentStockHistoryDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  
+  <object id="CoralPOS.DataLayer.IReturnPoDAO" type="CoralPOS.DataLayer.ReturnPoDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IScheduleTemplateDAO" type="CoralPOS.DataLayer.ScheduleTemplateDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IEmployeeDayoffDAO" type="CoralPOS.DataLayer.EmployeeDayoffDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IProductDAO" type="CoralPOS.DataLayer.ProductDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IPublishedCouponDAO" type="CoralPOS.DataLayer.PublishedCouponDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IReceiptOutCostDAO" type="CoralPOS.DataLayer.ReceiptOutCostDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <object id="CoralPOS.DataLayer.IOtherTransactionLogDAO" type="CoralPOS.DataLayer.OtherTransactionLogDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+<!--  <object id="CoralPOS.DataLayer.IDepartmentStockTempDAO" type="CoralPOS.DataLayer.DepartmentStockTempDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>-->
+  <object id="CoralPOS.DataLayer.ISyncStatusDAO" type="CoralPOS.DataLayer.SyncStatusDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <!--<object id="CoralPOS.DataLayer.IDepartmentTimelineDAO" type="CoralPOS.DataLayer.DepartmentTimelineDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>-->
+  <!--<object id="CoralPOS.DataLayer.IDepartmentManagementDAO" type="CoralPOS.DataLayer.DepartmentManagementDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>-->
+  <object id="CoralPOS.DataLayer.IPosLogDAO" type="CoralPOS.DataLayer.PosLogDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <!--<object id="CoralPOS.DataLayer.ISyncStatusDAO" type="CoralPOS.DataLayer.SyncStatusDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>-->
+
+  <object id="CoralPOS.DataLayer.IDepartmentTimelineDAO" type="CoralPOS.DataLayer.DepartmentTimelineDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  
+  <object id="CoralPOS.DataLayer.IDepartmentManagementDAO" type="CoralPOS.DataLayer.DepartmentManagementDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+  <!-- Data Access Objects -->
+  <object id="LoginDaoImpl" type="CoralPOS.DataLayer.LoginDaoImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  <object id="RoleDaoImpl" type="CoralPOS.DataLayer.RoleDaoImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
+
+  
+</objects>

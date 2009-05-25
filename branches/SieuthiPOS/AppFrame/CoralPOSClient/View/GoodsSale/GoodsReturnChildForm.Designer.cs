@@ -278,7 +278,7 @@
             // 
             // bdsBill
             // 
-            this.bdsBill.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.bdsBill.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // btnReturnGoods
             // 
@@ -343,7 +343,7 @@
             // 
             // bdsReturnBill
             // 
-            this.bdsReturnBill.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.bdsReturnBill.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // btnSave
             // 

@@ -5,17 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.MainStock;
-using AppFrameClient.Common;
-using AppFrameClient.View.GoodsIO.DepartmentStockData;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsIO.MainStock;
+using CoralPOS.Common;
+using CoralPOS.View.GoodsIO.DepartmentStockData;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsIO.MainStock
+namespace CoralPOS.View.GoodsIO.MainStock
 {
     public partial class InventoryCheckingForm : AppFrame.Common.BaseForm,IInventoryCheckingView
     {
@@ -51,14 +52,14 @@ namespace AppFrameClient.View.GoodsIO.MainStock
 
         #region IInventoryCheckingView Members
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.InventoryCheckingEventArgs> FillProductMasterToComboEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.InventoryCheckingEventArgs> FillProductMasterToComboEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.InventoryCheckingEventArgs> LoadGoodsByProductIdEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.InventoryCheckingEventArgs> LoadGoodsByProductIdEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsIO.MainStock.InventoryCheckingEventArgs> SaveInventoryCheckingEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.InventoryCheckingEventArgs> SaveInventoryCheckingEvent;
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IInventoryCheckingController inventoryCheckingController;
-        public AppFrame.Presenter.GoodsIO.MainStock.IInventoryCheckingController InventoryCheckingController
+        private  CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IInventoryCheckingController inventoryCheckingController;
+        public  CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IInventoryCheckingController InventoryCheckingController
         {
             get
             {
@@ -118,12 +119,12 @@ namespace AppFrameClient.View.GoodsIO.MainStock
         private void button2_Click(object sender, EventArgs e)
         {
             form = GlobalUtility.GetOnlyChildFormObject<ProductMasterSearchDepartmentForm>(GlobalCache.Instance().MainForm, FormConstants.PRODUCT_MASTER_SEARCH_DEPARMENT_FORM);
-            form.SelectProductEvent += new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
+            form.SelectProductEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
             if (form != null)
                 form.Show();
         }
 
-        void form_SelectProductEvent(object sender, AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs e)
+        void form_SelectProductEvent(object sender, CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs e)
         {
             LoadGoodsByProductId(e.ReturnProduct.ProductId);
             

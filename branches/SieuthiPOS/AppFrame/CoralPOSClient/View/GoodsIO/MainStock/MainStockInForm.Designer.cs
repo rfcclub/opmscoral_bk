@@ -436,7 +436,7 @@
             // 
             // bdsStockIn
             // 
-            this.bdsStockIn.DataSource = typeof(AppFrame.Collection.StockInDetailCollection);
+            this.bdsStockIn.DataSource = typeof(CoralPOS.Interfaces.Collection.StockInDetailCollection);
             // 
             // numericUpDownBarcode
             // 

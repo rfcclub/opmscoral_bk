@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO;
 using AppFrame;
-using AppFrame.Model;
-using AppFrameClient.Common;
-using AppFrameClient.View.GoodsIO;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Common;
+using CoralPOS.View.GoodsIO;
 
-namespace AppFrameClient.Presenter.GoodsIO
+namespace CoralPOS.Presenter.GoodsIO
 {
     public class ProductMasterSearchOrCreateController : IProductMasterSearchOrCreateController
     {

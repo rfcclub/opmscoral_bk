@@ -3,15 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.SalePoints;
-using AppFrameClient.Common;
-using AppFrameClient.View.SalePoints;
+using CoralPOS.Interfaces.View.SalePoints;
+using CoralPOS.Common;
+using CoralPOS.View.SalePoints;
 
-namespace AppFrameClient.Presenter.SalePoints
+namespace CoralPOS.Presenter.SalePoints
 {
     public class SalePointController  : ISalePointController
     {

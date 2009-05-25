@@ -149,23 +149,23 @@
             // 
             // PurchaseOrderDetailBindingSource
             // 
-            this.PurchaseOrderDetailBindingSource.DataSource = typeof(AppFrame.Model.PurchaseOrderDetail);
+            this.PurchaseOrderDetailBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.PurchaseOrderDetail);
             // 
             // PurchaseOrderDetailCollectionBindingSource
             // 
-            this.PurchaseOrderDetailCollectionBindingSource.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.PurchaseOrderDetailCollectionBindingSource.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // DepartmentBindingSource
             // 
-            this.DepartmentBindingSource.DataSource = typeof(AppFrame.Model.Department);
+            this.DepartmentBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Department);
             // 
             // PurchaseOrderBindingSource
             // 
-            this.PurchaseOrderBindingSource.DataSource = typeof(AppFrame.Model.PurchaseOrder);
+            this.PurchaseOrderBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.PurchaseOrder);
             // 
             // ReceiptBindingSource
             // 
-            this.ReceiptBindingSource.DataSource = typeof(AppFrame.Model.Receipt);
+            this.ReceiptBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Receipt);
             // 
             // btnHelp
             // 
@@ -409,7 +409,7 @@
             // 
             // bdsBill
             // 
-            this.bdsBill.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.bdsBill.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // label7
             // 
@@ -957,7 +957,7 @@
             // 
             // bdsReturnBill
             // 
-            this.bdsReturnBill.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.bdsReturnBill.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // dgvNewBill
             // 
@@ -1067,7 +1067,7 @@
             // 
             // bdsNewBill
             // 
-            this.bdsNewBill.DataSource = typeof(AppFrame.Collection.PurchaseOrderDetailCollection);
+            this.bdsNewBill.DataSource = typeof(CoralPOS.Interfaces.Collection.PurchaseOrderDetailCollection);
             // 
             // label1
             // 

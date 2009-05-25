@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO
+﻿namespace CoralPOS.View.GoodsIO
 {
     partial class ProductMasterSearchForm
     {
@@ -58,7 +58,7 @@
             this.productPrintDialog = new System.Windows.Forms.PrintDialog();
             this.productPrintDocument = new System.Drawing.Printing.PrintDocument();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.productMasterSearchControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterSearchControl = new ProductMasterSearchControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productMasterBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -261,7 +261,7 @@
             // 
             // productMasterBindingSource
             // 
-            this.productMasterBindingSource.DataSource = typeof(AppFrame.Model.ProductMaster);
+            this.productMasterBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductMaster);
             // 
             // btnClose
             // 

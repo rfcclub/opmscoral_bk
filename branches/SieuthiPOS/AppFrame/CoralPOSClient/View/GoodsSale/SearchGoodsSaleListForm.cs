@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.ViewModel;
 
 namespace CoralPOS.View.GoodsSale

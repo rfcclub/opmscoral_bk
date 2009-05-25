@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CoralPOS.Properties;
-using AFCSetting = CoralPOS.Properties.Settings;
+using CoralPOSClient.Properties;
+using AFCSetting = CoralPOSClient.Properties.Settings;
 
 namespace CoralPOS.Common
 {

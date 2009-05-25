@@ -4,7 +4,7 @@ using CoralPOS.Interfaces.Logic;
 /// Summary description for CounterLogic
 /// </summary>
 /// 
-namespace AppFrame.Logic
+namespace CoralPOS.Logic
 {
     public class CounterLogic : ICounter
     {

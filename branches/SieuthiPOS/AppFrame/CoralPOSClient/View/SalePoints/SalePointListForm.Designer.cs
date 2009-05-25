@@ -241,7 +241,7 @@
             // 
             // bdsSalePointList
             // 
-            this.bdsSalePointList.DataSource = typeof(AppFrame.Model.Department);
+            this.bdsSalePointList.DataSource = typeof(CoralPOS.Interfaces.Model.Department);
             // 
             // cmnDepartments
             // 

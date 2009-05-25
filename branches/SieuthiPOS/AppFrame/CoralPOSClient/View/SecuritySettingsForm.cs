@@ -7,11 +7,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
-using CoralPOS.Interfaces.Common;
-using CoralPOS.Interfaces.Exceptions;
+using AppFrame.Common;
+using AppFrame.Exceptions;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 using CoralPOS.Common;
 
@@ -34,8 +34,8 @@ namespace CoralPOS.View
 
         #region ISecurityView Members
 
-        AppFrame.Presenter.ISecurityController securityController;
-        public AppFrame.Presenter.ISecurityController SecurityController
+        CoralPOS.Interfaces.Presenter.ISecurityController securityController;
+        public CoralPOS.Interfaces.Presenter.ISecurityController SecurityController
         {
             get
             {
@@ -48,11 +48,11 @@ namespace CoralPOS.View
             }
         }
 
-        public event EventHandler<AppFrame.Presenter.SecurityEventArgs> InitSecuritySettingsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SecurityEventArgs> InitSecuritySettingsEvent;
 
-        public event EventHandler<AppFrame.Presenter.SecurityEventArgs> SaveUserEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SecurityEventArgs> SaveUserEvent;
 
-        public event EventHandler<AppFrame.Presenter.SecurityEventArgs> EditUserEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.SecurityEventArgs> EditUserEvent;
 
         #endregion
 

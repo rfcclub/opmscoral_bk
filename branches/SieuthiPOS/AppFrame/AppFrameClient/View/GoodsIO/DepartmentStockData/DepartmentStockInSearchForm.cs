@@ -7,13 +7,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.Common;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Common;
 
-namespace AppFrameClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOS.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockInSearchForm : BaseForm, IDepartmentStockInSearchView
     {
@@ -79,7 +80,7 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
             dataTable.Rows.Clear();
             for (int i = 0; i < DepartmentStockInList.Count; i++)
             {
-                var result = (AppFrame.Model.DepartmentStockIn)DepartmentStockInList[i];
+                var result = (CoralPOS.Interfaces.Model.DepartmentStockIn)DepartmentStockInList[i];
                 dataTable.Rows.Add(AddProductToDataGrid(result));
 
             }
@@ -89,7 +90,7 @@ namespace AppFrameClient.View.GoodsIO.DepartmentStockData
             dgvProduct.Refresh();
         }
 
-        private static object[] AddProductToDataGrid(AppFrame.Model.DepartmentStockIn stockInDetail)
+        private static object[] AddProductToDataGrid(CoralPOS.Interfaces.Model.DepartmentStockIn stockInDetail)
         {
             var obj = new object[MAX_COLUMNS];
             obj[STOCK_IN_ID_POS] = stockInDetail.DepartmentStockInPK.StockInId;

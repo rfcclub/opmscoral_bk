@@ -10,22 +10,23 @@ using System.Drawing.Printing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
 using AppFrame.Controls;
-using AppFrame.Exceptions;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
-using AppFrame.View.GoodsSale;
-using AppFrameClient.Common;
-using AppFrameClient.View.GoodsIO;
-using AppFrameClient.View.GoodsIO.DepartmentStockData;
+using CoralPOS.Interfaces.View.GoodsSale;
+using CoralPOS.View.GoodsIO;
+using CoralPOS.Common;
+using CoralPOS.View.GoodsIO.DepartmentStockData;
 using Microsoft.Reporting.WinForms;
 
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class GoodsSaleForm : BaseForm,IGoodsSaleView
     {
@@ -51,7 +52,7 @@ namespace AppFrameClient.View.GoodsSale
         #region IGoodsSaleView Members
 
         private IGoodsSaleController goodsSaleController;
-        public AppFrame.Presenter.GoodsSale.IGoodsSaleController GoodsSaleController
+        public CoralPOS.Interfaces.Presenter.GoodsSale.IGoodsSaleController GoodsSaleController
         {
             get
             {
@@ -87,29 +88,29 @@ namespace AppFrameClient.View.GoodsSale
             GoodsSaleController.PurchaseOrder = null;
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> AddGoodsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> AddGoodsEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> DeleteGoodsEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> DeleteGoodsEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> HelpEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> HelpEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> FirstRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> FirstRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> PreviousRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> PreviousRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> NextRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> NextRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> LastRecordEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> LastRecordEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> PrintCheckEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> PrintCheckEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> SaveCheckEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> SaveCheckEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> ResetCheckEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> ResetCheckEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> CloseFormEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> CloseFormEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleEventArgs> SavePurchaseOrderEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleEventArgs> SavePurchaseOrderEvent;
 
         #endregion
         
@@ -770,13 +771,13 @@ namespace AppFrameClient.View.GoodsSale
             /*if(dgvBill.CurrentCell.ColumnIndex == 0)
             {
                 form = GlobalUtility.GetOnlyChildFormObject<ProductMasterSearchDepartmentForm>(GlobalCache.Instance().MainForm, FormConstants.PRODUCT_MASTER_SEARCH_DEPARMENT_FORM);
-                form.SelectProductEvent += new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
+                form.SelectProductEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
                 if(form!=null)
                     form.Show();
             }*/
         }
 
-        void form_SelectProductEvent(object sender, AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs e)
+        void form_SelectProductEvent(object sender, CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs e)
         {
             /*pODList[dgvBill.CurrentCell.OwningRow.Index].Product = e.ReturnProduct;
             GoodsSaleEventArgs goodsSaleEventArgs = new GoodsSaleEventArgs();
@@ -797,7 +798,7 @@ namespace AppFrameClient.View.GoodsSale
             txtQuantity.Text = "1";
             if(form!=null)
             {
-                form.SelectProductEvent -= new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
+                form.SelectProductEvent -= new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
                 form.Close();
             }
         }
@@ -918,7 +919,7 @@ namespace AppFrameClient.View.GoodsSale
         private void button1_Click(object sender, EventArgs e)
         {
             form = GlobalUtility.GetOnlyChildFormObject<ProductMasterSearchDepartmentForm>(GlobalCache.Instance().MainForm, FormConstants.PRODUCT_MASTER_SEARCH_DEPARMENT_FORM);
-            form.SelectProductEvent += new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
+            form.SelectProductEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(form_SelectProductEvent);
             if (form != null)
                 form.Show();
         }
@@ -1243,7 +1244,7 @@ namespace AppFrameClient.View.GoodsSale
         private void btnRetBarcodeLookup_Click(object sender, EventArgs e)
         {
             goodsReturnForm = GlobalUtility.GetOnlyChildFormObject<ProductMasterSearchDepartmentForm>(GlobalCache.Instance().MainForm, FormConstants.PRODUCT_MASTER_SEARCH_DEPARMENT_FORM);
-            goodsReturnForm.SelectProductEvent += new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(formReturn_SelectProductEvent);
+            goodsReturnForm.SelectProductEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(formReturn_SelectProductEvent);
             if (goodsReturnForm != null)
                 goodsReturnForm.Show();
         }
@@ -1255,7 +1256,7 @@ namespace AppFrameClient.View.GoodsSale
             txtRetQuantity.Text = "1";
             if (goodsReturnForm != null)
             {
-                goodsReturnForm.SelectProductEvent -= new EventHandler<AppFrame.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(formReturn_SelectProductEvent);
+                goodsReturnForm.SelectProductEvent -= new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.ProductMasterSearchDepartmentEventArgs>(formReturn_SelectProductEvent);
                 goodsReturnForm.Close();
             }            
         }

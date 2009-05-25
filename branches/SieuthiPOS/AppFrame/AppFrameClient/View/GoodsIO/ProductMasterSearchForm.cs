@@ -7,13 +7,15 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
+using AppFrame.Common;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrameClient.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace AppFrameClient.View.GoodsIO
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Common;
+
+namespace CoralPOS.View.GoodsIO
 {
     public partial class ProductMasterSearchForm : BaseForm, IProductMasterSearchOrCreateView
     {

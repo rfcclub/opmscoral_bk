@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
@@ -94,8 +95,8 @@ namespace CoralPOS.View.GoodsIO.MainStock
 
         #region IBaseStockOutView Members
 
-        private AppFrame.Presenter.GoodsIO.MainStock.IBaseStockOutController baseStockOutController;
-        public AppFrame.Presenter.GoodsIO.MainStock.IBaseStockOutController BaseStockOutController
+        private CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IBaseStockOutController baseStockOutController;
+        public CoralPOS.Interfaces.Presenter.GoodsIO.MainStock.IBaseStockOutController BaseStockOutController
         {
             get
             {

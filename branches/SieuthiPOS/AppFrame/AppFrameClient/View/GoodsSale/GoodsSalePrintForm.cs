@@ -6,9 +6,11 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Model;
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class GoodsSalePrintForm : BaseForm
     {

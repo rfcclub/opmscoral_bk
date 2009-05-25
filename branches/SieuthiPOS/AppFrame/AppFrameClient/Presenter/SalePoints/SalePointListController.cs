@@ -5,16 +5,16 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.SalePoints;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.View.SalePoints;
-using AppFrameClient.Common;
-using AppFrameClient.View.SalePoints;
+using CoralPOS.Interfaces.View.SalePoints;
+using CoralPOS.Common;
+using CoralPOS.View.SalePoints;
 using NHibernate;
 
-namespace AppFrameClient.Presenter.SalePoints
+namespace CoralPOS.Presenter.SalePoints
 {
     public class SalePointListController : ISalePointListController
     {
@@ -22,7 +22,7 @@ namespace AppFrameClient.Presenter.SalePoints
         #region ISalePointListController Members
 
         private ISalePointListView salePointListView;
-        public AppFrame.View.SalePoints.ISalePointListView SalePointListView
+        public CoralPOS.Interfaces.View.SalePoints.ISalePointListView SalePointListView
         {
             get
             {
@@ -153,7 +153,7 @@ namespace AppFrameClient.Presenter.SalePoints
         #region ISalePointListController Members
 
         private IList<Department> departmentList;
-        public IList<AppFrame.Model.Department> DepartmentList
+        public IList<CoralPOS.Interfaces.Model.Department> DepartmentList
         {
             get
             {
@@ -170,7 +170,7 @@ namespace AppFrameClient.Presenter.SalePoints
         #region ISalePointListController Members
 
         private IDepartmentLogic departmentLogic;
-        public AppFrame.Logic.IDepartmentLogic DepartmentLogic
+        public IDepartmentLogic DepartmentLogic
         {
             get
             {

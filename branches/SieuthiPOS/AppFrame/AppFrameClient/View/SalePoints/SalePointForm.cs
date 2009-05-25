@@ -7,13 +7,14 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.SalePoints;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
-using AppFrame.Utility.Mapper;
-using AppFrame.View.SalePoints;
+using CoralPOS.Interfaces.Utility.Mapper;
+using CoralPOS.Interfaces.View.SalePoints;
 
-namespace AppFrameClient.View.SalePoints
+namespace CoralPOS.View.SalePoints
 {
     public partial class SalePointForm : BaseForm, ISalePointView
     {

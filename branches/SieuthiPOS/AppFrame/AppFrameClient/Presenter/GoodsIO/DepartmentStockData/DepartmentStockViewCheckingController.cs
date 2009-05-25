@@ -5,17 +5,18 @@ using System.Linq;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
-using AppFrame.Utility.Mapper;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Utility.Mapper;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.ViewModel;
 using Spring.Transaction.Interceptor;
 
-namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockViewCheckingController : IDepartmentStockCheckingController
     {
@@ -29,8 +30,8 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
             set
             {
                 departmentStockCheckingView = value;
-                departmentStockCheckingView.LoadGoodsByProductIdEvent += new EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs>(departmentStockCheckingView_LoadGoodsByProductIdEvent);
-                departmentStockCheckingView.SaveInventoryCheckingEvent += new EventHandler<AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs>(departmentStockCheckingView_SaveInventoryCheckingEvent);
+                departmentStockCheckingView.LoadGoodsByProductIdEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs>(departmentStockCheckingView_LoadGoodsByProductIdEvent);
+                departmentStockCheckingView.SaveInventoryCheckingEvent += new EventHandler<CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs>(departmentStockCheckingView_SaveInventoryCheckingEvent);
                 departmentStockCheckingView.SaveTempInventoryCheckingEvent += new EventHandler<DepartmentStockCheckingEventArgs>(departmentStockCheckingView_SaveTempInventoryCheckingEvent);
                 departmentStockCheckingView.LoadTempInventoryCheckingEvent += new EventHandler<DepartmentStockCheckingEventArgs>(departmentStockCheckingView_LoadTempInventoryCheckingEvent);
             }
@@ -123,7 +124,7 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
         }
 
         [Transaction(ReadOnly = false)]
-        void departmentStockCheckingView_SaveInventoryCheckingEvent(object sender, AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs e)
+        void departmentStockCheckingView_SaveInventoryCheckingEvent(object sender, CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs e)
         {
             foreach (DepartmentStockView stockView in e.SaveStockViewList)
             {
@@ -333,7 +334,7 @@ namespace AppFrameClient.Presenter.GoodsIO.DepartmentStockData
             }
         }
 
-        void departmentStockCheckingView_LoadGoodsByProductIdEvent(object sender, AppFrame.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs e)
+        void departmentStockCheckingView_LoadGoodsByProductIdEvent(object sender, CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO.DepartmentStockCheckingEventArgs e)
         {
             string barCode = e.InputBarcode;
             Product product = ProductLogic.FindById(barCode);

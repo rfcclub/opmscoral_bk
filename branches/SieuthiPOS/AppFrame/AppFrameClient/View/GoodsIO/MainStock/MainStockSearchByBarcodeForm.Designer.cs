@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.GoodsIO.MainStock
+﻿namespace CoralPOS.View.GoodsIO.MainStock
 {
     partial class MainStockSearchByBarcodeForm
     {
@@ -56,7 +56,7 @@
             this.exclusiveKeyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.delFlgDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productMasterControl = new AppFrameClient.View.GoodsIO.ProductMasterSearchControl();
+            this.productMasterControl = new ProductMasterSearchControl();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStockList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +95,7 @@
             // 
             // stockBindingSource
             // 
-            this.stockBindingSource.DataSource = typeof(AppFrame.Model.Stock);
+            this.stockBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Stock);
             // 
             // btnSearch
             // 

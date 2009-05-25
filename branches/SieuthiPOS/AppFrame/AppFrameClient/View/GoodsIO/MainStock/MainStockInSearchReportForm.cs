@@ -7,19 +7,19 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO.DepartmentGoodsIO;
-using AppFrame.Presenter.GoodsIO.MainStock;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO.DepartmentGoodsIO;
-using AppFrame.View.GoodsIO.MainStock;
-using AppFrameClient.Common;
-using AppFrameClient.View.GoodsIO.DepartmentStockData;
+using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
+using CoralPOS.Interfaces.View.GoodsIO.MainStock;
+using CoralPOS.Common;
+using CoralPOS.View.GoodsIO.DepartmentStockData;
 //using Aspose.Cells;
 
-namespace AppFrameClient.View.GoodsIO.MainStock
+namespace CoralPOS.View.GoodsIO.MainStock
 {
     public partial class MainStockInSearchReportForm : BaseForm, IMainStockInSearchView
     {

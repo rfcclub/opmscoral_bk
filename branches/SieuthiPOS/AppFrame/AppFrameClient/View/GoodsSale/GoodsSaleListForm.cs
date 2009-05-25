@@ -8,19 +8,20 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
-using AppFrame.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Collection;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Model;
 using AppFrame.ModelCriteria;
-using AppFrame.Presenter.GoodsSale;
+using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
-using AppFrame.View.GoodsSale;
+using CoralPOS.Interfaces.View.GoodsSale;
 //using Aspose.Cells;
-using AppFrameClient.ViewModel;
 //using Aspose.Cells;
+using CoralPOS.ViewModel;
 using ArrayList=System.Collections.ArrayList;
 
-namespace AppFrameClient.View.GoodsSale
+namespace CoralPOS.View.GoodsSale
 {
     public partial class GoodsSaleListForm : BaseForm,IGoodsSaleListView
     {
@@ -57,7 +58,7 @@ namespace AppFrameClient.View.GoodsSale
         #region IGoodsSaleListView Members
 
         private IGoodsSaleListController goodsSaleListController;
-        public AppFrame.Presenter.GoodsSale.IGoodsSaleListController GoodsSaleListController
+        public CoralPOS.Interfaces.Presenter.GoodsSale.IGoodsSaleListController GoodsSaleListController
         {
             get
             {
@@ -90,11 +91,11 @@ namespace AppFrameClient.View.GoodsSale
             txtRetQty.Text = retQty.ToString();
         }
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> GoodsSaleListSearchEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> GoodsSaleListSearchEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> ExportToExcelEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> ExportToExcelEvent;
 
-        public event EventHandler<AppFrame.Presenter.GoodsSale.GoodsSaleListEventArgs> PrintGoodsSaleEvent;
+        public event EventHandler<CoralPOS.Interfaces.Presenter.GoodsSale.GoodsSaleListEventArgs> PrintGoodsSaleEvent;
 
         #endregion
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Common;
+using CoralPOSClient.Properties;
 
 namespace CoralPOS.View
 {
@@ -21,14 +22,14 @@ namespace CoralPOS.View
         {
             if(radioButton1.Checked)
             {
-                Properties.Settings.Default.IsClient = FormConstants.SERVER_MODE;
+                Settings.Default.IsClient = FormConstants.SERVER_MODE;
             }
             if(radioButton2.Checked)
             {
-                Properties.Settings.Default.IsClient = FormConstants.CLIENT_MODE;    
+                Settings.Default.IsClient = FormConstants.CLIENT_MODE;    
             }
 
-            Properties.Settings.Default.Save();
+            Settings.Default.Save();
             Close();
         }
     }

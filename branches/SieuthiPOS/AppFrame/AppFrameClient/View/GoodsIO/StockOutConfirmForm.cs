@@ -7,17 +7,17 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using AppFrame.Collection;
+using CoralPOS.Interfaces.Collection;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter;
-using AppFrame.Presenter.Report;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter;
+using CoralPOS.Interfaces.Presenter.Report;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrame.View.Reports;
-using AppFrameClient.ViewModel;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Interfaces.View.Reports;
+using CoralPOS.ViewModel;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class StockOutConfirmForm : BaseForm,IStockOutConfirmView
     {

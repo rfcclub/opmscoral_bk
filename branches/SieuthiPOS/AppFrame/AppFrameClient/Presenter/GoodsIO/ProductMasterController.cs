@@ -4,14 +4,15 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame;
 using AppFrame.Common;
-using AppFrame.Logic;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
-using AppFrame.Presenter.SalePoints;
-using AppFrame.View.GoodsIO;
-using AppFrameClient.Utility;
+using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Presenter.SalePoints;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Utility;
 
-namespace AppFrameClient.Presenter.GoodsIO
+namespace CoralPOS.Presenter.GoodsIO
 {
     public class ProductMasterController : IProductMasterController
     {

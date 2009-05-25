@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:tx="http://www.springframework.net/tx">
+
+  <object id="CoralPOS.Service.IDepartmentReturnLogic" type="CoralPOS.Logic.DepartmentReturnLogicImpl, CoralPOS">
+    <property name="DepartmentReturnDAO" ref="CoralPOS.DataLayer.IDepartmentReturnDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentCostLogic" type="CoralPOS.Logic.DepartmentCostLogicImpl, CoralPOS">
+    <property name="DepartmentCostDAO" ref="CoralPOS.DataLayer.IDepartmentCostDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockOutCostLogic" type="CoralPOS.Logic.StockOutCostLogicImpl, CoralPOS">
+    <property name="StockOutCostDAO" ref="CoralPOS.DataLayer.IStockOutCostDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IReceiptLogic" type="CoralPOS.Logic.ReceiptLogicImpl, CoralPOS">
+    <property name="ReceiptDAO" ref="CoralPOS.DataLayer.IReceiptDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockLogic" type="CoralPOS.Logic.DepartmentStockLogicImpl, CoralPOS">
+    <property name="DepartmentStockDAO" ref="CoralPOS.DataLayer.IDepartmentStockDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockTempLogic" type="CoralPOS.Logic.DepartmentStockTempLogicImpl, CoralPOS">
+    <property name="DepartmentStockTempDAO" ref="CoralPOS.DataLayer.IDepartmentStockTempDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentPriceLogic" type="CoralPOS.Logic.DepartmentPriceLogicImpl, CoralPOS">
+    <property name="DepartmentPriceDAO" ref="CoralPOS.DataLayer.IDepartmentPriceDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ICustomerLogic" type="CoralPOS.Logic.CustomerLogicImpl, CoralPOS">
+    <property name="CustomerDAO" ref="CoralPOS.DataLayer.ICustomersDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockOutLogic" type="CoralPOS.Logic.StockOutLogicImpl, CoralPOS">
+    <property name="StockOutDAO" ref="CoralPOS.DataLayer.IStockOutDAO"/>
+    <property name="StockOutDetailDAO" ref="CoralPOS.DataLayer.IStockOutDetailDAO"/>    
+    <property name="StockDAO" ref="CoralPOS.DataLayer.IStockDAO"/>
+    <property name="StockInDetailDAO" ref="CoralPOS.DataLayer.IStockInDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockInCostLogic" type="CoralPOS.Logic.DepartmentStockInCostLogicImpl, CoralPOS">
+    <property name="DepartmentStockInCostDAO" ref="CoralPOS.DataLayer.IDepartmentStockInCostDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockLogic" type="CoralPOS.Logic.StockLogicImpl, CoralPOS">
+    <property name="StockDAO" ref="CoralPOS.DataLayer.IStockDAO"/>
+    <property name="StockInDetailDAO" ref="CoralPOS.DataLayer.IStockInDetailDAO"/>
+    <property name="ReturnProductDAO" ref="CoralPOS.DataLayer.IReturnProductDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IEmployeeWorkingDayLogic" type="CoralPOS.Logic.EmployeeWorkingDayLogicImpl, CoralPOS">
+    <property name="EmployeeWorkingDayDAO" ref="CoralPOS.DataLayer.IEmployeeWorkingDayDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPurchaseOrderDetailLogLogic" type="CoralPOS.Logic.PurchaseOrderDetailLogLogicImpl, CoralPOS">
+    <property name="PurchaseOrderDetailLogDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDetailLogDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IEmployeeDetailLogic" type="CoralPOS.Logic.EmployeeDetailLogicImpl, CoralPOS">
+    <property name="EmployeeDetailDAO" ref="CoralPOS.DataLayer.IEmployeeDetailDAO"/>
+    <property name="EmployeeDAO" ref="CoralPOS.DataLayer.IEmployeeDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPurchaseOrderDetailLogic" type="CoralPOS.Logic.PurchaseOrderDetailLogicImpl, CoralPOS">
+    <property name="PurchaseOrderDetailDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ISupplierLogic" type="CoralPOS.Logic.SupplierLogicImpl, CoralPOS">
+    <property name="SupplierDAO" ref="CoralPOS.DataLayer.ISupplierDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IBlockInDetailLogic" type="CoralPOS.Logic.BlockInDetailLogicImpl, CoralPOS">
+    <property name="BlockInDetailDAO" ref="CoralPOS.DataLayer.IBlockInDetailDAO"/>
+    <property name="ProductDAO" ref="CoralPOS.DataLayer.IProductDAO"/>
+    <property name="ProductMasterDAO" ref="CoralPOS.DataLayer.IProductMasterDAO"/>
+    <property name="StockInDetailDAO" ref="CoralPOS.DataLayer.IStockInDetailDAO"/>
+    <property name="StockInDAO" ref="CoralPOS.DataLayer.IStockInDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPackagerLogic" type="CoralPOS.Logic.PackagerLogicImpl, CoralPOS">
+    <property name="PackagerDAO" ref="CoralPOS.DataLayer.IPackagerDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ISyncStatusLogic" type="CoralPOS.Logic.SyncStatusLogicImpl, CoralPOS">
+    <property name="SyncStatusDAO" ref="CoralPOS.DataLayer.ISyncStatusDAO"/>
+  </object>
+  
+  <object id="CoralPOS.Service.IContractLogic" type="CoralPOS.Logic.ContractLogicImpl, CoralPOS">
+    <property name="ContractDAO" ref="CoralPOS.DataLayer.IContractDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IProductColorLogic" type="CoralPOS.Logic.ProductColorLogicImpl, CoralPOS">
+    <property name="ProductColorDAO" ref="CoralPOS.DataLayer.IProductColorDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockInDetailLogic" type="CoralPOS.Logic.DepartmentStockInDetailLogicImpl, CoralPOS">
+    <property name="DepartmentStockInDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IReceiptOutLogic" type="CoralPOS.Logic.ReceiptOutLogicImpl, CoralPOS">
+    <property name="ReceiptOutDAO" ref="CoralPOS.DataLayer.IReceiptOutDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ICountryLogic" type="CoralPOS.Logic.CountryLogicImpl, CoralPOS">
+    <property name="CountryDAO" ref="CoralPOS.DataLayer.ICountryDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ICategoryLogic" type="CoralPOS.Logic.CategoryLogicImpl, CoralPOS">
+    <property name="CategoryDAO" ref="CoralPOS.DataLayer.ICategoryDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ITaxLogic" type="CoralPOS.Logic.TaxLogicImpl, CoralPOS">
+    <property name="TaxDAO" ref="CoralPOS.DataLayer.ITaxDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentReturnDetailLogic" type="CoralPOS.Logic.DepartmentReturnDetailLogicImpl, CoralPOS">
+    <property name="DepartmentReturnDetailDAO" ref="CoralPOS.DataLayer.IDepartmentReturnDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IManufacturerLogic" type="CoralPOS.Logic.ManufacturerLogicImpl, CoralPOS">
+    <property name="ManufacturerDAO" ref="CoralPOS.DataLayer.IManufacturerDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IGiftLogic" type="CoralPOS.Logic.GiftLogicImpl, CoralPOS">
+    <property name="GiftDAO" ref="CoralPOS.DataLayer.IGiftDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IReturnProductLogic" type="CoralPOS.Logic.ReturnProductLogicImpl, CoralPOS">
+    <property name="ReturnProductDAO" ref="CoralPOS.DataLayer.IReturnProductDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ICustomerDetailLogic" type="CoralPOS.Logic.CustomerDetailLogicImpl, CoralPOS">
+    <property name="CustomerDetailDAO" ref="CoralPOS.DataLayer.ICustomerDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentLogic" type="CoralPOS.Logic.DepartmentLogicImpl, CoralPOS">
+    <property name="DepartmentDAO" ref="CoralPOS.DataLayer.IDepartmentDAO"/>
+    <property name="EmployeeDetailDAO" ref="CoralPOS.DataLayer.IEmployeeDetailDAO"/>
+    <property name="EmployeeDAO" ref="CoralPOS.DataLayer.IEmployeeDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPromotionLogic" type="CoralPOS.Logic.PromotionLogicImpl, CoralPOS">
+    <property name="PromotionDAO" ref="CoralPOS.DataLayer.IPromotionDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ICouponTypeLogic" type="CoralPOS.Logic.CouponTypeLogicImpl, CoralPOS">
+    <property name="CouponTypeDAO" ref="CoralPOS.DataLayer.ICouponTypeDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPurchaseOrderLogLogic" type="CoralPOS.Logic.PurchaseOrderLogLogicImpl, CoralPOS">
+    <property name="PurchaseOrderLogDAO" ref="CoralPOS.DataLayer.IPurchaseOrderLogDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockOutLogic" type="CoralPOS.Logic.DepartmentStockOutLogicImpl, CoralPOS">
+    <property name="DepartmentStockOutDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutDAO"/>
+    <property name="DepartmentStockDAO" ref="CoralPOS.DataLayer.IDepartmentStockDAO"/>
+    <property name="DepartmentStockTempDAO" ref="CoralPOS.DataLayer.IDepartmentStockTempDAO"/>
+    <property name="StockDAO" ref="CoralPOS.DataLayer.IStockDAO"/>
+    <property name="DepartmentStockOutDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutDetailDAO"/>
+    <property name="DepartmentStockInDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDetailDAO"/>
+    <property name="PurchaseOrderDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDAO"/>
+    <property name="PurchaseOrderDetailDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDetailDAO"/>
+    <property name="ReturnPoDAO" ref="CoralPOS.DataLayer.IReturnPoDAO"/>
+    <property name="DepartmentStockHistoryDAO" ref="CoralPOS.DataLayer.IDepartmentStockHistoryDAO"/>
+    <property name="DepartmentStockInDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDAO"/>
+    <property name="DepartmentTimelineDAO" ref="CoralPOS.DataLayer.IDepartmentTimelineDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentPromotionLogic" type="CoralPOS.Logic.DepartmentPromotionLogicImpl, CoralPOS">
+    <property name="DepartmentPromotionDAO" ref="CoralPOS.DataLayer.IDepartmentPromotionDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPurchaseOrderLogic" type="CoralPOS.Logic.PurchaseOrderLogicImpl, CoralPOS">
+    <property name="PurchaseOrderDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDAO"/>
+    <property name="ProductDAO" ref="CoralPOS.DataLayer.IProductDAO"/>
+    <property name="PurchaseOrderDetailDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDetailDAO"/>
+    <property name="DepartmentStockDAO" ref="CoralPOS.DataLayer.IDepartmentStockDAO"/>
+    <property name="DepartmentStockInDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDetailDAO"/>
+    <property name="ReceiptDAO" ref="CoralPOS.DataLayer.IReceiptDAO"/>
+    <property name="ReturnPoDAO" ref="CoralPOS.DataLayer.IReturnPoDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockOutDetailLogic" type="CoralPOS.Logic.StockOutDetailLogicImpl, CoralPOS">
+    <property name="StockOutDetailDAO" ref="CoralPOS.DataLayer.IStockOutDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockInDetailLogic" type="CoralPOS.Logic.StockInDetailLogicImpl, CoralPOS">
+    <property name="StockInDetailDAO" ref="CoralPOS.DataLayer.IStockInDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockHistoryLogic" type="CoralPOS.Logic.StockHistoryLogicImpl, CoralPOS">
+    <property name="StockHistoryDAO" ref="CoralPOS.DataLayer.IStockHistoryDAO"/>
+  </object>
+  
+  <object id="CoralPOS.Service.IDepartmentStockHistoryLogic" type="CoralPOS.Logic.DepartmentStockHistoryLogicImpl, CoralPOS">
+    <property name="DepartmentStockHistoryDAO" ref="CoralPOS.DataLayer.IDepartmentStockHistoryDAO"/>
+  </object>
+
+
+  <object id="CoralPOS.Service.IDepartmentStockInLogic" type="CoralPOS.Logic.DepartmentStockInLogicImpl, CoralPOS">
+
+    <property name="DepartmentStockTempDAO" ref="CoralPOS.DataLayer.IDepartmentStockTempDAO"/>
+    <property name="DepartmentStockOutDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutDAO"/>
+    <property name="DepartmentStockOutDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutDetailDAO"/>
+    <property name="DepartmentStockInDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDAO"/>
+    <property name="DepartmentStockInDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDetailDAO"/>
+    <property name="DepartmentStockDAO" ref="CoralPOS.DataLayer.IDepartmentStockDAO"/>
+    <property name="ProductDAO" ref="CoralPOS.DataLayer.IProductDAO"/>
+    <property name="ProductMasterDAO" ref="CoralPOS.DataLayer.IProductMasterDAO"/>
+    <property name="StockDAO" ref="CoralPOS.DataLayer.IStockDAO"/>
+    <property name="StockOutDAO" ref="CoralPOS.DataLayer.IStockOutDAO"/>
+    <property name="DepartmentPriceDAO" ref="CoralPOS.DataLayer.IDepartmentPriceDAO"/>
+    <property name="DepartmentDAO" ref="CoralPOS.DataLayer.IDepartmentDAO"/>
+    <property name="CountryDAO" ref="CoralPOS.DataLayer.ICountryDAO"/>
+    <property name="ProductColorDAO" ref="CoralPOS.DataLayer.IProductColorDAO"/>
+    <property name="ProductSizeDAO" ref="CoralPOS.DataLayer.IProductSizeDAO"/>
+    <property name="ProductTypeDAO" ref="CoralPOS.DataLayer.IProductTypeDAO"/>
+    <property name="DistributorDAO" ref="CoralPOS.DataLayer.IDistributorDAO"/>
+    <property name="ManufacturerDAO" ref="CoralPOS.DataLayer.IManufacturerDAO"/>
+    <property name="PackagerDAO" ref="CoralPOS.DataLayer.IPackagerDAO"/>
+    <property name="EmployeeDAO" ref="CoralPOS.DataLayer.IEmployeeDAO"/>
+    <property name="EmployeeDetailDAO" ref="CoralPOS.DataLayer.IEmployeeDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IProductSizeLogic" type="CoralPOS.Logic.ProductSizeLogicImpl, CoralPOS">
+    <property name="ProductSizeDAO" ref="CoralPOS.DataLayer.IProductSizeDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IBlockInCostLogic" type="CoralPOS.Logic.BlockInCostLogicImpl, CoralPOS">
+    <property name="BlockInCostDAO" ref="CoralPOS.DataLayer.IBlockInCostDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IProductMasterLogic" type="CoralPOS.Logic.ProductMasterLogicImpl, CoralPOS">
+    <property name="ProductMasterDAO" ref="CoralPOS.DataLayer.IProductMasterDAO"/>
+    <property name="ProductDAO" ref="CoralPOS.DataLayer.IProductDAO"/>
+    <property name="DepartmentStockInDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDetailDAO"/>
+    <property name="DepartmentStockInDAO" ref="CoralPOS.DataLayer.IDepartmentStockInDAO"/>
+    <property name="DepartmentStockDAO" ref="CoralPOS.DataLayer.IDepartmentStockDAO"/>
+    <property name="PurchaseOrderDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDAO"/>
+    <property name="PurchaseOrderDetailDAO" ref="CoralPOS.DataLayer.IPurchaseOrderDetailDAO"/>
+    <property name="DepartmentPriceDAO" ref="CoralPOS.DataLayer.IDepartmentPriceDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDistributorLogic" type="CoralPOS.Logic.DistributorLogicImpl, CoralPOS">
+    <property name="DistributorDAO" ref="CoralPOS.DataLayer.IDistributorDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IEmployeeLogic" type="CoralPOS.Logic.EmployeeLogicImpl, CoralPOS">
+    <property name="EmployeeDAO" ref="CoralPOS.DataLayer.IEmployeeDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentReturnCostLogic" type="CoralPOS.Logic.DepartmentReturnCostLogicImpl, CoralPOS">
+    <property name="DepartmentReturnCostDAO" ref="CoralPOS.DataLayer.IDepartmentReturnCostDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ICouponLogic" type="CoralPOS.Logic.CouponLogicImpl, CoralPOS">
+    <property name="CouponDAO" ref="CoralPOS.DataLayer.ICouponDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPurchaseOrderPromotionLogic" type="CoralPOS.Logic.PurchaseOrderPromotionLogicImpl, CoralPOS">
+    <property name="PurchaseOrderPromotionDAO" ref="CoralPOS.DataLayer.IPurchaseOrderPromotionDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.ISimilarProductLogic" type="CoralPOS.Logic.SimilarProductLogicImpl, CoralPOS">
+    <property name="SimilarProductDAO" ref="CoralPOS.DataLayer.ISimilarProductDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockOutCostLogic" type="CoralPOS.Logic.DepartmentStockOutCostLogicImpl, CoralPOS">
+    <property name="DepartmentStockOutCostDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutCostDAO"/>    
+  </object>
+
+  <object id="CoralPOS.Service.IBlockInLogic" type="CoralPOS.Logic.BlockInLogicImpl, CoralPOS">
+    <property name="BlockInDAO" ref="CoralPOS.DataLayer.IBlockInDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IEmployeeRewardLogic" type="CoralPOS.Logic.EmployeeRewardLogicImpl, CoralPOS">
+    <property name="EmployeeRewardDAO" ref="CoralPOS.DataLayer.IEmployeeRewardDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentStockOutDetailLogic" type="CoralPOS.Logic.DepartmentStockOutDetailLogicImpl, CoralPOS">
+    <property name="DepartmentStockOutDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutDetailDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IReturnBlockInLogic" type="CoralPOS.Logic.ReturnBlockInLogicImpl, CoralPOS">
+    <property name="ReturnBlockInDAO" ref="CoralPOS.DataLayer.IReturnBlockInDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IProductTypeLogic" type="CoralPOS.Logic.ProductTypeLogicImpl, CoralPOS">
+    <property name="ProductTypeDAO" ref="CoralPOS.DataLayer.IProductTypeDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IStockInLogic" type="CoralPOS.Logic.StockInLogicImpl, CoralPOS">
+    <property name="StockInDAO" ref="CoralPOS.DataLayer.IStockInDAO"/>
+    <property name="StockInDetailDAO" ref="CoralPOS.DataLayer.IStockInDetailDAO"/>
+    <property name="StockDAO" ref="CoralPOS.DataLayer.IStockDAO"/>
+    <property name="ProductDAO" ref="CoralPOS.DataLayer.IProductDAO"/>
+    <property name="DepartmentPriceDAO" ref="CoralPOS.DataLayer.IDepartmentPriceDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IReturnPoLogic" type="CoralPOS.Logic.ReturnPoLogicImpl, CoralPOS">
+    <property name="ReturnPoDAO" ref="CoralPOS.DataLayer.IReturnPoDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IScheduleTemplateLogic" type="CoralPOS.Logic.ScheduleTemplateLogicImpl, CoralPOS">
+    <property name="ScheduleTemplateDAO" ref="CoralPOS.DataLayer.IScheduleTemplateDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IEmployeeDayoffLogic" type="CoralPOS.Logic.EmployeeDayoffLogicImpl, CoralPOS">
+    <property name="EmployeeDayoffDAO" ref="CoralPOS.DataLayer.IEmployeeDayoffDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IProductLogic" type="CoralPOS.Logic.ProductLogicImpl, CoralPOS">
+    <property name="ProductDAO" ref="CoralPOS.DataLayer.IProductDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPublishedCouponLogic" type="CoralPOS.Logic.PublishedCouponLogicImpl, CoralPOS">
+    <property name="PublishedCouponDAO" ref="CoralPOS.DataLayer.IPublishedCouponDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IReceiptOutCostLogic" type="CoralPOS.Logic.ReceiptOutCostLogicImpl, CoralPOS">
+    <property name="ReceiptOutCostDAO" ref="CoralPOS.DataLayer.IReceiptOutCostDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IOtherTransactionLogLogic" type="CoralPOS.Logic.OtherTransactionLogLogicImpl, CoralPOS">
+    <property name="OtherTransactionLogDAO" ref="CoralPOS.DataLayer.IOtherTransactionLogDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentTimelineLogic" type="CoralPOS.Logic.DepartmentTimelineLogicImpl, CoralPOS">
+    <property name="DepartmentTimelineDAO" ref="CoralPOS.DataLayer.IDepartmentTimelineDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IDepartmentManagementLogic" type="CoralPOS.Logic.DepartmentManagementLogicImpl, CoralPOS">
+    <property name="DepartmentManagementDAO" ref="CoralPOS.DataLayer.IDepartmentManagementDAO"/>
+  </object>
+
+  <object id="CoralPOS.Service.IPosLogLogic" type="CoralPOS.Logic.PosLogLogicImpl, CoralPOS">
+    <property name="PosLogDAO" ref="CoralPOS.DataLayer.IPosLogDAO"/>
+  </object>
+  
+  <!-- Logic Objects -->
+  <object id="LocalLoginLogic" type="CoralPOS.Logic.LoginLogic, CoralPOS">
+    <property name="LoginDao" ref="LoginDaoImpl" />
+    <property name="RoleDao" ref="RoleDaoImpl" />
+  </object>
+
+  <tx:attribute-driven/>
+</objects>

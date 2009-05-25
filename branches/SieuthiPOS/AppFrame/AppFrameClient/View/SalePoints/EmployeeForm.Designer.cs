@@ -1,4 +1,4 @@
-﻿namespace AppFrameClient.View.SalePoints
+﻿namespace CoralPOS.View.SalePoints
 {
     partial class EmployeeForm
     {

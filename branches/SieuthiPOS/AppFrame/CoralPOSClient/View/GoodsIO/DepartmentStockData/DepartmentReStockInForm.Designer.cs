@@ -109,7 +109,7 @@
             // 
             // colorBindingSource
             // 
-            this.colorBindingSource.DataSource = typeof(AppFrame.Model.ProductColor);
+            this.colorBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductColor);
             // 
             // txtQty
             // 
@@ -163,7 +163,7 @@
             // 
             // sizeBindingSource
             // 
-            this.sizeBindingSource.DataSource = typeof(AppFrame.Model.ProductSize);
+            this.sizeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductSize);
             // 
             // label15
             // 

@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace AppFrameClient {
+namespace CoralPOS {
     
     
     /// <summary>
@@ -3966,7 +3966,7 @@ namespace AppFrameClient {
         }
     }
 }
-namespace AppFrameClient.MasterDBTableAdapters {
+namespace CoralPOS.MasterDBTableAdapters {
     
     
     /// <summary>
@@ -4479,7 +4479,7 @@ namespace AppFrameClient.MasterDBTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::AppFrameClient.Properties.Settings.Default.posConnectionString;
+            this._connection.ConnectionString = global::CoralPOS.Properties.Settings.Default.posConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5332,7 +5332,7 @@ namespace AppFrameClient.MasterDBTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::AppFrameClient.Properties.Settings.Default.posConnectionString;
+            this._connection.ConnectionString = global::CoralPOS.Properties.Settings.Default.posConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6185,7 +6185,7 @@ namespace AppFrameClient.MasterDBTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::AppFrameClient.Properties.Settings.Default.posConnectionString;
+            this._connection.ConnectionString = global::CoralPOS.Properties.Settings.Default.posConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7729,7 +7729,7 @@ namespace AppFrameClient.MasterDBTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::AppFrameClient.Properties.Settings.Default.posConnectionString;
+            this._connection.ConnectionString = global::CoralPOS.Properties.Settings.Default.posConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9268,7 +9268,7 @@ namespace AppFrameClient.MasterDBTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::AppFrameClient.Properties.Settings.Default.posConnectionString;
+            this._connection.ConnectionString = global::CoralPOS.Properties.Settings.Default.posConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using CoralPOS.Interfaces.Logic;
 using System.Collections;
 using CoralPOS.Interfaces.Model;
-using CoralPOS.Interfaces.Utility;
+using AppFrame.Utility;
 using AppFrame;
 using CoralPOS.Common;
 

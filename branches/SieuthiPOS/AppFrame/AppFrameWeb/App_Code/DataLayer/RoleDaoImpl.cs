@@ -14,7 +14,7 @@ using Spring.Data.NHibernate.Support;
 /// <summary>
 /// Summary description for RoleDaoImpl
 /// </summary>
-namespace AppFrame.DataLayer
+namespace CoralPOS.DataLayer
 {
     public class RoleDaoImpl : HibernateDaoSupport, IRoleDao
     {  

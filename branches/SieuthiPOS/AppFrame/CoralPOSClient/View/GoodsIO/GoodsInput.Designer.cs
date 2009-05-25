@@ -97,7 +97,7 @@
             // 
             // supplierBindingSource
             // 
-            this.supplierBindingSource.DataSource = typeof(AppFrame.Model.Supplier);
+            this.supplierBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Supplier);
             // 
             // textBox2
             // 
@@ -324,23 +324,23 @@
             // 
             // productBindingSource
             // 
-            this.productBindingSource.DataSource = typeof(AppFrame.Model.Product);
+            this.productBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.Product);
             // 
             // productTypeBindingSource
             // 
-            this.productTypeBindingSource.DataSource = typeof(AppFrame.Model.ProductType);
+            this.productTypeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductType);
             // 
             // productColorBindingSource
             // 
-            this.productColorBindingSource.DataSource = typeof(AppFrame.Model.ProductColor);
+            this.productColorBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductColor);
             // 
             // productSizeBindingSource
             // 
-            this.productSizeBindingSource.DataSource = typeof(AppFrame.Model.ProductSize);
+            this.productSizeBindingSource.DataSource = typeof(CoralPOS.Interfaces.Model.ProductSize);
             // 
             // supplierBindingSource1
             // 
-            this.supplierBindingSource1.DataSource = typeof(AppFrame.Model.Supplier);
+            this.supplierBindingSource1.DataSource = typeof(CoralPOS.Interfaces.Model.Supplier);
             // 
             // numericUpDown
             // 

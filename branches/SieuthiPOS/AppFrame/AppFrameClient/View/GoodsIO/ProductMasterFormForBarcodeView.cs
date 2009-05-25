@@ -8,14 +8,14 @@ using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame.Common;
-using AppFrame.Model;
-using AppFrame.Presenter.GoodsIO;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
-using AppFrame.View.GoodsIO;
-using AppFrameClient.Common;
-using AppFrameClient.View.Masters;
+using CoralPOS.Interfaces.View.GoodsIO;
+using CoralPOS.Common;
+using CoralPOS.View.Masters;
 
-namespace AppFrameClient.View.GoodsIO
+namespace CoralPOS.View.GoodsIO
 {
     public partial class ProductMasterFormForBarcodeView : BaseForm, IProductMasterView
     {

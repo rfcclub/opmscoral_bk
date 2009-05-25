@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using AppFrame;
-using CoralPOS.Interfaces.Common;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
@@ -16,8 +17,8 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
     {
         #region IBaseStockOutController Members
 
-        private AppFrame.View.GoodsIO.MainStock.IBaseStockOutView baseStockOutView;
-        public AppFrame.View.GoodsIO.MainStock.IBaseStockOutView BaseStockOutView
+        private CoralPOS.Interfaces.View.GoodsIO.MainStock.IBaseStockOutView baseStockOutView;
+        public CoralPOS.Interfaces.View.GoodsIO.MainStock.IBaseStockOutView BaseStockOutView
         {
             get
             {
@@ -234,31 +235,31 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
 
       
 
-        public Logic.IProductLogic ProductLogic
+        public IProductLogic ProductLogic
         {
             get;set;
             
         }
 
-        public Logic.IStockLogic StockLogic
+        public IStockLogic StockLogic
         {
             get;set;
             
         }
 
-        public Logic.IStockOutLogic StockOutLogic
+        public IStockOutLogic StockOutLogic
         {
             get;set;
             
         }
 
-        public Logic.IStockOutDetailLogic StockOutDetailLogic
+        public IStockOutDetailLogic StockOutDetailLogic
         {
             get;set;
             
         }
 
-        public Logic.IProductMasterLogic ProductMasterLogic
+        public IProductMasterLogic ProductMasterLogic
         {
             get;set;
         }
@@ -268,7 +269,7 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
         #region IBaseStockOutController Members
 
 
-        public Logic.IDepartmentStockHistoryLogic DepartmentStockHistoryLogic
+        public IDepartmentStockHistoryLogic DepartmentStockHistoryLogic
         {
             get;set;
         }
@@ -278,12 +279,12 @@ namespace CoralPOS.Presenter.GoodsIO.MainStock
         #region IBaseStockOutController Members
 
 
-        public Logic.IDepartmentStockOutLogic DepartmentStockOutLogic
+        public IDepartmentStockOutLogic DepartmentStockOutLogic
         {
             get;set;
         }
 
-        public Logic.IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
+        public IDepartmentStockOutDetailLogic DepartmentStockOutDetailLogic
         {
             get;set;
         }

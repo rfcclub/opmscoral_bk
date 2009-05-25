@@ -1,5 +1,6 @@
 using System.Collections;
 using AppFrame;
+using CoralPOS.Interfaces.Logic;
 using NHibernate.Criterion;
 using Spring.Transaction.Interceptor;
 using CoralPOS.Interfaces.Model;

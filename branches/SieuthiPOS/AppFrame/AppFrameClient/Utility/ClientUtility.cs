@@ -10,14 +10,14 @@ using System.Management;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using AppFrame.Common;
-using AppFrame.Exceptions;
-using AppFrame.Model;
+using CoralPOS.Interfaces.Exceptions;
+using CoralPOS.Interfaces.Model;
 using AppFrame.Utility;
-using AppFrameClient.Common;
+using CoralPOS.Common;
 using log4net;
 using MySql.Data.MySqlClient;
 
-namespace AppFrameClient.Utility
+namespace CoralPOS.Utility
 {
     public class ClientUtility
     {

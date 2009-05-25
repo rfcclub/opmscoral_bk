@@ -8,7 +8,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using AppFrame.DataLayer;
+using AppFrame;
+using CoralPOS.DataLayer;
 using AppFrame.Common;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.DataLayer;
@@ -16,7 +17,7 @@ using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using ObjectConverter=AppFrame.Utility.ObjectConverter;
 
-namespace AppFrame.Logic
+namespace CoralPOS.Logic
 {
 
     public class LoginLogic : ILoginLogic

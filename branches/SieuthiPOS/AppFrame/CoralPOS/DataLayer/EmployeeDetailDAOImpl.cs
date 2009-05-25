@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using AppFrame;
 using CoralPOS.Interfaces.Common;
+using CoralPOS.Interfaces.DataLayer;
 using NHibernate;
 using NHibernate.Criterion;
 using Spring.Data.NHibernate;

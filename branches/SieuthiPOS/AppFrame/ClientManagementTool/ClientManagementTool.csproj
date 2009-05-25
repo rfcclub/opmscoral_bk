@@ -190,6 +190,14 @@
       <Project>{73A362AB-99CF-4AA1-8278-01CAED2516F0}</Project>
       <Name>AppFrame</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CoralPOS.Interfaces\CoralPOS.Interfaces.csproj">
+      <Project>{A377C470-FB76-423D-A15F-A81B58C1EF31}</Project>
+      <Name>CoralPOS.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoralPOS\CoralPOS.csproj">
+      <Project>{980B950B-5AC9-4C8E-A956-45C401BFEF89}</Project>
+      <Name>CoralPOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Config\MySQLDao.xml" />
