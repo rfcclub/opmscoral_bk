@@ -9,7 +9,7 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 
-namespace CoralPOS.Presenter.GoodsIO.MainStock
+namespace CoralPOSClient.Presenter.GoodsIO.MainStock
 {
     public class MainStockInSearchController : IMainStockInSearchController
     {

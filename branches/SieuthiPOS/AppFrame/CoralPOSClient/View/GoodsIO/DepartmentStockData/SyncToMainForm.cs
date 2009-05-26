@@ -21,7 +21,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
 using CoralPOS.Utility;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class SyncToMainForm : BaseForm, IDepartmentStockOutView
     {

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOS.View.Masters
+namespace CoralPOSClient.View.Masters
 {
     public partial class ProductTypeMasterForm : Form
     {

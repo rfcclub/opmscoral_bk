@@ -19,10 +19,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
-using CoralPOS.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
 using CoralPOS.Utility;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class LoadDepartmentStockInToFileForm : BaseForm, IDepartmentStockInExtraView
     {

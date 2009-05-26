@@ -13,7 +13,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Common;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class ProductMasterSearchForm : BaseForm, IProductMasterSearchOrCreateView
     {

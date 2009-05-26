@@ -6,7 +6,7 @@ using AppFrame.Common;
 using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Common;
-using CoralPOS.View;
+using CoralPOSClient.View;
 
 namespace AppFrame.Presenter
 {

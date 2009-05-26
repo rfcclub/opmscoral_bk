@@ -1,4 +1,4 @@
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     partial class EditCustomerForm
     {

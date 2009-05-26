@@ -13,7 +13,7 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockInDetailSearchForm : BaseForm, IDepartmentStockDetailView
     {

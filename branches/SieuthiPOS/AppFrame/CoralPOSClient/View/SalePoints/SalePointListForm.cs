@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 
-namespace CoralPOS.View.SalePoints
+namespace CoralPOSClient.View.SalePoints
 {
     public partial class SalePointListForm : BaseForm,ISalePointListView
     {

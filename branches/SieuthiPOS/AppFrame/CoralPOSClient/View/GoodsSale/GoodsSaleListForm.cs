@@ -20,7 +20,7 @@ using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.ViewModel;
 using ArrayList=System.Collections.ArrayList;
 
-namespace CoralPOS.View.GoodsSale
+namespace CoralPOSClient.View.GoodsSale
 {
     public partial class GoodsSaleListForm : BaseForm,IGoodsSaleListView
     {

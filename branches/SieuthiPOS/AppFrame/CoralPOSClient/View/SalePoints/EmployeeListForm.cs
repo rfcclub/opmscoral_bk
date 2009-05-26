@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 using BarcodeLib;
 
-namespace CoralPOS.View.SalePoints
+namespace CoralPOSClient.View.SalePoints
 {
     public partial class EmployeeListForm : BaseForm,IEmployeeListView
     {

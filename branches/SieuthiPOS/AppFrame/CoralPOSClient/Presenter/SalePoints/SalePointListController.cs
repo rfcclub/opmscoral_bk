@@ -11,10 +11,10 @@ using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 using CoralPOS.Common;
-using CoralPOS.View.SalePoints;
+using CoralPOSClient.View.SalePoints;
 using NHibernate;
 
-namespace CoralPOS.Presenter.SalePoints
+namespace CoralPOSClient.Presenter.SalePoints
 {
     public class SalePointListController : ISalePointListController
     {

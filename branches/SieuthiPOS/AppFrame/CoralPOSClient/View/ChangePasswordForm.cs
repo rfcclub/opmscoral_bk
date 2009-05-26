@@ -11,7 +11,7 @@ using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     public partial class ChangePasswordForm : BaseForm,IChangePasswordView<LoginEventArgs>
     {

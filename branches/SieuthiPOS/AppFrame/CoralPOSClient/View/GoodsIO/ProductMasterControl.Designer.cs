@@ -1,4 +1,4 @@
-﻿namespace CoralPOS.View.GoodsIO
+﻿namespace CoralPOSClient.View.GoodsIO
 {
     partial class ProductMasterControl
     {

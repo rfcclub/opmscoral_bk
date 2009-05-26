@@ -16,7 +16,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Utility;
 using NHibernate.Criterion;
 
-namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentPriceUpdateController : IDepartmentPriceUpdateController
     {

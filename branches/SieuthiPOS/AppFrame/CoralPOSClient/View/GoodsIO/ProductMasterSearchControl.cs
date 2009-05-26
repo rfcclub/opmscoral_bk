@@ -6,7 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class ProductMasterSearchControl : UserControl
     {

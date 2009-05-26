@@ -15,7 +15,7 @@ using CoralPOS.Interfaces.View;
 using CoralPOS.Interfaces.View.GoodsIO;
 using NHibernate.Criterion;
 
-namespace CoralPOS.Presenter
+namespace CoralPOSClient.Presenter
 {
     public class PosLogController : IPosLogController
     {

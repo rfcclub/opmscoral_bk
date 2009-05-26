@@ -18,7 +18,7 @@ using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 using POSReports;
 
-namespace CoralPOS.View.Reports
+namespace CoralPOSClient.View.Reports
 {
     public partial class frmStockinStatistic : BaseForm,IReportStockInView
     {

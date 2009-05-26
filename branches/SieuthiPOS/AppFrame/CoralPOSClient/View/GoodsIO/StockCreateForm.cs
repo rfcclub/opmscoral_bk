@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class StockCreateForm : BaseForm, IStockCreateView
     {

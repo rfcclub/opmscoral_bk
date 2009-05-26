@@ -18,7 +18,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.ViewModel;
 using CoralPOS.Common;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockViewCheckingForm : AppFrame.Common.BaseForm, IDepartmentStockCheckingView
     {

@@ -13,7 +13,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 
-namespace CoralPOS.View.Reports
+namespace CoralPOSClient.View.Reports
 {
     public partial class MainStockOutReportForm : AppFrame.Common.BaseForm,IStockOutReportView
     {

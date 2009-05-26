@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOS.View.GoodsIO.MainStock
+namespace CoralPOSClient.View.GoodsIO.MainStock
 {
     partial class BaseStockOutForm
     {

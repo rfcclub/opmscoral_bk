@@ -1,7 +1,7 @@
 ﻿using System;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     partial class ProductMasterCreateForm
     {

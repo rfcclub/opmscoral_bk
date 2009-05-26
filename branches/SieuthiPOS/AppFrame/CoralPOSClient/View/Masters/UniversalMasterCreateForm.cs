@@ -10,7 +10,7 @@ using CoralPOS.Interfaces.Presenter.Masters;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Masters;
 
-namespace CoralPOS.View.Masters
+namespace CoralPOSClient.View.Masters
 {
     public partial class UniversalMasterCreateForm : Form, IUniversalMasterSaveView
     {

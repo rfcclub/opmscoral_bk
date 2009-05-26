@@ -1,4 +1,4 @@
-﻿namespace CoralPOS.View.SalePoints
+﻿namespace CoralPOSClient.View.SalePoints
 {
     partial class FineBonusForm
     {

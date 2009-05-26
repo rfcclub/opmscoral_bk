@@ -13,10 +13,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Common;
-using CoralPOS.View.GoodsIO.DepartmentStockData;
 using CoralPOS.ViewModel;
+using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 
-namespace CoralPOS.View.GoodsIO.MainStock
+namespace CoralPOSClient.View.GoodsIO.MainStock
 {
     public partial class InventoryCheckingForm : AppFrame.Common.BaseForm,IInventoryCheckingView
     {

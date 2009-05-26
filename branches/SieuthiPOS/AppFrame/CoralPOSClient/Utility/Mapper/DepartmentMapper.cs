@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.Model;
-using CoralPOS.View.SalePoints;
+using CoralPOSClient.View.SalePoints;
 
 namespace CoralPOS.Utility.Mapper
 {

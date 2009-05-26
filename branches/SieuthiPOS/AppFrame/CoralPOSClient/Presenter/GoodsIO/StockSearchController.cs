@@ -14,7 +14,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using NHibernate.Criterion;
 
-namespace CoralPOS.Presenter.GoodsIO
+namespace CoralPOSClient.Presenter.GoodsIO
 {
     public class StockSearchController : IStockSearchController
     {

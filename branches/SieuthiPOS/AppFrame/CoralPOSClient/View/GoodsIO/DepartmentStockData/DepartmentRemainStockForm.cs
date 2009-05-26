@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentRemainStockForm : Form
     {

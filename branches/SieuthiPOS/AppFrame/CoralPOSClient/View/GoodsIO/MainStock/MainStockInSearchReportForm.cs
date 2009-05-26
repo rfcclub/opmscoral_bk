@@ -16,10 +16,10 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Common;
-using CoralPOS.View.GoodsIO.DepartmentStockData;
+using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 //using Aspose.Cells;
 
-namespace CoralPOS.View.GoodsIO.MainStock
+namespace CoralPOSClient.View.GoodsIO.MainStock
 {
     public partial class MainStockInSearchReportForm : BaseForm, IMainStockInSearchView
     {

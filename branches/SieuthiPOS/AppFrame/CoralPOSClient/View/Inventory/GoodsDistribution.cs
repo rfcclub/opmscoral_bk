@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOS.View.Inventory
+namespace CoralPOSClient.View.Inventory
 {
     public partial class GoodsDistribution : Form
     {

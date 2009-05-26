@@ -14,7 +14,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
-namespace CoralPOS.View.GoodsIO.MainStock
+namespace CoralPOSClient.View.GoodsIO.MainStock
 {
    
     public partial class BaseStockOutForm : AppFrame.Common.BaseForm,IBaseStockOutView

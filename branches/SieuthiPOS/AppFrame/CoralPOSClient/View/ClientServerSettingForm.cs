@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using CoralPOS.Common;
 using CoralPOSClient.Properties;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     public partial class ClientServerSettingForm : Form
     {

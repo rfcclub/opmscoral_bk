@@ -20,13 +20,13 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
-using CoralPOS.View.GoodsIO;
+using CoralPOSClient.View.GoodsIO;
 using CoralPOS.Common;
-using CoralPOS.View.GoodsIO.DepartmentStockData;
+using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 using Microsoft.Reporting.WinForms;
 
 
-namespace CoralPOS.View.GoodsSale
+namespace CoralPOSClient.View.GoodsSale
 {
     public partial class GoodsSaleForm : BaseForm,IGoodsSaleView
     {

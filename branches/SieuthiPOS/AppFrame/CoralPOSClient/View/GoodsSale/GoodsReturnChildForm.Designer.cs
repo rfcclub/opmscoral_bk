@@ -1,4 +1,4 @@
-﻿namespace CoralPOS.View.GoodsSale
+﻿namespace CoralPOSClient.View.GoodsSale
 {
     partial class GoodsReturnChildForm
     {

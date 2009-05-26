@@ -14,10 +14,10 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.Inventory;
 using CoralPOS.Common;
-using CoralPOS.View.GoodsIO.DepartmentStockData;
 using CoralPOS.ViewModel;
+using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 
-namespace CoralPOS.View.Inventory
+namespace CoralPOSClient.View.Inventory
 {
     public partial class DepartmentStockAdhocCheckingForm : BaseForm, IDepartmentStockAdhocProcessingView
     {

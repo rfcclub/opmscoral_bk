@@ -14,7 +14,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using Microsoft.Reporting.WinForms;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class ProductMasterSearchDepartmentForm : BaseForm,IProductMasterSearchDepartmentView
     {

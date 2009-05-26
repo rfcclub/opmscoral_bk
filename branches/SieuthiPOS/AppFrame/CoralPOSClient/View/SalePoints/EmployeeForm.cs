@@ -14,7 +14,7 @@ using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.View.SalePoints;
 using CoralPOS.Interfaces.Presenter.SalePoints;
 
-namespace CoralPOS.View.SalePoints
+namespace CoralPOSClient.View.SalePoints
 {
     public partial class EmployeeForm : BaseForm, IEmployeeView
     {

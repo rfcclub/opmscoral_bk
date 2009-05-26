@@ -11,7 +11,7 @@ using CoralPOS.Interfaces.Presenter.Report;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Reports;
 
-namespace CoralPOS.View.Reports
+namespace CoralPOSClient.View.Reports
 {
     public partial class frmStockinRpt : BaseForm,IReportStockInParamView
     {

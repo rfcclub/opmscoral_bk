@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     public partial class WaitingForm : Form
     {

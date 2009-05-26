@@ -13,9 +13,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Common;
-using CoralPOS.View.Masters;
+using CoralPOSClient.View.Masters;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class ProductMasterFormForBarcodeView : BaseForm, IProductMasterView
     {

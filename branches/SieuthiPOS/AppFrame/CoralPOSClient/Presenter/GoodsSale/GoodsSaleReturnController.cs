@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 
-namespace CoralPOS.Presenter.GoodsSale
+namespace CoralPOSClient.Presenter.GoodsSale
 {
     public class GoodsSaleReturnController : IGoodsSaleReturnController
     {

@@ -17,7 +17,7 @@ using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class StockOutConfirmForm : BaseForm,IStockOutConfirmView
     {

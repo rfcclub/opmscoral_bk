@@ -17,10 +17,10 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using BarcodeLib;
 using CoralPOS.Common;
-using CoralPOS.Presenter.GoodsIO.MainStock;
+using CoralPOSClient.Presenter.GoodsIO.MainStock;
 
 
-namespace CoralPOS.View.GoodsIO.MainStock
+namespace CoralPOSClient.View.GoodsIO.MainStock
 {
     public partial class MainStockInForm : BaseForm, IMainStockInView
     {

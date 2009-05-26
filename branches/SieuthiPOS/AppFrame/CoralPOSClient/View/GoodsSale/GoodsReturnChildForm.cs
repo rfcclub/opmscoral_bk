@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.Common;
 
-namespace CoralPOS.View.GoodsSale
+namespace CoralPOSClient.View.GoodsSale
 {
     public partial class GoodsReturnChildForm : BaseForm, IGoodsSaleReturnView
     {

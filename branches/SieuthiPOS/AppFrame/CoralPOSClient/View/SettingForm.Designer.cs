@@ -1,6 +1,6 @@
 ﻿using CoralPOSClient.Properties;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     partial class SettingForm
     {

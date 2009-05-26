@@ -13,9 +13,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 using CoralPOS.Interfaces.View.GoodsIO;
-using CoralPOS.View.GoodsIO;
+using CoralPOSClient.View.GoodsIO;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     public partial class PosLogForm : BaseForm, IPosLogView
     {

@@ -14,7 +14,7 @@ using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 
-namespace CoralPOS.Presenter.GoodsSale
+namespace CoralPOSClient.Presenter.GoodsSale
 {
     public class GoodsSaleController : IGoodsSaleController
     {

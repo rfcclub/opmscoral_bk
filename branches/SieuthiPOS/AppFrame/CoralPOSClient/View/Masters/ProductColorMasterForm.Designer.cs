@@ -1,6 +1,7 @@
-﻿using CoralPOS.MasterDBTableAdapters;
+﻿using CoralPOS;
+using CoralPOS.MasterDBTableAdapters;
 
-namespace CoralPOS.View.Masters
+namespace CoralPOSClient.View.Masters
 {
     partial class ProductColorMasterForm
     {

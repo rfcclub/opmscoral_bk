@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using AppFrame.Utility;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class ProductMasterCreateControl : UserControl
     {

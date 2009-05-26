@@ -9,7 +9,7 @@ using System.Collections;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class GoodsInputDetail : Form
     {

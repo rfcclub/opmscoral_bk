@@ -15,10 +15,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
-using CoralPOS.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
 
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockOutExtraForm : BaseForm, IDepartmentStockOutView
     {

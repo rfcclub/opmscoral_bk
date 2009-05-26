@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.Model;
 using AppFrame.Utility.Mapper;
-using CoralPOS.View.SalePoints;
+using CoralPOSClient.View.SalePoints;
 
 namespace CoralPOS.Utility.Mapper
 {

@@ -1,4 +1,4 @@
-﻿namespace CoralPOS.View.Reports
+﻿namespace CoralPOSClient.View.Reports
 {
     partial class RemainStockReport
     {

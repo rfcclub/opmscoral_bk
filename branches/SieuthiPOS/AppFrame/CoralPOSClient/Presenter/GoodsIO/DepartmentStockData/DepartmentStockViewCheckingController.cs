@@ -17,7 +17,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.ViewModel;
 using Spring.Transaction.Interceptor;
 
-namespace CoralPOS.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockViewCheckingController : IDepartmentStockCheckingController
     {

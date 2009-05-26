@@ -12,7 +12,7 @@ using AppFrame.Utility;
 using AppFrame;
 using CoralPOS.Common;
 
-namespace CoralPOS.View.GoodsIO
+namespace CoralPOSClient.View.GoodsIO
 {
     public partial class GoodsInput : Form
     {

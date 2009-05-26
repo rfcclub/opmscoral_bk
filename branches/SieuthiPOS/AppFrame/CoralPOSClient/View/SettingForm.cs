@@ -10,7 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Common;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     public partial class SettingForm : Form
     {

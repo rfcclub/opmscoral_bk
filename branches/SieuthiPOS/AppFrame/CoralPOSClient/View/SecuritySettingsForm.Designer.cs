@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     partial class SecuritySettingsForm
     {

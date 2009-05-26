@@ -12,9 +12,9 @@ using CoralPOS.Interfaces.View.GoodsIO;
 using AppFrame;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Common;
-using CoralPOS.View.GoodsIO;
+using CoralPOSClient.View.GoodsIO;
 
-namespace CoralPOS.Presenter.GoodsIO
+namespace CoralPOSClient.Presenter.GoodsIO
 {
     public class ProductMasterSearchOrCreateController : IProductMasterSearchOrCreateController
     {

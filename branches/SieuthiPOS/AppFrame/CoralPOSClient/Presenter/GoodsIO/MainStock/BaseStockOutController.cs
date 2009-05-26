@@ -11,7 +11,7 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
-namespace CoralPOS.Presenter.GoodsIO.MainStock
+namespace CoralPOSClient.Presenter.GoodsIO.MainStock
 {
     public class BaseStockOutController : IBaseStockOutController
     {

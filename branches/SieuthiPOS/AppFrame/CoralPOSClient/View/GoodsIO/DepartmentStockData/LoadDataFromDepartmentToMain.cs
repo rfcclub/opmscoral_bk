@@ -21,7 +21,7 @@ using CoralPOS.Common;
 using CoralPOS.Utility;
 using ArrayList=System.Collections.ArrayList;
 
-namespace CoralPOS.View.GoodsIO.DepartmentStockData
+namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
     public partial class LoadDataFromDepartmentToMain : BaseForm, IDepartmentStockOutView
     {

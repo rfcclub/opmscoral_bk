@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 using CoralPOS.Common;
 
-namespace CoralPOS.View
+namespace CoralPOSClient.View
 {
     public partial class SecuritySettingsForm : BaseForm, ISecurityView
     {

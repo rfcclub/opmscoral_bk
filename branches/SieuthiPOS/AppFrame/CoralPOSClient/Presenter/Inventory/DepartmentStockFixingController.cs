@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.View.Inventory;
 using CoralPOS.ViewModel;
 using Spring.Transaction.Interceptor;
 
-namespace CoralPOS.Presenter.Inventory
+namespace CoralPOSClient.Presenter.Inventory
 {
     public class DepartmentStockFixingController : IDepartmentStockFixingController
     {
