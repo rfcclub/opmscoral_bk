@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading;
 using AppFrame.Common;
 using AppFrame.Utility;
+using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.DataLayer;
 using CoralPOS.Interfaces.Exceptions;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Utility;
+using CoralPOS.Interfaces.Utility.Mapper;
 using Spring.Transaction.Interceptor;
 using ArrayList=System.Collections.ArrayList;
 
@@ -71,7 +73,9 @@ namespace CoralPOS.Logic
 
             LoginModel loginModel = LoginDao.getUser(username);
             BaseUser user = null;
-            user = AppFrame.Utility.ObjectConverter.Convert<BaseUser, LoginModel>(loginModel);
+            MapperRepository repository = new POSMapperRepository();
+            repository.RegisterMappers();
+            user = AppFrame.Utility.ObjectConverter.Convert<BaseUser, LoginModel>(loginModel,repository);
 
             if (user == null)
             {
@@ -81,9 +85,10 @@ namespace CoralPOS.Logic
             }
             IList roleModelList = RoleDao.getRoles(username);
             System.Collections.IList roleList = new ArrayList();
+            
             foreach (RoleModel roleModel in roleModelList)
             {
-                roleList.Add(ObjectConverter.Convert<Role, RoleModel>(roleModel));
+                roleList.Add(ObjectConverter.Convert<Role, RoleModel>(roleModel,repository));
             }
             user.Roles = roleList;
             return user;
