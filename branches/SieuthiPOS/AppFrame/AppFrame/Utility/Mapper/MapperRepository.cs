@@ -15,7 +15,7 @@ namespace AppFrame.Utility.Mapper
             //Register(new BaseUserMapper());
             //Register(new RoleMapper());
         }
-        public static MapperRepository Instance()
+        /*public static MapperRepository Instance()
         {
             if (repository == null)
             {
@@ -23,7 +23,7 @@ namespace AppFrame.Utility.Mapper
                 repository.RegisterMappers();
             }
             return repository;
-        }
+        }*/
         /// <summary>
         ///     
         /// </summary>

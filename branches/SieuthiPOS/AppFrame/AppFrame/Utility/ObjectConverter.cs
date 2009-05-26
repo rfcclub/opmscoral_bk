@@ -16,12 +16,18 @@ using System.Reflection.Emit;
 namespace AppFrame.Utility
 {
 
-    public sealed class ObjectConverter
+    public static class ObjectConverter
     {
-
+        
         public static TDestinationClass Convert<TDestinationClass, TSourceClass>(TSourceClass source)
         {
-            MapperRepository repository = MapperRepository.Instance();
+            MapperRepository repository = new MapperRepository();
+            BaseMapper<TDestinationClass, TSourceClass> mapper = repository.Get(source.GetType().FullName) as BaseMapper<TDestinationClass, TSourceClass>;
+            return mapper.Convert(source);
+        }
+        public static TDestinationClass Convert<TDestinationClass, TSourceClass>(TSourceClass source,MapperRepository repository)
+        {
+
             BaseMapper<TDestinationClass, TSourceClass> mapper = repository.Get(source.GetType().FullName) as BaseMapper<TDestinationClass, TSourceClass>;
             return mapper.Convert(source);
         }
