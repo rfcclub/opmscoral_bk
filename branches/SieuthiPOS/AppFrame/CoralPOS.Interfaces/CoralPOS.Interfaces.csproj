@@ -583,7 +583,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Advice\dummy.txt" />
-    <Content Include="Model\DepartmentStockProductMasterView.hbm.xml" />
+    <EmbeddedResource Include="Model\DepartmentStockProductMasterView.hbm.xml" />
     <EmbeddedResource Include="Model\Tax.hbm.xml" />
     <EmbeddedResource Include="Model\SyncStatus.hbm.xml" />
     <EmbeddedResource Include="Model\Supplier.hbm.xml" />

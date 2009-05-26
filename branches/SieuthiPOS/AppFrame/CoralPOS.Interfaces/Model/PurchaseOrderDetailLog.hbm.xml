@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="AppFrame" namespace="AppFrame.Model">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="CoralPOS.Interfaces" namespace="CoralPOS.Interfaces.Model">
 
 <class name="PurchaseOrderDetailLog"
 	    table="purchase_order_detail_log"

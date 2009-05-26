@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="AppFrame" namespace="AppFrame.Model">
-  <class name="AppFrame.Model.LoginModel, AppFrame" table="userinfo" lazy="false">
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="CoralPOS.Interfaces" namespace="CoralPOS.Interfaces.Model">
+  <class name="LoginModel" 
+         table="userinfo" 
+         lazy="false"
+  >
     <id name="Username" type="String" unsaved-value="null">
       <column name="Username" length="50" sql-type="varchar" not-null="true" unique="true" />
       <generator class="assigned" />
@@ -24,7 +27,7 @@
     </property>
     <bag name="Roles" table="userrole" lazy="false">
       <key column="userid" />
-      <many-to-many class="AppFrame.Model.RoleModel, AppFrame" column="roleid" />
+      <many-to-many class="CoralPOS.Interfaces.Model.RoleModel, CoralPOS.Interfaces" column="roleid" />
     </bag>
     <many-to-one
   name="EmployeeInfo"

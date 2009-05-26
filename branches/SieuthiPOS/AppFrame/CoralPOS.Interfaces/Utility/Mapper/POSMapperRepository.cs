@@ -8,7 +8,7 @@ namespace CoralPOS.Interfaces.Utility.Mapper
 {
     public class POSMapperRepository  : MapperRepository
     {
-        private POSMapperRepository()
+        public POSMapperRepository()
         {
             
         }
