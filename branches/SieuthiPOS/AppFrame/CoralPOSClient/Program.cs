@@ -4,7 +4,6 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms;
 using AppFrame.Common;
 using AppFrame.Utility;
-using AppFrame.View;
 using CoralPOS.Interfaces.View;
 using CoralPOS;
 using CoralPOS.Common;
@@ -16,7 +15,7 @@ using Spring.Context.Support;
 using Spring.Objects.Factory;
 using Spring.Objects.Factory.Xml;
 
-namespace AppFrame
+namespace CoralPOSClient
 {
     internal static class Program
     {

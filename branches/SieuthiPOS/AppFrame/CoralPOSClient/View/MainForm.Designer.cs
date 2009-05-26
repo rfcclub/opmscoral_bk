@@ -1,4 +1,4 @@
-﻿namespace AppFrame.View
+﻿namespace CoralPOSClient.View
 {
     public partial class MainForm
     {
@@ -157,16 +157,16 @@
             // mnuMenu
             // 
             this.mnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFile,
-            this.departmentStockToolStripMenuItem,
-            this.productToolStripMenuItem,
-            this.mnuSale,
-            this.mnuDeptStock,
-            this.mnuWareHouse,
-            this.mnuReport,
-            this.mnuTool,
-            this.mnuSalePoint,
-            this.mnuHelp});
+                                                                                     this.mnuFile,
+                                                                                     this.departmentStockToolStripMenuItem,
+                                                                                     this.productToolStripMenuItem,
+                                                                                     this.mnuSale,
+                                                                                     this.mnuDeptStock,
+                                                                                     this.mnuWareHouse,
+                                                                                     this.mnuReport,
+                                                                                     this.mnuTool,
+                                                                                     this.mnuSalePoint,
+                                                                                     this.mnuHelp});
             this.mnuMenu.Location = new System.Drawing.Point(0, 0);
             this.mnuMenu.Name = "mnuMenu";
             this.mnuMenu.Size = new System.Drawing.Size(1016, 24);
@@ -176,12 +176,12 @@
             // mnuFile
             // 
             this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuFileLogin,
-            this.mnuFileLogout,
-            this.toolStripMenuItem1,
-            this.mnuFileChangePassword,
-            this.toolStripMenuItem6,
-            this.mnuFileExit});
+                                                                                             this.mnuFileLogin,
+                                                                                             this.mnuFileLogout,
+                                                                                             this.toolStripMenuItem1,
+                                                                                             this.mnuFileChangePassword,
+                                                                                             this.toolStripMenuItem6,
+                                                                                             this.mnuFileExit});
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Size = new System.Drawing.Size(54, 20);
             this.mnuFile.Text = "Tác vụ";
@@ -227,15 +227,15 @@
             // departmentStockToolStripMenuItem
             // 
             this.departmentStockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.wareHouseStockIn,
-            this.departmentStockInToolStripMenuItem,
-            this.mnuDepartmentStockInExtra,
-            this.toolStripMenuItem4,
-            this.searchDepartmentStockInMenuItem,
-            this.mainStockInSearchStripMenuItem,
-            this.wareHouseStockInSearch,
-            this.searchDepartmentStockToolStripMenuItem,
-            this.toolStripMenuItem5});
+                                                                                                                      this.wareHouseStockIn,
+                                                                                                                      this.departmentStockInToolStripMenuItem,
+                                                                                                                      this.mnuDepartmentStockInExtra,
+                                                                                                                      this.toolStripMenuItem4,
+                                                                                                                      this.searchDepartmentStockInMenuItem,
+                                                                                                                      this.mainStockInSearchStripMenuItem,
+                                                                                                                      this.wareHouseStockInSearch,
+                                                                                                                      this.searchDepartmentStockToolStripMenuItem,
+                                                                                                                      this.toolStripMenuItem5});
             this.departmentStockToolStripMenuItem.Name = "departmentStockToolStripMenuItem";
             this.departmentStockToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.departmentStockToolStripMenuItem.Text = "Nhập hàng";
@@ -305,9 +305,9 @@
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.productMasterToolStripMenuItem,
-            this.searchProductMasterToolStripMenuItem,
-            this.updatePriceToolStripMenuItem});
+                                                                                                              this.productMasterToolStripMenuItem,
+                                                                                                              this.searchProductMasterToolStripMenuItem,
+                                                                                                              this.updatePriceToolStripMenuItem});
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
             this.productToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.productToolStripMenuItem.Text = "Danh mục hàng";
@@ -336,16 +336,16 @@
             // mnuSale
             // 
             this.mnuSale.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuGoodsSale,
-            this.mnuGoodsSaleExchange,
-            this.mnuGoodsSaleReturn,
-            this.toolStripMenuItem3,
-            this.mnuDayGoodsSaleList,
-            this.mnuMonthGoodsSaleList,
-            this.mnuGoodsSaleList,
-            this.toolStripMenuItem21,
-            this.mnuDeptGoodsPurchaseOrderPeriodReport,
-            this.mnuDeptPurchaseOrderReport});
+                                                                                             this.mnuGoodsSale,
+                                                                                             this.mnuGoodsSaleExchange,
+                                                                                             this.mnuGoodsSaleReturn,
+                                                                                             this.toolStripMenuItem3,
+                                                                                             this.mnuDayGoodsSaleList,
+                                                                                             this.mnuMonthGoodsSaleList,
+                                                                                             this.mnuGoodsSaleList,
+                                                                                             this.toolStripMenuItem21,
+                                                                                             this.mnuDeptGoodsPurchaseOrderPeriodReport,
+                                                                                             this.mnuDeptPurchaseOrderReport});
             this.mnuSale.Name = "mnuSale";
             this.mnuSale.Size = new System.Drawing.Size(69, 20);
             this.mnuSale.Text = "Bán hàng";
@@ -418,18 +418,18 @@
             // mnuDeptStock
             // 
             this.mnuDeptStock.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuDeptStockChecking,
-            this.mnuDepartmentReturnGoods,
-            this.mnuProcessDepartmentStockDefect,
-            this.mnuDeptStockFixing,
-            this.mnuProcessDeptAtStock,
-            this.toolStripMenuItem19,
-            this.mnuDepartmentReStockIn,
-            this.toolStripMenuItem20,
-            this.mnuDeptStockStatisticReport,
-            this.mnuReturnPOReport,
-            this.mnuReturnMainStockReport,
-            this.mnuDepartmentStockIn});
+                                                                                                  this.mnuDeptStockChecking,
+                                                                                                  this.mnuDepartmentReturnGoods,
+                                                                                                  this.mnuProcessDepartmentStockDefect,
+                                                                                                  this.mnuDeptStockFixing,
+                                                                                                  this.mnuProcessDeptAtStock,
+                                                                                                  this.toolStripMenuItem19,
+                                                                                                  this.mnuDepartmentReStockIn,
+                                                                                                  this.toolStripMenuItem20,
+                                                                                                  this.mnuDeptStockStatisticReport,
+                                                                                                  this.mnuReturnPOReport,
+                                                                                                  this.mnuReturnMainStockReport,
+                                                                                                  this.mnuDepartmentStockIn});
             this.mnuDeptStock.Name = "mnuDeptStock";
             this.mnuDeptStock.Size = new System.Drawing.Size(92, 20);
             this.mnuDeptStock.Text = "Kho cửa hàng";
@@ -517,23 +517,23 @@
             // mnuWareHouse
             // 
             this.mnuWareHouse.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchBlockToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.mnuImportGoods,
-            this.approveStockToolStripMenuItem,
-            this.mnuDepartmentStockOutConfirm,
-            this.mnuInventoryChecking,
-            this.mnuProcessStockDefect,
-            this.mnuFindStockByBarcode,
-            this.searchStockToolStripMenuItem,
-            this.toolStripMenuItem7,
-            this.mnuWarehouseRemains,
-            this.mnuTheKho,
-            this.mnuDanhmucHanghoa,
-            this.toolStripMenuItem12,
-            this.mnuPhieuXuatKho,
-            this.mnuTemporaryStockOut,
-            this.mnuMainReStockIn});
+                                                                                                  this.searchBlockToolStripMenuItem,
+                                                                                                  this.toolStripMenuItem2,
+                                                                                                  this.mnuImportGoods,
+                                                                                                  this.approveStockToolStripMenuItem,
+                                                                                                  this.mnuDepartmentStockOutConfirm,
+                                                                                                  this.mnuInventoryChecking,
+                                                                                                  this.mnuProcessStockDefect,
+                                                                                                  this.mnuFindStockByBarcode,
+                                                                                                  this.searchStockToolStripMenuItem,
+                                                                                                  this.toolStripMenuItem7,
+                                                                                                  this.mnuWarehouseRemains,
+                                                                                                  this.mnuTheKho,
+                                                                                                  this.mnuDanhmucHanghoa,
+                                                                                                  this.toolStripMenuItem12,
+                                                                                                  this.mnuPhieuXuatKho,
+                                                                                                  this.mnuTemporaryStockOut,
+                                                                                                  this.mnuMainReStockIn});
             this.mnuWareHouse.Name = "mnuWareHouse";
             this.mnuWareHouse.Size = new System.Drawing.Size(143, 20);
             this.mnuWareHouse.Text = "Kho chính - Nhập hàng";
@@ -653,30 +653,30 @@
             // mnuReport
             // 
             this.mnuReport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuGoodsSaleStatisticReport,
-            this.mnuGoodsSaleDepartmentReport,
-            this.mnuGoodsSaleDepartmentDetail,
-            this.mnuMainReturnPOReport,
-            this.mnuTotalReport,
-            this.toolStripMenuItem17,
-            this.mnuGoodsImportReport,
-            this.mnuDeptStockInReport,
-            this.toolStripMenuItem15,
-            this.mnuGoodsSendbackReport,
-            this.mnuGoodsExportReport,
-            this.mnuAllStockReturnReport,
-            this.toolStripMenuItem16,
-            this.mnuMixReport,
-            this.mnuMixDeptReport,
-            this.toolStripMenuItem13,
-            this.mnuAllStock,
-            this.mnuStockCollection,
-            this.mnuMainDeptStockStatisticReport,
-            this.toolStripMenuItem14,
-            this.mnuRestockinReport,
-            this.mnuTempStockoutReport,
-            this.mnuDeptReStockReport,
-            this.mnuDeptTempStockOutReport});
+                                                                                               this.mnuGoodsSaleStatisticReport,
+                                                                                               this.mnuGoodsSaleDepartmentReport,
+                                                                                               this.mnuGoodsSaleDepartmentDetail,
+                                                                                               this.mnuMainReturnPOReport,
+                                                                                               this.mnuTotalReport,
+                                                                                               this.toolStripMenuItem17,
+                                                                                               this.mnuGoodsImportReport,
+                                                                                               this.mnuDeptStockInReport,
+                                                                                               this.toolStripMenuItem15,
+                                                                                               this.mnuGoodsSendbackReport,
+                                                                                               this.mnuGoodsExportReport,
+                                                                                               this.mnuAllStockReturnReport,
+                                                                                               this.toolStripMenuItem16,
+                                                                                               this.mnuMixReport,
+                                                                                               this.mnuMixDeptReport,
+                                                                                               this.toolStripMenuItem13,
+                                                                                               this.mnuAllStock,
+                                                                                               this.mnuStockCollection,
+                                                                                               this.mnuMainDeptStockStatisticReport,
+                                                                                               this.toolStripMenuItem14,
+                                                                                               this.mnuRestockinReport,
+                                                                                               this.mnuTempStockoutReport,
+                                                                                               this.mnuDeptReStockReport,
+                                                                                               this.mnuDeptTempStockOutReport});
             this.mnuReport.Name = "mnuReport";
             this.mnuReport.Size = new System.Drawing.Size(61, 20);
             this.mnuReport.Text = "Báo cáo";
@@ -841,20 +841,20 @@
             // mnuTool
             // 
             this.mnuTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuSaleOffCreate,
-            this.toolStripMenuItem11,
-            this.mnuDiaryTracking,
-            this.mnuBackupData,
-            this.mnuDeleteData,
-            this.mnuRecoverData,
-            this.toolStripMenuItem9,
-            this.mnuSyncToMainForm,
-            this.mnuLoadToDept,
-            this.mnuSynchronizeData,
-            this.mnuLoadToMain,
-            this.toolStripMenuItem10,
-            this.mnuSystemConfiguration,
-            this.mnuImportByFile});
+                                                                                             this.mnuSaleOffCreate,
+                                                                                             this.toolStripMenuItem11,
+                                                                                             this.mnuDiaryTracking,
+                                                                                             this.mnuBackupData,
+                                                                                             this.mnuDeleteData,
+                                                                                             this.mnuRecoverData,
+                                                                                             this.toolStripMenuItem9,
+                                                                                             this.mnuSyncToMainForm,
+                                                                                             this.mnuLoadToDept,
+                                                                                             this.mnuSynchronizeData,
+                                                                                             this.mnuLoadToMain,
+                                                                                             this.toolStripMenuItem10,
+                                                                                             this.mnuSystemConfiguration,
+                                                                                             this.mnuImportByFile});
             this.mnuTool.Name = "mnuTool";
             this.mnuTool.Size = new System.Drawing.Size(61, 20);
             this.mnuTool.Text = "Tiện ích";
@@ -950,15 +950,15 @@
             // mnuSalePoint
             // 
             this.mnuSalePoint.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuDefineSalePoint,
-            this.mnuListSalePoints,
-            this.mnuSalePointManagement,
-            this.toolStripMenuItem8,
-            this.mnuAddEmployee,
-            this.mnuEmployeeManagement,
-            this.toolStripMenuItem18,
-            this.mnuChamCong,
-            this.mnuUserAccount});
+                                                                                                  this.mnuDefineSalePoint,
+                                                                                                  this.mnuListSalePoints,
+                                                                                                  this.mnuSalePointManagement,
+                                                                                                  this.toolStripMenuItem8,
+                                                                                                  this.mnuAddEmployee,
+                                                                                                  this.mnuEmployeeManagement,
+                                                                                                  this.toolStripMenuItem18,
+                                                                                                  this.mnuChamCong,
+                                                                                                  this.mnuUserAccount});
             this.mnuSalePoint.Name = "mnuSalePoint";
             this.mnuSalePoint.Size = new System.Drawing.Size(123, 20);
             this.mnuSalePoint.Text = "Quản lý hành chính";
@@ -1024,7 +1024,7 @@
             // mnuHelp
             // 
             this.mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuHelpAbout});
+                                                                                             this.mnuHelpAbout});
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Size = new System.Drawing.Size(61, 20);
             this.mnuHelp.Text = "Giúp đỡ";
@@ -1049,8 +1049,8 @@
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripProgressBar,
-            this.toolStripStatusLabel});
+                                                                                         this.toolStripProgressBar,
+                                                                                         this.toolStripStatusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 544);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1016, 22);

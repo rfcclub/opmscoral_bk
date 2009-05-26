@@ -11,108 +11,108 @@ namespace CoralPOS.Common
     {   
         public static bool IsClient()
         {
-            return string.IsNullOrEmpty(Settings.Default.IsClient)
+            return string.IsNullOrEmpty(AFCSetting.Default.IsClient)
                        ? false
                        : Settings.Default.IsClient.Equals("1");           
         }
 
         public static bool IsServer()
         {
-            return string.IsNullOrEmpty(Settings.Default.IsClient)
+            return string.IsNullOrEmpty(AFCSetting.Default.IsClient)
                        ? false
                        : Settings.Default.IsClient.Equals("0");
         }
         public static void Save()
         {
-            Settings.Default.Save();
+            AFCSetting.Default.Save();
             Settings.Default.Upgrade();
         }
         public static void Reload()
         {
-            Settings.Default.Reload();
+            AFCSetting.Default.Reload();
         }
 
         public static string SyncImportPath
         {
             get
             {
-                return Settings.Default.SyncImportPath;
+                return AFCSetting.Default.SyncImportPath;
             }
             set
             {
-                Settings.Default.SyncImportPath = value;
+                AFCSetting.Default.SyncImportPath = value;
             }
         }
         public static string SyncSuccessPath
         {
             get
             {
-                return Settings.Default.SyncSuccessPath;
+                return AFCSetting.Default.SyncSuccessPath;
             }
             set
             {
-                Settings.Default.SyncSuccessPath = value;
+                AFCSetting.Default.SyncSuccessPath = value;
             }
         }
         public static string SyncErrorPath
         {
             get
             {
-                return Settings.Default.SyncErrorPath;
+                return AFCSetting.Default.SyncErrorPath;
             }
             set
             {
-                Settings.Default.SyncErrorPath = value;
+                AFCSetting.Default.SyncErrorPath = value;
             }
         }
         public static string SyncExportPath
         {
             get
             {
-                return Settings.Default.SyncExportPath;
+                return AFCSetting.Default.SyncExportPath;
             }
             set
             {
-                Settings.Default.SyncExportPath = value;
+                AFCSetting.Default.SyncExportPath = value;
             }
         }
         public static string PrinterName
         {
             get
             {
-                return Settings.Default.PrinterName;
+                return AFCSetting.Default.PrinterName;
             }
             set
             {
-                Settings.Default.PrinterName = value;
+                AFCSetting.Default.PrinterName = value;
             }
         }
         public static string MySQLDumpPath
         {
             get
             {
-                return Settings.Default.MySQLDump;
+                return AFCSetting.Default.MySQLDump;
             }
             set
             {
-                Settings.Default.MySQLDump = value;                
+                AFCSetting.Default.MySQLDump = value;                
             }
         }
         public static string DBBackupPath
         {
             get
             {
-                return Settings.Default.DBBackupPath;
+                return AFCSetting.Default.DBBackupPath;
             }
             set
             {
-                Settings.Default.DBBackupPath = value;
+                AFCSetting.Default.DBBackupPath = value;
             }
         }
 
         public static void Reset()
         {
-            Settings.Default.Reset();
+            AFCSetting.Default.Reset();
         }
     }
 }

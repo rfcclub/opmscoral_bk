@@ -10,7 +10,7 @@ using CoralPOS.Interfaces.View;
 using CoralPOS.Utility;
 using Common.Logging;
 
-namespace AppFrame.Presenter
+namespace CoralPOSClient.Presenter
 {
     public class LoginController : AsyncController, ILoginController<LoginEventArgs>
     {
@@ -36,7 +36,7 @@ namespace AppFrame.Presenter
         {
             get { return changePasswordView; }
             set { changePasswordView = value;
-            changePasswordView.ChangePasswordEvent += new EventHandler<LoginEventArgs>(changePasswordView_ChangePasswordEvent);
+                changePasswordView.ChangePasswordEvent += new EventHandler<LoginEventArgs>(changePasswordView_ChangePasswordEvent);
             }
         }
 

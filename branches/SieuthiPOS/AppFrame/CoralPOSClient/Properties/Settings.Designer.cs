@@ -37,7 +37,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\CH-KHO")]
         public string SyncImportPath {
             get {
                 return ((string)(this["SyncImportPath"]));
@@ -49,7 +49,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\KHO-CH")]
         public string SyncExportPath {
             get {
                 return ((string)(this["SyncExportPath"]));
@@ -61,7 +61,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\Error")]
         public string SyncErrorPath {
             get {
                 return ((string)(this["SyncErrorPath"]));
@@ -73,7 +73,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\Success")]
         public string SyncSuccessPath {
             get {
                 return ((string)(this["SyncSuccessPath"]));
@@ -97,7 +97,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("E:\\Program Files\\MySQL\\MySQL Server 5.1\\bin")]
         public string MySQLDump {
             get {
                 return ((string)(this["MySQLDump"]));
@@ -109,7 +109,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\BackupDB")]
         public string DBBackupPath {
             get {
                 return ((string)(this["DBBackupPath"]));

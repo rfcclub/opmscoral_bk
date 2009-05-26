@@ -16,7 +16,6 @@ using CoralPOS.Interfaces.View.Reports;
 using CoralPOS;
 using CoralPOS.Common;
 using CoralPOS.Utility;
-using CoralPOSClient.View;
 using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 using CoralPOSClient.View.GoodsIO.MainStock;
 using CoralPOSClient.View.GoodsSale;
@@ -29,7 +28,7 @@ using Spring.Context;
 using Spring.Context.Support;
 using CoralPOSClient.View.GoodsIO;
 
-namespace AppFrame.View
+namespace CoralPOSClient.View
 {
     public partial class MainForm : Form
     {
@@ -325,8 +324,8 @@ namespace AppFrame.View
             /*Form stockInReportForm = GlobalUtility.GetOnlyChildFormObject<frmStockinStatistic>(this, FormConstants.REPORT_STOCK_IN_FORM);
             stockInReportForm.Show();*/
 
-        //            Form stockInReportForm = GlobalUtility.GetOnlyChildFormObject<MainStockInSearchReportForm>(this, FormConstants.MAIN_STOCK_IN_SEARCH_REPORT_FORM);
-        //            stockInReportForm.Show();
+            //            Form stockInReportForm = GlobalUtility.GetOnlyChildFormObject<MainStockInSearchReportForm>(this, FormConstants.MAIN_STOCK_IN_SEARCH_REPORT_FORM);
+            //            stockInReportForm.Show();
             new StockInReportViewer().Show();
 
         }
@@ -369,8 +368,8 @@ namespace AppFrame.View
             //                                                                                             DEPARTMENT_STOCK_CHECKING_FORM);
             
             Form deptStockCheckingForm = GlobalUtility.GetOnlyChildFormObject<DepartmentStockViewCheckingForm>(this,
-                                                                                                     FormConstants.
-                                                                                                         DEPARTMENT_STOCK_VIEW_CHECKING_FORM);
+                                                                                                               FormConstants.
+                                                                                                                   DEPARTMENT_STOCK_VIEW_CHECKING_FORM);
             //deptStockCheckingForm.Show();
             ShowFormWithActiveDepartment(deptStockCheckingForm, new Department());
         }
@@ -426,7 +425,7 @@ namespace AppFrame.View
         private void mnuProcessDepartmentStockDefect_Click(object sender, EventArgs e)
         {
             ProcessErrorGoodsForm form =
-                 GlobalUtility.GetOnlyChildFormObject<ProcessErrorGoodsForm>(this, FormConstants.PROCESS_ERROR_GOODS_FORM);
+                GlobalUtility.GetOnlyChildFormObject<ProcessErrorGoodsForm>(this, FormConstants.PROCESS_ERROR_GOODS_FORM);
             form.DepartmentProcessing = true;
             //            form.Show();
             ShowFormWithActiveDepartment(form, new Department());
@@ -454,16 +453,16 @@ namespace AppFrame.View
         private void mnuFindStockByBarcode_Click(object sender, EventArgs e)
         {
             Form form = GlobalUtility.GetOnlyChildFormObject<MainStockSearchByBarcodeForm>(this,
-                                                                          FormConstants.
-                                                                              MAIN_STOCK_SEARCH_BY_BARCODE_FORM);
+                                                                                           FormConstants.
+                                                                                               MAIN_STOCK_SEARCH_BY_BARCODE_FORM);
             form.Show();
         }
 
         private void mnuSyncToMainForm_Click(object sender, EventArgs e)
         {
             Form form = GlobalUtility.GetOnlyChildFormObject<SyncToMainForm>(this,
-                                                                          FormConstants.
-                                                                              SYNC_TO_MAIN_FORM);
+                                                                             FormConstants.
+                                                                                 SYNC_TO_MAIN_FORM);
             form.Show();
         }
 
@@ -477,16 +476,16 @@ namespace AppFrame.View
         private void mnuLoadToMain_Click(object sender, EventArgs e)
         {
             Form form = GlobalUtility.GetOnlyChildFormObject<LoadDataFromDepartmentToMain>(this,
-                                                                          FormConstants.
-                                                                              LOAD_DATA_TO_MAIN_STOCK_FORM);
+                                                                                           FormConstants.
+                                                                                               LOAD_DATA_TO_MAIN_STOCK_FORM);
             form.Show();
         }
 
         private void mnuLoadToDept_Click(object sender, EventArgs e)
         {
             Form form = GlobalUtility.GetOnlyChildFormObject<LoadDepartmentStockInToFileForm>(this,
-                                                                          FormConstants.
-                                                                              LOAD_DATA_FROM_MAIN_STOCK_TO_FILE_FORM);
+                                                                                              FormConstants.
+                                                                                                  LOAD_DATA_FROM_MAIN_STOCK_TO_FILE_FORM);
             form.Show();
         }
 
@@ -518,7 +517,7 @@ namespace AppFrame.View
         private void mnuUserAccount_Click_1(object sender, EventArgs e)
         {
             Form form = GlobalUtility.GetOnlyChildFormObject<SecuritySettingsForm>(this,
-                                                                                    FormConstants.SECURITY_SETTINGS_FORM);
+                                                                                   FormConstants.SECURITY_SETTINGS_FORM);
             form.Show();
         }
 
@@ -574,17 +573,17 @@ namespace AppFrame.View
             Stream inStream = null;
             if(ClientSetting.IsClient())
             {
-                inStream = this.GetType().Assembly.GetManifestResourceStream("AppFrameClient.ClientMenuPermissions.xml");    
+                inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ClientMenuPermissions.xml");    
             }
             else
             {
                 if(ClientSetting.IsServer())
                 {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("AppFrameClient.ServerMenuPermissions.xml");    
+                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ServerMenuPermissions.xml");    
                 }
                 else
                 {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("AppFrameClient.NAMenuPermissions.xml");    
+                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.NAMenuPermissions.xml");    
                 }
             }
 
@@ -709,7 +708,7 @@ namespace AppFrame.View
         private void mnuDiaryTracking_Click(object sender, EventArgs e)
         {
             Form form = GlobalUtility.GetOnlyChildFormObject<PosLogForm>(this, 
-                FormConstants.POS_LOG_FORM);
+                                                                         FormConstants.POS_LOG_FORM);
             form.Show();
         }
 

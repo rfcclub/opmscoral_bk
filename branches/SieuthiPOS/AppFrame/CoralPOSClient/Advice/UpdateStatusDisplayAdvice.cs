@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using AopAlliance.Intercept;
-using AppFrame.View;
 using CoralPOS.Interfaces.View;
+using CoralPOSClient.View;
 
 namespace CoralPOS.Advice
 {

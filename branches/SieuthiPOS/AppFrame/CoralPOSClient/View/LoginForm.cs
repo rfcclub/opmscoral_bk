@@ -8,6 +8,7 @@ using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Common;
 using CoralPOS.Interfaces.View;
+using CoralPOSClient.View;
 using Spring.Context;
 using Spring.Context.Support;
 

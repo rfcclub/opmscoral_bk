@@ -6,25 +6,25 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SyncImportPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">\POS\CH-KHO</Value>
     </Setting>
     <Setting Name="SyncExportPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">\POS\KHO-CH</Value>
     </Setting>
     <Setting Name="SyncErrorPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">\POS\Error</Value>
     </Setting>
     <Setting Name="SyncSuccessPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">\POS\Success</Value>
     </Setting>
     <Setting Name="PrinterName" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="MySQLDump" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">E:\Program Files\MySQL\MySQL Server 5.1\bin</Value>
     </Setting>
     <Setting Name="DBBackupPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">\POS\BackupDB</Value>
     </Setting>
     <Setting Name="posConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
