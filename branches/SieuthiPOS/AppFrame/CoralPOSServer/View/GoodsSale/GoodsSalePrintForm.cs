@@ -10,7 +10,7 @@ using AppFrame.Common;
 using CoralPOS.Interfaces.Common;
 using CoralPOS.Interfaces.Model;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class GoodsSalePrintForm : BaseForm
     {

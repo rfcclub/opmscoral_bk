@@ -14,7 +14,7 @@ using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 using POSReports;
 
-namespace CoralPOSClient.View.Reports
+namespace CoralPOSServer.View.Reports
 {
     public partial class DepartmentStockInReportForm : AppFrame.Common.BaseForm,IDepartmentStockInReportView
     {

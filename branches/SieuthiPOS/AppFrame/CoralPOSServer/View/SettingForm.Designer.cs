@@ -2,7 +2,7 @@
 
 using CoralPOSServer.Properties;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     partial class SettingForm
     {

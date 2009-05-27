@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.Reports
+namespace CoralPOSServer.View.Reports
 {
     partial class frmStockinStatistic
     {
@@ -117,12 +117,12 @@ namespace CoralPOSClient.View.Reports
             this.dgvStockProducts.AutoGenerateColumns = false;
             this.dgvStockProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.Category,
-            this.ProductName,
-            this.receipt,
-            this.amount,
-            this.stockInTotalAmountsDataGridViewTextBoxColumn});
+                                                                                                     this.STT,
+                                                                                                     this.Category,
+                                                                                                     this.ProductName,
+                                                                                                     this.receipt,
+                                                                                                     this.amount,
+                                                                                                     this.stockInTotalAmountsDataGridViewTextBoxColumn});
             this.dgvStockProducts.DataSource = this.bdsStockInResultPM;
             this.dgvStockProducts.Location = new System.Drawing.Point(13, 115);
             this.dgvStockProducts.MultiSelect = false;
@@ -178,14 +178,14 @@ namespace CoralPOSClient.View.Reports
             this.dgvStockProductsDetail.AutoGenerateColumns = false;
             this.dgvStockProductsDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockProductsDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.receipt_date,
-            this.quantity,
-            this.total,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.CreateId,
-            this.color,
-            this.size});
+                                                                                                           this.id,
+                                                                                                           this.receipt_date,
+                                                                                                           this.quantity,
+                                                                                                           this.total,
+                                                                                                           this.delFlgDataGridViewTextBoxColumn,
+                                                                                                           this.CreateId,
+                                                                                                           this.color,
+                                                                                                           this.size});
             this.dgvStockProductsDetail.DataSource = this.bdsStockInResultDetail;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;

@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockCheckingForm : AppFrame.Common.BaseForm, IDepartmentStockCheckingView
     {
@@ -121,18 +121,18 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             }
             else // create new stock defect row
             {
-                    stockList.AddNew();
-                    DepartmentStock defect = checkingEventArgs.ScannedStock;
-                    stockList[stockList.Count - 1] = defect;
+                stockList.AddNew();
+                DepartmentStock defect = checkingEventArgs.ScannedStock;
+                stockList[stockList.Count - 1] = defect;
                     
-                    stockList[stockList.Count - 1].GoodQuantity = 1;
-                    stockList[stockList.Count - 1].OldErrorQuantity = stockList[stockList.Count - 1].ErrorQuantity = 0;
-                    stockList[stockList.Count - 1].OldDamageQuantity = stockList[stockList.Count - 1].DamageQuantity = 0;
-                    stockList[stockList.Count - 1].OldLostQuantity = stockList[stockList.Count - 1].LostQuantity = 0;
-                    stockList[stockList.Count - 1].OldUnconfirmQuantity = stockList[stockList.Count - 1].UnconfirmQuantity = 0;
+                stockList[stockList.Count - 1].GoodQuantity = 1;
+                stockList[stockList.Count - 1].OldErrorQuantity = stockList[stockList.Count - 1].ErrorQuantity = 0;
+                stockList[stockList.Count - 1].OldDamageQuantity = stockList[stockList.Count - 1].DamageQuantity = 0;
+                stockList[stockList.Count - 1].OldLostQuantity = stockList[stockList.Count - 1].LostQuantity = 0;
+                stockList[stockList.Count - 1].OldUnconfirmQuantity = stockList[stockList.Count - 1].UnconfirmQuantity = 0;
 
-                    txtStockQuantity.Text = stockList[stockList.Count - 1].Quantity.ToString("##,##0");
-                    dgvStock.CurrentCell = dgvStock[5, stockList.Count - 1];
+                txtStockQuantity.Text = stockList[stockList.Count - 1].Quantity.ToString("##,##0");
+                dgvStock.CurrentCell = dgvStock[5, stockList.Count - 1];
             }
             bdsStockDefect.EndEdit();
             dgvStock.Refresh();
@@ -261,11 +261,11 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             {
                 foreach (DepartmentStock departmentStock in RestrictDepartmentStocks)
                 {
-                     departmentStock.GoodQuantity = departmentStock.OldGoodQuantity ;
-                     departmentStock.ErrorQuantity = departmentStock.OldErrorQuantity ;
-                     departmentStock.UnconfirmQuantity = departmentStock.OldUnconfirmQuantity ;
-                     departmentStock.DamageQuantity = departmentStock.OldDamageQuantity ;
-                     departmentStock.LostQuantity = departmentStock.OldLostQuantity ;
+                    departmentStock.GoodQuantity = departmentStock.OldGoodQuantity ;
+                    departmentStock.ErrorQuantity = departmentStock.OldErrorQuantity ;
+                    departmentStock.UnconfirmQuantity = departmentStock.OldUnconfirmQuantity ;
+                    departmentStock.DamageQuantity = departmentStock.OldDamageQuantity ;
+                    departmentStock.LostQuantity = departmentStock.OldLostQuantity ;
                 }
             }
             Close();

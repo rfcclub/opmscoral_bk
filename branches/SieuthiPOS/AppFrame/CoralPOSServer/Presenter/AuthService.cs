@@ -6,9 +6,9 @@ using AppFrame.Common;
 using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Common;
-using CoralPOSClient.View;
+using CoralPOSServer.View;
 
-namespace CoralPOSClient.Presenter
+namespace CoralPOSServer.Presenter
 {
     public class AuthService : IAuthService
     {

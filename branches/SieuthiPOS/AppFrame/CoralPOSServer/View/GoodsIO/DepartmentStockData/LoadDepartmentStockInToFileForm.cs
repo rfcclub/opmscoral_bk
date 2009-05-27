@@ -19,10 +19,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSServer.Presenter.GoodsIO.DepartmentStockData;
 using CoralPOS.Utility;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class LoadDepartmentStockInToFileForm : BaseForm, IDepartmentStockInExtraView
     {
@@ -141,11 +141,11 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                     EventUtility.fireEvent(LoadDepartemntStockInForExportEvent, this, deptEvent);
 
                     if(deptEvent.SyncFromMainToDepartment!=null 
-                        && deptEvent.SyncFromMainToDepartment.StockOutList!=null
-                        && deptEvent.SyncFromMainToDepartment.StockOutList.Count > 0 )
+                       && deptEvent.SyncFromMainToDepartment.StockOutList!=null
+                       && deptEvent.SyncFromMainToDepartment.StockOutList.Count > 0 )
                     {
                         string fileName = exportPath + "\\" + department.DepartmentId + "_SyncDown_" + 
-                                                              DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss") + CommonConstants.SERVER_SYNC_FORMAT;
+                                          DateTime.Now.ToString("yyyy_MM_dd_HH_mm_ss") + CommonConstants.SERVER_SYNC_FORMAT;
                         SyncResult result = new SyncResult();
                         result.FileName = fileName;
                         result.Status = "Thành công";

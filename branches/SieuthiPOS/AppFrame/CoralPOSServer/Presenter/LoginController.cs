@@ -10,7 +10,7 @@ using CoralPOS.Interfaces.View;
 using CoralPOS.Utility;
 using Common.Logging;
 
-namespace CoralPOSClient.Presenter
+namespace CoralPOSServer.Presenter
 {
     public class LoginController : AsyncController, ILoginController<LoginEventArgs>
     {

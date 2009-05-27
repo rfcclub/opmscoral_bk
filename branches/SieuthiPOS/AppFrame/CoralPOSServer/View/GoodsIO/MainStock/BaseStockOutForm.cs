@@ -14,9 +14,8 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
-   
     public partial class BaseStockOutForm : AppFrame.Common.BaseForm,IBaseStockOutView
     {
         protected StockViewCollection stockViewList = null;
@@ -159,7 +158,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 EventUtility.fireEvent(SaveDeptTempStockOut, this, checkingEventArgs);
                 DepartmentStockOutDetail detail =
                     (DepartmentStockOutDetail)checkingEventArgs.SaveDeptStockOutList[checkingEventArgs.SaveDeptStockOutList.Count - 1];
-               /* if (detail.DepartmentStockOutDetailPK.StockOutId > 0)
+                /* if (detail.DepartmentStockOutDetailPK.StockOutId > 0)
                 {
                     MessageBox.Show("Lưu thành công !");
                     ClearForm();
@@ -209,17 +208,17 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
             if(cboProductMasters.SelectedIndex <0)
                 return;
             
-                StockView stockView = (StockView) bdsProductMasters[cboProductMasters.SelectedIndex];
-                ProductMaster master = stockView.ProductMaster;
-                if (master.ProductType != null)
-                    txtProductType.Text = master.ProductType.TypeName;
+            StockView stockView = (StockView) bdsProductMasters[cboProductMasters.SelectedIndex];
+            ProductMaster master = stockView.ProductMaster;
+            if (master.ProductType != null)
+                txtProductType.Text = master.ProductType.TypeName;
 
-                txtDescription.Text = master.Description;
-                txtStockQuantity.Text = stockView.StockQuantity.ToString();
-                txtProductName.Text = stockView.ProductDisplayName;
-                pictureBox1.ImageLocation = master.ImagePath;
+            txtDescription.Text = master.Description;
+            txtStockQuantity.Text = stockView.StockQuantity.ToString();
+            txtProductName.Text = stockView.ProductDisplayName;
+            pictureBox1.ImageLocation = master.ImagePath;
                 
-                LoadGoodsByName(master);
+            LoadGoodsByName(master);
                 
         }
 

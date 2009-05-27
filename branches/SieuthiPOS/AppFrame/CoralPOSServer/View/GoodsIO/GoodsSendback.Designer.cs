@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class GoodsSendback
     {
@@ -289,13 +289,13 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Lohang,
-            this.Column2,
-            this.Column5,
-            this.Column3,
-            this.Column1,
-            this.Column6,
-            this.Column4});
+                                                                                                  this.Lohang,
+                                                                                                  this.Column2,
+                                                                                                  this.Column5,
+                                                                                                  this.Column3,
+                                                                                                  this.Column1,
+                                                                                                  this.Column6,
+                                                                                                  this.Column4});
             this.dataGridView1.Location = new System.Drawing.Point(11, 181);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(589, 189);

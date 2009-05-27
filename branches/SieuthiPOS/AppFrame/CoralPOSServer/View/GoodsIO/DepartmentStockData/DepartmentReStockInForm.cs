@@ -14,9 +14,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
-using CoralPOSClient.Presenter.GoodsIO;
+using CoralPOSServer.Presenter.GoodsIO;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentReStockInForm : BaseForm,IDepartmentStockInView
     {

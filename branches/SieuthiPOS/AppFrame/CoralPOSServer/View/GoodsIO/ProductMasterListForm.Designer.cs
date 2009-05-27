@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class ProductMasterListForm
     {
@@ -63,12 +63,12 @@
             this.dgvProductMaster.AllowUserToAddRows = false;
             this.dgvProductMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductMaster.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column5,
-            this.Column4,
-            this.Column6});
+                                                                                                     this.Column1,
+                                                                                                     this.Column2,
+                                                                                                     this.Column3,
+                                                                                                     this.Column5,
+                                                                                                     this.Column4,
+                                                                                                     this.Column6});
             this.dgvProductMaster.Location = new System.Drawing.Point(12, 118);
             this.dgvProductMaster.MultiSelect = false;
             this.dgvProductMaster.Name = "dgvProductMaster";

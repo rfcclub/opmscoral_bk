@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class GoodsSync : Form
     {

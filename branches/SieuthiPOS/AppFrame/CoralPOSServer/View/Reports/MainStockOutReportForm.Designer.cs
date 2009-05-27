@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.Reports
+﻿namespace CoralPOSServer.View.Reports
 {
     partial class MainStockOutReportForm
     {
@@ -165,11 +165,11 @@
             this.dgvStockOut.AutoGenerateColumns = false;
             this.dgvStockOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+                                                                                                this.Column1,
+                                                                                                this.Column2,
+                                                                                                this.Column3,
+                                                                                                this.Column4,
+                                                                                                this.Column5});
             this.dgvStockOut.DataSource = this.bdsStockOut;
             this.dgvStockOut.Location = new System.Drawing.Point(133, 148);
             this.dgvStockOut.Name = "dgvStockOut";
@@ -286,19 +286,19 @@
             this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.Column9,
-            this.Quantity,
-            this.columnGood,
-            this.columnError,
-            this.columnDamage,
-            this.columnLost,
-            this.Column7,
-            this.Column6,
-            this.Column8});
+                                                                                             this.dataGridViewTextBoxColumn1,
+                                                                                             this.dataGridViewTextBoxColumn2,
+                                                                                             this.dataGridViewTextBoxColumn3,
+                                                                                             this.dataGridViewTextBoxColumn4,
+                                                                                             this.Column9,
+                                                                                             this.Quantity,
+                                                                                             this.columnGood,
+                                                                                             this.columnError,
+                                                                                             this.columnDamage,
+                                                                                             this.columnLost,
+                                                                                             this.Column7,
+                                                                                             this.Column6,
+                                                                                             this.Column8});
             this.dgvStock.DataSource = this.bdsStockOutDetail;
             this.dgvStock.Location = new System.Drawing.Point(12, 329);
             this.dgvStock.Name = "dgvStock";

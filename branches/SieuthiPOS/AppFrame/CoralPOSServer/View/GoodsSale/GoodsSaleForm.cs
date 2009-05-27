@@ -20,13 +20,12 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
-using CoralPOSClient.View.GoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
+using CoralPOSServer.View.GoodsIO;
 using Microsoft.Reporting.WinForms;
 
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class GoodsSaleForm : BaseForm,IGoodsSaleView
     {
@@ -346,7 +345,7 @@ namespace CoralPOSClient.View.GoodsSale
             {
                 pODList.RemoveAt(dgvBill.CurrentCell.OwningRow.Index);
                 GoodsSaleController.PurchaseOrder.PurchaseOrderDetails =
-                ObjectConverter.ConvertToNonGenericList<PurchaseOrderDetail>(pODList);
+                    ObjectConverter.ConvertToNonGenericList<PurchaseOrderDetail>(pODList);
                 bdsBill.EndEdit();
                 dgvBill.Focus();
 
@@ -444,7 +443,7 @@ namespace CoralPOSClient.View.GoodsSale
 
         private void txtPayment_TextChanged(object sender, EventArgs e)
         {
-           CalculateCharge();
+            CalculateCharge();
         }
 
         private Bitmap printBitmap = null;
@@ -501,9 +500,9 @@ namespace CoralPOSClient.View.GoodsSale
             {
                 PurchaseOrderDetail detail = (PurchaseOrderDetail)purchaseDetails[maxIndex];
                 if (detail.PurchaseOrder != null
-                   && detail.PurchaseOrder.PurchaseOrderPK != null
-                   && !string.IsNullOrEmpty(detail.PurchaseOrder.PurchaseOrderPK.PurchaseOrderId)
-                   && !detail.PurchaseOrder.PurchaseOrderPK.PurchaseOrderId.Equals(purchaseOrder.PurchaseOrderPK.PurchaseOrderId) )
+                    && detail.PurchaseOrder.PurchaseOrderPK != null
+                    && !string.IsNullOrEmpty(detail.PurchaseOrder.PurchaseOrderPK.PurchaseOrderId)
+                    && !detail.PurchaseOrder.PurchaseOrderPK.PurchaseOrderId.Equals(purchaseOrder.PurchaseOrderPK.PurchaseOrderId) )
                 {
                     if(detail.Price < 0 )
                     {
@@ -554,28 +553,28 @@ namespace CoralPOSClient.View.GoodsSale
             this.ReceiptBindingSource.DataSource = receipt;
             this.DepartmentBindingSource.DataSource = CurrentDepartment.Get();
 
-                PurchaseOrderDetailBindingSource.DataSource = ObjectConverter.ConvertGenericList<PurchaseOrderDetail>(returnDetails);
+            PurchaseOrderDetailBindingSource.DataSource = ObjectConverter.ConvertGenericList<PurchaseOrderDetail>(returnDetails);
 
-                ReportDataSource PODataRDS = new ReportDataSource("AppFrame_Model_PurchaseOrder");
-                PODataRDS.Value = PurchaseOrderBindingSource;
-                PurchaseOrderBill.DataSources.Add(PODataRDS);
+            ReportDataSource PODataRDS = new ReportDataSource("AppFrame_Model_PurchaseOrder");
+            PODataRDS.Value = PurchaseOrderBindingSource;
+            PurchaseOrderBill.DataSources.Add(PODataRDS);
 
-                ReportDataSource PODetRDS = new ReportDataSource("AppFrame_Collection_PurchaseOrderDetailCollection");
-                PODetRDS.Value = PurchaseOrderDetailCollectionBindingSource;
-                PurchaseOrderBill.DataSources.Add(PODetRDS);
+            ReportDataSource PODetRDS = new ReportDataSource("AppFrame_Collection_PurchaseOrderDetailCollection");
+            PODetRDS.Value = PurchaseOrderDetailCollectionBindingSource;
+            PurchaseOrderBill.DataSources.Add(PODetRDS);
 
-                ReportDataSource DepartmentRDS = new ReportDataSource("AppFrame_Model_Department");
-                DepartmentRDS.Value = DepartmentBindingSource;
-                PurchaseOrderBill.DataSources.Add(DepartmentRDS);
+            ReportDataSource DepartmentRDS = new ReportDataSource("AppFrame_Model_Department");
+            DepartmentRDS.Value = DepartmentBindingSource;
+            PurchaseOrderBill.DataSources.Add(DepartmentRDS);
 
-                ReportDataSource ReceiptRDS = new ReportDataSource("AppFrame_Model_Receipt");
-                ReceiptRDS.Value = ReceiptBindingSource;
-                PurchaseOrderBill.DataSources.Add(ReceiptRDS);
+            ReportDataSource ReceiptRDS = new ReportDataSource("AppFrame_Model_Receipt");
+            ReceiptRDS.Value = ReceiptBindingSource;
+            PurchaseOrderBill.DataSources.Add(ReceiptRDS);
 
 
-                ReportDataSource POReturnDetRDS = new ReportDataSource("AppFrame_Model_PurchaseOrderDetail");
-                POReturnDetRDS.Value = PurchaseOrderDetailBindingSource;
-                PurchaseOrderBill.DataSources.Add(POReturnDetRDS);
+            ReportDataSource POReturnDetRDS = new ReportDataSource("AppFrame_Model_PurchaseOrderDetail");
+            POReturnDetRDS.Value = PurchaseOrderDetailBindingSource;
+            PurchaseOrderBill.DataSources.Add(POReturnDetRDS);
                 
             
 
@@ -640,7 +639,7 @@ namespace CoralPOSClient.View.GoodsSale
 
         IList<Stream> streamList = new List<Stream>();
         private Stream CreateStream(string name, string fileNameExtension, Encoding encoding,
-                              string mimeType, bool willSeek)
+                                    string mimeType, bool willSeek)
         {
             //Stream stream = new FileStream(name + "." + fileNameExtension, FileMode.Create);
             //Stream stream = new FileStream(name + "." + fileNameExtension, FileMode.Create,FileAccess.ReadWrite);
@@ -660,17 +659,17 @@ namespace CoralPOSClient.View.GoodsSale
             180;*/
             
             string deviceInfo =
-          "<DeviceInfo>" +
-          "  <OutputFormat>EMF</OutputFormat>" +
-          "  <PageWidth>2.8in</PageWidth>" +
-          "  <PageHeight>8in</PageHeight>" +
-          "  <DpiX>180</DpiX>" +
-          "  <DpiY>180</DpiY>" +
-          "  <MarginTop>0.0in</MarginTop>" +
-          "  <MarginLeft>0.0in</MarginLeft>" +
-          "  <MarginRight>0.0in</MarginRight>" +
-          "  <MarginBottom>0.0in</MarginBottom>" +
-          "</DeviceInfo>";
+                "<DeviceInfo>" +
+                "  <OutputFormat>EMF</OutputFormat>" +
+                "  <PageWidth>2.8in</PageWidth>" +
+                "  <PageHeight>8in</PageHeight>" +
+                "  <DpiX>180</DpiX>" +
+                "  <DpiY>180</DpiY>" +
+                "  <MarginTop>0.0in</MarginTop>" +
+                "  <MarginLeft>0.0in</MarginLeft>" +
+                "  <MarginRight>0.0in</MarginRight>" +
+                "  <MarginBottom>0.0in</MarginBottom>" +
+                "</DeviceInfo>";
             Warning[] warnings;
             if(PurchaseOrderBill == null)
             {
@@ -697,16 +696,16 @@ namespace CoralPOSClient.View.GoodsSale
             PurchaseOrderDetailCollection newList = new PurchaseOrderDetailCollection();
             foreach (PurchaseOrderDetail detail in list)
             {
-               PurchaseOrderDetail newDetail = null;
-               if(!ExistInList(newList,detail,out newDetail))
-               {
-                   newList.Add(detail);
-               }
-               else
-               {
-                   newDetail.Quantity += detail.Quantity;
-                   //newDetail.Price = detail.Price;
-               }
+                PurchaseOrderDetail newDetail = null;
+                if(!ExistInList(newList,detail,out newDetail))
+                {
+                    newList.Add(detail);
+                }
+                else
+                {
+                    newDetail.Quantity += detail.Quantity;
+                    //newDetail.Price = detail.Price;
+                }
             }
 
             return newList;
@@ -820,7 +819,7 @@ namespace CoralPOSClient.View.GoodsSale
 
                 if (orderDetail.Product == null 
                     || orderDetail.Product.ProductMaster == null 
-                   || string.IsNullOrEmpty(orderDetail.Product.ProductMaster.ProductMasterId))
+                    || string.IsNullOrEmpty(orderDetail.Product.ProductMaster.ProductMasterId))
                 {
                     list.RemoveAt(maxId);
                 }
@@ -853,10 +852,10 @@ namespace CoralPOSClient.View.GoodsSale
         private void txtBarcode_TextChanged(object sender, EventArgs e)
         {
             
-                if (!string.IsNullOrEmpty(txtBarcode.Text) && txtBarcode.Text.Length == CommonConstants.PRODUCT_ID_LENGTH)
+            if (!string.IsNullOrEmpty(txtBarcode.Text) && txtBarcode.Text.Length == CommonConstants.PRODUCT_ID_LENGTH)
+            {
+                try
                 {
-                    try
-                    {
                     GoodsSaleEventArgs goodsSaleEventArgs = new GoodsSaleEventArgs();
                     /*int selectedIndex = dgvBill.CurrentCell.OwningRow.Index;
                     goodsSaleEventArgs.SelectedIndex = selectedIndex;*/
@@ -876,28 +875,28 @@ namespace CoralPOSClient.View.GoodsSale
                     {
                         pODList[pODList.Count - 1].Quantity = totalNumber;
                     }
-                        if(GoodsSaleController.PurchaseOrder== null)
-                        {
-                            GoodsSaleController.PurchaseOrder = new PurchaseOrder();
-                        }
+                    if(GoodsSaleController.PurchaseOrder== null)
+                    {
+                        GoodsSaleController.PurchaseOrder = new PurchaseOrder();
+                    }
                     GoodsSaleController.PurchaseOrder.PurchasePrice = CalculateTotalPrice(pODList);
                     txtTotalAmount.Text = GoodsSaleController.PurchaseOrder.PurchasePrice.ToString();
                     bdsBill.EndEdit();
                     
-                    }
-                    catch (Exception ex)
-                    {
-                        //throw new BusinessException("Mã vạch không hợp lệ hoặc hàng không tồn tại");
-                        pODList.RemoveAt(pODList.Count - 1);
-                    }
-                    finally
-                    {
-                        CreateRowNumbers();
-                        CalculateCharge();
-                        RemoveEmptyRowFromList(pODList);
-                        ClearInput();
-                        txtBarcode.Focus();
-                    }
+                }
+                catch (Exception ex)
+                {
+                    //throw new BusinessException("Mã vạch không hợp lệ hoặc hàng không tồn tại");
+                    pODList.RemoveAt(pODList.Count - 1);
+                }
+                finally
+                {
+                    CreateRowNumbers();
+                    CalculateCharge();
+                    RemoveEmptyRowFromList(pODList);
+                    ClearInput();
+                    txtBarcode.Focus();
+                }
             }
             
 
@@ -1072,18 +1071,18 @@ namespace CoralPOSClient.View.GoodsSale
             GoodsSaleEventArgs eventArgs = new GoodsSaleEventArgs();
             PurchaseOrder searchRetPurchaseOrder = new PurchaseOrder();
             searchRetPurchaseOrder.PurchaseOrderPK = new PurchaseOrderPK
-                                                                       {
-                                                                           PurchaseOrderId = txtRefPurchaseOrder.Text,
-                                                                           DepartmentId =
-                                                                               CurrentDepartment.Get().DepartmentId
-                                                                       };
+                                                         {
+                                                             PurchaseOrderId = txtRefPurchaseOrder.Text,
+                                                             DepartmentId =
+                                                                 CurrentDepartment.Get().DepartmentId
+                                                         };
             
             // if purchase order id is UNDEFINED
             if (!string.IsNullOrEmpty(txtRefPurchaseOrder.Text) && txtRefPurchaseOrder.Text.Trim().Equals("000"))
             {
                 
                 if (string.IsNullOrEmpty(txtRetProductName.Text) // product id is notavailable
-                   && string.IsNullOrEmpty(txtRetBarCode.Text)) // bar code is not available 
+                    && string.IsNullOrEmpty(txtRetBarCode.Text)) // bar code is not available 
                 {
                     MessageBox.Show(
                         "Nếu muốn trả hàng không đối chứng, xin nhập hoá đơn là 000 và chọn một mã vạch phù hợp.");
@@ -1136,69 +1135,69 @@ namespace CoralPOSClient.View.GoodsSale
                     // create new undefined order
                     PurchaseOrder undefPurchaseOrder = new PurchaseOrder();
                     undefPurchaseOrder.PurchaseOrderPK = new PurchaseOrderPK
-                    {
-                        PurchaseOrderId = txtRefPurchaseOrder.Text.Trim(),
-                        DepartmentId =
-                            CurrentDepartment.Get().DepartmentId
-                    };
+                                                             {
+                                                                 PurchaseOrderId = txtRefPurchaseOrder.Text.Trim(),
+                                                                 DepartmentId =
+                                                                     CurrentDepartment.Get().DepartmentId
+                                                             };
                     ReturnPurchaseOrder = undefPurchaseOrder;
                     // if defined barcode
                     /*if(!string.IsNullOrEmpty(txtRetProductName.Text))
                     {*/
-                        PurchaseOrderDetail specialDetail = new PurchaseOrderDetail { Product = new Product()};
-                        specialDetail.Product.ProductId = txtRetBarCode.Text;
+                    PurchaseOrderDetail specialDetail = new PurchaseOrderDetail { Product = new Product()};
+                    specialDetail.Product.ProductId = txtRetBarCode.Text;
                     
                     if (!string.IsNullOrEmpty(specialDetail.Product.ProductId)
-                            && specialDetail.Product.ProductId.Equals(CommonConstants.UNDEFINED_BARCODE_MARK))
+                        && specialDetail.Product.ProductId.Equals(CommonConstants.UNDEFINED_BARCODE_MARK))
+                    {
+                        specialDetail.Product.ProductId = string.Format("{0:000000000000}", 0);
+                        if(CheckUtility.IsNullOrEmpty(txtRetPrice.Text))
                         {
-                            specialDetail.Product.ProductId = string.Format("{0:000000000000}", 0);
-                            if(CheckUtility.IsNullOrEmpty(txtRetPrice.Text))
-                            {
-                                /*MessageBox.Show("Xin hãy nhập giá của sản phẩm không có mã vạch");
+                            /*MessageBox.Show("Xin hãy nhập giá của sản phẩm không có mã vạch");
                                 return;*/
-                            }
-                            specialDetail.Price = Int64.Parse(txtRetPrice.Text);
                         }
-                        try    // if null , will go to exception
-                        {
-                            GoodsSaleEventArgs goodsSaleEventArgs = new GoodsSaleEventArgs();
-                            goodsSaleEventArgs.SelectedPurchaseOrderDetail = specialDetail;
-                            goodsSaleEventArgs.NotAvailableInStock = true;
-                            EventUtility.fireEvent(LoadGoodsEvent, this, goodsSaleEventArgs);
+                        specialDetail.Price = Int64.Parse(txtRetPrice.Text);
+                    }
+                    try    // if null , will go to exception
+                    {
+                        GoodsSaleEventArgs goodsSaleEventArgs = new GoodsSaleEventArgs();
+                        goodsSaleEventArgs.SelectedPurchaseOrderDetail = specialDetail;
+                        goodsSaleEventArgs.NotAvailableInStock = true;
+                        EventUtility.fireEvent(LoadGoodsEvent, this, goodsSaleEventArgs);
                             
-                            txtRetProductName.Text = goodsSaleEventArgs.SelectedPurchaseOrderDetail.Product.ProductMaster.ProductName;
-                            txtRetPrice.Text = goodsSaleEventArgs.SelectedPurchaseOrderDetail.Price.ToString();
-                            specialDetail = goodsSaleEventArgs.SelectedPurchaseOrderDetail;
-                            specialDetail.PurchaseOrder = ReturnPurchaseOrder;
-                            specialDetail.PurchaseOrderDetailPK = new PurchaseOrderDetailPK
-                                                                      {
-                                                                          DepartmentId = CurrentDepartment.Get().DepartmentId,
-                                                                          PurchaseOrderId = ReturnPurchaseOrder.PurchaseOrderPK.PurchaseOrderId
-                                                                      };
-                            specialDetail.Quantity = 1;
-                            specialDetail.Price = 0 - specialDetail.Price;
-                            pODList.Add(specialDetail);
-                            bdsBill.EndEdit();
-                            dgvBill.Refresh();
-                            dgvBill.Invalidate();
-                        }
-                        catch (Exception ex)
-                        {
-                            // do nothing
-                            MessageBox.Show("Không có mã vạch này");
-                        }
-                        finally
-                        {
-                            GoodsSaleController.PurchaseOrder.PurchasePrice = CalculateTotalPrice(pODList);
-                            txtTotalAmount.Text = GoodsSaleController.PurchaseOrder.PurchasePrice.ToString();
+                        txtRetProductName.Text = goodsSaleEventArgs.SelectedPurchaseOrderDetail.Product.ProductMaster.ProductName;
+                        txtRetPrice.Text = goodsSaleEventArgs.SelectedPurchaseOrderDetail.Price.ToString();
+                        specialDetail = goodsSaleEventArgs.SelectedPurchaseOrderDetail;
+                        specialDetail.PurchaseOrder = ReturnPurchaseOrder;
+                        specialDetail.PurchaseOrderDetailPK = new PurchaseOrderDetailPK
+                                                                  {
+                                                                      DepartmentId = CurrentDepartment.Get().DepartmentId,
+                                                                      PurchaseOrderId = ReturnPurchaseOrder.PurchaseOrderPK.PurchaseOrderId
+                                                                  };
+                        specialDetail.Quantity = 1;
+                        specialDetail.Price = 0 - specialDetail.Price;
+                        pODList.Add(specialDetail);
+                        bdsBill.EndEdit();
+                        dgvBill.Refresh();
+                        dgvBill.Invalidate();
+                    }
+                    catch (Exception ex)
+                    {
+                        // do nothing
+                        MessageBox.Show("Không có mã vạch này");
+                    }
+                    finally
+                    {
+                        GoodsSaleController.PurchaseOrder.PurchasePrice = CalculateTotalPrice(pODList);
+                        txtTotalAmount.Text = GoodsSaleController.PurchaseOrder.PurchasePrice.ToString();
 
-                            CreateRowNumbers();
-                            CalculateCharge();
-                            RemoveEmptyRowFromList(pODList);
-                            ClearReturnInput();
-                            ClearInput();
-                            txtBarcode.Focus();
-                        }
+                        CreateRowNumbers();
+                        CalculateCharge();
+                        RemoveEmptyRowFromList(pODList);
+                        ClearReturnInput();
+                        ClearInput();
+                        txtBarcode.Focus();
+                    }
                     //}
                 }
             }

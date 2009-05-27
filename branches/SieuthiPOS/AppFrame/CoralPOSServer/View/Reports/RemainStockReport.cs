@@ -16,7 +16,7 @@ using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Interfaces.View.Reports;
 //using Aspose.Cells;
 
-namespace CoralPOSClient.View.Reports
+namespace CoralPOSServer.View.Reports
 {
     public partial class RemainStockReport : BaseForm, IStockSearchView
     {

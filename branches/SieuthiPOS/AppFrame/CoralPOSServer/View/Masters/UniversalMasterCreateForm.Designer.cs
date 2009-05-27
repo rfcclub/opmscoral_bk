@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.Masters
+﻿namespace CoralPOSServer.View.Masters
 {
     partial class UniversalMasterCreateForm
     {

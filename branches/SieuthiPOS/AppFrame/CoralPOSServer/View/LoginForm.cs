@@ -8,11 +8,10 @@ using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Common;
 using CoralPOS.Interfaces.View;
-using CoralPOSServer.View;
 using Spring.Context;
 using Spring.Context.Support;
 
-namespace AppFrame.View
+namespace CoralPOSServer.View
 {
     public partial class LoginForm : BaseForm, ILoginView<LoginEventArgs>
     {

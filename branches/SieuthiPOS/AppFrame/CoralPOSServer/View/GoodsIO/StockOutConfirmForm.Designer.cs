@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class StockOutConfirmForm
     {
@@ -105,18 +105,18 @@
             this.dgvStockOutDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStockOutDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockOutDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.Quantity,
-            this.columnGood,
-            this.columnError,
-            this.columnDamage,
-            this.columnLost,
-            this.Column7,
-            this.Column6,
-            this.Column8});
+                                                                                                      this.dataGridViewTextBoxColumn1,
+                                                                                                      this.dataGridViewTextBoxColumn2,
+                                                                                                      this.dataGridViewTextBoxColumn3,
+                                                                                                      this.dataGridViewTextBoxColumn4,
+                                                                                                      this.Quantity,
+                                                                                                      this.columnGood,
+                                                                                                      this.columnError,
+                                                                                                      this.columnDamage,
+                                                                                                      this.columnLost,
+                                                                                                      this.Column7,
+                                                                                                      this.Column6,
+                                                                                                      this.Column8});
             this.dgvStockOutDetail.DataSource = this.bdsDeptStockOutDetail;
             this.dgvStockOutDetail.Location = new System.Drawing.Point(12, 314);
             this.dgvStockOutDetail.Name = "dgvStockOutDetail";
@@ -286,11 +286,11 @@
             this.dgvStockOut.AutoGenerateColumns = false;
             this.dgvStockOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+                                                                                                this.Column1,
+                                                                                                this.Column2,
+                                                                                                this.Column3,
+                                                                                                this.Column4,
+                                                                                                this.Column5});
             this.dgvStockOut.DataSource = this.bdsDeptStockOut;
             this.dgvStockOut.Location = new System.Drawing.Point(136, 122);
             this.dgvStockOut.Name = "dgvStockOut";

@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class SyncToMainForm
     {
@@ -92,8 +92,8 @@
             this.dgvSyncResult.AutoGenerateColumns = false;
             this.dgvSyncResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSyncResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.fileNameDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn});
+                                                                                                  this.fileNameDataGridViewTextBoxColumn,
+                                                                                                  this.statusDataGridViewTextBoxColumn});
             this.dgvSyncResult.DataSource = this.syncResultBindingSource;
             this.dgvSyncResult.Location = new System.Drawing.Point(14, 125);
             this.dgvSyncResult.Name = "dgvSyncResult";

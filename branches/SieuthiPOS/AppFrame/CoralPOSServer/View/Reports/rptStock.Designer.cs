@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.Reports
+﻿namespace CoralPOSServer.View.Reports
 {
     partial class frmStockinRpt
     {

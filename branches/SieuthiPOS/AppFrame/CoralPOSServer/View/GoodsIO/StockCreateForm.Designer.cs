@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class StockCreateForm
     {
@@ -112,8 +112,8 @@
             this.cbbStatus.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbStatus.FormattingEnabled = true;
             this.cbbStatus.Items.AddRange(new object[] {
-            "Mới nhập về",
-            "Trả từ cửa hàng"});
+                                                           "Mới nhập về",
+                                                           "Trả từ cửa hàng"});
             this.cbbStatus.Location = new System.Drawing.Point(145, 66);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(125, 22);

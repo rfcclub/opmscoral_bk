@@ -21,7 +21,7 @@ using CoralPOS.Utility;
 using Microsoft.ReportingServices.Diagnostics.Utilities;
 using NHibernate.Criterion;
 
-namespace CoralPOSClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockInController : IDepartmentStockInController
     {

@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentPriceUpdateForm
     {

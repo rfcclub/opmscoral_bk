@@ -1,7 +1,7 @@
 ﻿using CoralPOS;
 using CoralPOS.MasterDBTableAdapters;
 
-namespace CoralPOSClient.View.Masters
+namespace CoralPOSServer.View.Masters
 {
     partial class ProductTypeMasterForm
     {
@@ -109,18 +109,18 @@ namespace CoralPOSClient.View.Masters
             this.product_typeBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.product_typeBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.product_typeBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.product_typeBindingNavigatorSaveItem});
+                                                                                                          this.bindingNavigatorMoveFirstItem,
+                                                                                                          this.bindingNavigatorMovePreviousItem,
+                                                                                                          this.bindingNavigatorSeparator,
+                                                                                                          this.bindingNavigatorPositionItem,
+                                                                                                          this.bindingNavigatorCountItem,
+                                                                                                          this.bindingNavigatorSeparator1,
+                                                                                                          this.bindingNavigatorMoveNextItem,
+                                                                                                          this.bindingNavigatorMoveLastItem,
+                                                                                                          this.bindingNavigatorSeparator2,
+                                                                                                          this.bindingNavigatorAddNewItem,
+                                                                                                          this.bindingNavigatorDeleteItem,
+                                                                                                          this.product_typeBindingNavigatorSaveItem});
             this.product_typeBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.product_typeBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.product_typeBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;

@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.MainStock
+﻿namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class MainStockOutExtraForm
     {
@@ -114,8 +114,8 @@
             // ctxMenuDept
             // 
             this.ctxMenuDept.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCreateDupItem,
-            this.mnuCreateNewItem});
+                                                                                         this.mnuCreateDupItem,
+                                                                                         this.mnuCreateNewItem});
             this.ctxMenuDept.Name = "ctxMenuDept";
             this.ctxMenuDept.Size = new System.Drawing.Size(307, 48);
             // 
@@ -246,24 +246,24 @@
             this.dgvDeptStockOut.AllowUserToAddRows = false;
             this.dgvDeptStockOut.AutoGenerateColumns = false;
             this.dgvDeptStockOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SearchCreate,
-            this.ProducType,
-            this.columnProductId,
-            this.columnProductName,
-            this.columnColor,
-            this.columnSize,
-            this.quantity,
-            this.Good,
-            this.Damage,
-            this.error,
-            this.Lost,
-            this.Unconfirm,
-            this.Desc,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.Product,
-            this.Column1,
-            this.Column2,
-            this.Column3});
+                                                                                                    this.SearchCreate,
+                                                                                                    this.ProducType,
+                                                                                                    this.columnProductId,
+                                                                                                    this.columnProductName,
+                                                                                                    this.columnColor,
+                                                                                                    this.columnSize,
+                                                                                                    this.quantity,
+                                                                                                    this.Good,
+                                                                                                    this.Damage,
+                                                                                                    this.error,
+                                                                                                    this.Lost,
+                                                                                                    this.Unconfirm,
+                                                                                                    this.Desc,
+                                                                                                    this.delFlgDataGridViewTextBoxColumn,
+                                                                                                    this.Product,
+                                                                                                    this.Column1,
+                                                                                                    this.Column2,
+                                                                                                    this.Column3});
             this.dgvDeptStockOut.ContextMenuStrip = this.ctxMenuDept;
             this.dgvDeptStockOut.DataSource = this.bdsStockIn;
             this.dgvDeptStockOut.Location = new System.Drawing.Point(11, 213);

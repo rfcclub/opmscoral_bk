@@ -13,7 +13,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.Presenter.GoodsSale
+namespace CoralPOSServer.Presenter.GoodsSale
 {
     public class GoodsSaleListController : IGoodsSaleListController
     {

@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     partial class MainAbout : Form
     {

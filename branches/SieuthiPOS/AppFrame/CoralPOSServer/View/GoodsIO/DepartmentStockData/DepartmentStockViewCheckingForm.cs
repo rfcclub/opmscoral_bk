@@ -18,7 +18,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.ViewModel;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockViewCheckingForm : AppFrame.Common.BaseForm, IDepartmentStockCheckingView
     {
@@ -69,7 +69,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             if (stock == null)
             {
                 if(!checkingEventArgs.UnconfirmTempBarcode)
-                MessageBox.Show("Không tìm thấy mã vạch trong kho", "Lỗi");
+                    MessageBox.Show("Không tìm thấy mã vạch trong kho", "Lỗi");
                 return;
             }
 
@@ -99,18 +99,18 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             }
             else // create new stock defect row
             {
-                    stockList.AddNew();
-                    DepartmentStockView defect = checkingEventArgs.ScannedStockView;
-                    stockList[stockList.Count - 1] = defect;
+                stockList.AddNew();
+                DepartmentStockView defect = checkingEventArgs.ScannedStockView;
+                stockList[stockList.Count - 1] = defect;
                     
-                    stockList[stockList.Count - 1].GoodQuantity = 1;
-                    stockList[stockList.Count - 1].OldErrorQuantity = stockList[stockList.Count - 1].ErrorQuantity = 0;
-                    stockList[stockList.Count - 1].OldDamageQuantity = stockList[stockList.Count - 1].DamageQuantity = 0;
-                    stockList[stockList.Count - 1].OldLostQuantity = stockList[stockList.Count - 1].LostQuantity = 0;
-                    stockList[stockList.Count - 1].OldUnconfirmQuantity = stockList[stockList.Count - 1].UnconfirmQuantity = 0;
+                stockList[stockList.Count - 1].GoodQuantity = 1;
+                stockList[stockList.Count - 1].OldErrorQuantity = stockList[stockList.Count - 1].ErrorQuantity = 0;
+                stockList[stockList.Count - 1].OldDamageQuantity = stockList[stockList.Count - 1].DamageQuantity = 0;
+                stockList[stockList.Count - 1].OldLostQuantity = stockList[stockList.Count - 1].LostQuantity = 0;
+                stockList[stockList.Count - 1].OldUnconfirmQuantity = stockList[stockList.Count - 1].UnconfirmQuantity = 0;
 
-                    txtStockQuantity.Text = stockList[stockList.Count - 1].Quantity.ToString("##,##0");
-                    dgvStocks.CurrentCell = dgvStocks[5, stockList.Count - 1];
+                txtStockQuantity.Text = stockList[stockList.Count - 1].Quantity.ToString("##,##0");
+                dgvStocks.CurrentCell = dgvStocks[5, stockList.Count - 1];
             }
             bdsStockDefect.EndEdit();
             dgvStocks.Refresh();
@@ -209,10 +209,10 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 DepartmentStockView defect = stockList[i];
 
                 if (   defect.ErrorQuantity < 0 
-                    || defect.GoodQuantity < 0 
-                    || defect.DamageQuantity < 0 
-                    || defect.LostQuantity < 0 
-                    || defect.UnconfirmQuantity < 0)
+                       || defect.GoodQuantity < 0 
+                       || defect.DamageQuantity < 0 
+                       || defect.LostQuantity < 0 
+                       || defect.UnconfirmQuantity < 0)
                 {
                     MessageBox.Show("Lỗi ở dòng thứ " + (i + 1) + " : Có số lượng âm");
                     dgvStocks.CurrentCell = dgvStocks[5, i];
@@ -249,7 +249,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         private void btnClose_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn muốn thoát ? ", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
-                            MessageBoxDefaultButton.Button1);
+                                                  MessageBoxDefaultButton.Button1);
             if(result == System.Windows.Forms.DialogResult.No)
             {
                 return;
@@ -387,10 +387,10 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                         stockView.LostQuantity += stock.LostQuantity;
                         stockView.DamageQuantity += stock.DamageQuantity;
                         if(    stock.GoodQuantity > 0 
-                            || stock.ErrorQuantity > 0 
-                            || stock.DamageQuantity > 0
-                            || stock.LostQuantity > 0
-                            || stock.UnconfirmQuantity > 0)
+                               || stock.ErrorQuantity > 0 
+                               || stock.DamageQuantity > 0
+                               || stock.LostQuantity > 0
+                               || stock.UnconfirmQuantity > 0)
                         {
                             isReadOnly = true;
                         }
@@ -455,7 +455,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         private void btnTempLoad_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn muốn đọc từ file tạm ?","Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
-                            MessageBoxDefaultButton.Button2);
+                                                  MessageBoxDefaultButton.Button2);
             if(result == DialogResult.No)
             {
                 return;

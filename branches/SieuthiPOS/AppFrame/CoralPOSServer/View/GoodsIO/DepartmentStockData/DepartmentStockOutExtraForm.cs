@@ -15,10 +15,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSServer.Presenter.GoodsIO.DepartmentStockData;
 
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockOutExtraForm : BaseForm, IDepartmentStockOutView
     {
@@ -362,8 +362,8 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 {
                     dgvDeptStockIn.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
                     if (i != QUANTITY_POS
-                            && i != PRICE_POS
-                            && i != SELL_PRICE_POS)
+                        && i != PRICE_POS
+                        && i != SELL_PRICE_POS)
                     {
                         dgvDeptStockIn.Columns[i].ReadOnly = true;
                     }
@@ -371,7 +371,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 //                txtDexcription.Text = deptSO.Description;
             }
             deptSO.DepartmentStockOutDetails =
-                    ObjectConverter.ConvertToNonGenericList<DepartmentStockOutDetail>(deptSODetailList);
+                ObjectConverter.ConvertToNonGenericList<DepartmentStockOutDetail>(deptSODetailList);
             
             
         }
@@ -768,7 +768,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                     }
                 }
             }
-            // Xuất trả về kho chính
+                // Xuất trả về kho chính
             else if (cbbStockOutType.SelectedIndex == 1)
             {
                 for (int i = 0; i < dgvDeptStockIn.ColumnCount; i++)
@@ -784,7 +784,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                     }
                 }
             }
-            //Xuất đi cửa hàng khác
+                //Xuất đi cửa hàng khác
             else if (cbbStockOutType.SelectedIndex == 2)
             {
                 for (int i = 0; i < dgvDeptStockIn.ColumnCount; i++)
@@ -879,9 +879,9 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                         continue;
                     }
 
-                     // DefectStatusId = 4, DefectStatusName = "Xuất tạm để sửa hàng" });
-                     // DefectStatusId = 6, DefectStatusName = "Xuất trả về kho chính" });
-                     // DefectStatusId = 7, DefectStatusName = "Xuất đi cửa hàng khác" });
+                    // DefectStatusId = 4, DefectStatusName = "Xuất tạm để sửa hàng" });
+                    // DefectStatusId = 6, DefectStatusName = "Xuất trả về kho chính" });
+                    // DefectStatusId = 7, DefectStatusName = "Xuất đi cửa hàng khác" });
                     StockDefectStatus defectStatus = (StockDefectStatus)cbbStockOutType.SelectedItem;
                     
                     if (defectStatus.DefectStatusId == 4)
@@ -965,7 +965,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                     }
                     else
                     {
-                         Clipboard.SetText("");
+                        Clipboard.SetText("");
                     }
                 }
 

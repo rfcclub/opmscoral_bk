@@ -14,7 +14,7 @@ using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.View.SalePoints;
 using CoralPOS.Interfaces.Presenter.SalePoints;
 
-namespace CoralPOSClient.View.SalePoints
+namespace CoralPOSServer.View.SalePoints
 {
     public partial class EmployeeForm : BaseForm, IEmployeeView
     {
@@ -115,7 +115,7 @@ namespace CoralPOSClient.View.SalePoints
             //txtDepartmentName.Text = employeeInfo.Employee.Department.DepartmentName;
             //txtDepartmentId.Text = employeeInfo.DepartmentId.ToString();
             if (   employeeInfo.EmployeePK != null 
-                && employeeInfo.EmployeePK.EmployeeId != null)
+                   && employeeInfo.EmployeePK.EmployeeId != null)
             {
                 txtEmployeeId.Text = employeeInfo.EmployeePK.EmployeeId.ToString();
             }

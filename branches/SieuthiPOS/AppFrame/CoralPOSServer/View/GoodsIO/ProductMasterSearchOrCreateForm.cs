@@ -12,9 +12,9 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using System.Collections;
 using CoralPOS.Common;
-using CoralPOSClient.View.Masters;
+using CoralPOSServer.View.Masters;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class ProductMasterSearchOrCreateForm : BaseForm, IProductMasterSearchOrCreateView
     {
@@ -57,58 +57,58 @@ namespace CoralPOSClient.View.GoodsIO
             EventUtility.fireEvent(InitProductMasterSearchOrCreateEvent, sender, eventArgs);
 
             AddListItemToCombo(productMasterControl.cbbProductType,
-                productMasterSearchControl.cbbProductType,
-                eventArgs.ProductTypeList,
-                "TypeName",
-                productMasterControl.cbbProductType.Text,
-                productMasterSearchControl.cbbProductType.Text);
+                               productMasterSearchControl.cbbProductType,
+                               eventArgs.ProductTypeList,
+                               "TypeName",
+                               productMasterControl.cbbProductType.Text,
+                               productMasterSearchControl.cbbProductType.Text);
 
             AddListItemToCombo(productMasterControl.cbbProductSize,
-                productMasterSearchControl.cbbProductSize,
-                eventArgs.ProductSizeList,
-                "SizeName",
-                productMasterControl.cbbProductSize.Text,
-                productMasterSearchControl.cbbProductSize.Text);
+                               productMasterSearchControl.cbbProductSize,
+                               eventArgs.ProductSizeList,
+                               "SizeName",
+                               productMasterControl.cbbProductSize.Text,
+                               productMasterSearchControl.cbbProductSize.Text);
 
 
             AddListItemToCombo(productMasterControl.cbbProductColor,
-                productMasterSearchControl.cbbProductColor,
-                eventArgs.ProductColorList,
-                "ColorName",
-                productMasterControl.cbbProductColor.Text,
-                productMasterSearchControl.cbbProductColor.Text);
+                               productMasterSearchControl.cbbProductColor,
+                               eventArgs.ProductColorList,
+                               "ColorName",
+                               productMasterControl.cbbProductColor.Text,
+                               productMasterSearchControl.cbbProductColor.Text);
 
 
             AddListItemToCombo(productMasterControl.cbbCountry,
-                productMasterSearchControl.cbbCountry,
-                eventArgs.CountryList,
-                "CountryName",
-                productMasterControl.cbbCountry.Text,
-                productMasterSearchControl.cbbCountry.Text);
+                               productMasterSearchControl.cbbCountry,
+                               eventArgs.CountryList,
+                               "CountryName",
+                               productMasterControl.cbbCountry.Text,
+                               productMasterSearchControl.cbbCountry.Text);
 
 
             AddListItemToCombo(productMasterControl.cbbManufacturer,
-                productMasterSearchControl.cbbManufacturer,
-                eventArgs.ManufacturerList,
-                "ManufacturerName",
-                productMasterControl.cbbManufacturer.Text,
-                productMasterSearchControl.cbbManufacturer.Text);
+                               productMasterSearchControl.cbbManufacturer,
+                               eventArgs.ManufacturerList,
+                               "ManufacturerName",
+                               productMasterControl.cbbManufacturer.Text,
+                               productMasterSearchControl.cbbManufacturer.Text);
 
 
             AddListItemToCombo(productMasterControl.cbbDistributor,
-                productMasterSearchControl.cbbDistributor,
-                eventArgs.DistributorList,
-                "DistributorName",
-                productMasterControl.cbbDistributor.Text,
-                productMasterSearchControl.cbbDistributor.Text);
+                               productMasterSearchControl.cbbDistributor,
+                               eventArgs.DistributorList,
+                               "DistributorName",
+                               productMasterControl.cbbDistributor.Text,
+                               productMasterSearchControl.cbbDistributor.Text);
 
 
             AddListItemToCombo(productMasterControl.cbbPackager,
-                productMasterSearchControl.cbbPackager,
-                eventArgs.PackagerList,
-                "PackagerName",
-                productMasterControl.cbbPackager.Text,
-                productMasterSearchControl.cbbPackager.Text);
+                               productMasterSearchControl.cbbPackager,
+                               eventArgs.PackagerList,
+                               "PackagerName",
+                               productMasterControl.cbbPackager.Text,
+                               productMasterSearchControl.cbbPackager.Text);
 
 
             SelectedProductMaster = null;
@@ -133,7 +133,7 @@ namespace CoralPOSClient.View.GoodsIO
                                     ProductSize = productMasterSearchControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterControl.cbbProductSize.SelectedItem) : null,
                                     ProductType = productMasterSearchControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
                                     ProductColor = productMasterSearchControl.cbbProductColor.SelectedIndex > 0 ?
-                                        ((ProductColor)productMasterSearchControl.cbbProductColor.SelectedItem) : null,
+                                                                                                                    ((ProductColor)productMasterSearchControl.cbbProductColor.SelectedItem) : null,
                                     Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
                                     Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
                                     Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
@@ -222,7 +222,7 @@ namespace CoralPOSClient.View.GoodsIO
                                         ProductSize = productMasterControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize) productMasterControl.cbbProductSize.SelectedItem) : null,
                                         ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType) productMasterControl.cbbProductType.SelectedItem) : null,
                                         ProductColor = productMasterControl.cbbProductColor.SelectedIndex > 0 ? 
-                                            ((ProductColor) productMasterControl.cbbProductColor.SelectedItem) : null,
+                                                                                                                  ((ProductColor) productMasterControl.cbbProductColor.SelectedItem) : null,
                                         Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? ((Country) productMasterControl.cbbCountry.SelectedItem) : null,
                                         Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
                                         Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
@@ -395,50 +395,50 @@ namespace CoralPOSClient.View.GoodsIO
         private void btnCreateColor_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_COLOR, 
-                productMasterControl.cbbProductColor,
-                productMasterSearchControl.cbbProductColor);
+                                productMasterControl.cbbProductColor,
+                                productMasterSearchControl.cbbProductColor);
         }
 
         private void btnCreateCountry_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.COUNTRY,
-                productMasterControl.cbbCountry,
-                productMasterSearchControl.cbbCountry);
+                                productMasterControl.cbbCountry,
+                                productMasterSearchControl.cbbCountry);
         }
 
         private void btnCreateDistributor_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.DISTRIBUTOR,
-                productMasterControl.cbbDistributor,
-                productMasterSearchControl.cbbDistributor);
+                                productMasterControl.cbbDistributor,
+                                productMasterSearchControl.cbbDistributor);
         }
 
         private void btnCreateManufacturer_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.MANUFACTURER,
-                productMasterControl.cbbManufacturer,
-                productMasterSearchControl.cbbManufacturer);
+                                productMasterControl.cbbManufacturer,
+                                productMasterSearchControl.cbbManufacturer);
         }
 
         private void btnCreatePackager_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PACKAGER,
-                productMasterControl.cbbPackager,
-                productMasterSearchControl.cbbPackager);
+                                productMasterControl.cbbPackager,
+                                productMasterSearchControl.cbbPackager);
         }
 
         private void btnCreateSize_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_SIZE,
-                productMasterControl.cbbProductSize,
-                productMasterSearchControl.cbbProductSize);
+                                productMasterControl.cbbProductSize,
+                                productMasterSearchControl.cbbProductSize);
         }
 
         private void btnCreateType_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_TYPE,
-                productMasterControl.cbbProductType,
-                productMasterSearchControl.cbbProductType);
+                                productMasterControl.cbbProductType,
+                                productMasterSearchControl.cbbProductType);
         }
     }
 }

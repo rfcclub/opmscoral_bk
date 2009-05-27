@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class BaseStockOutForm
     {
@@ -279,13 +279,13 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
             this.dgvStockDefect.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvStockDefect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockDefect.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column8,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.columnError,
-            this.Column6});
+                                                                                                   this.Column8,
+                                                                                                   this.Column1,
+                                                                                                   this.Column2,
+                                                                                                   this.Column3,
+                                                                                                   this.Column4,
+                                                                                                   this.columnError,
+                                                                                                   this.Column6});
             this.dgvStockDefect.DataSource = this.bdsStockDefect;
             this.dgvStockDefect.Location = new System.Drawing.Point(12, 148);
             this.dgvStockDefect.Name = "dgvStockDefect";
@@ -407,13 +407,13 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
             this.dgvTempStockOut.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvTempStockOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTempStockOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ProductId,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.Column5,
-            this.Column14});
+                                                                                                    this.ProductId,
+                                                                                                    this.dataGridViewTextBoxColumn2,
+                                                                                                    this.dataGridViewTextBoxColumn3,
+                                                                                                    this.dataGridViewTextBoxColumn4,
+                                                                                                    this.dataGridViewTextBoxColumn5,
+                                                                                                    this.Column5,
+                                                                                                    this.Column14});
             this.dgvTempStockOut.DataSource = this.bdsStockOut;
             this.dgvTempStockOut.Location = new System.Drawing.Point(13, 355);
             this.dgvTempStockOut.Name = "dgvTempStockOut";

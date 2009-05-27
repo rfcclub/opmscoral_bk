@@ -14,7 +14,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 //using Aspose.Cells;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class StockSearchForm : BaseForm, IStockSearchView
     {
@@ -71,21 +71,21 @@ namespace CoralPOSClient.View.GoodsIO
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var eventArgs = new StockSearchEventArgs
-            {
-                ProductMasterId = productMasterControl.txtProductMasterId.Text,
-                ProductMasterName = productMasterControl.txtProductName.Text,
-                ProductSize = productMasterControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterControl.cbbProductSize.SelectedItem) : null,
-                ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
-                ProductColor = productMasterControl.cbbProductColor.SelectedIndex > 0 ?
-                    ((ProductColor)productMasterControl.cbbProductColor.SelectedItem) : null,
-                Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? 
-                    ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
-                Packager = productMasterControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterControl.cbbPackager.SelectedItem) : null,
-                Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ?
-                    ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
-                Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ?
-                    ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
-            };
+                                {
+                                    ProductMasterId = productMasterControl.txtProductMasterId.Text,
+                                    ProductMasterName = productMasterControl.txtProductName.Text,
+                                    ProductSize = productMasterControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterControl.cbbProductSize.SelectedItem) : null,
+                                    ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
+                                    ProductColor = productMasterControl.cbbProductColor.SelectedIndex > 0 ?
+                                                                                                              ((ProductColor)productMasterControl.cbbProductColor.SelectedItem) : null,
+                                    Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? 
+                                                                                                    ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
+                                    Packager = productMasterControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterControl.cbbPackager.SelectedItem) : null,
+                                    Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ?
+                                                                                                              ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
+                                    Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ?
+                                                                                                            ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
+                                };
             EventUtility.fireEvent(SearchStockEvent, sender, eventArgs);
 
             stockBindingSource.DataSource = eventArgs.StockList;

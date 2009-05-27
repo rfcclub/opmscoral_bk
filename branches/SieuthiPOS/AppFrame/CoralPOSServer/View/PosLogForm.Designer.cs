@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View
+﻿namespace CoralPOSServer.View
 {
     partial class PosLogForm
     {
@@ -136,15 +136,15 @@
             this.dgvStockInDetail.AutoGenerateColumns = false;
             this.dgvStockInDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockInDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.dateDataGridViewTextBoxColumn,
-            this.threadDataGridViewTextBoxColumn,
-            this.levelDataGridViewTextBoxColumn,
-            this.loggerDataGridViewTextBoxColumn,
-            this.posUserDataGridViewTextBoxColumn,
-            this.posActionDataGridViewTextBoxColumn,
-            this.messageDataGridViewTextBoxColumn,
-            this.exceptionDataGridViewTextBoxColumn});
+                                                                                                     this.idDataGridViewTextBoxColumn,
+                                                                                                     this.dateDataGridViewTextBoxColumn,
+                                                                                                     this.threadDataGridViewTextBoxColumn,
+                                                                                                     this.levelDataGridViewTextBoxColumn,
+                                                                                                     this.loggerDataGridViewTextBoxColumn,
+                                                                                                     this.posUserDataGridViewTextBoxColumn,
+                                                                                                     this.posActionDataGridViewTextBoxColumn,
+                                                                                                     this.messageDataGridViewTextBoxColumn,
+                                                                                                     this.exceptionDataGridViewTextBoxColumn});
             this.dgvStockInDetail.DataSource = this.posLogBindingSource;
             this.dgvStockInDetail.Location = new System.Drawing.Point(17, 95);
             this.dgvStockInDetail.Name = "dgvStockInDetail";

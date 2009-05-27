@@ -17,10 +17,10 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using BarcodeLib;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.MainStock;
+using CoralPOSServer.Presenter.GoodsIO.MainStock;
 
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class MainStockInForm : BaseForm, IMainStockInView
     {
@@ -411,8 +411,8 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 {
                     dgvDeptStockIn.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
                     if (i != QUANTITY_POS
-                            && i != PRICE_POS
-                            && i != SELL_PRICE_POS)
+                        && i != PRICE_POS
+                        && i != SELL_PRICE_POS)
                     {
                         dgvDeptStockIn.Columns[i].ReadOnly = true;
                     }
@@ -422,7 +422,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 CalculateTotalStorePrice();
             }
             deptSI.StockInDetails =
-                    ObjectConverter.ConvertToNonGenericList<StockInDetail>(deptSIDetailList);
+                ObjectConverter.ConvertToNonGenericList<StockInDetail>(deptSIDetailList);
         }
 
         void dgvDeptStockIn_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -760,7 +760,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                                  TitleFont = new Font("Tahoma", 12),
                                  CodeStringFont = new Font("Tahoma",12),
                                  Title = titleString + " VND"
-                        };
+                             };
             
             //barcodeControl1.BarcodeData = deptSIDetailList[dgvDeptStockIn.CurrentRow.Index].Product.ProductId;
             
@@ -784,19 +784,19 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
 
             // draw title string
             
-                // calculate scale for title
-                var titleStrSize = e.Graphics.MeasureString(titleString.PadRight(25), new Font("Arial",10));
-                float currTitleSize = new Font("Arial",10).Size;
-                float scaledTitleSize = (150 * currTitleSize) / titleStrSize.Width;
-                //Font _titleFont = new Font("Arial", scaledTitleSize);
-                Font _titleFont = new Font("Arial", 7);
-                string nameString = titleString.Substring(0, titleString.IndexOf(" - "));
-                string priceString = titleString.Substring(titleString.IndexOf(" - "));
-                var priceTotalSize = e.Graphics.MeasureString(titleString, _titleFont);
-                var nameSize = e.Graphics.MeasureString(nameString, _titleFont);
-                var priceSize = e.Graphics.MeasureString(priceString, _titleFont);
-                var barCodeSize = e.Graphics.MeasureString(barCodeStr, _titleFont);
-                /*Bitmap bitmapName = new Bitmap(nameString, true);
+            // calculate scale for title
+            var titleStrSize = e.Graphics.MeasureString(titleString.PadRight(25), new Font("Arial",10));
+            float currTitleSize = new Font("Arial",10).Size;
+            float scaledTitleSize = (150 * currTitleSize) / titleStrSize.Width;
+            //Font _titleFont = new Font("Arial", scaledTitleSize);
+            Font _titleFont = new Font("Arial", 7);
+            string nameString = titleString.Substring(0, titleString.IndexOf(" - "));
+            string priceString = titleString.Substring(titleString.IndexOf(" - "));
+            var priceTotalSize = e.Graphics.MeasureString(titleString, _titleFont);
+            var nameSize = e.Graphics.MeasureString(nameString, _titleFont);
+            var priceSize = e.Graphics.MeasureString(priceString, _titleFont);
+            var barCodeSize = e.Graphics.MeasureString(barCodeStr, _titleFont);
+            /*Bitmap bitmapName = new Bitmap(nameString, true);
                 Bitmap bitmapPrice = new Bitmap(priceString, true);*/
             for (int i = 0; i < numberToPrint; i++)
             {

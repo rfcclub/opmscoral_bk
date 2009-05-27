@@ -8,7 +8,7 @@ using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 
-namespace CoralPOSClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockInSearchController : IDepartmentStockInSearchController
     {

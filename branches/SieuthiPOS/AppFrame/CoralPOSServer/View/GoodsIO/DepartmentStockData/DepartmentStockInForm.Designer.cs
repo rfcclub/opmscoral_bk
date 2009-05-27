@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockInForm
     {
@@ -70,24 +70,24 @@
             this.numericUpDown.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown.Location = new System.Drawing.Point(345, 457);
             this.numericUpDown.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
+                                                                   20,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                   1,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.numericUpDown.Size = new System.Drawing.Size(51, 22);
             this.numericUpDown.TabIndex = 47;
             this.numericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                 1,
+                                                                 0,
+                                                                 0,
+                                                                 0});
             // 
             // lblStatus
             // 
@@ -242,7 +242,7 @@
             // 
             this.dgvProduct.AllowUserToAddRows = false;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SearchCreate});
+                                                                                               this.SearchCreate});
             this.dgvProduct.Location = new System.Drawing.Point(9, 114);
             this.dgvProduct.MultiSelect = false;
             this.dgvProduct.Name = "dgvProduct";

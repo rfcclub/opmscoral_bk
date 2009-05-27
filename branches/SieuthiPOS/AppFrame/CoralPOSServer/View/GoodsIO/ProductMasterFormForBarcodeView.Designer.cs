@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class ProductMasterFormForBarcodeView
     {
@@ -128,23 +128,23 @@
             // 
             this.numericUpDown.Location = new System.Drawing.Point(166, 418);
             this.numericUpDown.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
+                                                                   999,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                   1,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.Size = new System.Drawing.Size(49, 22);
             this.numericUpDown.TabIndex = 29;
             this.numericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                 1,
+                                                                 0,
+                                                                 0,
+                                                                 0});
             // 
             // lblMaVach
             // 

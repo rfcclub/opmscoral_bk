@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.MainStock
+﻿namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class MainStockInForm
     {
@@ -125,24 +125,24 @@
             this.numericUpDown.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown.Location = new System.Drawing.Point(345, 457);
             this.numericUpDown.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
+                                                                   20,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                   1,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.numericUpDown.Size = new System.Drawing.Size(51, 22);
             this.numericUpDown.TabIndex = 69;
             this.numericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                 1,
+                                                                 0,
+                                                                 0,
+                                                                 0});
             // 
             // lblStatus
             // 
@@ -289,19 +289,19 @@
             this.dgvDeptStockIn.AllowUserToAddRows = false;
             this.dgvDeptStockIn.AutoGenerateColumns = false;
             this.dgvDeptStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SearchCreate,
-            this.columnProductId,
-            this.columnProductName,
-            this.columnColor,
-            this.columnSize,
-            this.quantityDataGridViewTextBoxColumn,
-            this.onStorePriceDataGridViewTextBoxColumn,
-            this.SellPrice,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.Product,
-            this.Column1,
-            this.Column2,
-            this.Column3});
+                                                                                                   this.SearchCreate,
+                                                                                                   this.columnProductId,
+                                                                                                   this.columnProductName,
+                                                                                                   this.columnColor,
+                                                                                                   this.columnSize,
+                                                                                                   this.quantityDataGridViewTextBoxColumn,
+                                                                                                   this.onStorePriceDataGridViewTextBoxColumn,
+                                                                                                   this.SellPrice,
+                                                                                                   this.delFlgDataGridViewTextBoxColumn,
+                                                                                                   this.Product,
+                                                                                                   this.Column1,
+                                                                                                   this.Column2,
+                                                                                                   this.Column3});
             this.dgvDeptStockIn.ContextMenuStrip = this.ctxMenuDept;
             this.dgvDeptStockIn.DataSource = this.bdsStockIn;
             this.dgvDeptStockIn.Location = new System.Drawing.Point(9, 114);
@@ -414,8 +414,8 @@
             // ctxMenuDept
             // 
             this.ctxMenuDept.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCreateDupItem,
-            this.mnuCreateNewItem});
+                                                                                         this.mnuCreateDupItem,
+                                                                                         this.mnuCreateNewItem});
             this.ctxMenuDept.Name = "ctxMenuDept";
             this.ctxMenuDept.Size = new System.Drawing.Size(279, 48);
             this.ctxMenuDept.Opening += new System.ComponentModel.CancelEventHandler(this.ctxMenuDept_Opening);
@@ -443,24 +443,24 @@
             this.numericUpDownBarcode.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownBarcode.Location = new System.Drawing.Point(102, 429);
             this.numericUpDownBarcode.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
+                                                                          9999,
+                                                                          0,
+                                                                          0,
+                                                                          0});
             this.numericUpDownBarcode.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                          1,
+                                                                          0,
+                                                                          0,
+                                                                          0});
             this.numericUpDownBarcode.Name = "numericUpDownBarcode";
             this.numericUpDownBarcode.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.numericUpDownBarcode.Size = new System.Drawing.Size(51, 22);
             this.numericUpDownBarcode.TabIndex = 74;
             this.numericUpDownBarcode.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
+                                                                        3,
+                                                                        0,
+                                                                        0,
+                                                                        0});
             this.numericUpDownBarcode.ValueChanged += new System.EventHandler(this.numericUpDownBarcode_ValueChanged);
             // 
             // btnPreview

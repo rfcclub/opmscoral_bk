@@ -18,7 +18,7 @@ using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 using POSReports;
 
-namespace CoralPOSClient.View.Reports
+namespace CoralPOSServer.View.Reports
 {
     public partial class frmStockinStatistic : BaseForm,IReportStockInView
     {
@@ -30,7 +30,7 @@ namespace CoralPOSClient.View.Reports
             
         }
 
-       #region IReportStockInView Members
+        #region IReportStockInView Members
 
 
         private CoralPOS.Interfaces.Presenter.Report.IReportStockInController reportStockInController;
@@ -59,7 +59,7 @@ namespace CoralPOSClient.View.Reports
         private void ok_Click(object sender, EventArgs e)
         {
             pSODetResultList.Clear();
-           ReportStockInEventArgs eventArgs = new ReportStockInEventArgs();
+            ReportStockInEventArgs eventArgs = new ReportStockInEventArgs();
             ReportStockInParam stockInParam = new ReportStockInParam();
             stockInParam.FromDate = DateUtility.ZeroTime(dtpFrom.Value);
             stockInParam.ToDate = DateUtility.MaxTime(dtpTo.Value);

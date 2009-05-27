@@ -16,7 +16,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Utility;
 
-namespace CoralPOSClient.Presenter.GoodsIO.MainStock
+namespace CoralPOSServer.Presenter.GoodsIO.MainStock
 {
     public class MainStockInController : IMainStockInController
     {

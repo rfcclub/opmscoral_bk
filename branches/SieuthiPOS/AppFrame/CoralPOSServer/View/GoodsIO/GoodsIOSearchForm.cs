@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.View.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class GoodsIOSearchForm : Form, IGoodsIOSearchView
     {

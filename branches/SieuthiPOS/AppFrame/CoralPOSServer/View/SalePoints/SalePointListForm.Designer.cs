@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.SalePoints
+﻿namespace CoralPOSServer.View.SalePoints
 {
     partial class SalePointListForm
     {
@@ -141,17 +141,17 @@
             this.dgvDepartments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDepartments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.departmentIdDataGridViewTextBoxColumn,
-            this.departmentNameDataGridViewTextBoxColumn,
-            this.managerIdDataGridViewTextBoxColumn,
-            this.EmployeesCount,
-            this.addressDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn});
+                                                                                                   this.departmentIdDataGridViewTextBoxColumn,
+                                                                                                   this.departmentNameDataGridViewTextBoxColumn,
+                                                                                                   this.managerIdDataGridViewTextBoxColumn,
+                                                                                                   this.EmployeesCount,
+                                                                                                   this.addressDataGridViewTextBoxColumn,
+                                                                                                   this.createDateDataGridViewTextBoxColumn,
+                                                                                                   this.createIdDataGridViewTextBoxColumn,
+                                                                                                   this.updateDateDataGridViewTextBoxColumn,
+                                                                                                   this.updateIdDataGridViewTextBoxColumn,
+                                                                                                   this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                                   this.delFlgDataGridViewTextBoxColumn});
             this.dgvDepartments.DataSource = this.bdsSalePointList;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -246,11 +246,11 @@
             // cmnDepartments
             // 
             this.cmnDepartments.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuSetMainDepartment,
-            this.toolStripMenuItem1,
-            this.mnuAdd,
-            this.mnuEdit,
-            this.mnuDelete});
+                                                                                            this.mnuSetMainDepartment,
+                                                                                            this.toolStripMenuItem1,
+                                                                                            this.mnuAdd,
+                                                                                            this.mnuEdit,
+                                                                                            this.mnuDelete});
             this.cmnDepartments.Name = "contextMenuStrip1";
             this.cmnDepartments.Size = new System.Drawing.Size(229, 98);
             // 

@@ -7,7 +7,7 @@ using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Presenter;
 using CoralPOS.Interfaces.View;
 
-namespace CoralPOSClient.Presenter
+namespace CoralPOSServer.Presenter
 {
     public class SecurityController : ISecurityController
     {

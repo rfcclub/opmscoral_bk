@@ -10,7 +10,7 @@ using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO;
 
-namespace CoralPOSClient.Presenter.GoodsIO
+namespace CoralPOSServer.Presenter.GoodsIO
 {
     public class ProductMasterSearchDepartmentController : IProductMasterSearchDepartmentController
     {

@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.Reports
+namespace CoralPOSServer.View.Reports
 {
     partial class DepartmentStockInReportForm
     {
@@ -165,14 +165,14 @@ namespace CoralPOSClient.View.Reports
             this.dgvStockProducts.AutoGenerateColumns = false;
             this.dgvStockProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.Category,
-            this.ProductName,
-            this.receipt,
-            this.amount,
-            this.StockInTotalAmounts,
-            this.productMasterGlobalDataGridViewTextBoxColumn,
-            this.stockInQuantitiesDataGridViewTextBoxColumn});
+                                                                                                     this.STT,
+                                                                                                     this.Category,
+                                                                                                     this.ProductName,
+                                                                                                     this.receipt,
+                                                                                                     this.amount,
+                                                                                                     this.StockInTotalAmounts,
+                                                                                                     this.productMasterGlobalDataGridViewTextBoxColumn,
+                                                                                                     this.stockInQuantitiesDataGridViewTextBoxColumn});
             this.dgvStockProducts.DataSource = this.bdsStockOutResultPM;
             this.dgvStockProducts.Location = new System.Drawing.Point(12, 125);
             this.dgvStockProducts.MultiSelect = false;
@@ -257,25 +257,25 @@ namespace CoralPOSClient.View.Reports
             this.dgvStockProductsDetail.AutoGenerateColumns = false;
             this.dgvStockProductsDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockProductsDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.receipt_date,
-            this.quantity,
-            this.total,
-            this.stockInIdDataGridViewTextBoxColumn,
-            this.oldQuantityDataGridViewTextBoxColumn,
-            this.productIdDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.productDataGridViewTextBoxColumn,
-            this.productMasterDataGridViewTextBoxColumn,
-            this.id,
-            this.color,
-            this.size});
+                                                                                                           this.receipt_date,
+                                                                                                           this.quantity,
+                                                                                                           this.total,
+                                                                                                           this.stockInIdDataGridViewTextBoxColumn,
+                                                                                                           this.oldQuantityDataGridViewTextBoxColumn,
+                                                                                                           this.productIdDataGridViewTextBoxColumn,
+                                                                                                           this.quantityDataGridViewTextBoxColumn,
+                                                                                                           this.priceDataGridViewTextBoxColumn,
+                                                                                                           this.createDateDataGridViewTextBoxColumn,
+                                                                                                           this.createIdDataGridViewTextBoxColumn,
+                                                                                                           this.updateDateDataGridViewTextBoxColumn,
+                                                                                                           this.updateIdDataGridViewTextBoxColumn,
+                                                                                                           this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                                           this.delFlgDataGridViewTextBoxColumn,
+                                                                                                           this.productDataGridViewTextBoxColumn,
+                                                                                                           this.productMasterDataGridViewTextBoxColumn,
+                                                                                                           this.id,
+                                                                                                           this.color,
+                                                                                                           this.size});
             this.dgvStockProductsDetail.DataSource = this.bdsStockOutResultDetail;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;

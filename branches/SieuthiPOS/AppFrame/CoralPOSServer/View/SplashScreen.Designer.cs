@@ -1,4 +1,4 @@
-﻿namespace CoralPOS
+﻿namespace CoralPOSServer.View
 {
     partial class SplashScreen
     {
@@ -38,6 +38,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::CoralPOSServer.Properties.Resources.SplashScreen;
             this.pictureBox1.InitialImage = global::CoralPOSServer.Properties.Resources.SplashScreen;
             this.pictureBox1.Location = new System.Drawing.Point(18, 22);
             this.pictureBox1.Name = "pictureBox1";

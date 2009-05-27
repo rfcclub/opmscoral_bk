@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.MainStock
+﻿namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class MainStockInSearchForm
     {

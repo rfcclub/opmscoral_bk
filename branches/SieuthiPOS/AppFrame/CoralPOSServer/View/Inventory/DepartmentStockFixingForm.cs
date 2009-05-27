@@ -15,10 +15,9 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.Inventory;
 using CoralPOS.Common;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.Inventory
+namespace CoralPOSServer.View.Inventory
 {
     public partial class DepartmentStockFixingForm : BaseForm, IDepartmentStockFixingView
     {

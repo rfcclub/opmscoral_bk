@@ -8,7 +8,7 @@ using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace CoralPOSClient.Presenter.GoodsIO
+namespace CoralPOSServer.Presenter.GoodsIO
 {
     public class GoodsIOSearchController : IGoodsIOSearchController
     {

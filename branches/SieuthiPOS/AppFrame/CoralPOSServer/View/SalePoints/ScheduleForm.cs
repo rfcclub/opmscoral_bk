@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOSClient.View.SalePoints
+namespace CoralPOSServer.View.SalePoints
 {
     public partial class ScheduleForm : Form
     {

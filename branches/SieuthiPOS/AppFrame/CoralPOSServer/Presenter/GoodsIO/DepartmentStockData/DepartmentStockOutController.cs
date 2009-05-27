@@ -16,7 +16,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Utility;
 
-namespace CoralPOSClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockOutController : IDepartmentStockOutController
     {

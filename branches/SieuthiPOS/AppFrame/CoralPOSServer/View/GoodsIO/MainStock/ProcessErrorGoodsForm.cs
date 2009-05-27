@@ -16,7 +16,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class ProcessErrorGoodsForm : BaseForm,IProcessErrorGoodsView
     {

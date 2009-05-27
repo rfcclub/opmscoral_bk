@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsSale
+﻿namespace CoralPOSServer.View.GoodsSale
 {
     partial class GoodsSaleReturnForm
     {
@@ -287,14 +287,14 @@
             this.dgvBill.AutoGenerateColumns = false;
             this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.columnProductId,
-            this.columnProductName,
-            this.quantityDataGridViewTextBoxColumn,
-            this.columnPrice,
-            this.columnColor,
-            this.columnSize,
-            this.columnType});
+                                                                                            this.Column1,
+                                                                                            this.columnProductId,
+                                                                                            this.columnProductName,
+                                                                                            this.quantityDataGridViewTextBoxColumn,
+                                                                                            this.columnPrice,
+                                                                                            this.columnColor,
+                                                                                            this.columnSize,
+                                                                                            this.columnType});
             this.dgvBill.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvBill.DataSource = this.bdsBill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -390,8 +390,8 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuReturnGoods,
-            this.mnuResetReturnGoods});
+                                                                                               this.mnuReturnGoods,
+                                                                                               this.mnuResetReturnGoods});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(109, 48);
             // 
@@ -829,14 +829,14 @@
             this.dgvReturnBill.AutoGenerateColumns = false;
             this.dgvReturnBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReturnBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ButtonSearch,
-            this.dataGridViewNumberTextBoxColumn1,
-            this.dataGridViewTextBoxColumn1,
-            this.returnQuantity,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
+                                                                                                  this.ButtonSearch,
+                                                                                                  this.dataGridViewNumberTextBoxColumn1,
+                                                                                                  this.dataGridViewTextBoxColumn1,
+                                                                                                  this.returnQuantity,
+                                                                                                  this.dataGridViewTextBoxColumn2,
+                                                                                                  this.dataGridViewTextBoxColumn3,
+                                                                                                  this.dataGridViewTextBoxColumn4,
+                                                                                                  this.dataGridViewTextBoxColumn5});
             this.dgvReturnBill.ContextMenuStrip = this.ctxReturnBill;
             this.dgvReturnBill.DataSource = this.bdsReturnBill;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -937,8 +937,8 @@
             // ctxReturnBill
             // 
             this.ctxReturnBill.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuAddUncheckMenu,
-            this.mnuRemoveUncheckMenu});
+                                                                                           this.mnuAddUncheckMenu,
+                                                                                           this.mnuRemoveUncheckMenu});
             this.ctxReturnBill.Name = "ctxReturnBill";
             this.ctxReturnBill.Size = new System.Drawing.Size(271, 48);
             // 
@@ -967,14 +967,14 @@
             this.dgvNewBill.AutoGenerateColumns = false;
             this.dgvNewBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNewBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewButtonColumn1,
-            this.dataGridViewNumberTextBoxColumn2,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewNumberTextBoxColumn3,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10});
+                                                                                               this.dataGridViewButtonColumn1,
+                                                                                               this.dataGridViewNumberTextBoxColumn2,
+                                                                                               this.dataGridViewTextBoxColumn6,
+                                                                                               this.dataGridViewNumberTextBoxColumn3,
+                                                                                               this.dataGridViewTextBoxColumn7,
+                                                                                               this.dataGridViewTextBoxColumn8,
+                                                                                               this.dataGridViewTextBoxColumn9,
+                                                                                               this.dataGridViewTextBoxColumn10});
             this.dgvNewBill.DataSource = this.bdsNewBill;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;

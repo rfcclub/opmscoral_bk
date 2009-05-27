@@ -12,7 +12,7 @@ using AppFrame.Utility;
 using AppFrame;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class GoodsInput : Form
     {
@@ -162,27 +162,27 @@ namespace CoralPOSClient.View.GoodsIO
             }
 
             if (BlockInDetail.BlockInDetailPK != null)
+            {
+                if (cbbSupplier.SelectedValue != null)
                 {
-                    if (cbbSupplier.SelectedValue != null)
-                    {
-                        BlockInDetail.SupplierId = ((Supplier)cbbSupplier.SelectedValue).SupplierId;    
-                    }
-                    
-                    BlockInDetail.DetailValue = txtDexcription.Text;
-                    BlockInDetail.ImportDate = dtpImportDate.Value;
-                    BlockInDetailLogic.Update(BlockInDetail);
+                    BlockInDetail.SupplierId = ((Supplier)cbbSupplier.SelectedValue).SupplierId;    
                 }
-                else
+                    
+                BlockInDetail.DetailValue = txtDexcription.Text;
+                BlockInDetail.ImportDate = dtpImportDate.Value;
+                BlockInDetailLogic.Update(BlockInDetail);
+            }
+            else
+            {
+                if (cbbSupplier.SelectedValue != null)
                 {
-                    if (cbbSupplier.SelectedValue != null)
-                    {
-                        BlockInDetail.SupplierId = ((Supplier)cbbSupplier.SelectedValue).SupplierId;
-                    }
-                    
-                    BlockInDetail.DetailValue = txtDexcription.Text;
-                    BlockInDetail.ImportDate = dtpImportDate.Value;
-                    BlockInDetailLogic.Add(BlockInDetail);
+                    BlockInDetail.SupplierId = ((Supplier)cbbSupplier.SelectedValue).SupplierId;
                 }
+                    
+                BlockInDetail.DetailValue = txtDexcription.Text;
+                BlockInDetail.ImportDate = dtpImportDate.Value;
+                BlockInDetailLogic.Add(BlockInDetail);
+            }
             if (BlockInDetail.BlockInDetailPK != null)
             {
                 txtBlockId.Text = BlockInDetail.BlockInDetailPK.BlockDetailId;

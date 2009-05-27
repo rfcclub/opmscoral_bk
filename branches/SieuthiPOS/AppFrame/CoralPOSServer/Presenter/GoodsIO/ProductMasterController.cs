@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.Presenter.SalePoints;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Utility;
 
-namespace CoralPOSClient.Presenter.GoodsIO
+namespace CoralPOSServer.Presenter.GoodsIO
 {
     public class ProductMasterController : IProductMasterController
     {

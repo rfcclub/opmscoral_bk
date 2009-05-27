@@ -16,7 +16,7 @@ using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class DepartmentStockOutConfirmForm : BaseForm,IDepartmentStockOutReportView
     {
@@ -52,10 +52,10 @@ namespace CoralPOSClient.View.GoodsIO
             ReportStockOutEventArgs eventArgs = new ReportStockOutEventArgs();
             eventArgs.ReportDateStockOutParam =
                 new ReportDateStockOutParam
-                {
-                    FromDate = DateUtility.ZeroTime(dtpFrom.Value),
-                    ToDate = DateUtility.MaxTime(dtpTo.Value)
-                };
+                    {
+                        FromDate = DateUtility.ZeroTime(dtpFrom.Value),
+                        ToDate = DateUtility.MaxTime(dtpTo.Value)
+                    };
             EventUtility.fireEvent(LoadDepartmentStockOutsEvent, this, eventArgs);
 
             if (eventArgs.ResultStockOutList != null)
@@ -90,13 +90,13 @@ namespace CoralPOSClient.View.GoodsIO
         }
 
         
-            private void CreateCountOnList()
-            {
+        private void CreateCountOnList()
+        {
             for (int i = 0; i < dgvStockOut.Rows.Count;i++ )
             {
                 dgvStockOut[0, dgvStockOut.Rows[i].Index].Value = i + 1;
             }
-            }
+        }
         
 
         #region IDepartmentStockOutReportView Members
@@ -114,7 +114,7 @@ namespace CoralPOSClient.View.GoodsIO
 
         private void DepartmentStockOutConfirmForm_Load(object sender, EventArgs e)
         {
-           deptStockOutList = new DepartmentStockOutViewCollection(bdsDeptStockOut);
+            deptStockOutList = new DepartmentStockOutViewCollection(bdsDeptStockOut);
             bdsDeptStockOut.DataSource = deptStockOutList;
             bdsDeptStockOut.ResetBindings(true);
             

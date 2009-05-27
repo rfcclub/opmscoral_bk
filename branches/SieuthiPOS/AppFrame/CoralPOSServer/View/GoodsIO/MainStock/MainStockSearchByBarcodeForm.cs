@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class MainStockSearchByBarcodeForm : BaseForm, IStockSearchView
     {
@@ -70,23 +70,23 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
         {
             stockBindingSource.Clear();
             var eventArgs = new StockSearchEventArgs
-            {
-                ProductMasterId = productMasterControl.txtProductMasterId.Text,
-                ProductMasterName = productMasterControl.txtProductName.Text,
-                ProductSize = productMasterControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterControl.cbbProductSize.SelectedItem) : null,
-                ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
-                ProductColor = productMasterControl.cbbProductColor.SelectedIndex > 0 ?
-                    ((ProductColor)productMasterControl.cbbProductColor.SelectedItem) : null,
-                Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? 
-                    ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
-                Packager = productMasterControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterControl.cbbPackager.SelectedItem) : null,
-                Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ?
-                    ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
-                Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ?
-                    ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null,
-                FromDate = dtpImportDateFrom.Value,
-                ToDate = dtpImportDateTo.Value
-            };
+                                {
+                                    ProductMasterId = productMasterControl.txtProductMasterId.Text,
+                                    ProductMasterName = productMasterControl.txtProductName.Text,
+                                    ProductSize = productMasterControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterControl.cbbProductSize.SelectedItem) : null,
+                                    ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
+                                    ProductColor = productMasterControl.cbbProductColor.SelectedIndex > 0 ?
+                                                                                                              ((ProductColor)productMasterControl.cbbProductColor.SelectedItem) : null,
+                                    Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? 
+                                                                                                    ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
+                                    Packager = productMasterControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterControl.cbbPackager.SelectedItem) : null,
+                                    Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ?
+                                                                                                              ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
+                                    Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ?
+                                                                                                            ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null,
+                                    FromDate = dtpImportDateFrom.Value,
+                                    ToDate = dtpImportDateTo.Value
+                                };
             EventUtility.fireEvent(BarcodeSearchStockEvent, sender, eventArgs);
             if(eventArgs.StockList== null || eventArgs.StockList.Count == 0)
             {

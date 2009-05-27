@@ -11,7 +11,7 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.Presenter.GoodsIO.MainStock
+namespace CoralPOSServer.Presenter.GoodsIO.MainStock
 {
     public class InventoryCheckingController : IInventoryCheckingController
     {

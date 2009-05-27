@@ -5,18 +5,14 @@ using System.Windows.Forms;
 using AppFrame.Common;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
-using CoralPOS;
 using CoralPOS.Common;
-using CoralPOSClient.View;
-using CoralPOSClient.View.GoodsIO;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 using CoralPOSServer.View;
 using Spring.Context;
 using Spring.Context.Support;
 using Spring.Objects.Factory;
 using Spring.Objects.Factory.Xml;
 
-namespace CoralPOSClient
+namespace CoralPOSServer
 {
     internal static class Program
     {

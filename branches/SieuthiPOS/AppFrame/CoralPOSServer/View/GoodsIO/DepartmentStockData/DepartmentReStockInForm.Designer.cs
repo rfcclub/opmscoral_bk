@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentReStockInForm
     {
@@ -213,8 +213,8 @@
             // ctxMenuDept
             // 
             this.ctxMenuDept.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCreateDupItem,
-            this.mnuCreateNewItem});
+                                                                                         this.mnuCreateDupItem,
+                                                                                         this.mnuCreateNewItem});
             this.ctxMenuDept.Name = "ctxMenuDept";
             this.ctxMenuDept.Size = new System.Drawing.Size(307, 48);
             // 
@@ -345,20 +345,20 @@
             this.dgvDeptStockIn.AllowUserToAddRows = false;
             this.dgvDeptStockIn.AutoGenerateColumns = false;
             this.dgvDeptStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SearchCreate,
-            this.columnProductId,
-            this.ProducType,
-            this.columnProductName,
-            this.columnColor,
-            this.columnSize,
-            this.Quantity,
-            this.StockOutQuantity,
-            this.Column4,
-            this.SellPrice,
-            this.Product,
-            this.Column1,
-            this.Column2,
-            this.Column3});
+                                                                                                   this.SearchCreate,
+                                                                                                   this.columnProductId,
+                                                                                                   this.ProducType,
+                                                                                                   this.columnProductName,
+                                                                                                   this.columnColor,
+                                                                                                   this.columnSize,
+                                                                                                   this.Quantity,
+                                                                                                   this.StockOutQuantity,
+                                                                                                   this.Column4,
+                                                                                                   this.SellPrice,
+                                                                                                   this.Product,
+                                                                                                   this.Column1,
+                                                                                                   this.Column2,
+                                                                                                   this.Column3});
             this.dgvDeptStockIn.ContextMenuStrip = this.ctxMenuDept;
             this.dgvDeptStockIn.DataSource = this.bdsStockIn;
             this.dgvDeptStockIn.Location = new System.Drawing.Point(4, 142);

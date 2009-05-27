@@ -11,7 +11,7 @@ using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     public partial class ChangePasswordForm : BaseForm,IChangePasswordView<LoginEventArgs>
     {
@@ -44,7 +44,7 @@ namespace CoralPOSClient.View
         {
             if(CheckIntegrity())
             {
-               LoginEventArgs eventArg = new LoginEventArgs();
+                LoginEventArgs eventArg = new LoginEventArgs();
                 eventArg.OldPassword = txtOldPassword.Text.Trim();
                 eventArg.NewPassword = txtNewPassword.Text.Trim();
                 EventUtility.fireEvent(ChangePasswordEvent,this,eventArg);
@@ -67,8 +67,8 @@ namespace CoralPOSClient.View
         private bool CheckIntegrity()
         {
             if(CheckUtility.IsNullOrEmpty(txtOldPassword.Text) 
-                || CheckUtility.IsNullOrEmpty(txtNewPassword.Text)
-                || CheckUtility.IsNullOrEmpty(txtConfirmNewPass.Text))
+               || CheckUtility.IsNullOrEmpty(txtNewPassword.Text)
+               || CheckUtility.IsNullOrEmpty(txtConfirmNewPass.Text))
             {
                 MessageBox.Show("Xin điền đầy đủ thông tin");
                 return false;

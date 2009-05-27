@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     public partial class SecuritySettingsForm : BaseForm, ISecurityView
     {
@@ -350,7 +350,7 @@ namespace CoralPOSClient.View
         private bool CheckIntegrity()
         {
             if(CheckUtility.IsNullOrEmpty(txtUsername.Text) 
-                || CheckUtility.IsNullOrEmpty(txtPassword.Text))
+               || CheckUtility.IsNullOrEmpty(txtPassword.Text))
             {
                 MessageBox.Show("Tên hoặc mật khẩu không được để trống");
                 return false;
@@ -388,12 +388,12 @@ namespace CoralPOSClient.View
                 if (selectedModel.RoleType.Equals("Administrator") && ClientInfo.getInstance().LoggedUser.Name.Equals(selectedModel.Username))
                 {
                     MessageBox.Show("Không thể thay đổi thông tin tài khoản quyền cao nhất");
-                        return;
+                    return;
                 }
                 CreateSaveModel(false);
                 PopulateSaveModel(selectedModel);
                 if(isSuspend)
-                SaveModel.Suspended = 1;
+                    SaveModel.Suspended = 1;
                 else
                 {
                     SaveModel.Suspended = 0;                    

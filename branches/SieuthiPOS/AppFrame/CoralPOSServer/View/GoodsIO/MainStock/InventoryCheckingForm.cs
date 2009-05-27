@@ -14,9 +14,8 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Common;
 using CoralPOS.ViewModel;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class InventoryCheckingForm : AppFrame.Common.BaseForm,IInventoryCheckingView
     {
@@ -78,12 +77,12 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
         {
             /*if(!DepartmentChecking)
             {*/
-                stockViewList = new StockViewCollection(bdsProductMasters);
-                bdsProductMasters.DataSource = stockViewList;
-                bdsProductMasters.ResetBindings(true);
-                stockList = new StockCollection(bdsStockDefect);
-                bdsStockDefect.DataSource = stockList;    
-                bdsStockDefect.ResetBindings(true);
+            stockViewList = new StockViewCollection(bdsProductMasters);
+            bdsProductMasters.DataSource = stockViewList;
+            bdsProductMasters.ResetBindings(true);
+            stockList = new StockCollection(bdsStockDefect);
+            bdsStockDefect.DataSource = stockList;    
+            bdsStockDefect.ResetBindings(true);
 
             /*}
             else
@@ -112,7 +111,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-             Close();
+            Close();
         }
 
         private ProductMasterSearchDepartmentForm form;
@@ -135,72 +134,72 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
             InventoryCheckingEventArgs checkingEventArgs = new InventoryCheckingEventArgs();
             /*if (!DepartmentChecking) 
             {*/
-                /* ----------------- STOCK CHECKING --------------*/
-                checkingEventArgs.InputBarcode = id;
-                EventUtility.fireEvent(LoadGoodsByProductIdEvent, this, checkingEventArgs);
-                Stock stock = checkingEventArgs.ScannedStock;
-                if (stock == null)
-                {
-                    MessageBox.Show("Không tìm thấy mã vạch trong kho", "Lỗi");
-                    return;
-                }
+            /* ----------------- STOCK CHECKING --------------*/
+            checkingEventArgs.InputBarcode = id;
+            EventUtility.fireEvent(LoadGoodsByProductIdEvent, this, checkingEventArgs);
+            Stock stock = checkingEventArgs.ScannedStock;
+            if (stock == null)
+            {
+                MessageBox.Show("Không tìm thấy mã vạch trong kho", "Lỗi");
+                return;
+            }
 
-                if (stock.ProductMaster.ProductType != null)
-                    txtProductType.Text = stock.ProductMaster.ProductType.TypeName;
+            if (stock.ProductMaster.ProductType != null)
+                txtProductType.Text = stock.ProductMaster.ProductType.TypeName;
 
-                txtProductName.Text = stock.ProductMaster.ProductName;
+            txtProductName.Text = stock.ProductMaster.ProductName;
 
-                txtDescription.Text = stock.ProductMaster.Description;
-                pictureBox1.ImageLocation = stock.ProductMaster.ImagePath;
-                if (!string.IsNullOrEmpty(pictureBox1.ImageLocation))
-                {
-                    pictureBox1.Load();
-                }
+            txtDescription.Text = stock.ProductMaster.Description;
+            pictureBox1.ImageLocation = stock.ProductMaster.ImagePath;
+            if (!string.IsNullOrEmpty(pictureBox1.ImageLocation))
+            {
+                pictureBox1.Load();
+            }
 
             int stockDefIndex = -1;
-                if (dgvStock.CurrentCell != null)
+            if (dgvStock.CurrentCell != null)
+            {
+                stockDefIndex = dgvStock.CurrentCell.RowIndex;
+            }
+            if (HasInStockList(stock, stockList, out stockDefIndex))
+            {
+                if (stockDefIndex > -1 && stockDefIndex < stockList.Count)
                 {
-                    stockDefIndex = dgvStock.CurrentCell.RowIndex;
+                    stockList[stockDefIndex].GoodQuantity += 1;
+                    dgvStock.CurrentCell = dgvStock[5, stockDefIndex];
                 }
-                if (HasInStockList(stock, stockList, out stockDefIndex))
-                {
-                    if (stockDefIndex > -1 && stockDefIndex < stockList.Count)
-                    {
-                        stockList[stockDefIndex].GoodQuantity += 1;
-                        dgvStock.CurrentCell = dgvStock[5, stockDefIndex];
-                    }
 
-                }
-                else // create new stock defect row
-                {
-                        Stock newStockDefect = stockList.AddNew();
+            }
+            else // create new stock defect row
+            {
+                Stock newStockDefect = stockList.AddNew();
                     
-                        // assign total quantity
-                        Stock defect = checkingEventArgs.ScannedStock;
-                        stockList[stockList.Count - 1] = defect;
+                // assign total quantity
+                Stock defect = checkingEventArgs.ScannedStock;
+                stockList[stockList.Count - 1] = defect;
                         
-                        txtStockQuantity.Text = stockList[stockList.Count - 1].Quantity.ToString("##,##0");
+                txtStockQuantity.Text = stockList[stockList.Count - 1].Quantity.ToString("##,##0");
 
-                        stockList[stockList.Count - 1].OldGoodQuantity = stockList[stockList.Count - 1].GoodQuantity = 1;
+                stockList[stockList.Count - 1].OldGoodQuantity = stockList[stockList.Count - 1].GoodQuantity = 1;
 
-                        stockList[stockList.Count - 1].OldDamageQuantity = stockList[stockList.Count - 1].DamageQuantity = 0;
+                stockList[stockList.Count - 1].OldDamageQuantity = stockList[stockList.Count - 1].DamageQuantity = 0;
 
-                        stockList[stockList.Count - 1].OldErrorQuantity =stockList[stockList.Count - 1].ErrorQuantity = 0;
+                stockList[stockList.Count - 1].OldErrorQuantity =stockList[stockList.Count - 1].ErrorQuantity = 0;
 
-                        stockList[stockList.Count - 1].OldUnconfirmQuantity = stockList[stockList.Count - 1].UnconfirmQuantity = 0;
+                stockList[stockList.Count - 1].OldUnconfirmQuantity = stockList[stockList.Count - 1].UnconfirmQuantity = 0;
 
-                        stockList[stockList.Count - 1].OldLostQuantity = stockList[stockList.Count - 1].LostQuantity = 0;
+                stockList[stockList.Count - 1].OldLostQuantity = stockList[stockList.Count - 1].LostQuantity = 0;
 
                     
-                    dgvStock.CurrentCell = dgvStock[5, stockList.Count - 1];
-                }
+                dgvStock.CurrentCell = dgvStock[5, stockList.Count - 1];
+            }
             
-                    /* ----------------- DEPARTMENT STOCK CHECKING --------------*/
+            /* ----------------- DEPARTMENT STOCK CHECKING --------------*/
                 
-                bdsStockDefect.EndEdit();
-                dgvStock.Refresh();
-                dgvStock.Invalidate();
-                txtBarcode.Text = "";
+            bdsStockDefect.EndEdit();
+            dgvStock.Refresh();
+            dgvStock.Invalidate();
+            txtBarcode.Text = "";
         }
 
         private bool HasInStockList(Stock stock, StockCollection list, out int stockDefIndex)
@@ -226,17 +225,17 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 MessageBox.Show("Không có gì để lưu");
                 return;
             }
-                /* ----------------- STOCK CHECKING --------------*/
-                InventoryCheckingEventArgs checkingEventArgs = new InventoryCheckingEventArgs();
-                checkingEventArgs.SaveStockList = ObjectConverter.ConvertToNonGenericList(stockList);
-                if (!CheckDataIntegrity())
-                    return;
-                EventUtility.fireEvent(SaveInventoryCheckingEvent, this, checkingEventArgs);
-                if (!checkingEventArgs.HasErrors)
-                {
-                    MessageBox.Show("Lưu kết quả thành công");
-                    ClearForm();
-                }
+            /* ----------------- STOCK CHECKING --------------*/
+            InventoryCheckingEventArgs checkingEventArgs = new InventoryCheckingEventArgs();
+            checkingEventArgs.SaveStockList = ObjectConverter.ConvertToNonGenericList(stockList);
+            if (!CheckDataIntegrity())
+                return;
+            EventUtility.fireEvent(SaveInventoryCheckingEvent, this, checkingEventArgs);
+            if (!checkingEventArgs.HasErrors)
+            {
+                MessageBox.Show("Lưu kết quả thành công");
+                ClearForm();
+            }
             
         }
 

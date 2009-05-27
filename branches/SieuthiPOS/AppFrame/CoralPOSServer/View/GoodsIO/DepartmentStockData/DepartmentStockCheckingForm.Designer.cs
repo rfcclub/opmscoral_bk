@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockCheckingForm
     {
@@ -260,16 +260,16 @@
             this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Quantity,
-            this.columnGood,
-            this.columnError,
-            this.columnDamage,
-            this.columnLost,
-            this.Column7});
+                                                                                             this.Column1,
+                                                                                             this.Column2,
+                                                                                             this.Column3,
+                                                                                             this.Column4,
+                                                                                             this.Quantity,
+                                                                                             this.columnGood,
+                                                                                             this.columnError,
+                                                                                             this.columnDamage,
+                                                                                             this.columnLost,
+                                                                                             this.Column7});
             this.dgvStock.DataSource = this.bdsStockDefect;
             this.dgvStock.Location = new System.Drawing.Point(12, 188);
             this.dgvStock.Name = "dgvStock";

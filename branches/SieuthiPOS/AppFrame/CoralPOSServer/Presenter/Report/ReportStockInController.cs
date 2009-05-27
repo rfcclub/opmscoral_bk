@@ -7,7 +7,7 @@ using AppFrame;
 using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Presenter.Report;
 
-namespace CoralPOSClient.Presenter.Report
+namespace CoralPOSServer.Presenter.Report
 {
     public class ReportStockInController : IReportStockInController
     {

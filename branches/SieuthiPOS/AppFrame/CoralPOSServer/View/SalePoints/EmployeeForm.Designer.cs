@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.SalePoints
+﻿namespace CoralPOSServer.View.SalePoints
 {
     partial class EmployeeForm
     {

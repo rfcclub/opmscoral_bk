@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockViewCheckingForm
     {
@@ -270,16 +270,16 @@
             this.dgvStocks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvStocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStocks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Quantity,
-            this.columnGood,
-            this.columnError,
-            this.columnDamage,
-            this.columnLost,
-            this.Column7});
+                                                                                              this.Column1,
+                                                                                              this.Column2,
+                                                                                              this.Column3,
+                                                                                              this.Column4,
+                                                                                              this.Quantity,
+                                                                                              this.columnGood,
+                                                                                              this.columnError,
+                                                                                              this.columnDamage,
+                                                                                              this.columnLost,
+                                                                                              this.Column7});
             this.dgvStocks.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvStocks.DataSource = this.bdsStockDefect;
             this.dgvStocks.Location = new System.Drawing.Point(12, 188);
@@ -392,7 +392,7 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuSum});
+                                                                                               this.mnuSum});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(127, 26);
             // 

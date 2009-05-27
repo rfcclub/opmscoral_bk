@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     partial class SecuritySettingsForm
     {
@@ -32,8 +32,8 @@ namespace CoralPOSClient.View
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "ANVT",
-            "Vo Thi An"}, -1);
+                                                                                                                     "ANVT",
+                                                                                                                     "Vo Thi An"}, -1);
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Supervisor");
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Manager");
             System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Accountant");
@@ -99,11 +99,11 @@ namespace CoralPOSClient.View
             // lstEmployee
             // 
             this.lstEmployee.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ID,
-            this.Name});
+                                                                                          this.ID,
+                                                                                          this.Name});
             this.lstEmployee.FullRowSelect = true;
             this.lstEmployee.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+                                                                                        listViewItem1});
             this.lstEmployee.Location = new System.Drawing.Point(12, 99);
             this.lstEmployee.MultiSelect = false;
             this.lstEmployee.Name = "lstEmployee";
@@ -235,11 +235,11 @@ namespace CoralPOSClient.View
             // lstRight
             // 
             this.lstRight.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
+                                                                                       this.columnHeader1});
             this.lstRight.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2,
-            listViewItem3,
-            listViewItem4});
+                                                                                     listViewItem2,
+                                                                                     listViewItem3,
+                                                                                     listViewItem4});
             this.lstRight.Location = new System.Drawing.Point(99, 100);
             this.lstRight.MultiSelect = false;
             this.lstRight.Name = "lstRight";
@@ -299,14 +299,14 @@ namespace CoralPOSClient.View
             this.dgvUserInfo.AutoGenerateColumns = false;
             this.dgvUserInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUserInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.usernameDataGridViewTextBoxColumn,
-            this.Column4,
-            this.passwordDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn1,
-            this.Column2,
-            this.EmployeeInfo,
-            this.Column1,
-            this.employeeInfoDataGridViewTextBoxColumn});
+                                                                                                this.usernameDataGridViewTextBoxColumn,
+                                                                                                this.Column4,
+                                                                                                this.passwordDataGridViewTextBoxColumn,
+                                                                                                this.dataGridViewTextBoxColumn1,
+                                                                                                this.Column2,
+                                                                                                this.EmployeeInfo,
+                                                                                                this.Column1,
+                                                                                                this.employeeInfoDataGridViewTextBoxColumn});
             this.dgvUserInfo.DataSource = this.bdsUserInfo;
             this.dgvUserInfo.Location = new System.Drawing.Point(483, 111);
             this.dgvUserInfo.MultiSelect = false;

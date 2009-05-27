@@ -12,9 +12,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.View.Masters;
+using CoralPOSServer.View.Masters;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class ProductMasterCreateForm : BaseForm, IProductMasterView
     {
@@ -98,8 +98,8 @@ namespace CoralPOSClient.View.GoodsIO
         {
             RememberSelectionList();            
             AddToDataToBindingSource(MasterType.PRODUCT_COLOR,
-                productMasterControl.colorBindingSource,
-                productMasterControl.lbxProductColor);
+                                     productMasterControl.colorBindingSource,
+                                     productMasterControl.lbxProductColor);
             RestoreSelectionList();
         }
 
@@ -108,40 +108,40 @@ namespace CoralPOSClient.View.GoodsIO
         private void btnCreateCountry_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.COUNTRY,
-                productMasterControl.cbbCountry, productMasterControl.countryBindingSource);
+                                productMasterControl.cbbCountry, productMasterControl.countryBindingSource);
         }
 
         private void btnCreateDistributor_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.DISTRIBUTOR,
-                productMasterControl.cbbDistributor, productMasterControl.distributorBindingSource);
+                                productMasterControl.cbbDistributor, productMasterControl.distributorBindingSource);
         }
 
         private void btnCreateManufacturer_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.MANUFACTURER,
-                productMasterControl.cbbManufacturer, productMasterControl.manufacturerBindingSource);
+                                productMasterControl.cbbManufacturer, productMasterControl.manufacturerBindingSource);
         }
 
         private void btnCreatePackager_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PACKAGER,
-                productMasterControl.cbbPackager, productMasterControl.packagerBindingSource);
+                                productMasterControl.cbbPackager, productMasterControl.packagerBindingSource);
         }
 
         private void btnCreateSize_Click(object sender, EventArgs e)
         {
             RememberSelectionList();            
             AddToDataToBindingSource(MasterType.PRODUCT_SIZE,
-                productMasterControl.sizeBindingSource,
-                productMasterControl.lbxProductSize);
+                                     productMasterControl.sizeBindingSource,
+                                     productMasterControl.lbxProductSize);
             RestoreSelectionList();
         }
 
         private void btnCreateType_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_TYPE,
-                productMasterControl.cbbProductType, productMasterControl.typeBindingSource);
+                                productMasterControl.cbbProductType, productMasterControl.typeBindingSource);
         }
 
         private void AddToDataToBindingSource(MasterType masterType, BindingSource source, ListBox listBox)
@@ -468,18 +468,18 @@ namespace CoralPOSClient.View.GoodsIO
         private ProductMaster CreateProductMaster(ProductSize size, ProductColor color)
         {
             return new ProductMaster
-            {
-                ProductName = productMasterControl.txtProductName.Text,
-                ImagePath = productMasterControl.txtImagePath.Text,
-                Description = productMasterControl.txtDescription.Text,
-                Packager = productMasterControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterControl.cbbPackager.SelectedItem) : null,
-                ProductSize = size,
-                ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
-                ProductColor = color,
-                Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
-                Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
-                Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
-            };
+                       {
+                           ProductName = productMasterControl.txtProductName.Text,
+                           ImagePath = productMasterControl.txtImagePath.Text,
+                           Description = productMasterControl.txtDescription.Text,
+                           Packager = productMasterControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterControl.cbbPackager.SelectedItem) : null,
+                           ProductSize = size,
+                           ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
+                           ProductColor = color,
+                           Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
+                           Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
+                           Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
+                       };
         }
 
         private void btnSelect_Click(object sender, EventArgs e)

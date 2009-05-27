@@ -8,9 +8,9 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 using CoralPOS.Utility.Mapper;
 using CoralPOS.Common;
-using CoralPOSClient.View.SalePoints;
+using CoralPOSServer.View.SalePoints;
 
-namespace CoralPOSClient.Presenter.SalePoints
+namespace CoralPOSServer.Presenter.SalePoints
 {
     public class EmployeeController : IEmployeeController
     {

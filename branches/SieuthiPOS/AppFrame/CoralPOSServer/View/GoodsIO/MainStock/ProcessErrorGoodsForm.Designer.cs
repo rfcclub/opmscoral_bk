@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.MainStock
+﻿namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class ProcessErrorGoodsForm
     {
@@ -146,16 +146,16 @@
             this.dgvStockDefect.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStockDefect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockDefect.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Quantity,
-            this.columnGood,
-            this.columnError,
-            this.columnDamage,
-            this.columnLost,
-            this.Column7});
+                                                                                                   this.Column1,
+                                                                                                   this.Column2,
+                                                                                                   this.Column3,
+                                                                                                   this.Column4,
+                                                                                                   this.Quantity,
+                                                                                                   this.columnGood,
+                                                                                                   this.columnError,
+                                                                                                   this.columnDamage,
+                                                                                                   this.columnLost,
+                                                                                                   this.Column7});
             this.dgvStockDefect.DataSource = this.bdsStockDefect;
             this.dgvStockDefect.Location = new System.Drawing.Point(12, 44);
             this.dgvStockDefect.Name = "dgvStockDefect";
@@ -288,9 +288,9 @@
             this.dgvReturnStockOut.AutoGenerateColumns = false;
             this.dgvReturnStockOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReturnStockOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column5,
-            this.Column6,
-            this.ErrorCount});
+                                                                                                      this.Column5,
+                                                                                                      this.Column6,
+                                                                                                      this.ErrorCount});
             this.dgvReturnStockOut.DataSource = this.bdsReturnGoods;
             this.dgvReturnStockOut.Location = new System.Drawing.Point(12, 299);
             this.dgvReturnStockOut.Name = "dgvReturnStockOut";
@@ -365,9 +365,9 @@
             this.dgvTempStockOut.AutoGenerateColumns = false;
             this.dgvTempStockOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTempStockOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
+                                                                                                    this.dataGridViewTextBoxColumn1,
+                                                                                                    this.dataGridViewTextBoxColumn2,
+                                                                                                    this.dataGridViewTextBoxColumn3});
             this.dgvTempStockOut.DataSource = this.bdsTempStockOut;
             this.dgvTempStockOut.Location = new System.Drawing.Point(334, 299);
             this.dgvTempStockOut.Name = "dgvTempStockOut";
@@ -403,9 +403,9 @@
             this.dgvGoodsDestroy.AutoGenerateColumns = false;
             this.dgvGoodsDestroy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGoodsDestroy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
+                                                                                                    this.dataGridViewTextBoxColumn4,
+                                                                                                    this.dataGridViewTextBoxColumn5,
+                                                                                                    this.dataGridViewTextBoxColumn6});
             this.dgvGoodsDestroy.DataSource = this.bdsDestroyGoods;
             this.dgvGoodsDestroy.Location = new System.Drawing.Point(656, 299);
             this.dgvGoodsDestroy.Name = "dgvGoodsDestroy";

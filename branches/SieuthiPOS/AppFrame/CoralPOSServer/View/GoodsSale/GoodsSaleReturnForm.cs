@@ -19,10 +19,10 @@ using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.Common;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
+using CoralPOSServer.View.GoodsIO;
 using Microsoft.Reporting.WinForms;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class GoodsSaleReturnForm : BaseForm, IGoodsSaleReturnView
     {
@@ -374,7 +374,7 @@ namespace CoralPOSClient.View.GoodsSale
 
                 if(pODNewList!=null && pODNewList.Count > 0 )
                 {
-                   PurchaseOrder nextOrder = new PurchaseOrder();
+                    PurchaseOrder nextOrder = new PurchaseOrder();
                     nextOrder.PurchaseOrderPK = new PurchaseOrderPK
                                                     {DepartmentId = CurrentDepartment.Get().DepartmentId};
                     nextOrder.PurchaseOrderDescription = " Next Purchase Order ";
@@ -470,7 +470,7 @@ namespace CoralPOSClient.View.GoodsSale
         }
         
         private Stream CreateStream(string name, string fileNameExtension, Encoding encoding,
-                              string mimeType, bool willSeek)
+                                    string mimeType, bool willSeek)
         {
             //Stream stream = new FileStream(name + "." + fileNameExtension, FileMode.Create);
             //Stream stream = new FileStream(name + "." + fileNameExtension, FileMode.Create);
@@ -485,21 +485,21 @@ namespace CoralPOSClient.View.GoodsSale
             e.PageSettings.PrinterResolution.Y = 180;
             
             e.PageSettings.PrinterSettings.DefaultPageSettings.PrinterResolution.X =
-            180;
+                180;
             e.PageSettings.PrinterSettings.DefaultPageSettings.PrinterResolution.Y =
-            180;
+                180;
             string deviceInfo =
-          "<DeviceInfo>" +
-          "  <OutputFormat>EMF</OutputFormat>" +
-          "  <PageWidth>2.8in</PageWidth>" +
-          "  <PageHeight>5in</PageHeight>" +
-          "  <DpiX>180</DpiX>" +
-          "  <DpiY>180</DpiY>" +
-          "  <MarginTop>0.0in</MarginTop>" +
-          "  <MarginLeft>0.0in</MarginLeft>" +
-          "  <MarginRight>0.0in</MarginRight>" +
-          "  <MarginBottom>0.0in</MarginBottom>" +
-          "</DeviceInfo>";
+                "<DeviceInfo>" +
+                "  <OutputFormat>EMF</OutputFormat>" +
+                "  <PageWidth>2.8in</PageWidth>" +
+                "  <PageHeight>5in</PageHeight>" +
+                "  <DpiX>180</DpiX>" +
+                "  <DpiY>180</DpiY>" +
+                "  <MarginTop>0.0in</MarginTop>" +
+                "  <MarginLeft>0.0in</MarginLeft>" +
+                "  <MarginRight>0.0in</MarginRight>" +
+                "  <MarginBottom>0.0in</MarginBottom>" +
+                "</DeviceInfo>";
             Warning[] warnings;
 
 

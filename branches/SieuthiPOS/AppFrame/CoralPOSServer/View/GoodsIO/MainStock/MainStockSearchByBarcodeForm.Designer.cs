@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.MainStock
+﻿namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class MainStockSearchByBarcodeForm
     {
@@ -69,24 +69,24 @@
             this.dgvStockList.AutoGenerateColumns = false;
             this.dgvStockList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStockList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productMasterDataGridViewTextBoxColumn,
-            this.ProductType,
-            this.ProductName,
-            this.quantityDataGridViewTextBoxColumn,
-            this.ProductColor,
-            this.ProductSize,
-            this.Country,
-            this.Manufacturer,
-            this.Packager,
-            this.Distributor,
-            this.stockIdDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.productDataGridViewTextBoxColumn});
+                                                                                                 this.productMasterDataGridViewTextBoxColumn,
+                                                                                                 this.ProductType,
+                                                                                                 this.ProductName,
+                                                                                                 this.quantityDataGridViewTextBoxColumn,
+                                                                                                 this.ProductColor,
+                                                                                                 this.ProductSize,
+                                                                                                 this.Country,
+                                                                                                 this.Manufacturer,
+                                                                                                 this.Packager,
+                                                                                                 this.Distributor,
+                                                                                                 this.stockIdDataGridViewTextBoxColumn,
+                                                                                                 this.createDateDataGridViewTextBoxColumn,
+                                                                                                 this.createIdDataGridViewTextBoxColumn,
+                                                                                                 this.updateDateDataGridViewTextBoxColumn,
+                                                                                                 this.updateIdDataGridViewTextBoxColumn,
+                                                                                                 this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                                 this.delFlgDataGridViewTextBoxColumn,
+                                                                                                 this.productDataGridViewTextBoxColumn});
             this.dgvStockList.DataSource = this.stockBindingSource;
             this.dgvStockList.Location = new System.Drawing.Point(2, 183);
             this.dgvStockList.Name = "dgvStockList";

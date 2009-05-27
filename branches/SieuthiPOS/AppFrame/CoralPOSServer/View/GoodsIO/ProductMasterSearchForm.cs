@@ -13,7 +13,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class ProductMasterSearchForm : BaseForm, IProductMasterSearchOrCreateView
     {
@@ -151,19 +151,19 @@ namespace CoralPOSClient.View.GoodsIO
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var eventArgs = new ProductMasterSearchOrCreateEventArgs
-            {
-                ProductMasterId = productMasterSearchControl.txtProductMasterId.Text,
-                Packager = productMasterSearchControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterSearchControl.cbbPackager.SelectedItem) : null,
-                ProductMasterName = productMasterSearchControl.txtProductName.Text,
-                ProductSize = productMasterSearchControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterSearchControl.cbbProductSize.SelectedItem) : null,
-                ProductType = productMasterSearchControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterSearchControl.cbbProductType.SelectedItem) : null,
-                ProductColor = productMasterSearchControl.cbbProductColor.SelectedIndex > 0 ?
-                    ((ProductColor)productMasterSearchControl.cbbProductColor.SelectedItem) : null,
-                Country = productMasterSearchControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterSearchControl.cbbCountry.SelectedItem) : null,
-                Manufacturer = productMasterSearchControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterSearchControl.cbbManufacturer.SelectedItem) : null,
-                Distributor = productMasterSearchControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterSearchControl.cbbDistributor.SelectedItem) : null,
-                Barcode = productMasterSearchControl.txtBarcode.Text
-            };
+                                {
+                                    ProductMasterId = productMasterSearchControl.txtProductMasterId.Text,
+                                    Packager = productMasterSearchControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterSearchControl.cbbPackager.SelectedItem) : null,
+                                    ProductMasterName = productMasterSearchControl.txtProductName.Text,
+                                    ProductSize = productMasterSearchControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterSearchControl.cbbProductSize.SelectedItem) : null,
+                                    ProductType = productMasterSearchControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterSearchControl.cbbProductType.SelectedItem) : null,
+                                    ProductColor = productMasterSearchControl.cbbProductColor.SelectedIndex > 0 ?
+                                                                                                                    ((ProductColor)productMasterSearchControl.cbbProductColor.SelectedItem) : null,
+                                    Country = productMasterSearchControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterSearchControl.cbbCountry.SelectedItem) : null,
+                                    Manufacturer = productMasterSearchControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterSearchControl.cbbManufacturer.SelectedItem) : null,
+                                    Distributor = productMasterSearchControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterSearchControl.cbbDistributor.SelectedItem) : null,
+                                    Barcode = productMasterSearchControl.txtBarcode.Text
+                                };
             EventUtility.fireEvent(SearchProductMasterEvent, sender, eventArgs);
             ProductMasterList = eventArgs.ProductMasterList;
             dgvProductMaster.DataSource = ProductMasterList;

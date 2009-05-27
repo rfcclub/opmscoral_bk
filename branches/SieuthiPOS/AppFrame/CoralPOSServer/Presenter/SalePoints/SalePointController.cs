@@ -9,9 +9,8 @@ using CoralPOS.Interfaces.Presenter.SalePoints;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 using CoralPOS.Common;
-using CoralPOSClient.View.SalePoints;
 
-namespace CoralPOSClient.Presenter.SalePoints
+namespace CoralPOSServer.Presenter.SalePoints
 {
     public class SalePointController  : ISalePointController
     {

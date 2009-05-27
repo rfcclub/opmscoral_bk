@@ -15,10 +15,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.MainStock;
+using CoralPOSServer.Presenter.GoodsIO.MainStock;
 
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class MainStockInExtraForm : BaseForm, IMainStockInView
     {
@@ -433,8 +433,8 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 {
                     dgvDeptStockIn.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
                     if (i != QUANTITY_POS
-                            && i != PRICE_POS
-                            && i != SELL_PRICE_POS)
+                        && i != PRICE_POS
+                        && i != SELL_PRICE_POS)
                     {
                         dgvDeptStockIn.Columns[i].ReadOnly = true;
                     }
@@ -442,7 +442,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 txtDexcription.Text = deptSI.Description;
             }
             deptSI.StockInDetails =
-                    ObjectConverter.ConvertToNonGenericList<StockInDetail>(deptSIDetailList);
+                ObjectConverter.ConvertToNonGenericList<StockInDetail>(deptSIDetailList);
             
             
         }
@@ -880,12 +880,12 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
 //                deptSIDetailList.EndNew(deptSIDetailList.Count - 1);
 //            }
             
-                foreach (ProductColor color in colorList)
+            foreach (ProductColor color in colorList)
+            {
+                foreach (ProductSize size in sizeList)
                 {
-                    foreach (ProductSize size in sizeList)
+                    foreach (ProductMaster productMaster in productMasterList)
                     {
-                        foreach (ProductMaster productMaster in productMasterList)
-                        {
                         
                         // do not allow duplicate
                         bool goOut = false;
@@ -966,7 +966,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                     }
                     else
                     {
-                         Clipboard.SetText("");
+                        Clipboard.SetText("");
                     }
                 }
 

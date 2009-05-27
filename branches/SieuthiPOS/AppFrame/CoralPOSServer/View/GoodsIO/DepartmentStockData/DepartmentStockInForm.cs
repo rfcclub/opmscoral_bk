@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockInForm : BaseForm, IDepartmentStockInView
     {
@@ -125,8 +125,8 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 {
                     dgvProduct.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
                     if (i != PRODUCT_QUANTITY_POS + 1 
-                            && i != PRODUCT_SELL_PRICE_POS + 1 
-                            && i != PRODUCT_PRICE_POS + 1)
+                        && i != PRODUCT_SELL_PRICE_POS + 1 
+                        && i != PRODUCT_PRICE_POS + 1)
                     {
                         dgvProduct.Columns[i].ReadOnly = true;
                     }
@@ -554,9 +554,9 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 foreach (DepartmentStockInDetail d in DepartmentStockInDetailList)
                 {
                     if (d.DepartmentStockInDetailPK != null 
-                            && d.Product.ProductMaster != null 
-                            && d.Product.ProductMaster.ProductMasterId != null 
-                            && d.Product.ProductMaster.ProductMasterId.Equals(productId))
+                        && d.Product.ProductMaster != null 
+                        && d.Product.ProductMaster.ProductMasterId != null 
+                        && d.Product.ProductMaster.ProductMasterId.Equals(productId))
                     {
                         detail = d;
                         break;

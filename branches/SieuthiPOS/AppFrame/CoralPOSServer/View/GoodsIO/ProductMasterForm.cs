@@ -13,9 +13,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.View.Masters;
+using CoralPOSServer.View.Masters;
 
-namespace CoralPOSClient.View.GoodsIO
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class ProductMasterForm : BaseForm, IProductMasterView
     {
@@ -140,7 +140,7 @@ namespace CoralPOSClient.View.GoodsIO
                                         ProductSize = productMasterControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterControl.cbbProductSize.SelectedItem) : null,
                                         ProductType = productMasterControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterControl.cbbProductType.SelectedItem) : null,
                                         ProductColor = productMasterControl.cbbProductColor.SelectedIndex > 0 ?
-                                            ((ProductColor)productMasterControl.cbbProductColor.SelectedItem) : null,
+                                                                                                                  ((ProductColor)productMasterControl.cbbProductColor.SelectedItem) : null,
                                         Country = productMasterControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterControl.cbbCountry.SelectedItem) : null,
                                         Manufacturer = productMasterControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterControl.cbbManufacturer.SelectedItem) : null,
                                         Distributor = productMasterControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterControl.cbbDistributor.SelectedItem) : null
@@ -351,43 +351,43 @@ namespace CoralPOSClient.View.GoodsIO
         private void btnCreateColor_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_COLOR,
-                productMasterControl.cbbProductColor);
+                                productMasterControl.cbbProductColor);
         }
 
         private void btnCreateCountry_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.COUNTRY,
-                productMasterControl.cbbCountry);
+                                productMasterControl.cbbCountry);
         }
 
         private void btnCreateDistributor_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.DISTRIBUTOR,
-                productMasterControl.cbbDistributor);
+                                productMasterControl.cbbDistributor);
         }
 
         private void btnCreateManufacturer_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.MANUFACTURER,
-                productMasterControl.cbbManufacturer);
+                                productMasterControl.cbbManufacturer);
         }
 
         private void btnCreatePackager_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PACKAGER,
-                productMasterControl.cbbPackager);
+                                productMasterControl.cbbPackager);
         }
 
         private void btnCreateSize_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_SIZE,
-                productMasterControl.cbbProductSize);
+                                productMasterControl.cbbProductSize);
         }
 
         private void btnCreateType_Click(object sender, EventArgs e)
         {
             AddToDataToComboBox(MasterType.PRODUCT_TYPE,
-                productMasterControl.cbbProductType);
+                                productMasterControl.cbbProductType);
         }
 
         private void AddToDataToComboBox(MasterType masterType, ComboBox cbb1)

@@ -8,7 +8,7 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter;
 using CoralPOS.Interfaces.View.GoodsIO;
 
-namespace CoralPOSClient.Presenter
+namespace CoralPOSServer.Presenter
 {
     public class StockOutConfirmController : IStockOutConfirmController
     {

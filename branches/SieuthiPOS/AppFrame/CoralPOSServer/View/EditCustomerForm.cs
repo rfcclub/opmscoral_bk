@@ -14,7 +14,7 @@ using CoralPOS.Interfaces.View;
 using Spring.Context;
 using Spring.Context.Support;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     public partial class EditCustomerForm : BaseForm,IEditCustomerView<CustomerEventArgs>
     {

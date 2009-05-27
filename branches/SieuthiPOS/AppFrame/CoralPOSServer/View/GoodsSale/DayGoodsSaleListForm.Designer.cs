@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     partial class DayGoodsSaleListForm
     {
@@ -144,18 +144,18 @@ namespace CoralPOSClient.View.GoodsSale
             this.dgvSaleList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSaleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSaleList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.ReturnDescription,
-            this.purchaseOrderIdDataGridViewTextBoxColumn,
-            this.purchaseOrderDataGridViewTextBoxColumn,
-            this.sellDescriptionDataGridViewTextBoxColumn,
-            this.sellAmountDataGridViewTextBoxColumn,
-            this.returnAmountDataGridViewTextBoxColumn,
-            this.returnDescriptionDataGridViewTextBoxColumn});
+                                                                                                this.Column1,
+                                                                                                this.Column2,
+                                                                                                this.Column3,
+                                                                                                this.Column4,
+                                                                                                this.Column5,
+                                                                                                this.ReturnDescription,
+                                                                                                this.purchaseOrderIdDataGridViewTextBoxColumn,
+                                                                                                this.purchaseOrderDataGridViewTextBoxColumn,
+                                                                                                this.sellDescriptionDataGridViewTextBoxColumn,
+                                                                                                this.sellAmountDataGridViewTextBoxColumn,
+                                                                                                this.returnAmountDataGridViewTextBoxColumn,
+                                                                                                this.returnDescriptionDataGridViewTextBoxColumn});
             this.dgvSaleList.DataSource = this.bdsPurchaseOrders;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;

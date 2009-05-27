@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.Inventory
+﻿namespace CoralPOSServer.View.Inventory
 {
     partial class DepartmentStockFixingForm
     {
@@ -224,16 +224,16 @@
             this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column8,
-            this.ProductMaster,
-            this.dataGridViewTextBoxColumn1,
-            this.Column2,
-            this.Column1,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
+                                                                                             this.Column8,
+                                                                                             this.ProductMaster,
+                                                                                             this.dataGridViewTextBoxColumn1,
+                                                                                             this.Column2,
+                                                                                             this.Column1,
+                                                                                             this.Column3,
+                                                                                             this.Column4,
+                                                                                             this.Column5,
+                                                                                             this.Column6,
+                                                                                             this.Column7});
             this.dgvStock.DataSource = this.bdsStockDefect;
             this.dgvStock.Location = new System.Drawing.Point(12, 126);
             this.dgvStock.MultiSelect = false;

@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsSale
+﻿namespace CoralPOSServer.View.GoodsSale
 {
     partial class GoodsSync
     {
@@ -181,8 +181,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Mạng Internet",
-            "Ổ USB"});
+                                                           "Mạng Internet",
+                                                           "Ổ USB"});
             this.comboBox1.Location = new System.Drawing.Point(101, 26);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(145, 21);

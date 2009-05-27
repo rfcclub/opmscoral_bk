@@ -12,7 +12,7 @@ using CoralPOS.Interfaces.Presenter.Report;
 using CoralPOS.Interfaces.Presenter.SalePoints;
 using CoralPOS.Utility.Mapper;
 
-namespace CoralPOSClient.Presenter.Report
+namespace CoralPOSServer.Presenter.Report
 {
     public class ReportStockOutController : IReportStockOutController
     {

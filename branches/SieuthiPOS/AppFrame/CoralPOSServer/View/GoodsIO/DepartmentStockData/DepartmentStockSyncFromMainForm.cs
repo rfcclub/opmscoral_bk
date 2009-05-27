@@ -19,10 +19,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSServer.Presenter.GoodsIO.DepartmentStockData;
 using CoralPOS.Utility;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockSyncFromMainForm : BaseForm, IDepartmentStockInExtraView
     {
@@ -112,7 +112,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                         foreach (DepartmentStockIn stockIn in deptEvent.DepartmentStockInList)
                         {
                             string fileName = exportPath + "\\" + department.DepartmentName + "_" + department.Address + " - Ma lo_" + stockIn.DepartmentStockInPK.StockInId + "_" +
-                                                              stockIn.StockInDate.ToString("yyyy_MM_dd_HH_mm_ss") + ".xac";
+                                              stockIn.StockInDate.ToString("yyyy_MM_dd_HH_mm_ss") + ".xac";
                             Stream stream = File.Open(fileName, FileMode.Create);
                             BinaryFormatter bf = new BinaryFormatter();
                             bf.Serialize(stream, stockIn);
@@ -255,7 +255,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                     else
                     {
                         if (CurrentDepartment.CurrentActiveDepartment(out dept)
-                         && syncFMTD.Department.DepartmentId == CurrentDepartment.Get().DepartmentId)
+                            && syncFMTD.Department.DepartmentId == CurrentDepartment.Get().DepartmentId)
                         {
                             var eventArgs = new DepartmentStockInEventArgs();
                             //eventArgs.DepartmentStockIn = deptStockIn;

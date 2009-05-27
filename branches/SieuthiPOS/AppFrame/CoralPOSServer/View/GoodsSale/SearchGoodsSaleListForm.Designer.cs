@@ -1,6 +1,6 @@
 ﻿using CoralPOS.Interfaces.Collection;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     partial class SearchGoodsSaleListForm
     {

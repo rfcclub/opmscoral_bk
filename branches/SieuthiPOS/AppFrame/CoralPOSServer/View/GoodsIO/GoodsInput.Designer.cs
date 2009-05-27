@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class GoodsInput
     {
@@ -119,7 +119,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SearchCreate});
+                                                                                               this.SearchCreate});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -347,24 +347,24 @@
             this.numericUpDown.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown.Location = new System.Drawing.Point(348, 422);
             this.numericUpDown.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
+                                                                   20,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                   1,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.numericUpDown.Size = new System.Drawing.Size(51, 22);
             this.numericUpDown.TabIndex = 24;
             this.numericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                 1,
+                                                                 0,
+                                                                 0,
+                                                                 0});
             // 
             // label9
             // 

@@ -13,7 +13,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.Reports;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.Reports
+namespace CoralPOSServer.View.Reports
 {
     public partial class MainStockOutReportForm : AppFrame.Common.BaseForm,IStockOutReportView
     {
@@ -43,13 +43,13 @@ namespace CoralPOSClient.View.Reports
         {
 
             stockOutList.Clear();
-                   ReportStockOutEventArgs eventArgs = new ReportStockOutEventArgs();
-                   eventArgs.ReportDateStockOutParam =
-                       new ReportDateStockOutParam
-                           {
-                               FromDate = DateUtility.ZeroTime(dtpFrom.Value),
-                               ToDate = DateUtility.MaxTime(dtpTo.Value)
-                           };
+            ReportStockOutEventArgs eventArgs = new ReportStockOutEventArgs();
+            eventArgs.ReportDateStockOutParam =
+                new ReportDateStockOutParam
+                    {
+                        FromDate = DateUtility.ZeroTime(dtpFrom.Value),
+                        ToDate = DateUtility.MaxTime(dtpTo.Value)
+                    };
             EventUtility.fireEvent(LoadStockOutsEvent,this,eventArgs);
             
             if(eventArgs.ResultStockOutList!=null)
@@ -138,12 +138,12 @@ namespace CoralPOSClient.View.Reports
                 {
                     StockOutDetailView stockOutDetailView = new StockOutDetailView();
 
-                        stockOutDetailView.StockOutDetail = stockOutDetail;
+                    stockOutDetailView.StockOutDetail = stockOutDetail;
                         
-                        stockOutDetailView.GoodCount = stockOutDetail.GoodQuantity;
-                        stockOutDetailView.ErrorCount = stockOutDetail.ErrorQuantity;
-                        stockOutDetailView.DamageCount = stockOutDetail.DamageQuantity;
-                        stockOutDetailView.UnconfirmCount = stockOutDetail.UnconfirmQuantity;
+                    stockOutDetailView.GoodCount = stockOutDetail.GoodQuantity;
+                    stockOutDetailView.ErrorCount = stockOutDetail.ErrorQuantity;
+                    stockOutDetailView.DamageCount = stockOutDetail.DamageQuantity;
+                    stockOutDetailView.UnconfirmCount = stockOutDetail.UnconfirmQuantity;
                     stockOutDetailView.LostCount = stockOutDetail.LostQuantity;
 
                     stockOutDetailView.TotalCount = stockOutDetail.Quantity;
@@ -171,7 +171,7 @@ namespace CoralPOSClient.View.Reports
             foreach (StockOutDetail detail in details)
             {
                 if ( detail.Product.ProductId == searchDetail.Product.ProductId &&
-                    detail.DefectStatus.DefectStatusId == specificCount)
+                     detail.DefectStatus.DefectStatusId == specificCount)
                 {
                     return detail.Quantity;
                 }

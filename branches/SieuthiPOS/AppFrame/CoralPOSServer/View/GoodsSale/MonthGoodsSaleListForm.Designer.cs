@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     partial class MonthGoodsSaleListForm
     {
@@ -132,13 +132,13 @@ namespace CoralPOSClient.View.GoodsSale
             this.dgvSaleList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSaleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSaleList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.purchaseOrderIdDataGridViewTextBoxColumn,
-            this.purchaseOrderDataGridViewTextBoxColumn,
-            this.sellDescriptionDataGridViewTextBoxColumn,
-            this.sellAmountDataGridViewTextBoxColumn,
-            this.returnDescriptionDataGridViewTextBoxColumn,
-            this.returnAmountDataGridViewTextBoxColumn,
-            this.ReturnDescription});
+                                                                                                this.purchaseOrderIdDataGridViewTextBoxColumn,
+                                                                                                this.purchaseOrderDataGridViewTextBoxColumn,
+                                                                                                this.sellDescriptionDataGridViewTextBoxColumn,
+                                                                                                this.sellAmountDataGridViewTextBoxColumn,
+                                                                                                this.returnDescriptionDataGridViewTextBoxColumn,
+                                                                                                this.returnAmountDataGridViewTextBoxColumn,
+                                                                                                this.ReturnDescription});
             this.dgvSaleList.DataSource = this.bdsPurchaseOrders;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;

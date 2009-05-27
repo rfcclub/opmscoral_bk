@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     partial class DepartmentStockInExtraForm
     {
@@ -119,24 +119,24 @@
             this.numericUpDown.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown.Location = new System.Drawing.Point(345, 457);
             this.numericUpDown.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
+                                                                   20,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                   1,
+                                                                   0,
+                                                                   0,
+                                                                   0});
             this.numericUpDown.Name = "numericUpDown";
             this.numericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.numericUpDown.Size = new System.Drawing.Size(51, 22);
             this.numericUpDown.TabIndex = 69;
             this.numericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+                                                                 1,
+                                                                 0,
+                                                                 0,
+                                                                 0});
             // 
             // lblStatus
             // 
@@ -292,17 +292,17 @@
             this.dgvDeptStockIn.AllowUserToAddRows = false;
             this.dgvDeptStockIn.AutoGenerateColumns = false;
             this.dgvDeptStockIn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SearchCreate,
-            this.columnProductId,
-            this.columnProductName,
-            this.columnColor,
-            this.columnSize,
-            this.quantityDataGridViewTextBoxColumn,
-            this.onStorePriceDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.Product,
-            this.Column1});
+                                                                                                   this.SearchCreate,
+                                                                                                   this.columnProductId,
+                                                                                                   this.columnProductName,
+                                                                                                   this.columnColor,
+                                                                                                   this.columnSize,
+                                                                                                   this.quantityDataGridViewTextBoxColumn,
+                                                                                                   this.onStorePriceDataGridViewTextBoxColumn,
+                                                                                                   this.priceDataGridViewTextBoxColumn,
+                                                                                                   this.delFlgDataGridViewTextBoxColumn,
+                                                                                                   this.Product,
+                                                                                                   this.Column1});
             this.dgvDeptStockIn.ContextMenuStrip = this.ctxMenuDept;
             this.dgvDeptStockIn.DataSource = this.bdsDeptStockIn;
             this.dgvDeptStockIn.Location = new System.Drawing.Point(9, 114);
@@ -399,8 +399,8 @@
             // ctxMenuDept
             // 
             this.ctxMenuDept.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCreateDupItem,
-            this.mnuCreateNewItem});
+                                                                                         this.mnuCreateDupItem,
+                                                                                         this.mnuCreateNewItem});
             this.ctxMenuDept.Name = "ctxMenuDept";
             this.ctxMenuDept.Size = new System.Drawing.Size(307, 48);
             this.ctxMenuDept.Opening += new System.ComponentModel.CancelEventHandler(this.ctxMenuDept_Opening);

@@ -15,10 +15,10 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.MainStock;
+using CoralPOSServer.Presenter.GoodsIO.MainStock;
 
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class MainStockOutExtraForm : BaseForm, IMainStockOutView
     {
@@ -222,8 +222,8 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                 {
                     dgvDeptStockOut.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
                     if (i != QUANTITY_POS
-                            && i != PRICE_POS
-                            && i != SELL_PRICE_POS)
+                        && i != PRICE_POS
+                        && i != SELL_PRICE_POS)
                     {
                         dgvDeptStockOut.Columns[i].ReadOnly = true;
                     }
@@ -231,7 +231,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
 //                txtDexcription.Text = stockOut.Description;
             }
             stockOut.StockOutDetails =
-                    ObjectConverter.ConvertToNonGenericList<StockOutDetail>(stockOutDetailList);
+                ObjectConverter.ConvertToNonGenericList<StockOutDetail>(stockOutDetailList);
             
             
         }
@@ -605,7 +605,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                     }
                 }
             }
-            // Xuất trả về nhà sản xuất
+                // Xuất trả về nhà sản xuất
             else if (cbbStockOutType.SelectedIndex == 1)
             {
                 for (int i = 0; i < dgvDeptStockOut.ColumnCount; i++)
@@ -621,7 +621,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                     }
                 }
             }
-            //Xuất đi cửa hàng khác
+                //Xuất đi cửa hàng khác
             else if (cbbStockOutType.SelectedIndex == 2)
             {
                 for (int i = 0; i < dgvDeptStockOut.ColumnCount; i++)
@@ -795,7 +795,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
                     }
                     else
                     {
-                         Clipboard.SetText("");
+                        Clipboard.SetText("");
                     }
                 }
 

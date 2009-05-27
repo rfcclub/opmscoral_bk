@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsSale;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class GoodsReturnChildForm : BaseForm, IGoodsSaleReturnView
     {
@@ -37,7 +37,7 @@ namespace CoralPOSClient.View.GoodsSale
             {
                 ReturnPurchaseOrder = new PurchaseOrder();
                 ReturnPurchaseOrder.PurchaseOrderPK = new 
-                PurchaseOrderPK{DepartmentId = CurrentDepartment.Get().DepartmentId };
+                    PurchaseOrderPK{DepartmentId = CurrentDepartment.Get().DepartmentId };
                 if(CheckUtility.IsNullOrEmpty(refPurchaseOrderId))
                 {
                     refPurchaseOrderId = "000000000000";

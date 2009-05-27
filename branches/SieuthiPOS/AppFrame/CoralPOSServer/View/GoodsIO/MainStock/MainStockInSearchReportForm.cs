@@ -16,10 +16,10 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 using CoralPOS.Common;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
+
 //using Aspose.Cells;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class MainStockInSearchReportForm : BaseForm, IMainStockInSearchView
     {
@@ -60,7 +60,7 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
         public MainStockInSearchReportForm()
         {
             InitializeComponent();
-    /*        dataTable.Columns.Add("Mã lô");
+            /*        dataTable.Columns.Add("Mã lô");
             dataTable.Columns.Add("Ngày nhập");
             dataTable.Columns.Add("Tổng số lượng nhập");
             dataTable.Columns.Add("Người nhập");*/
@@ -82,11 +82,11 @@ namespace CoralPOSClient.View.GoodsIO.MainStock
         {
             stockInDetList.Clear();
             var eventArgs = new MainStockInSearchEventArgs
-            {
-                StockInId = txtBlockInDetailId.Text,
-                StockInDateFrom = chkImportDateFrom.Checked ? DateUtility.ZeroTime(dtpImportDateFrom.Value) : DateTime.MinValue,
-                StockInDateTo = chkImportDateTo.Checked ? DateUtility.MaxTime(dtpImportDateTo.Value) : DateTime.MaxValue
-            };
+                                {
+                                    StockInId = txtBlockInDetailId.Text,
+                                    StockInDateFrom = chkImportDateFrom.Checked ? DateUtility.ZeroTime(dtpImportDateFrom.Value) : DateTime.MinValue,
+                                    StockInDateTo = chkImportDateTo.Checked ? DateUtility.MaxTime(dtpImportDateTo.Value) : DateTime.MaxValue
+                                };
             EventUtility.fireEvent(SearchStockInEvent, this, eventArgs);
             CurrentEventArgs = eventArgs;
             StockInList = eventArgs.StockInList;

@@ -11,7 +11,7 @@ using CoralPOS.Interfaces.Presenter.GoodsSale;
 using AppFrame.Utility;
 using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class SearchGoodsSaleListForm : GoodsSaleListForm
     {

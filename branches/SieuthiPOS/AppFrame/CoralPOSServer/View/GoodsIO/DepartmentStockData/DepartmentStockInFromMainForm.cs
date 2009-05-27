@@ -15,9 +15,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Common;
-using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSServer.Presenter.GoodsIO.DepartmentStockData;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockInFromMainForm : BaseForm, IDepartmentStockInExtraView
     {
@@ -435,8 +435,8 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 {
                     dgvDeptStockIn.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
                     if (i != QUANTITY_POS
-                            && i != PRICE_POS
-                            && i != SELL_PRICE_POS)
+                        && i != PRICE_POS
+                        && i != SELL_PRICE_POS)
                     {
                         dgvDeptStockIn.Columns[i].ReadOnly = true;
                     }
@@ -444,7 +444,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 txtDexcription.Text = deptSI.Description;
             }
             deptSI.DepartmentStockInDetails =
-                    ObjectConverter.ConvertToNonGenericList<DepartmentStockInDetail>(deptSIDetailList);
+                ObjectConverter.ConvertToNonGenericList<DepartmentStockInDetail>(deptSIDetailList);
         }
 
         void dgvDeptStockIn_DataError(object sender, DataGridViewDataErrorEventArgs e)

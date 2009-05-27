@@ -8,7 +8,7 @@ using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 
-namespace CoralPOSClient.Presenter
+namespace CoralPOSServer.Presenter
 {
     public class CustomerController : ICustomerController<CustomerEventArgs>
     {

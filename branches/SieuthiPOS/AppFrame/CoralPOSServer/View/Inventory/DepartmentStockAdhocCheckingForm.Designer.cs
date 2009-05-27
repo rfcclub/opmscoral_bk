@@ -1,6 +1,6 @@
 ﻿using CoralPOS.ViewModel;
 
-namespace CoralPOSClient.View.Inventory
+namespace CoralPOSServer.View.Inventory
 {
     partial class DepartmentStockAdhocCheckingForm
     {
@@ -268,30 +268,30 @@ namespace CoralPOSClient.View.Inventory
             this.dgvStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oldGoodQuantityDataGridViewTextBoxColumn,
-            this.ProductMaster,
-            this.dataGridViewTextBoxColumn1,
-            this.Column2,
-            this.quantityDataGridViewTextBoxColumn,
-            this.Column1,
-            this.goodQuantityDataGridViewTextBoxColumn,
-            this.errorQuantityDataGridViewTextBoxColumn,
-            this.damageQuantityDataGridViewTextBoxColumn,
-            this.lostQuantityDataGridViewTextBoxColumn,
-            this.unconfirmQuantityDataGridViewTextBoxColumn,
-            this.oldDamageQuantityDataGridViewTextBoxColumn,
-            this.oldErrorQuantityDataGridViewTextBoxColumn,
-            this.oldLostQuantityDataGridViewTextBoxColumn,
-            this.oldUnconfirmQuantityDataGridViewTextBoxColumn,
-            this.departmentIdDataGridViewTextBoxColumn,
-            this.productIdDataGridViewTextBoxColumn,
-            this.onStorePriceDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn});
+                                                                                             this.oldGoodQuantityDataGridViewTextBoxColumn,
+                                                                                             this.ProductMaster,
+                                                                                             this.dataGridViewTextBoxColumn1,
+                                                                                             this.Column2,
+                                                                                             this.quantityDataGridViewTextBoxColumn,
+                                                                                             this.Column1,
+                                                                                             this.goodQuantityDataGridViewTextBoxColumn,
+                                                                                             this.errorQuantityDataGridViewTextBoxColumn,
+                                                                                             this.damageQuantityDataGridViewTextBoxColumn,
+                                                                                             this.lostQuantityDataGridViewTextBoxColumn,
+                                                                                             this.unconfirmQuantityDataGridViewTextBoxColumn,
+                                                                                             this.oldDamageQuantityDataGridViewTextBoxColumn,
+                                                                                             this.oldErrorQuantityDataGridViewTextBoxColumn,
+                                                                                             this.oldLostQuantityDataGridViewTextBoxColumn,
+                                                                                             this.oldUnconfirmQuantityDataGridViewTextBoxColumn,
+                                                                                             this.departmentIdDataGridViewTextBoxColumn,
+                                                                                             this.productIdDataGridViewTextBoxColumn,
+                                                                                             this.onStorePriceDataGridViewTextBoxColumn,
+                                                                                             this.createDateDataGridViewTextBoxColumn,
+                                                                                             this.createIdDataGridViewTextBoxColumn,
+                                                                                             this.updateDateDataGridViewTextBoxColumn,
+                                                                                             this.updateIdDataGridViewTextBoxColumn,
+                                                                                             this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                             this.delFlgDataGridViewTextBoxColumn});
             this.dgvStock.DataSource = this.bdsStockDefect;
             this.dgvStock.Location = new System.Drawing.Point(12, 126);
             this.dgvStock.MultiSelect = false;
@@ -338,16 +338,16 @@ namespace CoralPOSClient.View.Inventory
             this.dgvSelectedStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvSelectedStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSelectedStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column7,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn7,
-            this.GoodQuantity,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
+                                                                                                     this.Column7,
+                                                                                                     this.dataGridViewTextBoxColumn3,
+                                                                                                     this.dataGridViewTextBoxColumn4,
+                                                                                                     this.dataGridViewTextBoxColumn5,
+                                                                                                     this.dataGridViewTextBoxColumn7,
+                                                                                                     this.GoodQuantity,
+                                                                                                     this.Column3,
+                                                                                                     this.Column4,
+                                                                                                     this.Column5,
+                                                                                                     this.Column6});
             this.dgvSelectedStock.DataSource = this.bdsSelectedStock;
             this.dgvSelectedStock.Location = new System.Drawing.Point(0, 0);
             this.dgvSelectedStock.MultiSelect = false;

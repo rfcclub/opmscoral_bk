@@ -13,7 +13,7 @@ using AppFrame.Utility;
 using AppFrame.Utility.Mapper;
 using CoralPOS.Interfaces.View.SalePoints;
 
-namespace CoralPOSClient.View.SalePoints
+namespace CoralPOSServer.View.SalePoints
 {
     public partial class SalePointForm : BaseForm, ISalePointView
     {
@@ -270,12 +270,12 @@ namespace CoralPOSClient.View.SalePoints
 
         private void mnuAdd_Click(object sender, EventArgs e)
         {
-           btnAdd_Click(sender,e); 
+            btnAdd_Click(sender,e); 
         }
 
         private void mnuEdit_Click(object sender, EventArgs e)
         {
-           btnEdit_Click(sender,e);
+            btnEdit_Click(sender,e);
         }
 
         private void mnuDelete_Click(object sender, EventArgs e)
@@ -330,23 +330,23 @@ namespace CoralPOSClient.View.SalePoints
         private void dgvEmployees_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
                 
-                EmployeeInfo employeeInfo = bdsEmployeeSource.List[e.RowIndex] as EmployeeInfo;
-                DataGridViewRow row = dgvEmployees.Rows[e.RowIndex];
-                if (employeeInfo != null && employeeInfo.DelFlg == 1 && row.Visible)
-                {
-                    // detach currency manager
-                    CurrencyManager currencyManager1 = bdsEmployeeSource.CurrencyManager;
+            EmployeeInfo employeeInfo = bdsEmployeeSource.List[e.RowIndex] as EmployeeInfo;
+            DataGridViewRow row = dgvEmployees.Rows[e.RowIndex];
+            if (employeeInfo != null && employeeInfo.DelFlg == 1 && row.Visible)
+            {
+                // detach currency manager
+                CurrencyManager currencyManager1 = bdsEmployeeSource.CurrencyManager;
                     
                     
-                    // set visible = false
+                // set visible = false
                     
-                        currencyManager1.SuspendBinding();
+                currencyManager1.SuspendBinding();
                     
-                        dgvEmployees.CurrentCell = null;
-                        row.Visible = false;
+                dgvEmployees.CurrentCell = null;
+                row.Visible = false;
 
-                        currencyManager1.ResumeBinding();     
-                }
+                currencyManager1.ResumeBinding();     
+            }
                 
         
         }
@@ -412,5 +412,4 @@ namespace CoralPOSClient.View.SalePoints
             }
         }
     }
-    
 }

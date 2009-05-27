@@ -1,4 +1,4 @@
-﻿namespace CoralPOS.Interfaces.Presenter.GoodsIO
+﻿namespace CoralPOSServer.View.Masters
 {
     partial class SupplierInput
     {

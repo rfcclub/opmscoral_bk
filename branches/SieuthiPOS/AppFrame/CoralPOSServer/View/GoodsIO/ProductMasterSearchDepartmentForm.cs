@@ -14,7 +14,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using Microsoft.Reporting.WinForms;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO
 {
     public partial class ProductMasterSearchDepartmentForm : BaseForm,IProductMasterSearchDepartmentView
     {
@@ -86,18 +86,18 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var eventArgs = new ProductMasterSearchDepartmentEventArgs
-            {
-                ProductMasterId = productMasterSearchControl.txtProductMasterId.Text,
-                Packager = productMasterSearchControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterSearchControl.cbbPackager.SelectedItem) : null,
-                ProductMasterName = productMasterSearchControl.txtProductName.Text,
-                ProductSize = productMasterSearchControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterSearchControl.cbbProductSize.SelectedItem) : null,
-                ProductType = productMasterSearchControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterSearchControl.cbbProductType.SelectedItem) : null,
-                ProductColor = productMasterSearchControl.cbbProductColor.SelectedIndex > 0 ?
-                    ((ProductColor)productMasterSearchControl.cbbProductColor.SelectedItem) : null,
-                Country = productMasterSearchControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterSearchControl.cbbCountry.SelectedItem) : null,
-                Manufacturer = productMasterSearchControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterSearchControl.cbbManufacturer.SelectedItem) : null,
-                Distributor = productMasterSearchControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterSearchControl.cbbDistributor.SelectedItem) : null
-            };
+                                {
+                                    ProductMasterId = productMasterSearchControl.txtProductMasterId.Text,
+                                    Packager = productMasterSearchControl.cbbPackager.SelectedIndex > 0 ? ((Packager)productMasterSearchControl.cbbPackager.SelectedItem) : null,
+                                    ProductMasterName = productMasterSearchControl.txtProductName.Text,
+                                    ProductSize = productMasterSearchControl.cbbProductSize.SelectedIndex > 0 ? ((ProductSize)productMasterSearchControl.cbbProductSize.SelectedItem) : null,
+                                    ProductType = productMasterSearchControl.cbbProductType.SelectedIndex > 0 ? ((ProductType)productMasterSearchControl.cbbProductType.SelectedItem) : null,
+                                    ProductColor = productMasterSearchControl.cbbProductColor.SelectedIndex > 0 ?
+                                                                                                                    ((ProductColor)productMasterSearchControl.cbbProductColor.SelectedItem) : null,
+                                    Country = productMasterSearchControl.cbbCountry.SelectedIndex > 0 ? ((Country)productMasterSearchControl.cbbCountry.SelectedItem) : null,
+                                    Manufacturer = productMasterSearchControl.cbbManufacturer.SelectedIndex > 0 ? ((Manufacturer)productMasterSearchControl.cbbManufacturer.SelectedItem) : null,
+                                    Distributor = productMasterSearchControl.cbbDistributor.SelectedIndex > 0 ? ((Distributor)productMasterSearchControl.cbbDistributor.SelectedItem) : null
+                                };
             EventUtility.fireEvent(SearchProductMasterEvent, sender, eventArgs);
             IList ProductMasterList = eventArgs.ProductMasterList;
             if (ProductMasterList != null)
@@ -125,58 +125,58 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             EventUtility.fireEvent(InitProductMasterSearchDepartmentEvent, this, eventArgs);
 
             AddListItemToCombo(productMasterSearchControl.cbbProductType,
-                productMasterSearchControl.cbbProductType,
-                eventArgs.ProductTypeList,
-                "TypeName",
-                productMasterSearchControl.cbbProductType.Text,
-                productMasterSearchControl.cbbProductType.Text);
+                               productMasterSearchControl.cbbProductType,
+                               eventArgs.ProductTypeList,
+                               "TypeName",
+                               productMasterSearchControl.cbbProductType.Text,
+                               productMasterSearchControl.cbbProductType.Text);
 
             AddListItemToCombo(productMasterSearchControl.cbbProductSize,
-                productMasterSearchControl.cbbProductSize,
-                eventArgs.ProductSizeList,
-                "SizeName",
-                productMasterSearchControl.cbbProductSize.Text,
-                productMasterSearchControl.cbbProductSize.Text);
+                               productMasterSearchControl.cbbProductSize,
+                               eventArgs.ProductSizeList,
+                               "SizeName",
+                               productMasterSearchControl.cbbProductSize.Text,
+                               productMasterSearchControl.cbbProductSize.Text);
 
 
             AddListItemToCombo(productMasterSearchControl.cbbProductColor,
-                productMasterSearchControl.cbbProductColor,
-                eventArgs.ProductColorList,
-                "ColorName",
-                productMasterSearchControl.cbbProductColor.Text,
-                productMasterSearchControl.cbbProductColor.Text);
+                               productMasterSearchControl.cbbProductColor,
+                               eventArgs.ProductColorList,
+                               "ColorName",
+                               productMasterSearchControl.cbbProductColor.Text,
+                               productMasterSearchControl.cbbProductColor.Text);
 
 
             AddListItemToCombo(productMasterSearchControl.cbbCountry,
-                productMasterSearchControl.cbbCountry,
-                eventArgs.CountryList,
-                "CountryName",
-                productMasterSearchControl.cbbCountry.Text,
-                productMasterSearchControl.cbbCountry.Text);
+                               productMasterSearchControl.cbbCountry,
+                               eventArgs.CountryList,
+                               "CountryName",
+                               productMasterSearchControl.cbbCountry.Text,
+                               productMasterSearchControl.cbbCountry.Text);
 
 
             AddListItemToCombo(productMasterSearchControl.cbbManufacturer,
-                productMasterSearchControl.cbbManufacturer,
-                eventArgs.ManufacturerList,
-                "ManufacturerName",
-                productMasterSearchControl.cbbManufacturer.Text,
-                productMasterSearchControl.cbbManufacturer.Text);
+                               productMasterSearchControl.cbbManufacturer,
+                               eventArgs.ManufacturerList,
+                               "ManufacturerName",
+                               productMasterSearchControl.cbbManufacturer.Text,
+                               productMasterSearchControl.cbbManufacturer.Text);
 
 
             AddListItemToCombo(productMasterSearchControl.cbbDistributor,
-                productMasterSearchControl.cbbDistributor,
-                eventArgs.DistributorList,
-                "DistributorName",
-                productMasterSearchControl.cbbDistributor.Text,
-                productMasterSearchControl.cbbDistributor.Text);
+                               productMasterSearchControl.cbbDistributor,
+                               eventArgs.DistributorList,
+                               "DistributorName",
+                               productMasterSearchControl.cbbDistributor.Text,
+                               productMasterSearchControl.cbbDistributor.Text);
 
 
             AddListItemToCombo(productMasterSearchControl.cbbPackager,
-                productMasterSearchControl.cbbPackager,
-                eventArgs.PackagerList,
-                "PackagerName",
-                productMasterSearchControl.cbbPackager.Text,
-                productMasterSearchControl.cbbPackager.Text);
+                               productMasterSearchControl.cbbPackager,
+                               eventArgs.PackagerList,
+                               "PackagerName",
+                               productMasterSearchControl.cbbPackager.Text,
+                               productMasterSearchControl.cbbPackager.Text);
 
             
             
@@ -198,7 +198,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             foreach (object type in data)
             {
                 box1.Items.Add(type);
-            //    box2.Items.Add(type);
+                //    box2.Items.Add(type);
             }
             box1.DisplayMember = displayItemName;
             //box2.DisplayMember = displayItemName;

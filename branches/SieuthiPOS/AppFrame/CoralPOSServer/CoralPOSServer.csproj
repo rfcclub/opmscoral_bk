@@ -182,12 +182,6 @@
     <Compile Include="Common\Code39Ex.cs" />
     <Compile Include="Common\Code39Settings.cs" />
     <Compile Include="Common\FormConstants.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Global1.Designer.cs">
       <DependentUpon>Global.resx</DependentUpon>
       <AutoGen>True</AutoGen>

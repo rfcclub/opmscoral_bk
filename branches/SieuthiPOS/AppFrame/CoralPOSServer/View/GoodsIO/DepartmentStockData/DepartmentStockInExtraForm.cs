@@ -17,9 +17,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
-using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
+using CoralPOSServer.Presenter.GoodsIO.DepartmentStockData;
 
-namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.View.GoodsIO.DepartmentStockData
 {
     public partial class DepartmentStockInExtraForm : BaseForm, IDepartmentStockInExtraView
     {
@@ -77,7 +77,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             }
 
             deptSI.DepartmentStockInDetails =
-                    ObjectConverter.ConvertToNonGenericList<DepartmentStockInDetail>(deptSIDetailList);
+                ObjectConverter.ConvertToNonGenericList<DepartmentStockInDetail>(deptSIDetailList);
             bdsDeptStockIn.EndEdit();
         }
 
@@ -261,7 +261,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             deptSI.ExclusiveKey = 0;
             CreateNewStockInDetail();
             deptSI.DepartmentStockInDetails =
-                    ObjectConverter.ConvertToNonGenericList<DepartmentStockInDetail>(deptSIDetailList);
+                ObjectConverter.ConvertToNonGenericList<DepartmentStockInDetail>(deptSIDetailList);
         }
 
         void dgvDeptStockIn_DataError(object sender, DataGridViewDataErrorEventArgs e)

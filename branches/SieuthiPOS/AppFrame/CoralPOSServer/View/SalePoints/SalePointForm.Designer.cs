@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.SalePoints
+﻿namespace CoralPOSServer.View.SalePoints
 {
     partial class SalePointForm
     {
@@ -182,10 +182,10 @@
             this.dgvEmployees.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.Salary,
-            this.StartDate,
-            this.delFlgDataGridViewTextBoxColumn});
+                                                                                                 this.dataGridViewTextBoxColumn1,
+                                                                                                 this.Salary,
+                                                                                                 this.StartDate,
+                                                                                                 this.delFlgDataGridViewTextBoxColumn});
             this.dgvEmployees.ContextMenuStrip = this.cmnEmployees;
             this.dgvEmployees.DataSource = this.bdsEmployeeSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -241,11 +241,11 @@
             // cmnEmployees
             // 
             this.cmnEmployees.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuSetMainSalePoint,
-            this.toolStripMenuItem1,
-            this.mnuAdd,
-            this.mnuEdit,
-            this.mnuDelete});
+                                                                                          this.mnuSetMainSalePoint,
+                                                                                          this.toolStripMenuItem1,
+                                                                                          this.mnuAdd,
+                                                                                          this.mnuEdit,
+                                                                                          this.mnuDelete});
             this.cmnEmployees.Name = "contextMenuStrip1";
             this.cmnEmployees.Size = new System.Drawing.Size(211, 98);
             // 

@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class ProductMasterSearchDepartmentForm
     {
@@ -125,13 +125,13 @@
             this.dgvProductMaster.AutoGenerateColumns = false;
             this.dgvProductMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductMaster.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productMasterIdDataGridViewTextBoxColumn1,
-            this.productNameDataGridViewTextBoxColumn1,
-            this.productTypeTypeNameDataGridViewTextBoxColumn,
-            this.productColorColorNameDataGridViewTextBoxColumn,
-            this.productSizeSizeNameDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn1,
-            this.categoryCategoryNameDataGridViewTextBoxColumn});
+                                                                                                     this.productMasterIdDataGridViewTextBoxColumn1,
+                                                                                                     this.productNameDataGridViewTextBoxColumn1,
+                                                                                                     this.productTypeTypeNameDataGridViewTextBoxColumn,
+                                                                                                     this.productColorColorNameDataGridViewTextBoxColumn,
+                                                                                                     this.productSizeSizeNameDataGridViewTextBoxColumn,
+                                                                                                     this.descriptionDataGridViewTextBoxColumn1,
+                                                                                                     this.categoryCategoryNameDataGridViewTextBoxColumn});
             this.dgvProductMaster.DataSource = this.productMasterBindingSource;
             this.dgvProductMaster.Location = new System.Drawing.Point(7, 138);
             this.dgvProductMaster.MultiSelect = false;
@@ -203,12 +203,12 @@
             this.dgvProducts.AutoGenerateColumns = false;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn1,
-            this.CreateDate,
-            this.createIdDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn});
+                                                                                                this.Column4,
+                                                                                                this.updateIdDataGridViewTextBoxColumn,
+                                                                                                this.dataGridViewTextBoxColumn1,
+                                                                                                this.CreateDate,
+                                                                                                this.createIdDataGridViewTextBoxColumn,
+                                                                                                this.delFlgDataGridViewTextBoxColumn});
             this.dgvProducts.DataSource = this.deptStockBindingSource;
             this.dgvProducts.Location = new System.Drawing.Point(7, 354);
             this.dgvProducts.MultiSelect = false;

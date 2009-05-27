@@ -15,9 +15,9 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.Inventory;
 using CoralPOS.Common;
 using CoralPOS.ViewModel;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
+using CoralPOSServer.View.GoodsIO.DepartmentStockData;
 
-namespace CoralPOSClient.View.Inventory
+namespace CoralPOSServer.View.Inventory
 {
     public partial class DepartmentStockAdhocCheckingForm : BaseForm, IDepartmentStockAdhocProcessingView
     {
@@ -265,10 +265,10 @@ namespace CoralPOSClient.View.Inventory
                 bool needAdjust = false;
                 
                 if(    checkedGoodQty!=goodQty 
-                    || checkedErrorQty!= errorQty 
-                    || checkedLostQty != lostQty
-                    || checkedUnconfirmQty != unconfirmQty
-                    || checkedDamageQty != damageQty)
+                       || checkedErrorQty!= errorQty 
+                       || checkedLostQty != lostQty
+                       || checkedUnconfirmQty != unconfirmQty
+                       || checkedDamageQty != damageQty)
                 {
                     needAdjust = true;
                 }
@@ -500,7 +500,7 @@ namespace CoralPOSClient.View.Inventory
             dgvSelectedStock.Invalidate();
             foreach (DepartmentStockTemp stockTemp in selectedTempView.DepartmentStockTemps)
             {
-               selectedStockList.Add(stockTemp); 
+                selectedStockList.Add(stockTemp); 
             }
             // save current checking value
         }
@@ -599,48 +599,48 @@ namespace CoralPOSClient.View.Inventory
 
         private void btnSaveSelectedStocks_Click(object sender, EventArgs e)
         {
-                DialogResult result = MessageBox.Show("Bạn muốn lưu kết quả ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
-                                MessageBoxDefaultButton.Button2);
-                if (result == DialogResult.No)
+            DialogResult result = MessageBox.Show("Bạn muốn lưu kết quả ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
+                                                  MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.No)
+            {
+                dgvStock.Focus();
+                return;
+            }
+
+            pnlSelectedStocks.Visible = false;
+            if (selectedTempView != null)
+            {
+                DepartmentStockTempCollection editedStockTemps = (DepartmentStockTempCollection)bdsSelectedStock.DataSource;
+                selectedTempView.DepartmentStockTemps.Clear();
+                selectedTempView.Quantity = 0;
+                selectedTempView.RealQuantity = 0;
+                selectedTempView.GoodQuantity = 0;
+                selectedTempView.ErrorQuantity = 0;
+                selectedTempView.DamageQuantity = 0;
+                selectedTempView.LostQuantity = 0;
+                selectedTempView.UnconfirmQuantity = 0;
+                foreach (DepartmentStockTemp stockTemp in editedStockTemps)
                 {
-                    dgvStock.Focus();
-                    return;
+                    selectedTempView.GoodQuantity += stockTemp.GoodQuantity;
+                    selectedTempView.ErrorQuantity += stockTemp.ErrorQuantity;
+                    selectedTempView.LostQuantity += stockTemp.LostQuantity;
+                    selectedTempView.DamageQuantity += stockTemp.DamageQuantity;
+                    selectedTempView.UnconfirmQuantity += stockTemp.UnconfirmQuantity;
+                    selectedTempView.Quantity += stockTemp.Quantity;
+                    selectedTempView.RealQuantity += stockTemp.GoodQuantity + stockTemp.ErrorQuantity +
+                                                     stockTemp.DamageQuantity + stockTemp.UnconfirmQuantity +
+                                                     stockTemp.LostQuantity;
+                    selectedTempView.DepartmentStockTemps.Add(stockTemp);
                 }
 
-                pnlSelectedStocks.Visible = false;
-                if (selectedTempView != null)
-                {
-                    DepartmentStockTempCollection editedStockTemps = (DepartmentStockTempCollection)bdsSelectedStock.DataSource;
-                    selectedTempView.DepartmentStockTemps.Clear();
-                    selectedTempView.Quantity = 0;
-                    selectedTempView.RealQuantity = 0;
-                    selectedTempView.GoodQuantity = 0;
-                    selectedTempView.ErrorQuantity = 0;
-                    selectedTempView.DamageQuantity = 0;
-                    selectedTempView.LostQuantity = 0;
-                    selectedTempView.UnconfirmQuantity = 0;
-                    foreach (DepartmentStockTemp stockTemp in editedStockTemps)
-                    {
-                        selectedTempView.GoodQuantity += stockTemp.GoodQuantity;
-                        selectedTempView.ErrorQuantity += stockTemp.ErrorQuantity;
-                        selectedTempView.LostQuantity += stockTemp.LostQuantity;
-                        selectedTempView.DamageQuantity += stockTemp.DamageQuantity;
-                        selectedTempView.UnconfirmQuantity += stockTemp.UnconfirmQuantity;
-                        selectedTempView.Quantity += stockTemp.Quantity;
-                        selectedTempView.RealQuantity += stockTemp.GoodQuantity + stockTemp.ErrorQuantity +
-                                                    stockTemp.DamageQuantity + stockTemp.UnconfirmQuantity +
-                                                    stockTemp.LostQuantity;
-                        selectedTempView.DepartmentStockTemps.Add(stockTemp);
-                    }
-
-                    editedStockTemps = null;
-                    selectedTempView = null;
-                    bdsStockDefect.EndEdit();
-                    dgvStock.Enabled = true;
-                    dgvStock.Focus();
-                    dgvStock.Refresh();
-                    dgvStock.Invalidate();
-                }
+                editedStockTemps = null;
+                selectedTempView = null;
+                bdsStockDefect.EndEdit();
+                dgvStock.Enabled = true;
+                dgvStock.Focus();
+                dgvStock.Refresh();
+                dgvStock.Invalidate();
+            }
             
         }
 

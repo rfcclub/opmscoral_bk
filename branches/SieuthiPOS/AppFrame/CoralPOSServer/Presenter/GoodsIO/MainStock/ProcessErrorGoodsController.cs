@@ -8,7 +8,7 @@ using CoralPOS.Interfaces.Logic;
 using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
 
-namespace CoralPOSClient.Presenter.GoodsIO.MainStock
+namespace CoralPOSServer.Presenter.GoodsIO.MainStock
 {
     public class ProcessErrorGoodsController : IProcessErrorGoodsController
     {

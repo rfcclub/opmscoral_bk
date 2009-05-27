@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsSale
+﻿namespace CoralPOSServer.View.GoodsSale
 {
     partial class Goods
     {

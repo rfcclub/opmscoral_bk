@@ -18,7 +18,7 @@ using CoralPOS.ViewModel;
 
 //using Aspose.Cells;
 
-namespace CoralPOSClient.View.GoodsSale
+namespace CoralPOSServer.View.GoodsSale
 {
     public partial class MonthGoodsSaleListForm : BaseForm, IMonthGoodsSaleListView
     {

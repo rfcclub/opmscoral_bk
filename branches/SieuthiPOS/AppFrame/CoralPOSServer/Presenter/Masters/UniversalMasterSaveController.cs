@@ -14,7 +14,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO;
 using CoralPOS.Interfaces.View.Masters;
 
-namespace CoralPOSClient.Presenter.Masters
+namespace CoralPOSServer.Presenter.Masters
 {
     public class UniversalMasterSaveController : IUniversalMasterSaveController
     {

@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO
+﻿namespace CoralPOSServer.View.GoodsIO
 {
     partial class ProductMasterSearchForm
     {
@@ -79,26 +79,26 @@
             this.dgvProductMaster.AutoGenerateColumns = false;
             this.dgvProductMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductMaster.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productMasterIdDataGridViewTextBoxColumn,
-            this.productNameDataGridViewTextBoxColumn,
-            this.barcodeDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.supplierIdDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.productTypeDataGridViewTextBoxColumn,
-            this.productColorDataGridViewTextBoxColumn,
-            this.productSizeDataGridViewTextBoxColumn,
-            this.countryDataGridViewTextBoxColumn,
-            this.manufacturerDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.packagerDataGridViewTextBoxColumn,
-            this.categoryDataGridViewTextBoxColumn,
-            this.distributorDataGridViewTextBoxColumn,
-            this.Column1});
+                                                                                                     this.productMasterIdDataGridViewTextBoxColumn,
+                                                                                                     this.productNameDataGridViewTextBoxColumn,
+                                                                                                     this.barcodeDataGridViewTextBoxColumn,
+                                                                                                     this.descriptionDataGridViewTextBoxColumn,
+                                                                                                     this.supplierIdDataGridViewTextBoxColumn,
+                                                                                                     this.createDateDataGridViewTextBoxColumn,
+                                                                                                     this.createIdDataGridViewTextBoxColumn,
+                                                                                                     this.updateDateDataGridViewTextBoxColumn,
+                                                                                                     this.updateIdDataGridViewTextBoxColumn,
+                                                                                                     this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                                     this.productTypeDataGridViewTextBoxColumn,
+                                                                                                     this.productColorDataGridViewTextBoxColumn,
+                                                                                                     this.productSizeDataGridViewTextBoxColumn,
+                                                                                                     this.countryDataGridViewTextBoxColumn,
+                                                                                                     this.manufacturerDataGridViewTextBoxColumn,
+                                                                                                     this.delFlgDataGridViewTextBoxColumn,
+                                                                                                     this.packagerDataGridViewTextBoxColumn,
+                                                                                                     this.categoryDataGridViewTextBoxColumn,
+                                                                                                     this.distributorDataGridViewTextBoxColumn,
+                                                                                                     this.Column1});
             this.dgvProductMaster.DataSource = this.productMasterBindingSource;
             this.dgvProductMaster.Location = new System.Drawing.Point(9, 160);
             this.dgvProductMaster.MultiSelect = false;

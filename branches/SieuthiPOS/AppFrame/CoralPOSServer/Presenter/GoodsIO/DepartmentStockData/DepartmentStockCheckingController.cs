@@ -15,7 +15,7 @@ using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using NHibernate.Criterion;
 using ArrayList = System.Collections.ArrayList;
 
-namespace CoralPOSClient.Presenter.GoodsIO.DepartmentStockData
+namespace CoralPOSServer.Presenter.GoodsIO.DepartmentStockData
 {
     public class DepartmentStockCheckingController : IDepartmentStockCheckingController
     {

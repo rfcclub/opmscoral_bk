@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.SalePoints
+﻿namespace CoralPOSServer.View.SalePoints
 {
     partial class EmployeeListForm
     {
@@ -65,23 +65,23 @@
             this.dgvEmployee.AutoGenerateColumns = false;
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.employeeNameDataGridViewTextBoxColumn,
-            this.startDateDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.salaryDataGridViewTextBoxColumn,
-            this.barcodeDataGridViewTextBoxColumn,
-            this.birthdayDataGridViewTextBoxColumn,
-            this.countryDataGridViewTextBoxColumn,
-            this.contractIdDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.employeeDataGridViewTextBoxColumn,
-            this.departmentDataGridViewTextBoxColumn});
+                                                                                                this.Column1,
+                                                                                                this.employeeNameDataGridViewTextBoxColumn,
+                                                                                                this.startDateDataGridViewTextBoxColumn,
+                                                                                                this.addressDataGridViewTextBoxColumn,
+                                                                                                this.salaryDataGridViewTextBoxColumn,
+                                                                                                this.barcodeDataGridViewTextBoxColumn,
+                                                                                                this.birthdayDataGridViewTextBoxColumn,
+                                                                                                this.countryDataGridViewTextBoxColumn,
+                                                                                                this.contractIdDataGridViewTextBoxColumn,
+                                                                                                this.createDateDataGridViewTextBoxColumn,
+                                                                                                this.createIdDataGridViewTextBoxColumn,
+                                                                                                this.updateDateDataGridViewTextBoxColumn,
+                                                                                                this.updateIdDataGridViewTextBoxColumn,
+                                                                                                this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                                this.delFlgDataGridViewTextBoxColumn,
+                                                                                                this.employeeDataGridViewTextBoxColumn,
+                                                                                                this.departmentDataGridViewTextBoxColumn});
             this.dgvEmployee.DataSource = this.bdsEmployee;
             this.dgvEmployee.Location = new System.Drawing.Point(13, 13);
             this.dgvEmployee.Name = "dgvEmployee";

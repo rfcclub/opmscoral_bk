@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsSale
+﻿namespace CoralPOSServer.View.GoodsSale
 {
     partial class GoodsSalePrintForm
     {
@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Hàng bán số 1",
-            "1",
-            "100000"}, -1);
+                                                                                                                     "Hàng bán số 1",
+                                                                                                                     "1",
+                                                                                                                     "100000"}, -1);
             System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Hàng bán số 2",
-            "5",
-            "150000"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
+                                                                                                                     "Hàng bán số 2",
+                                                                                                                     "5",
+                                                                                                                     "150000"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Hàng bán số 3",
-            "10",
-            "200000"}, -1);
+                                                                                                                     "Hàng bán số 3",
+                                                                                                                     "10",
+                                                                                                                     "200000"}, -1);
             this.lblDepartment = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblBillNumber = new System.Windows.Forms.Label();
@@ -203,15 +203,15 @@
             this.lstBill.BackColor = System.Drawing.Color.White;
             this.lstBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
+                                                                                      this.columnHeader1,
+                                                                                      this.columnHeader2,
+                                                                                      this.columnHeader3});
             this.lstBill.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstBill.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.lstBill.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7,
-            listViewItem8,
-            listViewItem9});
+                                                                                    listViewItem7,
+                                                                                    listViewItem8,
+                                                                                    listViewItem9});
             this.lstBill.Location = new System.Drawing.Point(12, 158);
             this.lstBill.Name = "lstBill";
             this.lstBill.Size = new System.Drawing.Size(245, 192);

@@ -11,7 +11,7 @@ using CoralPOS.Common;
 using Spring.Context;
 using Spring.Context.Support;
 
-namespace CoralPOS
+namespace CoralPOSServer.View
 {
     public partial class SplashScreen : Form
     {

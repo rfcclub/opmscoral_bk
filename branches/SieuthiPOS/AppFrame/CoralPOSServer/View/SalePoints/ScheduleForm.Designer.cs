@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.SalePoints
+﻿namespace CoralPOSServer.View.SalePoints
 {
     partial class ScheduleForm
     {
@@ -164,9 +164,9 @@
             this.listBox3.FormattingEnabled = true;
             this.listBox3.ItemHeight = 14;
             this.listBox3.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                          "Hoa",
+                                                          "Diễm",
+                                                          "Quốc"});
             this.listBox3.Location = new System.Drawing.Point(7, 189);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(112, 102);
@@ -177,9 +177,9 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 14;
             this.listBox2.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                          "Hồng",
+                                                          "Thanh",
+                                                          "Hùng"});
             this.listBox2.Location = new System.Drawing.Point(7, 38);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(112, 102);
@@ -214,9 +214,9 @@
             this.listBox5.FormattingEnabled = true;
             this.listBox5.ItemHeight = 14;
             this.listBox5.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                          "Hồng",
+                                                          "Thanh",
+                                                          "Hùng"});
             this.listBox5.Location = new System.Drawing.Point(0, 38);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(112, 102);
@@ -236,9 +236,9 @@
             this.listBox4.FormattingEnabled = true;
             this.listBox4.ItemHeight = 14;
             this.listBox4.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                          "Hoa",
+                                                          "Diễm",
+                                                          "Quốc"});
             this.listBox4.Location = new System.Drawing.Point(0, 189);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(112, 102);
@@ -273,9 +273,9 @@
             this.listBox7.FormattingEnabled = true;
             this.listBox7.ItemHeight = 14;
             this.listBox7.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                          "Hồng",
+                                                          "Thanh",
+                                                          "Hùng"});
             this.listBox7.Location = new System.Drawing.Point(6, 38);
             this.listBox7.Name = "listBox7";
             this.listBox7.Size = new System.Drawing.Size(112, 102);
@@ -296,9 +296,9 @@
             this.listBox6.FormattingEnabled = true;
             this.listBox6.ItemHeight = 14;
             this.listBox6.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                          "Hoa",
+                                                          "Diễm",
+                                                          "Quốc"});
             this.listBox6.Location = new System.Drawing.Point(6, 189);
             this.listBox6.Name = "listBox6";
             this.listBox6.Size = new System.Drawing.Size(112, 102);
@@ -333,9 +333,9 @@
             this.listBox9.FormattingEnabled = true;
             this.listBox9.ItemHeight = 14;
             this.listBox9.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                          "Hồng",
+                                                          "Thanh",
+                                                          "Hùng"});
             this.listBox9.Location = new System.Drawing.Point(6, 38);
             this.listBox9.Name = "listBox9";
             this.listBox9.Size = new System.Drawing.Size(112, 102);
@@ -355,9 +355,9 @@
             this.listBox8.FormattingEnabled = true;
             this.listBox8.ItemHeight = 14;
             this.listBox8.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                          "Hoa",
+                                                          "Diễm",
+                                                          "Quốc"});
             this.listBox8.Location = new System.Drawing.Point(6, 189);
             this.listBox8.Name = "listBox8";
             this.listBox8.Size = new System.Drawing.Size(112, 102);
@@ -392,9 +392,9 @@
             this.listBox11.FormattingEnabled = true;
             this.listBox11.ItemHeight = 14;
             this.listBox11.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                           "Hồng",
+                                                           "Thanh",
+                                                           "Hùng"});
             this.listBox11.Location = new System.Drawing.Point(6, 38);
             this.listBox11.Name = "listBox11";
             this.listBox11.Size = new System.Drawing.Size(112, 102);
@@ -414,9 +414,9 @@
             this.listBox10.FormattingEnabled = true;
             this.listBox10.ItemHeight = 14;
             this.listBox10.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                           "Hoa",
+                                                           "Diễm",
+                                                           "Quốc"});
             this.listBox10.Location = new System.Drawing.Point(6, 189);
             this.listBox10.Name = "listBox10";
             this.listBox10.Size = new System.Drawing.Size(112, 102);
@@ -451,9 +451,9 @@
             this.listBox13.FormattingEnabled = true;
             this.listBox13.ItemHeight = 14;
             this.listBox13.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                           "Hồng",
+                                                           "Thanh",
+                                                           "Hùng"});
             this.listBox13.Location = new System.Drawing.Point(6, 38);
             this.listBox13.Name = "listBox13";
             this.listBox13.Size = new System.Drawing.Size(112, 102);
@@ -473,9 +473,9 @@
             this.listBox12.FormattingEnabled = true;
             this.listBox12.ItemHeight = 14;
             this.listBox12.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                           "Hoa",
+                                                           "Diễm",
+                                                           "Quốc"});
             this.listBox12.Location = new System.Drawing.Point(6, 189);
             this.listBox12.Name = "listBox12";
             this.listBox12.Size = new System.Drawing.Size(112, 102);
@@ -510,9 +510,9 @@
             this.listBox15.FormattingEnabled = true;
             this.listBox15.ItemHeight = 14;
             this.listBox15.Items.AddRange(new object[] {
-            "Hồng",
-            "Thanh",
-            "Hùng"});
+                                                           "Hồng",
+                                                           "Thanh",
+                                                           "Hùng"});
             this.listBox15.Location = new System.Drawing.Point(6, 38);
             this.listBox15.Name = "listBox15";
             this.listBox15.Size = new System.Drawing.Size(112, 102);
@@ -532,9 +532,9 @@
             this.listBox14.FormattingEnabled = true;
             this.listBox14.ItemHeight = 14;
             this.listBox14.Items.AddRange(new object[] {
-            "Hoa",
-            "Diễm",
-            "Quốc"});
+                                                           "Hoa",
+                                                           "Diễm",
+                                                           "Quốc"});
             this.listBox14.Location = new System.Drawing.Point(6, 189);
             this.listBox14.Name = "listBox14";
             this.listBox14.Size = new System.Drawing.Size(112, 102);
@@ -573,12 +573,12 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hồngToolStripMenuItem,
-            this.hoaToolStripMenuItem,
-            this.hùngToolStripMenuItem,
-            this.thanhToolStripMenuItem,
-            this.diễmToolStripMenuItem,
-            this.quốcToolStripMenuItem});
+                                                                                               this.hồngToolStripMenuItem,
+                                                                                               this.hoaToolStripMenuItem,
+                                                                                               this.hùngToolStripMenuItem,
+                                                                                               this.thanhToolStripMenuItem,
+                                                                                               this.diễmToolStripMenuItem,
+                                                                                               this.quốcToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(105, 136);
             // 

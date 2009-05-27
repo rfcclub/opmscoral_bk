@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsSale
+﻿namespace CoralPOSServer.View.GoodsSale
 {
     partial class GoodsSaleForm
     {
@@ -199,24 +199,24 @@
             this.dgvBill.AutoGenerateColumns = false;
             this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Product,
-            this.dataGridViewTextBoxColumn2,
-            this.quantityDataGridViewTextBoxColumn1,
-            this.priceDataGridViewTextBoxColumn,
-            this.Column1,
-            this.noteDataGridViewTextBoxColumn,
-            this.purchaseOrderDetailIdDataGridViewTextBoxColumn,
-            this.productMasterDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.createDateDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.updateDateDataGridViewTextBoxColumn,
-            this.updateIdDataGridViewTextBoxColumn,
-            this.exclusiveKeyDataGridViewTextBoxColumn,
-            this.delFlgDataGridViewTextBoxColumn,
-            this.purchaseOrderDataGridViewTextBoxColumn,
-            this.taxDataGridViewTextBoxColumn});
+                                                                                            this.Product,
+                                                                                            this.dataGridViewTextBoxColumn2,
+                                                                                            this.quantityDataGridViewTextBoxColumn1,
+                                                                                            this.priceDataGridViewTextBoxColumn,
+                                                                                            this.Column1,
+                                                                                            this.noteDataGridViewTextBoxColumn,
+                                                                                            this.purchaseOrderDetailIdDataGridViewTextBoxColumn,
+                                                                                            this.productMasterDataGridViewTextBoxColumn,
+                                                                                            this.dataGridViewTextBoxColumn3,
+                                                                                            this.dataGridViewTextBoxColumn4,
+                                                                                            this.createDateDataGridViewTextBoxColumn,
+                                                                                            this.createIdDataGridViewTextBoxColumn,
+                                                                                            this.updateDateDataGridViewTextBoxColumn,
+                                                                                            this.updateIdDataGridViewTextBoxColumn,
+                                                                                            this.exclusiveKeyDataGridViewTextBoxColumn,
+                                                                                            this.delFlgDataGridViewTextBoxColumn,
+                                                                                            this.purchaseOrderDataGridViewTextBoxColumn,
+                                                                                            this.taxDataGridViewTextBoxColumn});
             this.dgvBill.DataSource = this.bdsBill;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;

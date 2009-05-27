@@ -13,10 +13,9 @@ using CoralPOS.Interfaces.Presenter.GoodsIO.MainStock;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
 using CoralPOS.Interfaces.View.GoodsIO.MainStock;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 using CoralPOS.Common;
 
-namespace CoralPOSClient.View.GoodsIO.MainStock
+namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     public partial class MainStockInSearchForm : BaseForm, IMainStockInSearchView
     {

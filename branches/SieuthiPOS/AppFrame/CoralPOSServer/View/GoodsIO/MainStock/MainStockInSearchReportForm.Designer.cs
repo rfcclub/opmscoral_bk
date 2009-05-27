@@ -1,4 +1,4 @@
-﻿namespace CoralPOSClient.View.GoodsIO.MainStock
+﻿namespace CoralPOSServer.View.GoodsIO.MainStock
 {
     partial class MainStockInSearchReportForm
     {
@@ -94,15 +94,15 @@
             this.dgvProduct.AutoGenerateColumns = false;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Product,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.quantityDataGridViewTextBoxColumn,
-            this.onStorePriceDataGridViewTextBoxColumn,
-            this.createIdDataGridViewTextBoxColumn,
-            this.createDateDataGridViewTextBoxColumn,
-            this.DelFlg});
+                                                                                               this.Product,
+                                                                                               this.Column1,
+                                                                                               this.Column2,
+                                                                                               this.Column3,
+                                                                                               this.quantityDataGridViewTextBoxColumn,
+                                                                                               this.onStorePriceDataGridViewTextBoxColumn,
+                                                                                               this.createIdDataGridViewTextBoxColumn,
+                                                                                               this.createDateDataGridViewTextBoxColumn,
+                                                                                               this.DelFlg});
             this.dgvProduct.DataSource = this.bdsStockIn;
             this.dgvProduct.Location = new System.Drawing.Point(14, 90);
             this.dgvProduct.Name = "dgvProduct";

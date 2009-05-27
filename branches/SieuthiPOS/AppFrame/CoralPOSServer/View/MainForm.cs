@@ -16,18 +16,17 @@ using CoralPOS.Interfaces.View.Reports;
 using CoralPOS;
 using CoralPOS.Common;
 using CoralPOS.Utility;
-using CoralPOSClient.View;
-using CoralPOSClient.View.GoodsIO.DepartmentStockData;
-using CoralPOSClient.View.GoodsIO.MainStock;
-using CoralPOSClient.View.GoodsSale;
-using CoralPOSClient.View.Inventory;
-using CoralPOSClient.View.Reports;
-using CoralPOSClient.View.SalePoints;
+using CoralPOSServer.View.GoodsIO;
+using CoralPOSServer.View.GoodsIO.DepartmentStockData;
+using CoralPOSServer.View.GoodsIO.MainStock;
+using CoralPOSServer.View.GoodsSale;
+using CoralPOSServer.View.Inventory;
+using CoralPOSServer.View.Reports;
+using CoralPOSServer.View.SalePoints;
 using ImportPOSData;
 using POSReports;
 using Spring.Context;
 using Spring.Context.Support;
-using CoralPOSClient.View.GoodsIO;
 
 namespace CoralPOSServer.View
 {

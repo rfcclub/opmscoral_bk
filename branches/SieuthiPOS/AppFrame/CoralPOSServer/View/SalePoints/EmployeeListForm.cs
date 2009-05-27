@@ -15,7 +15,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View.SalePoints;
 using BarcodeLib;
 
-namespace CoralPOSClient.View.SalePoints
+namespace CoralPOSServer.View.SalePoints
 {
     public partial class EmployeeListForm : BaseForm,IEmployeeListView
     {
@@ -167,39 +167,39 @@ namespace CoralPOSClient.View.SalePoints
             {
 
 
-            string code = printArray[i].EmployeePK.EmployeeId;
-            BarcodeLib.Barcode barcode = new Barcode();
-            string employeeName = printArray[i].EmployeeName;
-            Image imageBC = barcode.Encode(BarcodeLib.TYPE.CODE39, code, Color.Black, Color.White, (int)(1.35 * e.Graphics.DpiX), (int)(0.45 * e.Graphics.DpiY));
+                string code = printArray[i].EmployeePK.EmployeeId;
+                BarcodeLib.Barcode barcode = new Barcode();
+                string employeeName = printArray[i].EmployeeName;
+                Image imageBC = barcode.Encode(BarcodeLib.TYPE.CODE39, code, Color.Black, Color.White, (int)(1.35 * e.Graphics.DpiX), (int)(0.45 * e.Graphics.DpiY));
             
 
 
-            Bitmap bitmap1 = new Bitmap(imageBC);
-            bitmap1.SetResolution(204, 204);
+                Bitmap bitmap1 = new Bitmap(imageBC);
+                bitmap1.SetResolution(204, 204);
             
-            e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            e.Graphics.CompositingQuality = CompositingQuality.HighQuality;
+                e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+                e.Graphics.CompositingQuality = CompositingQuality.HighQuality;
 
-            // draw title string
+                // draw title string
 
-            // calculate scale for title
-            var titleStrSize = e.Graphics.MeasureString(employeeName+ "0000", new Font("Arial", 10));
-            float currTitleSize = new Font("Arial", 10).Size;
-            float scaledTitleSize = (150 * currTitleSize) / titleStrSize.Width;
-            Font _empFont = null;
-            if (employeeName.Length < 17)
-            {
-                _empFont = new Font("Arial", 7);
-            }
-            else
-            {
-                _empFont = new Font("Arial", scaledTitleSize);                
-            }
-            Font _titleFont = new Font("Arial", 7);
+                // calculate scale for title
+                var titleStrSize = e.Graphics.MeasureString(employeeName+ "0000", new Font("Arial", 10));
+                float currTitleSize = new Font("Arial", 10).Size;
+                float scaledTitleSize = (150 * currTitleSize) / titleStrSize.Width;
+                Font _empFont = null;
+                if (employeeName.Length < 17)
+                {
+                    _empFont = new Font("Arial", 7);
+                }
+                else
+                {
+                    _empFont = new Font("Arial", scaledTitleSize);                
+                }
+                Font _titleFont = new Font("Arial", 7);
 
-            var barCodeSize = e.Graphics.MeasureString(code, _titleFont);
-            var empCodeSize = e.Graphics.MeasureString(employeeName, _empFont);
-            /*Bitmap bitmapName = new Bitmap(nameString, true);
+                var barCodeSize = e.Graphics.MeasureString(code, _titleFont);
+                var empCodeSize = e.Graphics.MeasureString(employeeName, _empFont);
+                /*Bitmap bitmapName = new Bitmap(nameString, true);
             Bitmap bitmapPrice = new Bitmap(priceString, true);*/
             
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using CoralPOS.Interfaces.Model;
 
-namespace CoralPOSClient.View
+namespace CoralPOSServer.View
 {
     public partial class PosLogDetailForm : Form
     {

@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CoralPOS.Interfaces.Presenter.GoodsIO
+namespace CoralPOSServer.View.Masters
 {
     public partial class SupplierInput : Form
     {
