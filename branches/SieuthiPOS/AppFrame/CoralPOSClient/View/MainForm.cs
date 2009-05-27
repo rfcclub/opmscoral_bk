@@ -16,6 +16,7 @@ using CoralPOS.Interfaces.View.Reports;
 using CoralPOS;
 using CoralPOS.Common;
 using CoralPOS.Utility;
+using CoralPOSClient.Common;
 using CoralPOSClient.View.GoodsIO.DepartmentStockData;
 using CoralPOSClient.View.GoodsIO.MainStock;
 using CoralPOSClient.View.GoodsSale;
@@ -571,13 +572,13 @@ namespace CoralPOSClient.View
         private void MainForm_Load(object sender, EventArgs e)
         {
             Stream inStream = null;
-            if(ClientSetting.IsClient())
+            if(ClientSetting.Instance.IsClient())
             {
                 inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ClientMenuPermissions.xml");    
             }
             else
             {
-                if(ClientSetting.IsServer())
+                if (ClientSetting.Instance.IsServer())
                 {
                     inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ServerMenuPermissions.xml");    
                 }
@@ -603,7 +604,7 @@ namespace CoralPOSClient.View
 
         private void CheckClientServer()
         {
-            if(!ClientSetting.IsClient() && !ClientSetting.IsServer())
+            if (!ClientSetting.Instance.IsClient() && !ClientSetting.Instance.IsServer())
             {
                 new ClientServerSettingForm().Show();                
             }

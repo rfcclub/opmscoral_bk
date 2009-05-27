@@ -296,14 +296,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Utility\ClientUtility.cs" />
     <Compile Include="Utility\Dummy.cs" />
     <Compile Include="Utility\Mapper\DepartmentMapper.cs" />
-    <Compile Include="Utility\Mapper\DeptRetProdStockInDetailMapper.cs" />
-    <Compile Include="Utility\Mapper\DeptRetProdStockInMapper.cs" />
     <Compile Include="Utility\Mapper\EmployeeTransform.cs" />
-    <Compile Include="Utility\Mapper\StockOutDetailMapper.cs" />
-    <Compile Include="Utility\Mapper\StockOutMapper.cs" />
     <Compile Include="ViewModel\DepartmentStockDefectCollection.cs" />
     <Compile Include="ViewModel\DepartmentStockInResultDetail.cs" />
     <Compile Include="ViewModel\DepartmentStockInResultDetailCollection.cs" />

@@ -7,6 +7,7 @@ using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
 using CoralPOS;
 using CoralPOS.Common;
+using CoralPOSClient.Common;
 using CoralPOSClient.View;
 using CoralPOSClient.View.GoodsIO;
 using CoralPOSClient.View.GoodsIO.DepartmentStockData;
@@ -31,7 +32,7 @@ namespace CoralPOSClient
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            if(!ClientSetting.IsClient() && !ClientSetting.IsServer())
+            if (!ClientSetting.Instance.IsClient() && !ClientSetting.Instance.IsServer())
             {
                 ClientServerSettingForm clientServerSettingForm = new ClientServerSettingForm();
                 clientServerSettingForm.ShowDialog();

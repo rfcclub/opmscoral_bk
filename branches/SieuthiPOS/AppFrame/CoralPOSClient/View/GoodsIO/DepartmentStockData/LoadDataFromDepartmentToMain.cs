@@ -17,8 +17,8 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Common;
 using CoralPOS.Utility;
+using CoralPOSClient.Common;
 using ArrayList=System.Collections.ArrayList;
 
 namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
@@ -32,7 +32,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 
         private bool CheckPOSSyncDriveExist()
         {
-            IList list = ClientUtility.GetPOSSyncDrives();
+            IList list = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance);
             if (list.Count == 0)
             {
                 MessageBox.Show("Không có USB đồng bộ nào");
@@ -50,7 +50,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         {
             if(!CheckPOSSyncDriveExist())
                 return;
-            string POSSyncDrive = ClientUtility.GetPOSSyncDrives()[0].ToString();
+            string POSSyncDrive = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance)[0].ToString();
             DialogResult dResult = MessageBox.Show(
                 "Bạn muốn đồng bộ từ cửa hàng ? ",
                 "Đồng bộ", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -61,12 +61,12 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 
             var configurationAppSettings = new AppSettingsReader();
             //var importPath = (string)configurationAppSettings.GetValue("SyncImportPath", typeof(String));
-            var importPath = POSSyncDrive + ClientSetting.SyncImportPath;
+            var importPath = POSSyncDrive + ClientSetting.Instance.SyncImportPath;
             //var successPath = (string)configurationAppSettings.GetValue("SyncImportSuccessPath", typeof(String));
             //var errorPath = (string)configurationAppSettings.GetValue("SyncImportErrorPath", typeof(String));
 
-            var successPath = POSSyncDrive + ClientSetting.SyncSuccessPath;
-            var errorPath = POSSyncDrive + ClientSetting.SyncErrorPath;
+            var successPath = POSSyncDrive + ClientSetting.Instance.SyncSuccessPath;
+            var errorPath = POSSyncDrive + ClientSetting.Instance.SyncErrorPath;
             // get import path of this department
             
             if (string.IsNullOrEmpty(importPath) || !Directory.Exists(importPath))

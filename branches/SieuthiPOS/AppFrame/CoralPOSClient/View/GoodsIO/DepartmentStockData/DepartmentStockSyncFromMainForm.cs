@@ -18,7 +18,7 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Common;
+using CoralPOSClient.Common;
 using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
 using CoralPOS.Utility;
 
@@ -155,7 +155,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         }
         private bool CheckPOSSyncDriveExist()
         {
-            IList list = ClientUtility.GetPOSSyncDrives();
+            IList list = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance);
             if (list.Count == 0)
             {
                 MessageBox.Show("Không có USB đồng bộ nào");
@@ -175,7 +175,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
                 return;
             }
                 
-            string POSSyncDrive = ClientUtility.GetPOSSyncDrives()[0].ToString();
+            string POSSyncDrive = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance)[0].ToString();
             DialogResult dResult = MessageBox.Show(
                 "Bạn muốn nhập hàng cho cửa hàng ? ",
                 "Nhập hàng cho cửa hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -186,9 +186,9 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 
             var configurationAppSettings = new AppSettingsReader();
             //var importPath = (string)configurationAppSettings.GetValue("SyncImportPath", typeof(String));
-            var importPath = POSSyncDrive + ClientSetting.SyncImportPath;
-            var successPath = POSSyncDrive + ClientSetting.SyncSuccessPath;
-            var errorPath = POSSyncDrive + ClientSetting.SyncErrorPath;
+            var importPath = POSSyncDrive + ClientSetting.Instance.SyncImportPath;
+            var successPath = POSSyncDrive + ClientSetting.Instance.SyncSuccessPath;
+            var errorPath = POSSyncDrive + ClientSetting.Instance.SyncErrorPath;
             // get import path of this department
             importPath = importPath + "\\" + CurrentDepartment.Get().DepartmentId;
             //errorPath = ClientUtility.EnsureSyncPath(errorPath, CurrentDepartment.Get());

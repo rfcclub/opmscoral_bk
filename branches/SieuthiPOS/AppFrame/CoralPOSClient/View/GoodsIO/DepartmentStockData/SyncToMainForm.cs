@@ -18,8 +18,8 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Common;
 using CoralPOS.Utility;
+using CoralPOSClient.Common;
 
 namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 {
@@ -34,7 +34,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         {
             if(!CheckPOSSyncDriveExist())
                 return;
-            string POSSyncDrive = ClientUtility.GetPOSSyncDrives()[0].ToString();
+            string POSSyncDrive = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance)[0].ToString();
             bool isConfirmPeriod = false;
             DialogResult dResult = MessageBox.Show(
                 "Bạn xác định kết sổ cho ngày hôm nay ? Nếu phải, bấm Yes, còn nếu không, bấm No. Không làm gì, bấm Cancel",
@@ -52,7 +52,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             // sync
             var configurationAppSettings = new AppSettingsReader();
             syncResultBindingSource.DataSource = null;
-            var exportPath = POSSyncDrive + ClientSetting.SyncExportPath;
+            var exportPath = POSSyncDrive + ClientSetting.Instance.SyncExportPath;
             
             if (string.IsNullOrEmpty(exportPath) || !Directory.Exists(exportPath))
             {
@@ -63,7 +63,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             try
             {
                 // dump db
-                ClientUtility.DumpDatabase();
+                ClientUtility.DumpDatabase(ClientSetting.Instance);
                 exportPath = ClientUtility.EnsureSyncPath(exportPath, CurrentDepartment.Get());
                 // get last sync time
                 DateTime lastSyncTime = ClientUtility.GetLastSyncTime(exportPath, CurrentDepartment.Get(),ClientUtility.SyncType.SyncUp);
@@ -119,7 +119,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 
         private bool CheckPOSSyncDriveExist()
         {
-            IList list = ClientUtility.GetPOSSyncDrives();
+            IList list = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance);
             if(list.Count == 0)
             {
                 MessageBox.Show("Không có USB đồng bộ nào");
@@ -162,7 +162,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             {
                 return;
             }
-            string POSSyncDrive = ClientUtility.GetPOSSyncDrives()[0].ToString();
+            string POSSyncDrive = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance)[0].ToString();
             DialogResult dResult = MessageBox.Show(
                 "Bạn muốn đồng bộ thông tin từ cửa hàng ?",
                 "Đồng bộ", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -177,9 +177,9 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
             //var successPath = (string)configurationAppSettings.GetValue("SyncImportSuccessPath", typeof(String));
             //var errorPath = (string)configurationAppSettings.GetValue("SyncImportErrorPath", typeof(String));
 
-            var importPath = POSSyncDrive +ClientSetting.SyncImportPath;
-            var successPath = POSSyncDrive + ClientSetting.SyncSuccessPath;
-            var errorPath = POSSyncDrive + ClientSetting.SyncErrorPath;
+            var importPath = POSSyncDrive +ClientSetting.Instance.SyncImportPath;
+            var successPath = POSSyncDrive + ClientSetting.Instance.SyncSuccessPath;
+            var errorPath = POSSyncDrive + ClientSetting.Instance.SyncErrorPath;
 
 
             if (string.IsNullOrEmpty(importPath) || !Directory.Exists(importPath))

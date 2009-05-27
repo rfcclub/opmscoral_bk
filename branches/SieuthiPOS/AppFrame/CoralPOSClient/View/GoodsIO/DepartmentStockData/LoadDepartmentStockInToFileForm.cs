@@ -18,7 +18,7 @@ using CoralPOS.Interfaces.Presenter.GoodsIO;
 using CoralPOS.Interfaces.Presenter.GoodsIO.DepartmentGoodsIO;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View.GoodsIO.DepartmentGoodsIO;
-using CoralPOS.Common;
+using CoralPOSClient.Common;
 using CoralPOSClient.Presenter.GoodsIO.DepartmentStockData;
 using CoralPOS.Utility;
 
@@ -90,7 +90,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 
         private bool CheckPOSSyncDriveExist()
         {
-            IList list = ClientUtility.GetPOSSyncDrives();
+            IList list = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance);
             if (list.Count == 0)
             {
                 MessageBox.Show("Không có USB đồng bộ nào");
@@ -107,7 +107,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
         {
             if(!CheckPOSSyncDriveExist())
                 return;
-            string POSSyncDrive = ClientUtility.GetPOSSyncDrives()[0].ToString();
+            string POSSyncDrive = ClientUtility.GetPOSSyncDrives(ClientSetting.Instance)[0].ToString();
             DialogResult dResult = MessageBox.Show(
                 "Bạn muốn xuất hàng cho cửa hàng ? ",
                 "Xuất hàng cho cửa hàng", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
@@ -118,7 +118,7 @@ namespace CoralPOSClient.View.GoodsIO.DepartmentStockData
 
             var configurationAppSettings = new AppSettingsReader();
             //var exportPath = (string)configurationAppSettings.GetValue("SyncExportPath", typeof(String));
-            var configExportPath = POSSyncDrive + ClientSetting.SyncExportPath;
+            var configExportPath = POSSyncDrive + ClientSetting.Instance.SyncExportPath;
             if (string.IsNullOrEmpty(configExportPath) || !Directory.Exists(configExportPath))
             {
                 MessageBox.Show("Không thể tìm thấy đường dẫn đến thư mục " + configExportPath + "!Hãy kiễm tra file cấu hình phần SyncExportPath");

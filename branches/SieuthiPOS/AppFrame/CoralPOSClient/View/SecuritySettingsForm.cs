@@ -13,7 +13,7 @@ using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.Presenter;
 using AppFrame.Utility;
 using CoralPOS.Interfaces.View;
-using CoralPOS.Common;
+using CoralPOSClient.Common;
 
 namespace CoralPOSClient.View
 {
@@ -58,7 +58,7 @@ namespace CoralPOSClient.View
 
         private void SecuritySettings_Load(object sender, EventArgs e)
         {
-            if(ClientSetting.IsClient())
+            if(ClientSetting.Instance.IsClient())
             {
                 btnCreateFromEmployee.Enabled = false;
                 btnCreateNew.Enabled = false;

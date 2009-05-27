@@ -8,7 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CoralPOS.Common;
+using CoralPOSClient.Common;
 
 namespace CoralPOSClient.View
 {
@@ -21,20 +21,20 @@ namespace CoralPOSClient.View
 
         private void SettingForm_Load(object sender, EventArgs e)
         {   
-            ClientSetting.Reload();
+            ClientSetting.Instance.Reload();
             cboPrinters.Items.Clear();
-            txtSyncImportPath.Text = ClientSetting.SyncImportPath;
-            txtSyncExportPath.Text = ClientSetting.SyncExportPath;
-            txtSyncErrorPath.Text = ClientSetting.SyncErrorPath;
-            txtSyncSuccessPath.Text = ClientSetting.SyncSuccessPath;
-            txtBackupDB.Text = ClientSetting.DBBackupPath;
-            txtMySQLDump.Text = ClientSetting.MySQLDumpPath;
+            txtSyncImportPath.Text = ClientSetting.Instance.SyncImportPath;
+            txtSyncExportPath.Text = ClientSetting.Instance.SyncExportPath;
+            txtSyncErrorPath.Text = ClientSetting.Instance.SyncErrorPath;
+            txtSyncSuccessPath.Text = ClientSetting.Instance.SyncSuccessPath;
+            txtBackupDB.Text = ClientSetting.Instance.DBBackupPath;
+            txtMySQLDump.Text = ClientSetting.Instance.MySQLDumpPath;
             PrinterSettings.StringCollection printerNames = PrinterSettings.InstalledPrinters;
             foreach (string printerName in printerNames)
             {
                 cboPrinters.Items.Add(printerName);    
             }
-            cboPrinters.SelectedItem = ClientSetting.PrinterName;
+            cboPrinters.SelectedItem = ClientSetting.Instance.PrinterName;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -46,17 +46,17 @@ namespace CoralPOSClient.View
                 MessageBox.Show("Không thể tìm ra đường dẫn file backup dữ liệu.");
                 return;
             }
-            ClientSetting.DBBackupPath = txtBackupDB.Text;
-            ClientSetting.MySQLDumpPath = txtMySQLDump.Text;
-            ClientSetting.SyncImportPath = txtSyncImportPath.Text;
-            ClientSetting.SyncExportPath =txtSyncExportPath.Text;
-            ClientSetting.SyncErrorPath = txtSyncErrorPath.Text;
-            ClientSetting.SyncSuccessPath = txtSyncSuccessPath.Text;
-            ClientSetting.PrinterName = (string)cboPrinters.SelectedItem;
-            ClientSetting.Save();
+            ClientSetting.Instance.DBBackupPath = txtBackupDB.Text;
+            ClientSetting.Instance.MySQLDumpPath = txtMySQLDump.Text;
+            ClientSetting.Instance.SyncImportPath = txtSyncImportPath.Text;
+            ClientSetting.Instance.SyncExportPath = txtSyncExportPath.Text;
+            ClientSetting.Instance.SyncErrorPath = txtSyncErrorPath.Text;
+            ClientSetting.Instance.SyncSuccessPath = txtSyncSuccessPath.Text;
+            ClientSetting.Instance.PrinterName = (string)cboPrinters.SelectedItem;
+            ClientSetting.Instance.Save();
             
             MessageBox.Show("Lưu cấu hình thành công!");
-            ClientSetting.Reload();
+            ClientSetting.Instance.Reload();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -66,13 +66,13 @@ namespace CoralPOSClient.View
 
         private void btnDefault_Click(object sender, EventArgs e)
         {
-            ClientSetting.Reset();
-            ClientSetting.Reload();
+            ClientSetting.Instance.Reset();
+            ClientSetting.Instance.Reload();
         }
 
         private void SettingForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ClientSetting.Save();
+            ClientSetting.Instance.Save();
         }
 
         private void btnExportPath_Click(object sender, EventArgs e)
