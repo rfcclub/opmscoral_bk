@@ -1,0 +1,236 @@
+using System.Collections;
+using System.Windows.Forms;
+using AppFrame.Common;
+using CoralPOS.Interfaces.Logic;
+using CoralPOS.Interfaces.Model;
+using CoralPOS.Interfaces.Presenter.SalePoints;
+using AppFrame.Utility;
+using CoralPOS.Interfaces.View.SalePoints;
+using CoralPOS.Utility.Mapper;
+using CoralPOS.Common;
+using CoralPOSClient.View.SalePoints;
+
+namespace CoralPOSClient.Presenter.SalePoints
+{
+    public class EmployeeController : IEmployeeController
+    {
+
+        private Employee employeeModel;
+
+        #region IEmployeeController<EmployeeEventArgs> Members
+
+        private IEmployeeView employeeView;
+        public CoralPOS.Interfaces.View.SalePoints.IEmployeeView EmployeeView
+        {
+            get
+            {
+                return employeeView;
+            }
+            set
+            {
+                employeeView = value;
+                //employeeView.CloseEmployeeFormEvent += new System.EventHandler<EmployeeEventArgs>(employeeView_CloseEmployeeFormEvent);
+                employeeView.HelpEvent += new System.EventHandler<EmployeeEventArgs>(employeeView_HelpEvent);
+                employeeView.ResetEmployeeEvent += new System.EventHandler<EmployeeEventArgs>(employeeView_ResetEmployeeEvent);
+                employeeView.SaveEmployeeEvent += new System.EventHandler<EmployeeEventArgs>(employeeView_SaveEmployeeEvent);
+            }
+        }
+
+        private ISalePointView salePointView;
+        public ISalePointView SalePointView
+        {
+            get
+            {
+                return salePointView;
+            }
+            set
+            {
+                salePointView = value;
+                salePointView.AddEmployeeEvent += new System.EventHandler<EmployeeEventArgs>(salePointView_AddEmployeeEvent);
+                //salePointView.EditEmployeeEvent += new System.EventHandler<EmployeeEventArgs>(salePointView_EditEmployeeEvent);
+            }
+        }
+
+        void salePointView_EditEmployeeEvent(object sender, EmployeeEventArgs e)
+        {
+            
+        }
+
+        void salePointView_AddEmployeeEvent(object sender, EmployeeEventArgs e)
+        {
+            /*EmployeeForm form = GlobalUtility.GetOnlyChildFormObject <EmployeeForm>(GlobalCache.Instance().MainForm,
+                                                   FormConstants.EMPLOYEE_FORM);*/
+            EmployeeForm form = GlobalUtility.GetFormObject<EmployeeForm>(FormConstants.EMPLOYEE_FORM);
+            EmployeeInfoModel = e.EmployeeInfo;
+            form.txtDepartmentName.Text = EmployeeInfoModel.Employee.Department.DepartmentName;
+            form.ShowDialog(((Form) sender));
+            //GlobalUtility.ShowForm(form);
+            e.AddedEmployee = EmployeeInfoModel;
+        }
+
+        
+        
+        void employeeView_SaveEmployeeEvent(object sender, EmployeeEventArgs e)
+        {
+            ResultEventArgs = e;
+            ResultEventArgs.EmployeeInfo = EmployeeInfoModel;
+            int selectedEmployee = e.SelectedEmployee;
+            ResultEventArgs.SelectedEmployee = selectedEmployee;
+            
+            EmployeeDetailLogic.Add(e.EmployeeInfo);
+            
+            /*if (selectedEmployee == -1)
+            {
+                EventUtility.fireEvent(CompletedAddEmployeeEvent, this, ResultEventArgs);
+            }
+            else
+            {
+                EventUtility.fireEvent(CompletedEditEmployeeEvent, this, ResultEventArgs);    
+            }*/
+        }
+
+        void employeeView_ResetEmployeeEvent(object sender, EmployeeEventArgs e)
+        {
+            EventUtility.fireEvent(CompletedResetEmployeeEvent, this, ResultEventArgs);
+        }
+
+        void employeeView_HelpEvent(object sender, EmployeeEventArgs e)
+        {
+            EventUtility.fireEvent(CompletedHelpEvent, this, ResultEventArgs);
+        }
+
+        void employeeView_CloseEmployeeFormEvent(object sender, EmployeeEventArgs e)
+        {
+            EventUtility.fireEvent(CompletedCloseEmployeeFormEvent,this,ResultEventArgs);
+        }
+        
+
+        private IEmployeeLogic employeeLogic;
+        public IEmployeeLogic EmployeeLogic
+        {
+            get
+            {
+                return employeeLogic;
+            }
+            set
+            {
+                employeeLogic = value;
+            }
+        }
+
+        private IEmployeeDetailLogic employeeDetailLogic;
+        public IEmployeeDetailLogic EmployeeDetailLogic
+        {
+            get
+            {
+                return employeeDetailLogic;
+            }
+            set
+            {
+                employeeDetailLogic = value;
+            }
+        }
+
+        public event System.EventHandler<EmployeeEventArgs> CompletedSaveEmployeeEvent;
+
+        public event System.EventHandler<EmployeeEventArgs> CompletedResetEmployeeEvent;
+
+        public event System.EventHandler<EmployeeEventArgs> CompletedCloseEmployeeFormEvent;
+
+        public event System.EventHandler<EmployeeEventArgs> CompletedHelpEvent;
+
+        #endregion
+
+        #region IBaseController<EmployeeEventArgs> Members
+
+        private EmployeeEventArgs resultEventArgs;
+        public EmployeeEventArgs ResultEventArgs
+        {
+            get
+            {
+                return resultEventArgs;
+            }
+            set
+            {
+                resultEventArgs = value;
+            }
+        }
+
+        public Employee EmployeeModel
+        {
+            get { return employeeModel; }
+            set { employeeModel = value; }
+        }
+
+        #endregion
+
+
+
+        #region IEmployeeController Members
+
+
+        public event System.EventHandler<EmployeeEventArgs> CompletedAddEmployeeEvent;
+
+        #endregion
+
+        #region IEmployeeController Members
+
+        private EmployeeInfo employeeInfo;
+        public EmployeeInfo EmployeeInfoModel
+        {
+            get
+            {
+                return employeeInfo;
+            }
+            set
+            {
+                employeeInfo = value;
+            }
+        }
+
+        #endregion
+
+        #region IEmployeeController Members
+
+
+        public event System.EventHandler<EmployeeEventArgs> CompletedEditEmployeeEvent;
+
+        #endregion
+
+        #region IEmployeeController Members
+
+        public IEmployeeListView employeeListView;
+        public IEmployeeListView EmployeeListView
+        {
+            get
+            {
+                return employeeListView;
+            }
+            set
+            {
+                employeeListView = value;
+                employeeListView.LoadEmployeesEvent += new System.EventHandler<EmployeeEventArgs>(employeeListView_LoadEmployeesEvent);
+                employeeListView.EditEmployeeEvent += new System.EventHandler<EmployeeEventArgs>(employeeListView_EditEmployeeEvent);
+            }
+        }
+
+        void employeeListView_EditEmployeeEvent(object sender, EmployeeEventArgs e)
+        {
+            EmployeeForm form = GlobalUtility.GetFormObject<EmployeeForm>(FormConstants.EMPLOYEE_FORM);
+            EmployeeInfoModel = e.EmployeeInfo;
+            form.ModelToForm();
+            form.txtHiddenSelectedEmployeeId.Text = e.SelectedEmployee.ToString();
+            form.Status = ViewStatus.OPENDIALOG;
+            form.ShowDialog((Form)sender);
+            e.EditedEmployee = EmployeeInfoModel;           
+        }
+
+        void employeeListView_LoadEmployeesEvent(object sender, EmployeeEventArgs e)
+        {
+            IList list = EmployeeDetailLogic.FindAll(null);
+            e.EmployeeList = list;
+        }
+
+        #endregion
+    }
+}
