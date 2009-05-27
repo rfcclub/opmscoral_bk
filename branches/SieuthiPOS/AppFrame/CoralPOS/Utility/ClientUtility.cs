@@ -21,15 +21,15 @@ namespace CoralPOS.Utility
 {
     public class ClientUtility
     {
-        public static void DumpDatabase(BaseClientSetting clientSetting)
+        public static void DumpDatabase(IBaseClientSetting clientSetting)
         {
             string mySQLDumpPath = clientSetting.MySQLDumpPath + "\\mysqldump.exe";
             if(!File.Exists(mySQLDumpPath))
             {
                 throw new BusinessException("Tập thực  thi mysqldump không tồn tại trên đường dẫn. Xin xem lại trong cấu hình hệ thống");
             }
-            string POSSyncDrive = ClientUtility.GetPOSSyncDrives()[0].ToString();
-            string dbBackupPath = POSSyncDrive + ClientSetting.DBBackupPath;
+            string POSSyncDrive = ClientUtility.GetPOSSyncDrives(clientSetting)[0].ToString();
+            string dbBackupPath = POSSyncDrive + clientSetting.DBBackupPath;
             if(!Directory.Exists(dbBackupPath))
             {
                 throw new BusinessException("Đường dẫn backup dữ liệu không tồn tại. Xin xem lại trong cấu hình hệ thống");    
@@ -106,34 +106,34 @@ namespace CoralPOS.Utility
             return usbList;
         }
 
-        public static IList GetPOSSyncDrives()
+        public static IList GetPOSSyncDrives(IBaseClientSetting clientSetting)
         {
             IList posSyncDrives = new ArrayList();
             IList usbList = GetUSBDrives();
             foreach (string usbDrive in usbList)
             {
-               if(CheckPOSSyncDrive(usbDrive))
+                if (CheckPOSSyncDrive(usbDrive, clientSetting))
                {
                    posSyncDrives.Add(usbDrive);
                }
             }
             return posSyncDrives;
         }
-        public static bool CheckPOSSyncDrive(string usbDrive)
+        public static bool CheckPOSSyncDrive(string usbDrive,IBaseClientSetting clientSetting)
         {
-            if (!Directory.Exists(usbDrive + ClientSetting.SyncSuccessPath))
+            if (!Directory.Exists(usbDrive + clientSetting.SyncSuccessPath))
             {
                 return false;
             }
-            if (!Directory.Exists(usbDrive + ClientSetting.SyncImportPath))
+            if (!Directory.Exists(usbDrive + clientSetting.SyncImportPath))
             {
                 return false;
             }
-            if (!Directory.Exists(usbDrive + ClientSetting.SyncExportPath))
+            if (!Directory.Exists(usbDrive + clientSetting.SyncExportPath))
             {
                 return false;
             }
-            if (!Directory.Exists(usbDrive + ClientSetting.SyncErrorPath))
+            if (!Directory.Exists(usbDrive + clientSetting.SyncErrorPath))
             {
                 return false;
             }

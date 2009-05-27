@@ -160,9 +160,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Advice\ConfirmDialogDisplayAdvice.cs" />
-    <Compile Include="Advice\MenuPermissionAdvice.cs" />
-    <Compile Include="Advice\UpdateStatusDisplayAdvice.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Common\AppFrameSetting.cs" />
     <Compile Include="Common\AppFrameUser.cs" />
@@ -313,10 +310,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\ClientUtility.cs" />
     <Compile Include="Utility\Dummy.cs" />
-    <Compile Include="Utility\Mapper\DepartmentMapper.cs" />
     <Compile Include="Utility\Mapper\DeptRetProdStockInDetailMapper.cs" />
     <Compile Include="Utility\Mapper\DeptRetProdStockInMapper.cs" />
-    <Compile Include="Utility\Mapper\EmployeeTransform.cs" />
     <Compile Include="Utility\Mapper\StockOutDetailMapper.cs" />
     <Compile Include="Utility\Mapper\StockOutMapper.cs" />
     <Compile Include="ViewModel\DepartmentStockDefectCollection.cs" />
