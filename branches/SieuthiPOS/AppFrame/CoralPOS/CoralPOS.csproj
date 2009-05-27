@@ -143,6 +143,12 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -154,7 +160,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advice\ConfirmDialogDisplayAdvice.cs" />
+    <Compile Include="Advice\MenuPermissionAdvice.cs" />
+    <Compile Include="Advice\UpdateStatusDisplayAdvice.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="Common\AppFrameSetting.cs" />
+    <Compile Include="Common\AppFrameUser.cs" />
+    <Compile Include="Common\BaseClientSetting.cs" />
+    <Compile Include="Common\Code39Ex.cs" />
+    <Compile Include="Common\Code39Settings.cs" />
     <Compile Include="DataLayer\BlockInCostDAOImpl.cs" />
     <Compile Include="DataLayer\BlockInDAOImpl.cs" />
     <Compile Include="DataLayer\BlockInDetailDAOImpl.cs" />
@@ -297,10 +311,40 @@
     <Compile Include="Logic\SyncStatusLogicImpl.cs" />
     <Compile Include="Logic\TaxLogicImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ClientUtility.cs" />
+    <Compile Include="Utility\Dummy.cs" />
+    <Compile Include="Utility\Mapper\DepartmentMapper.cs" />
+    <Compile Include="Utility\Mapper\DeptRetProdStockInDetailMapper.cs" />
+    <Compile Include="Utility\Mapper\DeptRetProdStockInMapper.cs" />
+    <Compile Include="Utility\Mapper\EmployeeTransform.cs" />
+    <Compile Include="Utility\Mapper\StockOutDetailMapper.cs" />
+    <Compile Include="Utility\Mapper\StockOutMapper.cs" />
+    <Compile Include="ViewModel\DepartmentStockDefectCollection.cs" />
+    <Compile Include="ViewModel\DepartmentStockInResultDetail.cs" />
+    <Compile Include="ViewModel\DepartmentStockInResultDetailCollection.cs" />
+    <Compile Include="ViewModel\DepartmentStockOutDetailView.cs" />
+    <Compile Include="ViewModel\DepartmentStockOutDetailViewCollection.cs" />
+    <Compile Include="ViewModel\DepartmentStockOutView.cs" />
+    <Compile Include="ViewModel\DepartmentStockOutViewCollection.cs" />
+    <Compile Include="ViewModel\DepartmentStockTempCollection.cs" />
+    <Compile Include="ViewModel\DepartmentStockTempView.cs" />
+    <Compile Include="ViewModel\DepartmentStockTempViewCollection.cs" />
+    <Compile Include="ViewModel\ProductMasterGlobal.cs" />
+    <Compile Include="ViewModel\PurchaseOrderView.cs" />
+    <Compile Include="ViewModel\StockDefectCollection.cs" />
+    <Compile Include="ViewModel\StockInResultDetail.cs" />
+    <Compile Include="ViewModel\StockInResultDetailCollection.cs" />
+    <Compile Include="ViewModel\StockOutDetailView.cs" />
+    <Compile Include="ViewModel\StockOutDetailViewCollection.cs" />
+    <Compile Include="ViewModel\StockOutView.cs" />
+    <Compile Include="ViewModel\StockOutViewCollection.cs" />
+    <Compile Include="ViewModel\StockView.cs" />
+    <Compile Include="ViewModel\StockViewCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Config\DataLayer.xml" />
     <EmbeddedResource Include="Config\Logic.xml" />
+    <Content Include="Common\dummy.txt" />
     <Content Include="Logic\dummy.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +356,27 @@
       <Project>{A377C470-FB76-423D-A15F-A81B58C1EF31}</Project>
       <Name>CoralPOS.Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\ean13.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\FREE3OF9.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\MW6Code39LT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Common\MW6Code39MT.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Common\MW6Code39S.TTF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
