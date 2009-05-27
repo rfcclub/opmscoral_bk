@@ -37,7 +37,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\CH-KHO")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\KHO-CH")]
         public string SyncImportPath {
             get {
                 return ((string)(this["SyncImportPath"]));
@@ -49,7 +49,7 @@ namespace CoralPOSClient.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\KHO-CH")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\POS\\CH-KHO")]
         public string SyncExportPath {
             get {
                 return ((string)(this["SyncExportPath"]));

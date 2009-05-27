@@ -6,10 +6,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SyncImportPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">\POS\CH-KHO</Value>
+      <Value Profile="(Default)">\POS\KHO-CH</Value>
     </Setting>
     <Setting Name="SyncExportPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">\POS\KHO-CH</Value>
+      <Value Profile="(Default)">\POS\CH-KHO</Value>
     </Setting>
     <Setting Name="SyncErrorPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">\POS\Error</Value>
