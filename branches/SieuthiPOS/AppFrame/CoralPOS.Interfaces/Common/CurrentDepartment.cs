@@ -22,7 +22,7 @@ namespace CoralPOS.Interfaces.Common
             /*if (_currentDepartment == null)
             {*/
             IApplicationContext ctx = ContextRegistry.GetContext();
-            var departmentLogic = ctx.GetObject("AppFrame.Service.IDepartmentLogic") as IDepartmentLogic;
+            var departmentLogic = ctx.GetObject("CoralPOS.Service.IDepartmentLogic") as IDepartmentLogic;
             var criteria = new ObjectCriteria();
             criteria.AddEqCriteria("Active", 1);
             criteria.AddEqCriteria("DelFlg", (long)0);
