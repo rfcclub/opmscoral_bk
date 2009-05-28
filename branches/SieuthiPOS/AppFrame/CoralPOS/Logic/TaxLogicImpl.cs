@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using AppFrame;
 using CoralPOS.Interfaces.Logic;
+using NHibernate.Criterion;
 using Spring.Transaction.Interceptor;
 using CoralPOS.Interfaces.Model;
 using CoralPOS.Interfaces.DataLayer;
@@ -96,6 +98,12 @@ namespace CoralPOS.Logic
         public QueryResult FindPaging(ObjectCriteria criteria)
         {
             return TaxDAO.FindPaging(criteria);
+        }
+
+        public long FindMaxId()
+        {
+            object maxId = TaxDAO.SelectSpecificType(null, Projections.Max("TaxId"));
+            return maxId != null ? (long)maxId : 0;
         }
     }
 }
