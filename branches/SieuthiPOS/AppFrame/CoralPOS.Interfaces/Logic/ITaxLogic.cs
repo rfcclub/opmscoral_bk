@@ -55,5 +55,7 @@ namespace CoralPOS.Interfaces.Logic
         /// <param name="criteria"></param>
         /// <returns></returns>
         QueryResult FindPaging(ObjectCriteria criteria);
+
+        long FindMaxId();
     }
 }

@@ -241,6 +241,7 @@ namespace CoralPOS.Interfaces.Model
         }
         public virtual ProductMaster ProductMaster { get; set; }
         public virtual string Note { get; set; }
+        public virtual long OriginalPrice { get; set; }
         #endregion
         
         #region IComparable Methods

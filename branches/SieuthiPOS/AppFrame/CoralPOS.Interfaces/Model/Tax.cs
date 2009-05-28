@@ -137,7 +137,9 @@ namespace CoralPOS.Interfaces.Model
                 _purchaseOrderDetails = value;
             }
         }
-        
+
+        public virtual long TaxValue { get; set; }
+        public virtual long Active { get; set; }
 
         #endregion
         

@@ -93,6 +93,14 @@
     >
       <column name="PRODUCT_MASTER_ID" />
     </many-to-one>
+    <many-to-one
+      name="Tax"
+      class="Tax"
+      not-null="false"
+      lazy="false"
+    >
+    <column name="TAX_ID" />
+  </many-to-one>
     <!-- bi-directional one-to-many association to StockOutDetail -->
     <bag
         name="StockOutDetails"

@@ -93,6 +93,7 @@
     <Compile Include="Collection\StockInDetailCollection.cs" />
     <Compile Include="Collection\StockOutCollection.cs" />
     <Compile Include="Collection\StockOutDetailCollection.cs" />
+    <Compile Include="Collection\TaxCollection.cs" />
     <Compile Include="Common\CommonConstants.cs" />
     <Compile Include="Common\CurrentDepartment.cs" />
     <Compile Include="DataLayer\Dummy.cs" />
@@ -430,6 +431,7 @@
     <Compile Include="Presenter\IPosLogController.cs" />
     <Compile Include="Presenter\ISecurityController.cs" />
     <Compile Include="Presenter\IStockOutConfirmController.cs" />
+    <Compile Include="Presenter\ITaxChangeController.cs" />
     <Compile Include="Presenter\LoginEventArgs.cs" />
     <Compile Include="Presenter\Masters\IUniversalMasterSaveController.cs" />
     <Compile Include="Presenter\Masters\UniversalMasterSaveEventArgs.cs" />
@@ -446,6 +448,7 @@
     <Compile Include="Presenter\SalePoints\SalePointListEventArgs.cs" />
     <Compile Include="Presenter\SecurityEventArgs.cs" />
     <Compile Include="Presenter\StockOutConfirmEventArgs.cs" />
+    <Compile Include="Presenter\TaxChangeEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\Mapper\BaseUserMapper.cs" />
     <Compile Include="Utility\Mapper\POSMapperRepository.cs" />
@@ -473,6 +476,7 @@
     <Compile Include="View\GoodsIO\IStockCreateView.cs" />
     <Compile Include="View\GoodsIO\IStockOutConfirmView.cs" />
     <Compile Include="View\GoodsIO\IStockSearchView.cs" />
+    <Compile Include="View\GoodsIO\ITaxChangeView.cs" />
     <Compile Include="View\GoodsIO\MainStock\IBaseStockOutView.cs" />
     <Compile Include="View\GoodsIO\MainStock\IInventoryCheckingView.cs" />
     <Compile Include="View\GoodsIO\MainStock\IMainStockInSearchView.cs" />

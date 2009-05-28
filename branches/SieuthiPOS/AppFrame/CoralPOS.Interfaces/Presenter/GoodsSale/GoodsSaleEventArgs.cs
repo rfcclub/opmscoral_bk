@@ -8,6 +8,7 @@ namespace CoralPOS.Interfaces.Presenter.GoodsSale
 {
     public class GoodsSaleEventArgs : BaseEventArgs
     {
+        public bool HasVAT { get; set;}
         public bool NotAvailableInStock { get; set;}
 
         public PurchaseOrder RefPurchaseOrder { get; set;}

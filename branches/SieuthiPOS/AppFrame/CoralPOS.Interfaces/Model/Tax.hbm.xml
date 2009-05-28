@@ -62,11 +62,24 @@
         length="10"
     >
     </property>
-
+  <property
+     name="TaxValue"
+     type="Int64"
+     column="TAX_VALUE"
+     length="10"
+    >
+  </property>
+  <property
+     name="Active"
+     type="Int64"
+     column="ACTIVE"
+     length="10"
+    >
+  </property>
     <!-- Associations -->
   
     <!-- bi-directional one-to-many association to PurchaseOrderDetail -->
-    <bag
+    <!--<bag
         name="PurchaseOrderDetails"
         lazy="true"
         inverse="true"
@@ -78,7 +91,7 @@
         <one-to-many 
             class="PurchaseOrderDetail"
         />
-    </bag>
+    </bag>-->
 
 </class>
 </hibernate-mapping>

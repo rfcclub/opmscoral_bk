@@ -281,7 +281,8 @@ namespace CoralPOS.Interfaces.Model
                 _purchaseOrderDetails = value;
             }
         }
-        
+
+        public virtual Tax Tax { get; set; }
 
         #endregion
         
