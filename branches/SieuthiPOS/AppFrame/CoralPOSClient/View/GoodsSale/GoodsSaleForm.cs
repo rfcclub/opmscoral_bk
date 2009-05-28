@@ -858,6 +858,7 @@ namespace CoralPOSClient.View.GoodsSale
                     try
                     {
                     GoodsSaleEventArgs goodsSaleEventArgs = new GoodsSaleEventArgs();
+                        goodsSaleEventArgs.HasVAT = chkVATBill.Checked;
                     /*int selectedIndex = dgvBill.CurrentCell.OwningRow.Index;
                     goodsSaleEventArgs.SelectedIndex = selectedIndex;*/
                     btnAdd_Click(this, null);
@@ -1493,6 +1494,36 @@ namespace CoralPOSClient.View.GoodsSale
         private void timer1_Tick(object sender, EventArgs e)
         {
             txtWorkingTime.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void chkVATBill_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach (PurchaseOrderDetail detail in pODList)
+            {
+                if(chkVATBill.Checked)
+                {
+                   if(detail.Product.Tax != null && detail.Price > 0)
+                   {
+                       long taxValue = detail.Product.Tax.TaxValue;
+                       detail.Price = detail.Price + (detail.Price * taxValue / 100);
+                   }
+                }
+                else
+                {
+                    if(detail.Price > 0 )
+                    {
+                        detail.Price = detail.OriginalPrice;    
+                    }
+                }
+            }
+                    GoodsSaleController.PurchaseOrder.PurchasePrice = CalculateTotalPrice(pODList);
+                    txtTotalAmount.Text = GoodsSaleController.PurchaseOrder.PurchasePrice.ToString();
+                    CreateRowNumbers();
+                    CalculateCharge();
+                    RemoveEmptyRowFromList(pODList);
+                    ClearInput();
+                    txtBarcode.Focus();
+                    
         }
     }
 }

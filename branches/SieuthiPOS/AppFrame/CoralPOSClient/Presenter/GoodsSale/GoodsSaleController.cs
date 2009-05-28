@@ -150,6 +150,15 @@ namespace CoralPOSClient.Presenter.GoodsSale
                 return;    
             }
             detail.Price = price.Price;
+            detail.OriginalPrice = detail.Price;
+            if (e.HasVAT)
+            {
+                if (detail.Product != null && detail.Product.Tax != null)
+                {
+                    long taxValue = detail.Product.Tax.TaxValue;
+                    detail.Price = detail.Price + (detail.Price*taxValue/100);
+                }
+            }
             e.SelectedPurchaseOrderDetail = detail;
         }
 

@@ -572,22 +572,8 @@ namespace CoralPOSClient.View
         private void MainForm_Load(object sender, EventArgs e)
         {
             Stream inStream = null;
-            if(ClientSetting.Instance.IsClient())
-            {
-                inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ClientMenuPermissions.xml");    
-            }
-            else
-            {
-                if (ClientSetting.Instance.IsServer())
-                {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ServerMenuPermissions.xml");    
-                }
-                else
-                {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.NAMenuPermissions.xml");    
-                }
-            }
-
+            inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ClientMenuPermissions.xml");    
+            
             // load menu permission
             MenuItemPermission menuItemPermission = new MenuItemPermission(MenuItemPermission.INVISIBLE);
             menuItemPermission.loadRoles(inStream);
