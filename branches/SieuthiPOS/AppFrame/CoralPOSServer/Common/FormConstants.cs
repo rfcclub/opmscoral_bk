@@ -86,5 +86,6 @@ namespace CoralPOS.Common
         public static string CHANGE_PASSWORD_FORM = "ChangePasswordView";
 
         public static string POS_LOG_FORM = "PosLogView";
+        public static string TAX_CREATE_FORM = "TaxCreateView";
     }
 }

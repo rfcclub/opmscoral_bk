@@ -571,22 +571,8 @@ namespace CoralPOSServer.View
         private void MainForm_Load(object sender, EventArgs e)
         {
             Stream inStream = null;
-            if (ClientSetting.Instance.IsClient())
-            {
-                inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.ClientMenuPermissions.xml");    
-            }
-            else
-            {
-                if (ClientSetting.Instance.IsServer())
-                {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.ServerMenuPermissions.xml");    
-                }
-                else
-                {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.NAMenuPermissions.xml");    
-                }
-            }
-
+            inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.ServerMenuPermissions.xml");    
+            
             // load menu permission
             MenuItemPermission menuItemPermission = new MenuItemPermission(MenuItemPermission.INVISIBLE);
             menuItemPermission.loadRoles(inStream);
@@ -715,6 +701,12 @@ namespace CoralPOSServer.View
         private void mnuDanhmucHanghoa_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnuTaxModification_Click(object sender, EventArgs e)
+        {
+            Form form = GlobalUtility.GetOnlyChildFormObject<TaxCreateForm>(this, FormConstants.TAX_CREATE_FORM);
+            form.Show();
         }
     }
 }
