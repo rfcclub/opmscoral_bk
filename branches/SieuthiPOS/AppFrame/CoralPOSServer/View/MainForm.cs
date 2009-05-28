@@ -573,17 +573,17 @@ namespace CoralPOSServer.View
             Stream inStream = null;
             if (ClientSetting.Instance.IsClient())
             {
-                inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ClientMenuPermissions.xml");    
+                inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.ClientMenuPermissions.xml");    
             }
             else
             {
                 if (ClientSetting.Instance.IsServer())
                 {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.ServerMenuPermissions.xml");    
+                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.ServerMenuPermissions.xml");    
                 }
                 else
                 {
-                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSClient.NAMenuPermissions.xml");    
+                    inStream = this.GetType().Assembly.GetManifestResourceStream("CoralPOSServer.NAMenuPermissions.xml");    
                 }
             }
 

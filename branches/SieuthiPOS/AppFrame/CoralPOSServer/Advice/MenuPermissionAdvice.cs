@@ -9,7 +9,7 @@ using CoralPOS.Common;
 using CoralPOSServer.View;
 using Spring.Aop;
 
-namespace CoralPOSServer.Advice
+namespace CoralPOS.Advice
 {
     internal class MenuPermissionAdvice : IAfterReturningAdvice
     {
@@ -19,7 +19,7 @@ namespace CoralPOSServer.Advice
         {
             var mainForm = GlobalUtility.GetFormObject<MainForm>(FormConstants.MAIN_FORM);
             ClientInfo clientInfo = ClientInfo.getInstance();
-            var resManager = new ResourceManager("CoralPOSClient.Global", Assembly.GetExecutingAssembly());
+            var resManager = new ResourceManager("CoralPOSServer.Global", Assembly.GetExecutingAssembly());
             if (clientInfo.LoggedUser.IsGuest)
             {
                 mainForm.lblStatus.Text = resManager.GetString("guestUserString");
