@@ -124,12 +124,17 @@
     <Compile Include="Common\Dummy.cs" />
     <Compile Include="Common\FormConstants.cs" />
     <Compile Include="DataLayer\Dummy.cs" />
+    <Compile Include="Logic\ClosedPeriodEventArgs.cs" />
     <Compile Include="Logic\EmployeeWorkingsLogicEventArg.cs" />
     <Compile Include="Logic\EmployeeWorkingsLogicImpl.cs" />
+    <Compile Include="Logic\IClosedPeriodLogic.cs" />
     <Compile Include="Logic\IEmployeeWorkingsLogic.cs" />
     <Compile Include="Logic\IMainLogic.cs" />
+    <Compile Include="Logic\IProcessPeriodMoneyLogic.cs" />
     <Compile Include="Logic\MainLogicEventArgs.cs" />
     <Compile Include="Logic\MainLogicImpl.cs" />
+    <Compile Include="Logic\ProcessPeriodMoneyEventArgs.cs" />
+    <Compile Include="Logic\ProcessPeriodMoneyLogic.cs" />
     <Compile Include="Model\PosRole.cs" />
     <Compile Include="View\IMainView.cs" />
     <Compile Include="View\MainForm.cs">
@@ -143,6 +148,12 @@
     </Compile>
     <Compile Include="View\Management\DepartmentManagement.Designer.cs">
       <DependentUpon>DepartmentManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Management\EmployeeMoneyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Management\EmployeeMoneyForm.Designer.cs">
+      <DependentUpon>EmployeeMoneyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Management\EmployeeWorkingsForm.cs">
       <SubType>Form</SubType>
@@ -165,7 +176,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Config\AppFrameObject.config" />
-    <EmbeddedResource Include="Config\Logic.config" />
     <EmbeddedResource Include="Config\Presentation.config" />
     <None Include="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -183,7 +193,9 @@
     </Compile>
     <Compile Include="Utility\Dummy.cs" />
     <Compile Include="View\Dummy.cs" />
+    <Compile Include="View\Management\IClosedPeriodView.cs" />
     <Compile Include="View\Management\IEmployeeWorkingsView.cs" />
+    <Compile Include="View\Management\IProcessPeriodMoneyView.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppFrame\AppFrame.csproj">
@@ -193,6 +205,10 @@
     <ProjectReference Include="..\CoralPOS.Interfaces\CoralPOS.Interfaces.csproj">
       <Project>{A377C470-FB76-423D-A15F-A81B58C1EF31}</Project>
       <Name>CoralPOS.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoralPOSClient\CoralPOSClient.csproj">
+      <Project>{D00460D1-6FAB-443F-A23A-D1FFF7961431}</Project>
+      <Name>CoralPOSClient</Name>
     </ProjectReference>
     <ProjectReference Include="..\CoralPOS\CoralPOS.csproj">
       <Project>{980B950B-5AC9-4C8E-A956-45C401BFEF89}</Project>
@@ -212,6 +228,9 @@
     <EmbeddedResource Include="MenuPermissions.xml" />
     <EmbeddedResource Include="View\Management\DepartmentManagement.resx">
       <DependentUpon>DepartmentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Management\EmployeeMoneyForm.resx">
+      <DependentUpon>EmployeeMoneyForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

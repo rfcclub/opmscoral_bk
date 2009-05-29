@@ -124,11 +124,12 @@ namespace ClientManagementTool.View
             }
         }
 
-        public event EventHandler<ClientManagementTool.Logic.MainLogicEventArgs> ProcessPeriodEvent;
+        public event EventHandler<MainLogicEventArgs> ProcessPeriodEvent;
 
-        public event EventHandler<ClientManagementTool.Logic.MainLogicEventArgs> StartPeriodEvent;
+        public event EventHandler<MainLogicEventArgs> StartPeriodEvent;
 
-        public event EventHandler<ClientManagementTool.Logic.MainLogicEventArgs> EndPeriodEvent;
+        public event EventHandler<MainLogicEventArgs> EndPeriodEvent;
+        public event EventHandler<MainLogicEventArgs> ProcessEmployeeMoneyEvent;
 
         #endregion
 
@@ -157,6 +158,23 @@ namespace ClientManagementTool.View
                     }
                     else
                     {
+                        EmployeeMoneyForm form =
+                            GlobalUtility.GetFormObject<EmployeeMoneyForm>(FormConstants.EMPLOYEE_MONEY_FORM);
+                        form.lblStatus.Text = "VÀO CA";
+                        form.ShowDialog();
+                        EmployeeMoneyForm.ChoosingResult choosingResult = form.ChoosedResult;
+                        if(choosingResult == EmployeeMoneyForm.ChoosingResult.Next)
+                        {
+                            long inMoney = form.MoneyEntered;
+                            eventArgs.InMoney = inMoney;
+                            EventUtility.fireEvent(ProcessEmployeeMoneyEvent, this, eventArgs);
+                            if(eventArgs.HasErrors)
+                            {
+                                MessageBox.Show("Có lỗi khi thực hiện vào ca. Liên hệ người quản trị.", "Lỗi");
+                                return;
+                            }
+                        }
+
                         MessageBox.Show("Bạn đã vào ca trực. Nhấn OK để thoát.");
                     }
                 }
@@ -204,6 +222,16 @@ namespace ClientManagementTool.View
                         MessageBox.Show("Ca trực đã có người quản lý.", "Lỗi");
                         return;
                     }
+                    EmployeeMoneyForm form =
+                            GlobalUtility.GetFormObject<EmployeeMoneyForm>(FormConstants.EMPLOYEE_MONEY_FORM);
+                    form.lblStatus.Text = "CHỐT CA";
+                    form.ShowDialog();
+                    EmployeeMoneyForm.ChoosingResult choosingResult = form.ChoosedResult;
+                    if (choosingResult == EmployeeMoneyForm.ChoosingResult.Next)
+                    {
+                        long outMoney = form.MoneyEntered;
+                        eventArgs.OutMoney = outMoney;
+                    }
                     EventUtility.fireEvent(EndPeriodEvent, this, eventArgs);
                     if (eventArgs.HasErrors)
                     {
@@ -219,6 +247,11 @@ namespace ClientManagementTool.View
             {
                 MessageBox.Show("Không đủ quyền hạn", "Lỗi");
             }
+        }
+
+        private void watchClosedPeriodMenu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

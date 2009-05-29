@@ -13,5 +13,6 @@ namespace ClientManagementTool.View
         event EventHandler<MainLogicEventArgs> ProcessPeriodEvent;
         event EventHandler<MainLogicEventArgs> StartPeriodEvent;
         event EventHandler<MainLogicEventArgs> EndPeriodEvent;
+        event EventHandler<MainLogicEventArgs> ProcessEmployeeMoneyEvent;
     }
 }

@@ -13,5 +13,7 @@ namespace ClientManagementTool.Logic
         public string Username { get; set; }
         public LoginModel UserInfo { get; set; }
         public DepartmentManagement DepartmentManagement { get; set; }
+        public long InMoney { get; set; }
+        public long OutMoney { get; set; }
     }
 }

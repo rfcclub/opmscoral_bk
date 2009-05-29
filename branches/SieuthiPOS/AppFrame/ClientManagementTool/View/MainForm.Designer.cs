@@ -47,6 +47,8 @@
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.watchClosedPeriodMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -118,7 +120,9 @@
             this.employeeWorkingReport,
             this.toolStripMenuItem1,
             this.enterPeriodMenu,
-            this.leavePeriodMenu});
+            this.leavePeriodMenu,
+            this.toolStripMenuItem2,
+            this.watchClosedPeriodMenu});
             this.employeeManagementMenu.Name = "employeeManagementMenu";
             this.employeeManagementMenu.Size = new System.Drawing.Size(115, 20);
             this.employeeManagementMenu.Text = "Quản lý nhân viên";
@@ -159,7 +163,7 @@
             // 
             this.leavePeriodMenu.Name = "leavePeriodMenu";
             this.leavePeriodMenu.Size = new System.Drawing.Size(209, 22);
-            this.leavePeriodMenu.Text = "Kết thúc ca";
+            this.leavePeriodMenu.Text = "Chốt ca";
             this.leavePeriodMenu.Click += new System.EventHandler(this.mnuLeavePeriod_Click);
             // 
             // menuHelp
@@ -184,6 +188,18 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "label1";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(206, 6);
+            // 
+            // watchClosedPeriodMenu
+            // 
+            this.watchClosedPeriodMenu.Name = "watchClosedPeriodMenu";
+            this.watchClosedPeriodMenu.Size = new System.Drawing.Size(209, 22);
+            this.watchClosedPeriodMenu.Text = "Xem chốt ca";
+            this.watchClosedPeriodMenu.Click += new System.EventHandler(this.watchClosedPeriodMenu_Click);
             // 
             // MainForm
             // 
@@ -227,5 +243,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem enterPeriodMenu;
         private System.Windows.Forms.ToolStripMenuItem leavePeriodMenu;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem watchClosedPeriodMenu;
     }
 }

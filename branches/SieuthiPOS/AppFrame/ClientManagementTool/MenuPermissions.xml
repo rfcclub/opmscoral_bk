@@ -15,6 +15,7 @@
     <menuitem name="employeeWorkingReport" role="NotImplement" />
     <menuitem name="enterPeriodMenu" role="Manager" />
     <menuitem name="leavePeriodMenu" role="Manager" />
+    <menuitem name="watchClosedPeriodMenu" role="Manager" />    
   </menu>  
   <menu name="menuHelp" role="*">
     <menuitem name="menuAbout" role="*">
