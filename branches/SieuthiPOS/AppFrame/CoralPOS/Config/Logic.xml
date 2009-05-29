@@ -280,6 +280,10 @@
     <property name="EmployeeRewardDAO" ref="CoralPOS.DataLayer.IEmployeeRewardDAO"/>
   </object>
 
+  <object id="CoralPOS.Service.IEmployeeMoneyLogic" type="CoralPOS.Logic.EmployeeMoneyLogicImpl, CoralPOS">
+    <property name="EmployeeMoneyDAO" ref="CoralPOS.DataLayer.IEmployeeMoneyDAO"/>
+  </object>
+  
   <object id="CoralPOS.Service.IDepartmentStockOutDetailLogic" type="CoralPOS.Logic.DepartmentStockOutDetailLogicImpl, CoralPOS">
     <property name="DepartmentStockOutDetailDAO" ref="CoralPOS.DataLayer.IDepartmentStockOutDetailDAO"/>
   </object>

@@ -171,6 +171,7 @@
     <Compile Include="DataLayer\BlockInDetailDAOImpl.cs" />
     <Compile Include="DataLayer\CategoryDAOImpl.cs" />
     <Compile Include="DataLayer\ContractDAOImpl.cs" />
+    <Compile Include="DataLayer\EmployeeMoneyDAOImpl.cs" />
     <Compile Include="DataLayer\CountryDAOImpl.cs" />
     <Compile Include="DataLayer\CouponDAOImpl.cs" />
     <Compile Include="DataLayer\CouponTypeDAOImpl.cs" />
@@ -242,6 +243,7 @@
     <Compile Include="Logic\BlockInLogicImpl.cs" />
     <Compile Include="Logic\CategoryLogicImpl.cs" />
     <Compile Include="Logic\ContractLogicImpl.cs" />
+    <Compile Include="Logic\EmployeeMoneyLogicImpl.cs" />
     <Compile Include="Logic\CountryLogicImpl.cs" />
     <Compile Include="Logic\CouponLogicImpl.cs" />
     <Compile Include="Logic\CouponTypeLogicImpl.cs" />

@@ -159,6 +159,9 @@
   <object id="CoralPOS.DataLayer.IEmployeeRewardDAO" type="CoralPOS.DataLayer.EmployeeRewardDAOImpl, CoralPOS">
     <property name="HibernateTemplate" ref="HibernateTemplate"/>
   </object>
+  <object id="CoralPOS.DataLayer.IEmployeeMoneyDAO" type="CoralPOS.DataLayer.EmployeeMoneyDAOImpl, CoralPOS">
+    <property name="HibernateTemplate" ref="HibernateTemplate"/>
+  </object>
   <object id="CoralPOS.DataLayer.IDepartmentStockOutDetailDAO" type="CoralPOS.DataLayer.DepartmentStockOutDetailDAOImpl, CoralPOS">
     <property name="HibernateTemplate" ref="HibernateTemplate"/>
   </object>
