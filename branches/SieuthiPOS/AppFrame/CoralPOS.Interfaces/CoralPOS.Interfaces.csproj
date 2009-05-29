@@ -82,6 +82,7 @@
     <Compile Include="Collection\DepartmentStockTempCollection.cs" />
     <Compile Include="Collection\DepartmentStockViewCollection.cs" />
     <Compile Include="Collection\EmployeeInfoCollection.cs" />
+    <Compile Include="Collection\EmployeeMoneyCollection.cs" />
     <Compile Include="Collection\EmployeeWorkingDaysCollection.cs" />
     <Compile Include="Collection\LoginModelCollection.cs" />
     <Compile Include="Collection\ProductReportCollection.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Collection\TaxCollection.cs" />
     <Compile Include="Common\CommonConstants.cs" />
     <Compile Include="Common\CurrentDepartment.cs" />
+    <Compile Include="DataLayer\IEmployeeMoneyDAO.cs" />
     <Compile Include="DataLayer\Dummy.cs" />
     <Compile Include="DataLayer\IBlockInCostDAO.cs" />
     <Compile Include="DataLayer\IBlockInDAO.cs" />
@@ -172,6 +174,7 @@
     <Compile Include="Exceptions\BusinessException.cs" />
     <Compile Include="Exceptions\DataLayerException.cs" />
     <Compile Include="Exceptions\PresentationException.cs" />
+    <Compile Include="Logic\IEmployeeMoneyLogic.cs" />
     <Compile Include="Logic\IAuthoriseLogic.cs" />
     <Compile Include="Logic\IAuthorizationLogic.cs" />
     <Compile Include="Logic\IBlockInCostLogic.cs" />
@@ -302,6 +305,8 @@
     <Compile Include="Model\EmployeeDayoff.cs" />
     <Compile Include="Model\EmployeeDayoffPK.cs" />
     <Compile Include="Model\EmployeeInfo.cs" />
+    <Compile Include="Model\EmployeeMoney.cs" />
+    <Compile Include="Model\EmployeeMoneyPK.cs" />
     <Compile Include="Model\EmployeePK.cs" />
     <Compile Include="Model\EmployeeReward.cs" />
     <Compile Include="Model\EmployeeRewardPK.cs" />
@@ -587,6 +592,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Advice\dummy.txt" />
+    <EmbeddedResource Include="Model\EmployeeMoney.hbm.xml" />
     <EmbeddedResource Include="Model\DepartmentStockProductMasterView.hbm.xml" />
     <EmbeddedResource Include="Model\Tax.hbm.xml" />
     <EmbeddedResource Include="Model\SyncStatus.hbm.xml" />
