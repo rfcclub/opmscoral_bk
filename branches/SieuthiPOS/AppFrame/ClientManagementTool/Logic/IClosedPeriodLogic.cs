@@ -34,5 +34,6 @@ namespace ClientManagementTool.Logic
         
         IReturnPoLogic ReturnPoLogic { get; set; }
         IDepartmentPriceLogic DepartmentPriceLogic { get; set; }
+        IEmployeeMoneyLogic EmployeeMoneyLogic { get; set; }
     }
 }

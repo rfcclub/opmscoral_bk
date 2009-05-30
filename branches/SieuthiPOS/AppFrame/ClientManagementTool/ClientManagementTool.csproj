@@ -125,6 +125,7 @@
     <Compile Include="Common\FormConstants.cs" />
     <Compile Include="DataLayer\Dummy.cs" />
     <Compile Include="Logic\ClosedPeriodEventArgs.cs" />
+    <Compile Include="Logic\ClosedPeriodLogic.cs" />
     <Compile Include="Logic\EmployeeWorkingsLogicEventArg.cs" />
     <Compile Include="Logic\EmployeeWorkingsLogicImpl.cs" />
     <Compile Include="Logic\IClosedPeriodLogic.cs" />
@@ -154,6 +155,12 @@
     </Compile>
     <Compile Include="View\Management\EmployeeMoneyForm.Designer.cs">
       <DependentUpon>EmployeeMoneyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Management\ClosedPeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Management\ClosedPeriodForm.Designer.cs">
+      <DependentUpon>ClosedPeriodForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Management\EmployeeWorkingsForm.cs">
       <SubType>Form</SubType>
@@ -231,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Management\EmployeeMoneyForm.resx">
       <DependentUpon>EmployeeMoneyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Management\ClosedPeriodForm.resx">
+      <DependentUpon>ClosedPeriodForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

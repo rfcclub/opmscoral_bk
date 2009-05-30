@@ -251,7 +251,8 @@ namespace ClientManagementTool.View
 
         private void watchClosedPeriodMenu_Click(object sender, EventArgs e)
         {
-
+            Form form = GlobalUtility.GetOnlyChildFormObject<ClosedPeriodForm>(this, FormConstants.CLOSED_PERIOD_FORM);
+            form.Show();
         }
     }
 }

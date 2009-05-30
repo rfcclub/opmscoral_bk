@@ -11,5 +11,6 @@ namespace ClientManagementTool.Common
         public static string MAIN_FORM = "mainView";
         public static string EMPLOYEE_WORKINGS_FORM = "EmployeeWorkingView";
         public static string EMPLOYEE_MONEY_FORM = "EmployeeMoneyView";
+        public static string CLOSED_PERIOD_FORM = "ClosedPeriodView";
     }
 }
