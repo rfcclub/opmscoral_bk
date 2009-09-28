@@ -15,28 +15,14 @@ namespace AppFrame.Controls
         public override PropertyDescriptorCollection GetProperties(Attribute[] attributes)
         {
             PropertyDescriptorCollection parentPDs = base.GetProperties(attributes);
-            Console.WriteLine("Load properties of " + GetClassName());
             return ComplexListPropertyHelper.GetList(parentPDs, GetClassName());
         }
         
 
         public override PropertyDescriptorCollection GetProperties()
         {
-            //return base.GetProperties();
+            
             PropertyDescriptorCollection parentPDs = base.GetProperties();
-            /*IList list = new ArrayList();
-
-            list = CopyToList(list, parentPDs);
-
-            foreach(PropertyDescriptor parentPD in parentPDs)
-            {
-               GetList(parentPD,ref list); 
-            }
-            PropertyDescriptor[] array = new PropertyDescriptor[list.Count];
-            list.CopyTo(array,0);
-            PropertyDescriptorCollection newcols = new PropertyDescriptorCollection(array);
-            return newcols;           */
-            Console.WriteLine("Load properties of " + GetClassName());
             return ComplexListPropertyHelper.GetList(parentPDs,GetClassName());
 
         }

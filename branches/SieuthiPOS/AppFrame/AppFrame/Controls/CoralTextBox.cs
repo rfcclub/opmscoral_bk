@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -31,6 +32,20 @@ namespace AppFrame.Controls
 
         }
 
+        private Color focusColor = Color.FromKnownColor(KnownColor.Window);
+        public Color FocusColor
+        {
+            get
+            {
+                return focusColor;
+            } 
+            set
+            {
+                focusColor = value;
+            }
+        }
+        
+
         public CoralTextBox()
         {
             DigitOnly = false;
@@ -38,6 +53,18 @@ namespace AppFrame.Controls
             this.KeyPress += new KeyPressEventHandler(CoralTextBox_KeyPress);
             this.KeyDown += new KeyEventHandler(CoralTextBox_KeyDown);
             this.TextChanged += new EventHandler(CoralTextBox_TextChanged);
+            this.Enter += new EventHandler(CoralTextBox_Enter);
+            this.Leave += new EventHandler(CoralTextBox_Leave);
+        }
+
+        void CoralTextBox_Leave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromKnownColor(KnownColor.Window); 
+        }
+
+        void CoralTextBox_Enter(object sender, EventArgs e)
+        {
+            this.BackColor = focusColor; 
         }
 
         void CoralTextBox_TextChanged(object sender, EventArgs e)
@@ -81,6 +108,9 @@ namespace AppFrame.Controls
                             || e.KeyCode != Keys.Home
                             || e.KeyCode != Keys.End
                             || e.KeyCode != Keys.Enter
+                            || e.KeyCode != Keys.Shift
+                            || e.KeyCode != Keys.Alt
+                            || !e.Shift
                             )
                         {
                             numberEntered = true;
