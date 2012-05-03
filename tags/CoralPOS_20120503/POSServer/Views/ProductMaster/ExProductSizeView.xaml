@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="POSServer.Views.ProductMaster.ExProductSizeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="700" Width="837" >
+    <Grid>
+        <Grid Margin="0,0,0,149">
+        <DataGrid AutoGenerateColumns="False" Margin="18,21,6,40" Name="ProductSizeList" FontSize="14" SelectedItem="{Binding SelectedProductSize}" CanUserAddRows="False" RowHeight="38">
+            <DataGrid.Columns>
+                <DataGridTextColumn FontSize="14" Header="MÃ SỐ" Binding="{Binding Path=SizeId}" SortMemberPath="SizeId" IsReadOnly="True"/>
+                <DataGridTextColumn FontSize="14" Header="TÊN KÍCH CỠ" Width="200" Binding="{Binding Path=SizeName}" SortMemberPath="SizeName"/>
+                <DataGridTextColumn FontSize="14" Header="DIỄN GIẢI" Width="*" Binding="{Binding Path=CreateId}" SortMemberPath="CreateId" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+        </Grid>
+        <Grid Height="150" VerticalAlignment="Bottom">
+            <Button FontSize="14" FontWeight="Bold" Margin="25,6,0,64" Name="Help" HorizontalAlignment="Left" Width="80" Height="80">GIÚP ĐỠ</Button>
+            <Button FontSize="14" FontWeight="Bold" Margin="414,6,343,64" Name="Delete" Height="80" Width="80">XÓA</Button>
+            <Button FontSize="14" FontWeight="Bold" Margin="299,6,0,64" Name="Edit" HorizontalAlignment="Left" Width="80" Height="80">SỬA</Button>
+            <Button FontSize="14" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,6,18,64" Name="Stop" Width="80" Height="80">THOÁT</Button>
+            <Button FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" Margin="190,6,0,64" Name="Create" Width="80" Height="80">TẠO MỚI</Button>
+            <Button FontSize="14" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,6,153,64" Name="Save" Width="80" Height="80">LƯU</Button>
+        </Grid>
+    </Grid>
+</UserControl>
