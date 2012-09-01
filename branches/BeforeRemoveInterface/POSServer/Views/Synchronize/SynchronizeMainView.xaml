@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="POSServer.Views.Synchronize.SynchronizeMainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Width="837" Height="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="167*" />
+            <ColumnDefinition Width="167*" />
+            <ColumnDefinition Width="167*" />
+            <ColumnDefinition Width="167*" />            
+        </Grid.ColumnDefinitions>
+        <Button FontSize="14" FontWeight="Bold" Height="80" Margin="59.994,0,68.882,0" Name="ToDepartment" TabIndex="9" VerticalAlignment="Top" Grid.Row="1">
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap" Text="XUẤT ĐỒNG BỘ"></TextBlock></Button>
+        <Button FontSize="14" FontWeight="Bold" Height="80" Margin="59.994,107.5,68.882,0" Name="FromDepartment" TabIndex="9" VerticalAlignment="Top" Grid.Row="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center">
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap" Text="NHẬP ĐỒNG BỘ"></TextBlock>
+        </Button>
+        <Button FontSize="14" FontWeight="Bold" Margin="60,434,71,175" Name="CreateSyncUSB" TabIndex="9" Grid.Row="1">
+            <TextBlock Text="TẠO USB ĐỒNG BỘ" TextAlignment="Center" TextWrapping="Wrap" Width="72.5" />
+        </Button>
+    </Grid>
+</UserControl>

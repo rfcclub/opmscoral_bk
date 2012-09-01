@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="CoralPOS" namespace="CoralPOS.Models" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="UserInfo" table="CRL_USR_INFO" where="DEL_FLG = 0">
+    <id name="Username" type="String" column="USERNAME">
+      <generator class="assigned" />
+    </id>
+    <property name="Deleted" column="DELETED" />
+    <property name="DepartmentId" column="DEPARTMENT_ID" />
+    <property name="EmployeeId" column="EMPLOYEE_ID" />
+    <property name="Password" column="PASSWORD" />
+    <property name="Suspended" column="SUSPENDED" />
+    <sql-delete>update CRL_USR_INFO set DEL_FLG=1,UPDATE_DATE=now() WHERE USERNAME=?</sql-delete>
+  </class>
+</hibernate-mapping>

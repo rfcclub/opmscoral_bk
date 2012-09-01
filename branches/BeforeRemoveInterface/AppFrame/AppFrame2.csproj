@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B57B71C6-9CD9-4A81-937C-5091F7C78225}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppFrame</RootNamespace>
+    <AssemblyName>AppFrame</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>..\libraries\Caliburn\Caliburn.Micro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <HintPath>..\libraries\Spring\Common.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EmitMapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\libraries\NHibernate\Iesi.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\libraries\NHibernate\NHibernate.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NHibernate.LambdaExtensions">
+      <HintPath>..\libraries\Codeplex\NHibernate.LambdaExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\libraries\Spring\Spring.Aop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\libraries\Spring\Spring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\libraries\Spring\Spring.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\libraries\Spring\Spring.Data.NHibernate32.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\libraries\Caliburn\System.Windows.Interactivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\AppFrameCommands.cs" />
+    <Compile Include="Base\ChildFlow.cs" />
+    <Compile Include="Base\DefaultFlow.cs" />
+    <Compile Include="Base\DefaultSession.cs" />
+    <Compile Include="Base\FlowSession.cs" />
+    <Compile Include="Base\Generic\GenericPosViewModel.cs" />
+    <Compile Include="Base\GlobalSession.cs" />
+    <Compile Include="Base\IActionNode.cs" />
+    <Compile Include="Base\IFlow.cs" />
+    <Compile Include="Base\IFlowManager.cs" />
+    <Compile Include="Base\IFlowSession.cs" />
+    <Compile Include="Base\INavigator.cs" />
+    <Compile Include="Base\IPosAction.cs" />
+    <Compile Include="Base\IPosActionResult.cs" />
+    <Compile Include="Base\IPosScreen.cs" />
+    <Compile Include="Base\IRootNode.cs" />
+    <Compile Include="Base\IScreenNode.cs" />
+    <Compile Include="Base\ISession.cs" />
+    <Compile Include="Base\Navigator.cs" />
+    <Compile Include="Base\PosAction.cs" />
+    <Compile Include="Base\PosViewModel.cs" />
+    <Compile Include="Base\PosViewModelExtensions.cs" />
+    <Compile Include="Base\ShellNavigator.cs" />
+    <Compile Include="Base\Synchronize\UsbSyncDisc.cs" />
+    <Compile Include="Common\GlobalCache.cs" />
+    <Compile Include="Base\INode.cs" />
+    <Compile Include="Base\Node.cs" />
+    <Compile Include="CustomAttributes\AttachMenuAndMainScreenAttribute.cs" />
+    <Compile Include="CustomAttributes\SingletonAttribute.cs" />
+    <Compile Include="CustomAttributes\MainScreenAttribute.cs" />
+    <Compile Include="CustomAttributes\PerRequestAttribute.cs" />
+    <Compile Include="DataLayer\AdoWrapper.cs" />
+    <Compile Include="DataLayer\DataErrorInfoFactory.cs" />
+    <Compile Include="DataLayer\HashtableDynamicObject.cs" />
+    <Compile Include="DataLayer\LazyInitializer.cs" />
+    <Compile Include="DataLayer\LinqCriteria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataLayer\ObjectCriteria.cs" />
+    <Compile Include="DataLayer\PosContext.cs" />
+    <Compile Include="DataLayer\QueryHandler.cs" />
+    <Compile Include="DataLayer\Utils\PosDatabase.cs" />
+    <Compile Include="Exceptions\IllegalFlowStateException.cs" />
+    <Compile Include="Extensions\DataGrid\DataGridExtension.cs" />
+    <Compile Include="Extensions\DataGrid\SelectedItemsBehavior.cs" />
+    <Compile Include="Extensions\DialogExtensions.cs" />
+    <Compile Include="Extensions\HibernateTemplateExtensions.cs" />
+    <Compile Include="Extensions\ListBox\IListItemConverter.cs" />
+    <Compile Include="Extensions\ListBox\ListBoxExtension.cs" />
+    <Compile Include="Extensions\ListBox\MultiSelectorBehaviours.cs" />
+    <Compile Include="Extensions\RelayCommand.cs" />
+    <Compile Include="Extensions\ListBox\TwoListSynchronizer.cs" />
+    <Compile Include="Extensions\PosViewModelExtensions.cs" />
+    <Compile Include="Extensions\TypedExpandExtension.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helpers\DataGridHelper.cs" />
+    <Compile Include="Helpers\TryHelper.cs" />
+    <Compile Include="Interceptors\DataErrorInfoInterceptor.cs" />
+    <Compile Include="Interceptors\ExceptionValidatorInterceptor.cs" />
+    <Compile Include="Interceptors\IInitializableInterceptor.cs" />
+    <Compile Include="Interceptors\InterceptorBase.cs" />
+    <Compile Include="Interceptors\ProxyInterceptor.cs" />
+    <Compile Include="Invocation\BackgroundTask.cs" />
+    <Compile Include="Invocation\DefaultMethodFactory.cs" />
+    <Compile Include="Invocation\DelegateFactory.cs" />
+    <Compile Include="Invocation\EventHelper.cs" />
+    <Compile Include="Invocation\ExecuteHelper.cs" />
+    <Compile Include="Invocation\IBackgroundContext.cs" />
+    <Compile Include="Invocation\IBackgroundTask.cs" />
+    <Compile Include="Invocation\IMethod.cs" />
+    <Compile Include="Invocation\IMethodFactory.cs" />
+    <Compile Include="Invocation\PredicateBuilder.cs" />
+    <Compile Include="Mapper\MapperConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\IProxy.cs" />
+    <Compile Include="Security\Role.cs" />
+    <Compile Include="Security\RoleDeniedActions.cs" />
+    <Compile Include="Security\RoleSecurity.cs" />
+    <Compile Include="Security\UISecurityCheckingAttribute.cs" />
+    <Compile Include="Utils\ClientUtility.cs" />
+    <Compile Include="Utils\DateUtility.cs" />
+    <Compile Include="Utils\DbUtility.cs" />
+    <Compile Include="Utils\NumberUtility.cs" />
+    <Compile Include="Utils\ObjectConverter.cs" />
+    <Compile Include="Utils\ObjectUtility.cs" />
+    <Compile Include="Utils\RandomGenerator.cs" />
+    <Compile Include="Utils\StringUtility.cs" />
+    <Compile Include="Utils\TaskUtils.cs" />
+    <Compile Include="Security\ClientInfo.cs" />
+    <Compile Include="Validation\DefaultError.cs" />
+    <Compile Include="Validation\DefaultValidator.cs" />
+    <Compile Include="Validation\IError.cs" />
+    <Compile Include="Validation\IValidator.cs" />
+    <Compile Include="Validation\POSError.cs" />
+    <Compile Include="Validation\POSErrorResult.cs" />
+    <Compile Include="Validation\IObjectValidator.cs" />
+    <Compile Include="Validation\ObjectValidator.cs" />
+    <Compile Include="Validation\ValidateAttribute.cs" />
+    <Compile Include="Validation\ValidatorProvider.cs" />
+    <Compile Include="WPF\BindableList.cs" />
+    <Compile Include="WPF\CoralCommands.cs" />
+    <Compile Include="WPF\FlowBackgroundTaskResult.cs" />
+    <Compile Include="WPF\FlowBackgroundTaskResultEventArgs.cs" />
+    <Compile Include="WPF\ModelMapper.cs" />
+    <Compile Include="WPF\PosDataErrorProvider.cs" />
+    <Compile Include="WPF\PosErrorValidationRule.cs" />
+    <Compile Include="WPF\PosValidationRule.cs" />
+    <Compile Include="WPF\RowNumberConverter.cs" />
+    <Compile Include="WPF\Screens\CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF\Screens\ICircularLoadViewModel.cs" />
+    <Compile Include="WPF\Screens\ILoadViewModel.cs" />
+    <Compile Include="WPF\Screens\INormalLoadViewModel.cs" />
+    <Compile Include="WPF\Screens\IPageScreen.cs" />
+    <Compile Include="WPF\Screens\TLoadScreen.cs" />
+    <Compile Include="WPF\ValidationAttributes\NotNullValidationRule.cs" />
+    <Compile Include="WPF\ValidationAttributes\FutureAttribute.cs" />
+    <Compile Include="WPF\ValidationAttributes\LengthAttribute.cs" />
+    <Compile Include="WPF\ValidationAttributes\MaxAttribute.cs" />
+    <Compile Include="WPF\ValidationAttributes\MinAttribute.cs" />
+    <Compile Include="WPF\ValidationAttributes\NotEmptyValidationRule.cs" />
+    <Compile Include="WPF\ValidationAttributes\NotNullOrEmptyValidationRule.cs" />
+    <Compile Include="WPF\ValidationAttributes\PastAttribute.cs" />
+    <Compile Include="WPF\WPFUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="WPF\Screens\CircularProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WPF\Screens\TLoadScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WPF\Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

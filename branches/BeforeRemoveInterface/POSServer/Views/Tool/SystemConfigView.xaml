@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="POSServer.Views.Tool.SystemConfigView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Width="837" Height="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="575*" />
+            <RowDefinition Height="125*" />
+        </Grid.RowDefinitions>
+        <GroupBox Header="Đồng bộ" Height="304" HorizontalAlignment="Left" Name="GroupSynchronize" VerticalAlignment="Top" Width="471" FontSize="14">
+            <Grid>
+                <TextBox Height="31" HorizontalAlignment="Right" Margin="0,16,49,0" Name="SyncImportPath" VerticalAlignment="Top" Width="258" />
+                <Label Content="Đường dẫn nhập file:" Height="28" HorizontalAlignment="Left" Margin="7,18,0,0" Name="label1" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
+                <TextBox Height="31" HorizontalAlignment="Right" Margin="0,53,49,0" Name="SyncExportPath" VerticalAlignment="Top" Width="258" />
+                <Label Content="Đường dẫn xuất file:" Height="28" HorizontalAlignment="Left" Margin="11,55,0,0" Name="label2" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
+                <TextBox Height="31" HorizontalAlignment="Right" Margin="0,90,49,0" Name="SyncErrorPath" VerticalAlignment="Top" Width="258" />
+                <Label Content="Lưu file lỗi:" Height="28" HorizontalAlignment="Left" Margin="15,90,0,0" Name="label3" VerticalAlignment="Top" Width="132" HorizontalContentAlignment="Right" />
+                <TextBox Height="31" HorizontalAlignment="Right" Margin="0,127,49,0" Name="SyncSuccessPath" VerticalAlignment="Top" Width="258" />
+                <Label Content="Lưu file thành công:" Height="28" HorizontalAlignment="Left" Margin="14,128,0,0" Name="label4" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
+                <TextBox Height="31" HorizontalAlignment="Right" Margin="0,164,49,0" Name="SyncBackupPath" VerticalAlignment="Top" Width="258" />
+                <Label Content="Backup dữ liệu:" Height="28" HorizontalAlignment="Left" Margin="15,164,0,0" Name="label5" VerticalAlignment="Top" Width="132" HorizontalContentAlignment="Right" />
+                <TextBox Height="31" HorizontalAlignment="Right" Margin="0,201,49,0" Name="DbToolPath" VerticalAlignment="Top" Width="258" />
+                <Label Content="Đường dẫn DB Tools:" Height="28" HorizontalAlignment="Left" Margin="6,201,0,0" Name="label6" VerticalAlignment="Top" HorizontalContentAlignment="Right" />
+                <Button Content="..." Height="29" HorizontalAlignment="Left" Margin="416,18,0,0" Name="GetImportPath" VerticalAlignment="Top" Width="37" />
+                <Button Content="..." Height="29" HorizontalAlignment="Left" Margin="416,55,0,0" Name="GetExportPath" VerticalAlignment="Top" Width="37" />
+                <Button Content="..." Height="29" HorizontalAlignment="Left" Margin="416,92,0,0" Name="GetErrorPath" VerticalAlignment="Top" Width="37" />
+                <Button Content="..." Height="29" HorizontalAlignment="Left" Margin="416,129,0,0" Name="GetSuccessPath" VerticalAlignment="Top" Width="37" />
+                <Button Content="..." Height="29" HorizontalAlignment="Left" Margin="416,166,0,0" Name="GetBackupPath" VerticalAlignment="Top" Width="37" />
+                <Button Content="..." Height="29" HorizontalAlignment="Left" Margin="416,203,0,0" Name="GetDbToolPath" VerticalAlignment="Top" Width="37" />
+                <Button Content="LẤY GIÁ TRỊ MẶC ĐỊNH" Height="27" HorizontalAlignment="Left" Margin="152,245,0,0" Name="CreateDefaultPath" VerticalAlignment="Top" Width="258" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Chức năng" Height="304" HorizontalAlignment="Left" Margin="471,0,0,0" Name="GroupFunction" VerticalAlignment="Top" Width="366" FontSize="14">
+            <Grid>
+                <CheckBox Content="Cho phép bán hàng số âm" Height="16" HorizontalAlignment="Left" Margin="15,6,0,0" Name="NegativeSelling" VerticalAlignment="Top" />
+                <CheckBox Content="Cho phép xuất hàng số âm" Height="16" HorizontalAlignment="Left" Margin="15,31,0,0" Name="NegativeStockOut" VerticalAlignment="Top" />
+                <CheckBox Content="Xác nhận khi nhập hàng" Height="16" HorizontalAlignment="Left" Margin="15,56,0,0" Name="StockInConfirm" VerticalAlignment="Top" />
+                <CheckBox Content="Xác nhận khi xuất hàng" Height="16" HorizontalAlignment="Left" Margin="15,81,0,0" Name="StockOutConfirm" VerticalAlignment="Top" />
+                <CheckBox Content="Xác nhận nhân viên khi bán hàng" Height="16" HorizontalAlignment="Left" Margin="15,107,0,0" Name="PurchaseOrderConfirm" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="In ấn" Height="82" HorizontalAlignment="Left" Margin="0,304,0,0" Name="GroupPrinting" VerticalAlignment="Top" Width="838" FontSize="14">
+            <Grid>
+                <Label Content="Máy in hóa đơn:" Height="28" HorizontalAlignment="Left" Margin="36,13,0,0" Name="label7" VerticalAlignment="Top" />
+                <ComboBox Height="34" HorizontalAlignment="Left" Margin="152,7,0,0" Name="BillPrinterList" VerticalAlignment="Top" Width="258" SelectedItem="{Binding SelectedPrinter,Mode=TwoWay}" />
+                <Label Content="Loại mã vạch:" Height="28" HorizontalAlignment="Left" Margin="446,13,0,0" Name="label8" VerticalAlignment="Top" />
+                <ComboBox Height="34" HorizontalAlignment="Right" Margin="0,7,6,0" Name="BarcodeTypeList" VerticalAlignment="Top" Width="258" SelectedItem="{Binding SelectedBarcode,Mode=TwoWay}"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Kho phụ" Height="84" HorizontalAlignment="Left" Margin="4,392,0,0" Name="GroupSubStock" VerticalAlignment="Top" Width="833" FontSize="14">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="103*" />
+                    <ColumnDefinition Width="723*" />
+                </Grid.ColumnDefinitions>
+                <Label Content="Nơi xuất của kho phụ:" Height="28" HorizontalAlignment="Left" Margin="3,6,0,0" Name="label9" VerticalAlignment="Top" Width="150" Grid.ColumnSpan="2" />
+                <ComboBox Height="34" HorizontalAlignment="Left" Margin="45,6,0,0" Name="SubStockInvoiceStockOutList" VerticalAlignment="Top" Width="258" DisplayMemberPath="DepartmentName" Grid.Column="1" SelectedItem="{Binding SelectedExportDept,Mode=TwoWay}"/>
+                <CheckBox Content="Kiểm tra mã nhân viên trước khi xuất" Height="16" HorizontalAlignment="Left" Margin="339,18,0,0" Name="SubStockEmployeeChecking" VerticalAlignment="Top" Width="306" Grid.Column="1" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Kết nối" Height="80" HorizontalAlignment="Left" Margin="0,482,0,0" Name="GroupConnection" VerticalAlignment="Top" Width="838" FontSize="14">
+            <Grid>
+                <Label Content="Giao thức kết nối" Height="28" HorizontalAlignment="Left" Margin="7,6,0,0" Name="label10" VerticalAlignment="Top" Width="150" />
+                <ComboBox Height="34" HorizontalAlignment="Left" Margin="152,6,0,0" Name="ConnectionProtocol" VerticalAlignment="Top" Width="258" SelectedItem="{Binding SelectedProtocol,Mode=TwoWay}"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="LƯU" Height="80" HorizontalAlignment="Left" Margin="256,8,0,0" Name="Update" VerticalAlignment="Top" Width="80" Grid.Row="1" FontSize="16" FontWeight="Bold" />
+        <Button Content="MẶC ĐỊNH" Height="80" HorizontalAlignment="Left" Margin="356,8,0,0" Name="Default" VerticalAlignment="Top" Width="112" Grid.Row="1" FontSize="16" FontWeight="Bold" />
+        <Button Content="THOÁT" Height="80" HorizontalAlignment="Left" Margin="492,8,0,0" Name="Quit" VerticalAlignment="Top" Width="80" Grid.Row="1" FontSize="16" FontWeight="Bold" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,33 @@
+
+			 
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using AppFrame.Base;
+using AppFrame.CustomAttributes;
+using AppFrame.CustomAttributes;
+
+namespace POSServer.ViewModels.Menu.Stock
+{
+    public interface IConfirmMenuViewModel : IScreenNode
+    {
+        #region Fields
+			#endregion
+		
+		#region Methods
+		        
+        void StockInConfirm();
+        
+		        
+        void StockOutConfirm();
+        
+		        
+        void DepartmentStockOutConfirm();
+
+        void Back();
+
+        #endregion
+    }
+}
